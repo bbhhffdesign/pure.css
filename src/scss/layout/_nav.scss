@@ -7,12 +7,33 @@
     height: 3rem;
     position: fixed;
     background-color: black;
-    @include flex(row,space-around,center,none);
-    
-//     .nav-logo{
-//         height: 100%;
-        
-//     }
+    padding: $spac-xs 0;
+    @include flex(row, space-around, center, auto);
+
+    @include tablet{
+        height: 4rem;
+        justify-content: center;
+        gap: 5rem;
+//de 2 a 5 rem
+        button{
+            margin-left: 1.3rem;
+        }
+    }
+    @include desktop-sm{
+        // justify-content: center;
+
+        // button{
+        //     margin-left: 1rem;
+        // }
+    }
+    @include desktop-lg{
+        height: 5rem;
+    }
+
+    a{
+        height: 90%;
+    }
+
 }
 
 

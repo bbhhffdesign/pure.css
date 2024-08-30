@@ -34,6 +34,11 @@
       @content;
     }
   }
+@mixin desktop-xlg {
+    @media (min-width: $desktop-xlg) {
+      @content;
+    }
+  }
 
 
 //animaciones&hovers

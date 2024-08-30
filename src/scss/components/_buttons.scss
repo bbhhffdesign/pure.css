@@ -9,18 +9,16 @@
     border-radius: $border-rad-xs;
     font-size: 80%;
     border: $border-black-2;
-
     @include hvr-right;
+    
     @include tablet{
         font-size: 100%;
         border-radius: $border-rad-s;
     }
-    @include desktop-sm{
+    @include desktop-lg{
         font-size: 120%;
     }
-    @include desktop-md{
-        font-size: 140%;
-    }
+
 }
 // .btn-pri {
 //     @extend .btn-pri;
