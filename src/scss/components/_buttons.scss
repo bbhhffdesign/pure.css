@@ -2,7 +2,7 @@
 @use "../abstract/variables" as *;
 @use "../abstract/mixins" as *;
 
-.btn-pri-s {
+.btn-pri {
     @extend .pure-button;
     position: relative;
     background-color: $colorSecundario;
@@ -18,12 +18,15 @@
     @include desktop-sm{
         font-size: 120%;
     }
+    @include desktop-md{
+        font-size: 140%;
+    }
 }
-.btn-pri {
-    @extend .btn-pri;
-    border-radius: $border-rad-s;
-    font-size: 100%;
-}
+// .btn-pri {
+//     @extend .btn-pri;
+//     border-radius: $border-rad-s;
+//     font-size: 100%;
+// }
 .btn-pri-m {
     @extend .btn-pri;
     border-radius: $border-rad-s;
@@ -41,7 +44,7 @@
     @extend .btn-pri-m;
     font-size: 180%;
 }
-.btn-pri-s:hover,
+// .btn-pri-s:hover,
 .btn-pri:hover,
 .btn-pri-m:hover,
 .btn-pri-l:hover,
@@ -55,7 +58,7 @@
     // @include ani-padding-right($spac-s, 2rem, ease-out, .1s);
     // @include ani-btn
 }
-.btn-pri-s:hover::before,
+// .btn-pri-s:hover::before,
 .btn-pri:hover::before,
 .btn-pri-m:hover::before,
 .btn-pri-l:hover::before,

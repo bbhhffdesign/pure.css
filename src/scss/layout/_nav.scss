@@ -4,10 +4,15 @@
 
 .nav{
     @extend .pure-menu-horizontal;
+    height: 3rem;
     position: fixed;
     background-color: black;
-    @include flex(row,center,center,none);
+    @include flex(row,space-around,center,none);
     
+//     .nav-logo{
+//         height: 100%;
+        
+//     }
 }
 
 

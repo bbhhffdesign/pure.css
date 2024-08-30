@@ -2,7 +2,7 @@
 @use '../../css/pure.css';
 
 //paddings y margins responsive
-@media (max-width: $mobile){
+
     .fh{
         height: $dvh100;
     }
@@ -41,7 +41,6 @@
         font-size: 180%;
     } 
 
-}
 @media (min-width: $tablet){
     .fh-md{
         height: $dvh100;
