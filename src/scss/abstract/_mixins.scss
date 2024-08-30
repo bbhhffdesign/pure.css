@@ -1,0 +1,71 @@
+@use 'variables' as *;
+//utilidades
+@mixin flex($direction:row,$justify:auto, $align:auto, $gap:none){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+//mediaqueries
+@mixin mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  }
+@mixin tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  }
+@mixin desktop-sm {
+    @media (min-width: $desktop-sm) {
+      @content;
+    }
+  }
+@mixin desktop-md {
+    @media (min-width: $desktop-md) {
+      @content;
+    }
+  }
+@mixin desktop-lg {
+    @media (min-width: $desktop-lg) {
+      @content;
+    }
+  }
+
+
+//animaciones&hovers
+@mixin ani-btn($transform: scale(1.05), $origin:center){
+    transform: $transform;
+    transform-origin: $origin;
+    transition: transform ease-out .1s;
+}
+
+@mixin ani-padding-right($paddingInicial:$spac-s, $padding:.8rem, $ease:linear, $duration:.1s){
+    padding-right: $spac-s + $padding;
+    transition: padding-right linear $duration;
+}
+@mixin ani-padding-left($paddingInicial:$spac-s, $padding:.8rem, $ease:linear, $duration: 1s){
+    padding-left: $spac-s + $padding;
+    transition: padding-left linear $duration;
+}
+
+@mixin hvr-right{
+    background-color: $transparent0;
+    transition:color .1s ease-in;
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        border-radius: $border-rad-xs;
+        background: $colorSecundario;
+        transform: scaleX(1);
+        transition: transform .3s ease-out;
+        transform-origin: right;
+    }
+   
+
+}

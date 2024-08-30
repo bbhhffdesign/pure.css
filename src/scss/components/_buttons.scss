@@ -1,0 +1,66 @@
+@use "../../css/pure.css";
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+.btn-pri-s {
+    @extend .pure-button;
+    position: relative;
+    background-color: $colorSecundario;
+    border-radius: $border-rad-xs;
+    font-size: 80%;
+    border: $border-black-2;
+
+    @include hvr-right;
+    @include tablet{
+        font-size: 100%;
+        border-radius: $border-rad-s;
+    }
+    @include desktop-sm{
+        font-size: 120%;
+    }
+}
+.btn-pri {
+    @extend .btn-pri;
+    border-radius: $border-rad-s;
+    font-size: 100%;
+}
+.btn-pri-m {
+    @extend .btn-pri;
+    border-radius: $border-rad-s;
+    font-size: 120%;
+}
+.btn-pri-l {
+    @extend .btn-pri-m;
+    font-size: 140%;
+}
+.btn-pri-xl {
+    @extend .btn-pri-m;
+    font-size: 160%;
+}
+.btn-pri-xxl {
+    @extend .btn-pri-m;
+    font-size: 180%;
+}
+.btn-pri-s:hover,
+.btn-pri:hover,
+.btn-pri-m:hover,
+.btn-pri-l:hover,
+.btn-pri-xl:hover,
+.btn-pri-xxl:hover {
+    box-shadow: none;
+    background-color: $transparent0;
+    color: $blanco;
+    font-weight: 600;
+    border: $border-white-2;
+    // @include ani-padding-right($spac-s, 2rem, ease-out, .1s);
+    // @include ani-btn
+}
+.btn-pri-s:hover::before,
+.btn-pri:hover::before,
+.btn-pri-m:hover::before,
+.btn-pri-l:hover::before,
+.btn-pri-xl:hover::before,
+.btn-pri-xxl:hover:before {
+    transform: scaleX(0);
+    transition: transform .3s ease-out;
+}

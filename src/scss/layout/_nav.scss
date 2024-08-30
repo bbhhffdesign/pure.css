@@ -1,0 +1,13 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+@use "../../css/pure.css";
+
+.nav{
+    @extend .pure-menu-horizontal;
+    position: fixed;
+    background-color: black;
+    @include flex(row,center,center,none);
+    
+}
+
+

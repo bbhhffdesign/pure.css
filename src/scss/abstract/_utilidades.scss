@@ -1,0 +1,215 @@
+@use './variables' as *;
+@use '../../css/pure.css';
+
+//paddings y margins responsive
+@media (max-width: $mobile){
+    .fh{
+        height: $dvh100;
+    }
+    
+    .m-s{
+        margin: $spac-xs;
+    }
+    .m-m{
+        margin: $spac-s;
+    }
+    .m-l{
+        margin: $spac-m;
+    }
+    .p-s{
+        padding: $spac-xs;
+    }
+    .p-m{
+        padding: $spac-s;
+    }
+    .p-l{
+        padding: $spac-m;
+    }
+    .fs-s{
+        font-size: 100%;
+    } 
+    .fs-m{
+        font-size: 120%;
+    } 
+    .fs-l{
+        font-size: 140%;
+    } 
+    .fs-xl{
+        font-size: 160%;
+    } 
+    .fs-xxl{
+        font-size: 180%;
+    } 
+
+}
+@media (min-width: $tablet){
+    .fh-md{
+        height: $dvh100;
+    }
+    .m-md-s{
+        margin: $spac-xs;
+    }
+    .m-md-m{
+        margin: $spac-s;
+    }
+    .m-md-l{
+        margin: $spac-m;
+    }
+    .p-md-s{
+        padding: $spac-xs;
+    }
+    .p-md-m{
+        padding: $spac-s;
+    }
+    .p-md-s{
+        padding: $spac-m;
+    }
+    .fs-md-s{
+        font-size: 100%;
+    } 
+    .fs-md-m{
+        font-size: 120%;
+    } 
+    .fs-md-l{
+        font-size: 140%;
+    } 
+    .fs-md-xl{
+        font-size: 160%;
+    } 
+    .fs-md-xxl{
+        font-size: 180%;
+    } 
+}
+@media (min-width: $desktop-sm){
+    .fh-lg{
+        height: $dvh100;
+    }
+    .m-lg-s{
+        margin: $spac-xs;
+    }
+    .m-lg-m{
+        margin: $spac-s;
+    }
+    .m-lg-l{
+        margin: $spac-m;
+    }
+    .p-lg-s{
+        padding: $spac-xs;
+    }
+    .p-lg-m{
+        padding: $spac-s;
+    }
+    .p-lg-l{
+        padding: $spac-m;
+    } 
+    .fs-lg-s{
+        font-size: 100%;
+    } 
+    .fs-lg-m{
+        font-size: 120%;
+    } 
+    .fs-lg-l{
+        font-size: 140%;
+    } 
+    .fs-lg-xl{
+        font-size: 160%;
+    } 
+    .fs-lg-xxl{
+        font-size: 180%;
+    }     
+}
+@media (min-width: $desktop-md){
+    .fh-xlg{
+        height: $dvh100;
+    }
+    .m-xlg-s{
+        margin: $spac-xs;
+    }
+    .m-xlg-m{
+        margin: $spac-s;
+    }
+    .m-xlg-l{
+        margin: $spac-m;
+    }
+    .p-xlg-s{
+        padding: $spac-xs;
+    }
+    .p-xlg-m{
+        padding: $spac-s;
+    }
+    .p-xlg-l{
+        padding: $spac-m;
+    }
+    .fs-xlg-s{
+        font-size: 100%;
+    } 
+    .fs-xlg-m{
+        font-size: 120%;
+    } 
+    .fs-xlg-l{
+        font-size: 140%;
+    } 
+    .fs-xlg-xl{
+        font-size: 160%;
+    } 
+    .fs-xlg-xxl{
+        font-size: 180%;
+    } 
+
+    
+}
+@media (min-width: $desktop-lg){
+    .fh-xxlg{
+        height: $dvh100;
+    }
+    .m-xxlg-s{
+        margin: $spac-xs;
+    }
+    .m-xxlg-m{
+        margin: $spac-s;
+    }
+    .m-xxlg-l{
+        margin: $spac-m;
+    }
+    .p-xxlg-s{
+        padding: $spac-xs;
+    }
+    .p-xxlg-m{
+        padding: $spac-s;
+    }
+    .p-xxlg-l{
+        padding: $spac-m;
+    } 
+    .fs-xxlg{
+        font-size: 160%;
+    }
+    .fs-xxlg-s{
+        font-size: 100%;
+    } 
+    .fs-xxlg-m{
+        font-size: 120%;
+    } 
+    .fs-xxlg-l{
+        font-size: 140%;
+    } 
+    .fs-xxlg-xl{
+        font-size: 160%;
+    } 
+    .fs-xxlg-xxl{
+        font-size: 180%;
+    }  
+    
+}
+.menu-link{
+    @extend .pure-menu-link
+    };
+    .menu-list{
+    @extend .pure-menu-list;
+    };
+    .menu-item{
+    @extend .pure-menu-item;
+    };
+    .menu-heading{
+    @extend .pure-menu-heading;
+    };
+    

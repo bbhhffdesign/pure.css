@@ -1,0 +1,12 @@
+@forward 'components/buttons';
+@forward '../css/pure-grid-responsive.css';
+@forward './abstract/utilidades';
+@forward './layout/nav';
+
+
+body{
+    background-color: #333;
+}
+.hero{
+    color: white;
+}

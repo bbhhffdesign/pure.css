@@ -1,0 +1,37 @@
+$colorPrimario: #003399;
+$colorSecundario: #ccff66;
+$blanco: #cccccc;
+$gris1: #999999;
+$gris2: #666666;
+$gris3: #333333;
+$negro: #000000;
+$transparent0: transparent;
+$transparent1: #cccccc0a;
+$transparent2: #cccccc0e;
+
+//media queries
+$mobile: 568px;
+$tablet: 768px;
+$desktop-sm: 1024px;
+$desktop-md: 1280px;
+$desktop-lg: 1920px;
+
+//fonts
+$fuentePrincipal: 'roboto', sans-serif;
+$fuenteSecundaria: 'raleway', sans-serif;
+$fuenteTerciaria: 'rajdhani', sans-serif;
+
+
+// border
+$border-black: solid 1px black;
+$border-black-2: solid 2px black;
+$border-white: solid 1px #cccccc;
+$border-white-2: solid 2px #cccccc;
+
+//medidas
+$dvh100: 100dvh;
+$border-rad-xs: .3rem .05rem;  
+$border-rad-s: .5rem .05rem;  
+$spac-xs:.5rem;
+$spac-s: 1rem;
+$spac-m: 2rem;
