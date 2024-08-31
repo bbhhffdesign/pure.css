@@ -1305,27 +1305,46 @@ striping:
   border-bottom-width: 0;
 }
 
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  transform: scaleX(1);
+}
+
 .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
   background-color: #ccff66;
   border-radius: 0.3rem 0.05rem;
   font-size: 80%;
   padding: 0.5rem 0.2rem;
   border: solid 2px black;
-  will-change: transform;
-  background-color: transparent;
-  transition: color 0.3s ease-in;
-}
-.btn-pri::before, .btn-pri-m::before, .btn-pri-xxl::before, .btn-pri-xl::before, .btn-pri-l::before {
-  will-change: transform;
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  border-radius: 0.3rem 0.05rem;
-  background: #ccff66;
-  transform: scaleX(1);
-  transition: transform 0.3s ease-out;
-  transform-origin: right;
 }
 @media (min-width: 48rem) {
   .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
