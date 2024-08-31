@@ -1,6 +1,18 @@
 @use 'variables' as *;
 
+//glassfx
+@mixin glass-bg($color: transparent, $blur:4px ){
+  background-color: $transparent0;
 
+  &::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: $color;
+    backdrop-filter: blur($blur);
+  }
+}
 //utilidades
 @mixin flex($direction:row,$justify:auto, $align:auto, $gap:none){
     display: flex;
