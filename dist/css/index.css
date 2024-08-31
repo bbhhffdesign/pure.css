@@ -1309,6 +1309,7 @@ striping:
   background-color: #ccff66;
   border-radius: 0.3rem 0.05rem;
   font-size: 80%;
+  font-weight: 600;
   padding: 0.5rem 0.2rem;
   border: solid 1px black;
   will-change: transform;
@@ -2033,8 +2034,12 @@ striping:
   margin-right: auto;
 }
 
-.fh {
+.fhd {
   height: 100dvh;
+}
+
+.fh {
+  height: 100vh;
 }
 
 .m-s {
@@ -2271,49 +2276,6 @@ striping:
     font-size: 160%;
   }
 }
-.nav {
-  position: sticky;
-  top: 0;
-  height: 3rem;
-  max-width: 80rem;
-  background-color: black;
-  padding: 0.5rem 0;
-  border-bottom: solid 1px #cccccc;
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: auto;
-}
-.nav::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-}
-@media (min-width: 48rem) {
-  .nav {
-    height: 4rem;
-    justify-content: center;
-    gap: clamp(3rem, 0.714rem + 4.762vw, 5rem);
-  }
-}
-@media (min-width: 90rem) {
-  .nav {
-    height: 5rem;
-    border: solid 1px #cccccc;
-    border-top: none;
-    border-radius: 0 0 1rem 1rem;
-  }
-}
-.nav a {
-  height: 90%;
-}
-
 .count__container {
   position: relative;
   display: flex;
@@ -2338,10 +2300,70 @@ striping:
   justify-self: center;
 }
 
-body {
-  background-color: #333;
+.nav {
+  position: fixed;
+  inset: 0;
+  height: 3rem;
+  max-width: 80rem;
+  background-color: black;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: solid 1px #cccccc;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: auto;
+}
+.nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+@media (min-width: 48rem) {
+  .nav {
+    height: 4rem;
+    justify-content: center;
+    gap: clamp(3rem, 0.714rem + 4.762vw, 5rem);
+  }
+}
+@media (min-width: 80rem) {
+  .nav {
+    border: solid 1px #cccccc;
+    border-radius: 0 0 1rem 1rem;
+    border-top: none;
+  }
+  .nav::before {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+@media (min-width: 90rem) {
+  .nav {
+    height: 5rem;
+  }
+}
+.nav a {
+  height: 90%;
 }
 
 .hero {
-  color: white;
+  background-color: red;
+  color: #cccccc;
+  justify-content: center;
+}
+.hero div {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: auto;
+}
+body {
+  background-color: #000000;
 }/*# sourceMappingURL=index.css.map */

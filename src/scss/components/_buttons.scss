@@ -8,6 +8,7 @@
     background-color: $colorSecundario;
     border-radius: $border-rad-xs;
     font-size: 80%;
+    font-weight: 600;
     padding: $spac-xs .2rem;
     border: $border-black;
     @include hvr-right;
@@ -47,7 +48,6 @@
     box-shadow: none;
     background-color: $transparent0;
     color: $blanco;
-    // font-weight: 600;
     border: $border-white;
     // @include ani-padding-right($spac-s, 2rem, ease-out, .1s);
     // @include ani-btn

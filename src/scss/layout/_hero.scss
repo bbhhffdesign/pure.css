@@ -1,0 +1,21 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+
+.hero{
+    background-color: red;
+    color: $blanco;
+    justify-content: center;
+
+
+
+    div{
+        max-width: 40rem;
+        @include flex(column, center, flex-start, auto)
+    }
+
+    .hero-text{
+    }
+    .mindmap{
+
+    }
+}

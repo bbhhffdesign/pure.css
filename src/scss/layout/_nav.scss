@@ -4,14 +4,16 @@
 
 .nav{
     @extend .pure-menu-horizontal;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    inset: 0;
     height: 3rem;
     max-width: $desktop-md;
     background-color: black;
     padding: $spac-xs 0;
+    border: none;
     border-bottom: $border-white;
     @include glass-bg;
+
 
     
     @include flex(row, space-around, center, auto);
@@ -24,14 +26,17 @@
 
     
     }
-    @include desktop-sm{
+    @include desktop-md{
+        border: $border-white;
+        border-radius: 0 0 $spac-s $spac-s;
+        border-top: none;
+        &::before{
+            border-radius: 0 0 $spac-s $spac-s;
+        }
 
     }
     @include desktop-lg{
         height: 5rem;
-        border: $border-white;
-        border-top: none;
-        border-radius: 0 0 $spac-s $spac-s;
     }
 
     a{

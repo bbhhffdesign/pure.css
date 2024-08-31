@@ -12,6 +12,7 @@
     background: $color;
     backdrop-filter: blur($blur);
   }
+  
 }
 //utilidades
 @mixin flex($direction:row,$justify:auto, $align:auto, $gap:none){
