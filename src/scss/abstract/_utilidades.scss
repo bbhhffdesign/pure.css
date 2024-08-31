@@ -3,6 +3,11 @@
 
 //paddings y margins responsive
 
+.m-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .fh {
   height: $dvh100;
 }

@@ -4,30 +4,31 @@
 
 .nav{
     @extend .pure-menu-horizontal;
+    position: sticky;
     height: 3rem;
-    position: fixed;
+    max-width: $desktop-md;
     background-color: black;
     padding: $spac-xs 0;
+    border: $border-white;
+    border-top: none;
+
+    
     @include flex(row, space-around, center, auto);
 
     @include tablet{
         height: 4rem;
         justify-content: center;
-        gap: 5rem;
+        gap: clamp(3rem, 0.714rem + 4.762vw, 5rem);
 //de 2 a 5 rem
-        button{
-            margin-left: 1.3rem;
-        }
+
+    
     }
     @include desktop-sm{
-        // justify-content: center;
 
-        // button{
-        //     margin-left: 1rem;
-        // }
     }
     @include desktop-lg{
         height: 5rem;
+        border-radius: 0 0 $spac-s $spac-s;
     }
 
     a{
