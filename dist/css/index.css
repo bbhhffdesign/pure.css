@@ -2273,7 +2273,7 @@ striping:
   }
 }
 .nav {
-  position: sticky;
+  position: fixed;
   height: 3rem;
   max-width: 80rem;
   background-color: black;

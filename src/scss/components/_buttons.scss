@@ -10,7 +10,7 @@
     font-size: 80%;
     padding: $spac-xs .2rem;
     border: $border-black-2;
-    @include hvr-right;
+    // @include hvr-right;
     
     @include tablet{
         font-size: 100%;
