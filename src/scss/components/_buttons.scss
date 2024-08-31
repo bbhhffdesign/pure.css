@@ -9,8 +9,8 @@
     border-radius: $border-rad-xs;
     font-size: 80%;
     padding: $spac-xs .2rem;
-    border: $border-black-2;
-    // @include hvr-right;
+    border: $border-black;
+    @include hvr-right;
     
     @include tablet{
         font-size: 100%;
@@ -47,7 +47,7 @@
     box-shadow: none;
     background-color: $transparent0;
     color: $blanco;
-    font-weight: 600;
+    // font-weight: 600;
     border: $border-white;
     // @include ani-padding-right($spac-s, 2rem, ease-out, .1s);
     // @include ani-btn
