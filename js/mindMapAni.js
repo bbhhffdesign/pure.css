@@ -72,7 +72,6 @@ let mmTabletSmall = gsap.matchMedia();
 
 let funcTimelines = function (timelines) {
   timelines
-    .to(scrollDownIcon,{y:-500})
     .from(dueño, { opacity: 0 },"<")
     .to(flecha1, { strokeDashoffset: 0 })
     .from(no1, { opacity: 0 }, "<50%")
@@ -205,16 +204,16 @@ let funcTimelinesDesktop = function (timelines) {
 
 };
 
-mmMobile.add("(max-width: 601px)", () => {
+mmMobile.add("(max-width: 599px)", () => {
   let tlMobile = gsap.timeline({
     scrollTrigger: {
-      trigger:mindMapContainer,
+      trigger:heroContainer,
       scrub: 1,
-      markers: true,
+      // markers: true,
       pin: true,
       // pinspacing: true,
-      start: "top 20%",
-      end: "600% bottom",
+      start: "55% 20%",
+      end: "500% bottom",
     },
     
   });
@@ -226,17 +225,17 @@ mmTabletSmall.add("(min-width:600px) and (max-width: 768px)", () => {
     scrollTrigger: {
       trigger: heroContainer,
       scrub: true,
-      markers: true,
+      // markers: true,
       pin: true,
-      start: "center 10%",
-      end: "500% 10%",
+      start: "58% 20%",
+      end: "500% bottom",
     },
   });
 
   funcTimelines(tlMindmapTabletSmall)
 });
 
-mmDesktop.add("(min-width:1024px)", () => {
+mmDesktop.add("(min-width:769px)", () => {
   let tlMindmapDesktop = gsap.timeline({
     scrollTrigger: {
       trigger: heroContainer,
