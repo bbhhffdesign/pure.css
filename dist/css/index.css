@@ -2352,7 +2352,6 @@ striping:
 }
 
 .hero {
-  background-color: red;
   color: #cccccc;
   justify-content: center;
 }
@@ -2364,6 +2363,29 @@ striping:
   align-items: flex-start;
   gap: auto;
 }
+.hero .mindmap-container {
+  position: relative;
+  width: 99.6%;
+  height: auto;
+  background-color: #333;
+  padding: 1rem 0;
+  border: solid 1px #cccccc;
+  border-radius: 0.3rem 0.05rem;
+  background-color: transparent;
+}
+.hero .mindmap-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.hero .mindmap-container svg {
+  width: 95%;
+}
+
 body {
   background-color: #000000;
 }/*# sourceMappingURL=index.css.map */
