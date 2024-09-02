@@ -1,5 +1,5 @@
 const heroContainer = document.getElementById("hero");
-const mindMapContainer = document.getElementById("mindMap");
+const mindMapContainer = document.getElementById("mindMapContainer");
 const scrollDownIcon = document.getElementById("scrollDownIcon")
 const scrollDownIconDesktop = document.getElementById("scrollDownIconDesktop")
 
@@ -208,12 +208,12 @@ let funcTimelinesDesktop = function (timelines) {
 mmMobile.add("(max-width: 601px)", () => {
   let tlMobile = gsap.timeline({
     scrollTrigger: {
-      trigger:heroContainer,
+      trigger:mindMapContainer,
       scrub: 1,
       markers: true,
       pin: true,
       // pinspacing: true,
-      start: "center 10%",
+      start: "top 20%",
       end: "600% botom",
     },
     
@@ -221,7 +221,7 @@ mmMobile.add("(max-width: 601px)", () => {
   funcTimelines(tlMobile)
 });
 
-mmTabletSmall.add("(min-width:601px) and (max-width: 768px)", () => {
+mmTabletSmall.add("(min-width:600px) and (max-width: 768px)", () => {
   let tlMindmapTabletSmall = gsap.timeline({
     scrollTrigger: {
       trigger: heroContainer,
