@@ -1,9 +1,15 @@
-@forward 'components/buttons';
+@forward '../css/pure.css';
 @forward '../css/pure-grid-responsive.css';
+@forward 'components/buttons';
 @forward './abstract/utilidades';
 @forward 'components/counter';
 @forward './layout/nav';
 @forward './layout/hero';
+
+// @forward 'pure.css/base';
+// @forward 'pure.css/buttons';
+// @forward 'pure.css/grids';
+// @forward 'pure.css/menu';
 
 
 body{

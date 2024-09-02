@@ -1,6 +1,7 @@
 const heroContainer = document.getElementById("hero");
 const mindMapContainer = document.getElementById("mindMapContainer");
-const scrollDownIcon = document.getElementById("scrollDownIcon")
+const mindMap = document.getElementById("mindMap");
+const scrollDownIcon = document.getElementById("scrollDownIcon");
 const scrollDownIconDesktop = document.getElementById("scrollDownIconDesktop")
 
 //texto
@@ -67,8 +68,10 @@ const arrayLogo = [
 ];
 
 let mmMobile = gsap.matchMedia();
-let mmDesktop = gsap.matchMedia();
 let mmTabletSmall = gsap.matchMedia();
+let mmDesktopSmall = gsap.matchMedia();
+let mmDesktopMed = gsap.matchMedia();
+let mmDesktopLarge = gsap.matchMedia();
 
 let funcTimelines = function (timelines) {
   timelines
@@ -133,13 +136,13 @@ let funcTimelines = function (timelines) {
     .from(logoYamatec, { opacity: 0 }, "< +60%");
 };
 
-let funcTimelinesDesktop = function (timelines) {
+let funcTimelinesDesktopSmall = function (timelines) {
   timelines
 
 
-    .to(scrollDownIconDesktop,{y:"-60vh"})
+    // .to(scrollDownIconDesktop,{y:"-60vh"})
    
-    .from(dueño, { opacity: 0 , y:"50vh"},"<")
+    .from(dueño, { opacity: 0 })
     .to(flecha1, { strokeDashoffset: 0 })
     .from(no1, { opacity: 0 }, "<50%")
     .from(agenda, { opacity: 0 })
@@ -165,7 +168,7 @@ let funcTimelinesDesktop = function (timelines) {
     )
     .from(aumentarVentas, { opacity: 0 })
     .to(flecha5, { strokeDashoffset: 0 })
-    // .to(mindMapContainer,{y:"-10%"},"<") 
+    .to(mindMap,{y:"-10%"},"<") 
     .from(si3, { opacity: 0 }, "<50%")
     .from(estrategia, { opacity: 0 })
     .to(flecha6, { strokeDashoffset: 0 })
@@ -173,9 +176,9 @@ let funcTimelinesDesktop = function (timelines) {
     .from(agendaBig, { opacity: 0 })
     .from(agendaBigBg, { opacity: 0 }, "<")
     .to(flecha8, { strokeDashoffset: 0 })
-    .to(mindMapContainer,{y:"-10%"},"<") 
+    .to(mindMap,{y:"-10%"},"<") 
     .from(no3, { opacity: 0 }, "<10%")
-    .to(mindMapContainer,{y:"-10%"},"<")
+    .to(mindMap,{y:"-10%"},"<")
     .from(camino, { opacity: 0 })
     .from(
       iconoTick,
@@ -188,7 +191,139 @@ let funcTimelinesDesktop = function (timelines) {
       },
       "<"
     )
-    .to(mindMapContainer,{y:"-20%"})
+    .to(mindMap,{y:"-40%"})
+    .to(flechaF1,{strokeDashoffset: 0},"<+4%")
+    .to(flechaF2,{strokeDashoffset: 0},"<+8%")
+    .to(flechaF3,{strokeDashoffset: 0},"<+12%")
+    .to(flechaF4,{strokeDashoffset: 0},"<+16%")
+    .to(flechaF5,{strokeDashoffset: 0},"<+20%")
+    .to(flechaF6,{strokeDashoffset: 0},"<+24%")
+    .from(logoGallmarquez, { opacity: 0 }, "<")
+    .from(logoUdana, { opacity: 0 }, "<+4%")
+    .from(logoX, { opacity: 0 }, "<+8%")
+    .from(logoBelen, { opacity: 0 }, "<+12%")
+    .from(logoSound, { opacity: 0 }, "<+16%")
+    .from(logoYamatec, { opacity: 0 }, "<+20%")
+
+};
+let funcTimelinesDesktopMed = function (timelines) {
+  timelines
+    .from(dueño, { opacity: 0 })
+    .to(flecha1, { strokeDashoffset: 0 })
+    .from(no1, { opacity: 0 }, "<50%")
+    .from(agenda, { opacity: 0 })
+    .to(flecha2, { strokeDashoffset: 0 })
+    .from(si1, { opacity: 0 }, "<50%")
+    .from(posicionarMarca, { opacity: 0 })
+    .to(flecha3, { strokeDashoffset: 0 })
+    .from(si2, { opacity: 0 }, "<50%")
+    .from(branding, { opacity: 0 })
+    .to(flecha4, { strokeDashoffset: 0 })
+    .from(no2, { opacity: 0 }, "<50%")
+    .from(excelente, { opacity: 0 })
+    .from(
+      iconoLike,
+      {
+        opacity: 0,
+        scale: 0.5,
+        transformOrigin: "50% 50%",
+        ease: "bounce.out",
+        duration: 0.8,
+      },
+      "<"
+    )
+    .from(aumentarVentas, { opacity: 0 })
+    .to(flecha5, { strokeDashoffset: 0 })
+    .to(mindMap,{y:"-10%"},"<") 
+    .from(si3, { opacity: 0 }, "<50%")
+    .from(estrategia, { opacity: 0 })
+    .to(flecha6, { strokeDashoffset: 0 })
+    .to(flecha7, { strokeDashoffset: 0 }, "<")
+    .from(agendaBig, { opacity: 0 })
+    .from(agendaBigBg, { opacity: 0 }, "<")
+    .to(flecha8, { strokeDashoffset: 0 })
+    .to(mindMap,{y:"-10%"},"<") 
+    .from(no3, { opacity: 0 }, "<10%")
+    .to(mindMap,{y:"-10%"},"<")
+    .from(camino, { opacity: 0 })
+    .from(
+      iconoTick,
+      {
+        opacity: 0,
+        scale: 0.5,
+        transformOrigin: "50% 50%",
+        ease: "bounce.out",
+        duration: 0.8,
+      },
+      "<"
+    )
+    .to(mindMap,{y:"-50%"})
+    .to(flechaF1,{strokeDashoffset: 0},"<+4%")
+    .to(flechaF2,{strokeDashoffset: 0},"<+8%")
+    .to(flechaF3,{strokeDashoffset: 0},"<+12%")
+    .to(flechaF4,{strokeDashoffset: 0},"<+16%")
+    .to(flechaF5,{strokeDashoffset: 0},"<+20%")
+    .to(flechaF6,{strokeDashoffset: 0},"<+24%")
+    .from(logoGallmarquez, { opacity: 0 }, "<")
+    .from(logoUdana, { opacity: 0 }, "<+4%")
+    .from(logoX, { opacity: 0 }, "<+8%")
+    .from(logoBelen, { opacity: 0 }, "<+12%")
+    .from(logoSound, { opacity: 0 }, "<+16%")
+    .from(logoYamatec, { opacity: 0 }, "<+20%")
+
+};
+let funcTimelinesDesktopLarge = function (timelines) {
+  timelines
+    .from(dueño, { opacity: 0 })
+    .to(flecha1, { strokeDashoffset: 0 })
+    .from(no1, { opacity: 0 }, "<50%")
+    .from(agenda, { opacity: 0 })
+    .to(flecha2, { strokeDashoffset: 0 })
+    .from(si1, { opacity: 0 }, "<50%")
+    .from(posicionarMarca, { opacity: 0 })
+    .to(flecha3, { strokeDashoffset: 0 })
+    .from(si2, { opacity: 0 }, "<50%")
+    .from(branding, { opacity: 0 })
+    .to(flecha4, { strokeDashoffset: 0 })
+    .from(no2, { opacity: 0 }, "<50%")
+    .from(excelente, { opacity: 0 })
+    .from(
+      iconoLike,
+      {
+        opacity: 0,
+        scale: 0.5,
+        transformOrigin: "50% 50%",
+        ease: "bounce.out",
+        duration: 0.8,
+      },
+      "<"
+    )
+    .from(aumentarVentas, { opacity: 0 })
+    .to(flecha5, { strokeDashoffset: 0 })
+    .to(mindMap,{y:"-10%"},"<") 
+    .from(si3, { opacity: 0 }, "<50%")
+    .from(estrategia, { opacity: 0 })
+    .to(flecha6, { strokeDashoffset: 0 })
+    .to(flecha7, { strokeDashoffset: 0 }, "<")
+    .from(agendaBig, { opacity: 0 })
+    .from(agendaBigBg, { opacity: 0 }, "<")
+    .to(flecha8, { strokeDashoffset: 0 })
+    .to(mindMap,{y:"-10%"},"<") 
+    .from(no3, { opacity: 0 }, "<10%")
+    .to(mindMap,{y:"-10%"},"<")
+    .from(camino, { opacity: 0 })
+    .from(
+      iconoTick,
+      {
+        opacity: 0,
+        scale: 0.5,
+        transformOrigin: "50% 50%",
+        ease: "bounce.out",
+        duration: 0.8,
+      },
+      "<"
+    )
+    .to(mindMap,{y:"-37%"})
     .to(flechaF1,{strokeDashoffset: 0},"<+4%")
     .to(flechaF2,{strokeDashoffset: 0},"<+8%")
     .to(flechaF3,{strokeDashoffset: 0},"<+12%")
@@ -224,28 +359,53 @@ mmTabletSmall.add("(min-width:600px) and (max-width: 768px)", () => {
   let tlMindmapTabletSmall = gsap.timeline({
     scrollTrigger: {
       trigger: heroContainer,
-      scrub: true,
+      scrub: 1,
       // markers: true,
       pin: true,
       start: "58% 20%",
       end: "500% bottom",
     },
   });
-
   funcTimelines(tlMindmapTabletSmall)
 });
 
-mmDesktop.add("(min-width:769px)", () => {
+mmDesktopSmall.add("(min-width:769px) and (max-width: 1279px)", () => {
   let tlMindmapDesktop = gsap.timeline({
     scrollTrigger: {
       trigger: heroContainer,
-      scrub: true,
+      scrub: 1,
+      // markers: true,
+      pin: true,
+      start: "top 8%",
+      end: "600% bottom",
+    },
+  });
+  funcTimelinesDesktop(tlMindmapDesktopSmall)
+});
+
+mmDesktopMed.add("(min-width: 1280px) and (max-width: 1439px)", () => {
+  let tlMindmapDesktopMed = gsap.timeline({
+    scrollTrigger: {
+      trigger: heroContainer,
+      scrub: 1,
       // markers: true,
       pin: true,
       start: "top 8%",
       end: "1000% bottom",
     },
   });
-
-  funcTimelinesDesktop(tlMindmapDesktop)
+  funcTimelinesDesktopMed(tlMindmapDesktopMed)
+});
+mmDesktopLarge.add("(min-width: 1440px)", () => {
+  let tlMindmapDesktopLarge = gsap.timeline({
+    scrollTrigger: {
+      trigger: heroContainer,
+      scrub: 1,
+      // markers: true,
+      pin: true,
+      start: "top 8%",
+      end: "1000% bottom",
+    },
+  });
+  funcTimelinesDesktopLarge(tlMindmapDesktopLarge)
 });

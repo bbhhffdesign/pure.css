@@ -12,6 +12,7 @@
     padding: $spac-xs 0;
     border: none;
     border-bottom: $border-white;
+    z-index: 2;
     @include glass-bg;
 
 
@@ -22,7 +23,6 @@
         height: 4rem;
         justify-content: center;
         gap: clamp(3rem, 0.714rem + 4.762vw, 5rem);
-//de 2 a 5 rem
 
     
     }

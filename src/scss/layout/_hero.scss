@@ -2,22 +2,19 @@
 @use '../abstract/mixins' as *;
 
 .hero{
-    // background-color: white;
     color: $blanco;
     justify-content: center;
 
-
-
     div{
-        max-width: 40rem;
-        @include flex(column, center, flex-start, auto)
+        @include flex(column, center, flex-start, auto);
+        @include desktop-sm{
+            max-width: 40rem;
+        }
     }
 
-    .hero-text{
-    }
     .mindmap-container{
         position: relative;
-        width: 100%;
+        width: 95%;
         height: auto;
         background-color: #333;
         padding: 1rem 0;
@@ -27,10 +24,24 @@
 
         svg{
             width: 95%;
-
         }
 
-        
+        @include desktop-sm{
+            height: 50%;
+            overflow: hidden;
+            padding: 1rem;
+
+            svg{
+                position: absolute;
+                top: $spac-xs;
+                width: 95%;
+                height: auto;
+
+            }
+        }
+        // @include desktop-md{
+        //     height: 50%;
+        // }
 
     }
 }
