@@ -214,7 +214,7 @@ mmMobile.add("(max-width: 601px)", () => {
       pin: true,
       // pinspacing: true,
       start: "top 20%",
-      end: "600% botom",
+      end: "600% bottom",
     },
     
   });
