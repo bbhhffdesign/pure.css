@@ -1,0 +1,37 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+// @use '../abstract/' as *;
+
+.services {
+    
+    .membership__container {
+        // background-color: rgb(131, 130, 130);
+        max-width: 80rem;
+        height: 80%;
+
+    //SI ACTIVO flex-direction: column, se pone vertical el fla
+    display: flex;
+    flex-direction: column;
+    @include desktop-sm{
+        flex-direction: row;
+    }
+  }
+  .item {
+    position: relative;
+    cursor: pointer;
+    border: $border-white;
+  }
+  .item1 {
+    flex-grow: 1;
+    @include glass-bg($colorPrimarioTransparent, 4px);
+  }
+  .item2 {
+    flex-grow: 1;
+    @include glass-bg($colorSecundarioTransparent, 4px);
+  }
+  .item3 {
+    flex-grow: 1;
+
+  }
+
+}

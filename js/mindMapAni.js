@@ -428,7 +428,7 @@ mmTabletSmall.add("(min-width:600px) and (max-width: 768px)", () => {
       // markers: true,
       pin: true,
       start: "58% 20%",
-      end: "500% bottom",
+      end: "100% bottom",
     },
   });
   funcTimelines(tlMindmapTabletSmall)
@@ -442,7 +442,7 @@ mmDesktopSmall.add("(min-width:769px) and (max-width: 1279px)", () => {
       markers: true,
       pin: true,
       start: "8% 8%",
-      end: "600% bottom",
+      end: "100% bottom",
     },
   });
   funcTimelinesDesktopSmall(tlMindmapDesktopSmall)
@@ -456,7 +456,7 @@ mmDesktopMed.add("(min-width: 1280px) and (max-width: 1439px)", () => {
       markers: true,
       pin: true,
       start: "10% 10%",
-      end: "1000% bottom",
+      end: "100% bottom",
     },
   });
   funcTimelinesDesktopMed(tlMindmapDesktopMed)
@@ -469,7 +469,7 @@ mmDesktopLarge.add("(min-width: 1440px) and (max-width: 1919px)", () => {
       // markers: true,
       pin: true,
       start: "10% 10%",
-      end: "600% bottom",
+      end: "100% bottom",
     },
   });
   funcTimelinesDesktopXLarge(tlMindmapDesktopLarge)
@@ -479,10 +479,10 @@ mmDesktopXLarge.add("(min-width: 1920px)", () => {
     scrollTrigger: {
       trigger: heroContainer,
       scrub: 1,
-      markers: true,
+      // markers: true,
       pin: true,
       start: "10% 10%",
-      end: "600% bottom",
+      end: "100% bottom",
     },
   });
   funcTimelinesDesktopXLarge(tlMindmapDesktopXLarge)

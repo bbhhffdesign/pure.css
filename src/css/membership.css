@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #333;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.membership__container {
+    background-color: #838282;
+    height: 40rem;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+}
+.item {
+    cursor: pointer;
+}
+.item1 {
+    flex-grow: 1;
+    background-color: #f34d4d;
+}
+.item2 {
+    flex-grow: 1;
+    background-color: #9ee6e9;
+}
+.item3 {
+    flex-grow: 1;
+    background-color: #b3ec9d;
+}
+.item4 {
+    flex-grow: 1;
+    background-color: #e97ebc;
+}

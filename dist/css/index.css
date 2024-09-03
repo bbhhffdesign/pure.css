@@ -2413,6 +2413,52 @@ striping:
   }
 }
 
+.services .membership__container {
+  max-width: 80rem;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 64rem) {
+  .services .membership__container {
+    flex-direction: row;
+  }
+}
+.services .item {
+  position: relative;
+  cursor: pointer;
+  border: solid 1px #cccccc;
+}
+.services .item1 {
+  flex-grow: 1;
+  background-color: transparent;
+}
+.services .item1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 51, 153, 0.3098039216);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.services .item2 {
+  flex-grow: 1;
+  background-color: transparent;
+}
+.services .item2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(204, 255, 102, 0.2392156863);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.services .item3 {
+  flex-grow: 1;
+}
+
 body {
   background-color: #000000;
 }/*# sourceMappingURL=index.css.map */
