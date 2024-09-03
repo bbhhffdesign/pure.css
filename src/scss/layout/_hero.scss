@@ -36,12 +36,17 @@
                 top: $spac-xs;
                 width: 95%;
                 height: auto;
-
             }
         }
         // @include desktop-md{
-        //     height: 50%;
+        //     height: 55%;
         // }
+        @include desktop-lg{
+            height: 53%;
+        }
+        @include desktop-xlg{
+            height: 48%;
+        }
 
     }
 }
