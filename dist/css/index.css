@@ -1957,7 +1957,12 @@ striping:
   }
 }
 h1 {
-  font-size: clamp(2rem, 1.286rem + 3.571vw, 4.5rem);
+  font-size: clamp(2rem, 0.929rem + 5.357vw, 3.5rem);
+}
+@media (min-width: 64rem) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 h2 {
@@ -2319,6 +2324,9 @@ span {
   justify-items: end;
   align-items: center;
 }
+.count__container > div p {
+  margin: 0;
+}
 .count__container > div p[class*=text] {
   justify-self: center;
 }
@@ -2398,6 +2406,20 @@ span {
     max-width: 40rem;
   }
 }
+.hero .hero-text p {
+  margin: 0;
+  line-height: 1.5rem;
+}
+@media (min-width: 37.5rem) {
+  .hero .hero-text p {
+    line-height: 1.8rem;
+  }
+}
+@media (min-width: 64rem) {
+  .hero .hero-text p {
+    line-height: 2rem;
+  }
+}
 .hero .mindmap-container {
   position: relative;
   width: 95%;
@@ -2407,6 +2429,7 @@ span {
   border: solid 1px #cccccc;
   border-radius: 0.3rem 0.05rem;
   background-color: transparent;
+  overflow: hidden;
 }
 .hero .mindmap-container::before {
   content: "";
@@ -2416,6 +2439,11 @@ span {
   background: transparent;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+}
+.hero .mindmap-container .scrolldown {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .hero .mindmap-container svg {
   width: 95%;

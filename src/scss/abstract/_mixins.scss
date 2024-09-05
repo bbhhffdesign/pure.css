@@ -1,5 +1,16 @@
 @use 'variables' as *;
 
+// centrar horizontal
+@mixin centrarhorizontal{
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin centrarhorizontal2{
+  left: 0;
+  right: 0;
+  margin: 0 auto
+}
+
 //fonts
 @mixin font-raleway($weight:400){
 font-family: "Raleway", sans-serif;
@@ -46,6 +57,11 @@ font-style: normal;
   }
 @mixin tablet {
     @media (min-width: $tablet) {
+      @content;
+    }
+  }
+@mixin tablet-l {
+    @media (min-width: $tablet-l) {
       @content;
     }
   }

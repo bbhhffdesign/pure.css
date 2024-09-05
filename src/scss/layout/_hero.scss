@@ -12,6 +12,18 @@
             max-width: 40rem;
         }
     }
+    .hero-text{
+        p{
+            margin: 0;
+            line-height: 1.5rem;
+            @include tablet{
+                line-height: 1.8rem;
+            }
+            @include desktop-sm{
+                line-height: 2rem;
+            }
+        }
+    }
 
     .mindmap-container{
         position: relative;
@@ -22,6 +34,12 @@
         border: $border-white;
         border-radius: $border-rad-xs;
         @include glass-bg;
+        overflow: hidden;
+
+        .scrolldown{
+            position: absolute;
+            @include centrarhorizontal;
+        }
 
         svg{
             width: 95%;
@@ -39,9 +57,7 @@
                 height: auto;
             }
         }
-        // @include desktop-md{
-        //     height: 55%;
-        // }
+
         @include desktop-lg{
             height: 53%;
         }

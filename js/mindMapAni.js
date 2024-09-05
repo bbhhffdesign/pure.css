@@ -1,8 +1,8 @@
 const heroContainer = document.getElementById("hero");
 const mindMapContainer = document.getElementById("mindMapContainer");
 const mindMap = document.getElementById("mindMap");
-const scrollDownIcon = document.getElementById("scrollDownIcon");
-const scrollDownIconDesktop = document.getElementById("scrollDownIconDesktop")
+const scrollDownIcon = document.getElementById("scrollDown");
+// const scrollDownIconDesktop = document.getElementById("scrollDownIconDesktop")
 
 //texto
 const dueño = document.getElementById("owner");
@@ -76,7 +76,8 @@ let mmDesktopXLarge = gsap.matchMedia();
 
 let funcTimelines = function (timelines) {
   timelines
-    .from(dueño, { opacity: 0 },"<")
+    .to(scrollDownIcon, {y: "-50vh"})
+    .from(dueño, { opacity: 0 })
     .to(flecha1, { strokeDashoffset: 0 })
     .from(no1, { opacity: 0 }, "<50%")
     .from(agenda, { opacity: 0 })
@@ -140,7 +141,7 @@ let funcTimelines = function (timelines) {
 let funcTimelinesDesktopSmall = function (timelines) {
   timelines
 
-   
+    .to(scrollDownIcon, {y: "-50vh"})
     .from(dueño, { opacity: 0 })
     .to(flecha1, { strokeDashoffset: 0 })
     .from(no1, { opacity: 0 }, "<50%")
@@ -207,6 +208,7 @@ let funcTimelinesDesktopSmall = function (timelines) {
 };
 let funcTimelinesDesktopMed = function (timelines) {
   timelines
+    .to(scrollDownIcon, {y: "-50vh"})
     .from(dueño, { opacity: 0 })
     .to(flecha1, { strokeDashoffset: 0 })
     .from(no1, { opacity: 0 }, "<50%")
@@ -273,6 +275,7 @@ let funcTimelinesDesktopMed = function (timelines) {
 };
 let funcTimelinesDesktopLarge = function (timelines) {
   timelines
+    .to(scrollDownIcon, {y: "-50vh"})
     .from(dueño, { opacity: 0 })
     .to(flecha1, { strokeDashoffset: 0 })
     .from(no1, { opacity: 0 }, "<50%")
@@ -339,6 +342,7 @@ let funcTimelinesDesktopLarge = function (timelines) {
 };
 let funcTimelinesDesktopXLarge = function (timelines) {
   timelines
+    .to(scrollDownIcon, {y: "-50vh"})
     .from(dueño, { opacity: 0 })
     .to(flecha1, { strokeDashoffset: 0 })
     .from(no1, { opacity: 0 }, "<50%")
@@ -428,7 +432,7 @@ mmTabletSmall.add("(min-width:600px) and (max-width: 768px)", () => {
       // markers: true,
       pin: true,
       start: "58% 20%",
-      end: "100% bottom",
+      end: "500% bottom",
     },
   });
   funcTimelines(tlMindmapTabletSmall)
@@ -442,7 +446,7 @@ mmDesktopSmall.add("(min-width:769px) and (max-width: 1279px)", () => {
       markers: true,
       pin: true,
       start: "8% 8%",
-      end: "100% bottom",
+      end: "500% bottom",
     },
   });
   funcTimelinesDesktopSmall(tlMindmapDesktopSmall)
@@ -456,7 +460,7 @@ mmDesktopMed.add("(min-width: 1280px) and (max-width: 1439px)", () => {
       markers: true,
       pin: true,
       start: "10% 10%",
-      end: "100% bottom",
+      end: "500% bottom",
     },
   });
   funcTimelinesDesktopMed(tlMindmapDesktopMed)
@@ -469,7 +473,7 @@ mmDesktopLarge.add("(min-width: 1440px) and (max-width: 1919px)", () => {
       // markers: true,
       pin: true,
       start: "10% 10%",
-      end: "100% bottom",
+      end: "500% bottom",
     },
   });
   funcTimelinesDesktopXLarge(tlMindmapDesktopLarge)
@@ -482,7 +486,7 @@ mmDesktopXLarge.add("(min-width: 1920px)", () => {
       // markers: true,
       pin: true,
       start: "10% 10%",
-      end: "100% bottom",
+      end: "500% bottom",
     },
   });
   funcTimelinesDesktopXLarge(tlMindmapDesktopXLarge)
