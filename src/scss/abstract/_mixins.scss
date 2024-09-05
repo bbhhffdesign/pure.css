@@ -48,7 +48,19 @@ font-style: normal;
     backdrop-filter: blur($blur);
     @content;
   }
-  
+}
+@mixin glass-mask($color: transparent, $blur:4px ){
+  background-color: $transparent0;
+
+  &::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: $color;
+    backdrop-filter: blur($blur);
+    @content;
+  }
 }
 //utilidades
 @mixin flex($direction:row,$justify:auto, $align:auto, $gap:none){

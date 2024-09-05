@@ -191,7 +191,7 @@ let funcTimelinesDesktopSmall = function (timelines) {
       },
       "<"
     )
-    .to(mindMap,{y:"-40%"})
+    .to(mindMap,{y:"-50%"})
     .to(flechaF1,{strokeDashoffset: 0},"<+4%")
     .to(flechaF2,{strokeDashoffset: 0},"<+8%")
     .to(flechaF3,{strokeDashoffset: 0},"<+12%")
@@ -325,7 +325,7 @@ let funcTimelinesDesktopLarge = function (timelines) {
       },
       "<"
     )
-    .to(mindMap,{y:"-37%"})
+    .to(mindMap,{y:"-40%"})
     .to(flechaF1,{strokeDashoffset: 0},"<+4%")
     .to(flechaF2,{strokeDashoffset: 0},"<+8%")
     .to(flechaF3,{strokeDashoffset: 0},"<+12%")
@@ -392,7 +392,7 @@ let funcTimelinesDesktopXLarge = function (timelines) {
       },
       "<"
     )
-    .to(mindMap,{y:"-42%"})
+    .to(mindMap,{y:"-50%"})
     .to(flechaF1,{strokeDashoffset: 0},"<+4%")
     .to(flechaF2,{strokeDashoffset: 0},"<+8%")
     .to(flechaF3,{strokeDashoffset: 0},"<+12%")
