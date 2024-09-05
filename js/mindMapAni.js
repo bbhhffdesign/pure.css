@@ -379,7 +379,7 @@ let funcTimelinesDesktopXLarge = function (timelines) {
     .to(flecha8, { strokeDashoffset: 0 })
     .to(mindMap,{y:"-10%"},"<") 
     .from(no3, { opacity: 0 }, "<10%")
-    .to(mindMap,{y:"-10%"},"<")
+    .to(mindMap,{y:"-15%"},"<")
     .from(camino, { opacity: 0 })
     .from(
       iconoTick,
