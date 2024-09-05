@@ -10,9 +10,12 @@ h1{
 }
 h2{
     font-size: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
+    // margin-bottom: 1.5rem;
 }
 p{
-    font-size: clamp(1rem, 0.857rem + 0.714vw, 1.5rem);
+    // font-size: clamp(1rem, 0.857rem + 0.714vw, 1.5rem);
+    font-size: clamp(1rem, 0.643rem + 1.786vw, 1.5rem);
+
 }
 strong{
     font-weight: 800;

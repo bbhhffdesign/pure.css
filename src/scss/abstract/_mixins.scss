@@ -1,5 +1,15 @@
 @use 'variables' as *;
 
+//margin top/bottom 0
+@mixin marginvert0{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@mixin paddingvert0{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 // centrar horizontal
 @mixin centrarhorizontal{
   left: 50%;
