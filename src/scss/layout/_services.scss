@@ -2,8 +2,7 @@
 @use '../abstract/variables' as *;
 // @use '../abstract/' as *;
 
-.services {
-    
+.services {    
     .membership__container {
         // background-color: rgb(131, 130, 130);
         max-width: 80rem;
@@ -18,16 +17,16 @@
   }
   .item {
     position: relative;
+    z-index: 1;
     cursor: pointer;
     border: $border-white;
+    @include glass-bg(transparent, 4px);
   }
   .item1 {
     flex-grow: 1;
-    @include glass-bg($colorPrimarioTransparent, 4px);
   }
   .item2 {
     flex-grow: 1;
-    @include glass-bg($colorSecundarioTransparent, 4px);
   }
   .item3 {
     flex-grow: 1;
