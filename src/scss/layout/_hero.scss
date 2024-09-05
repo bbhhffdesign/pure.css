@@ -4,6 +4,7 @@
 .hero{
     color: $blanco;
     justify-content: center;
+    @include font-raleway(300);
 
     div{
         @include flex(column, center, flex-start, auto);

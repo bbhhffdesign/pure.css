@@ -1,17 +1,12 @@
 @forward '../css/pure.css';
 @forward '../css/pure-grid-responsive.css';
+@forward './abstract/globales';
 @forward 'components/buttons';
 @forward './abstract/utilidades';
 @forward 'components/counter';
 @forward './layout/nav';
 @forward './layout/hero';
 @forward './layout/services';
-
-// @forward 'pure.css/base';
-// @forward 'pure.css/buttons';
-// @forward 'pure.css/grids';
-// @forward 'pure.css/menu';
-
 
 body{
     background-color: #000000;

@@ -1,5 +1,19 @@
 @use 'variables' as *;
 
+//fonts
+@mixin font-raleway($weight:400){
+font-family: "Raleway", sans-serif;
+font-optical-sizing: auto;
+font-weight: $weight;
+font-style: normal;
+}
+
+@mixin font-rajdhani($weight:400){
+  font-family: "Rajdhani", sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+}
+
 //glassfx
 @mixin glass-bg($color: transparent, $blur:4px ){
   background-color: $transparent0;

@@ -1956,6 +1956,26 @@ striping:
     width: 100%;
   }
 }
+h1 {
+  font-size: clamp(2rem, 1.286rem + 3.571vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
+}
+
+p {
+  font-size: clamp(1rem, 0.857rem + 0.714vw, 1.5rem);
+}
+
+strong {
+  font-weight: 800;
+}
+
+span {
+  color: #ccff66;
+}
+
 .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
   background-color: #ccff66;
   border-radius: 0.3rem 0.05rem;
@@ -2288,6 +2308,9 @@ striping:
   border-top: solid 1px #cccccc;
   border-bottom: solid 1px #cccccc;
   padding: 0.3rem 0;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 .count__container > div {
   display: grid;
@@ -2296,7 +2319,7 @@ striping:
   justify-items: end;
   align-items: center;
 }
-.count__container > div span[class*=text] {
+.count__container > div p[class*=text] {
   justify-self: center;
 }
 
@@ -2316,6 +2339,10 @@ striping:
   justify-content: space-around;
   align-items: center;
   gap: auto;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .nav::before {
   content: "";
@@ -2354,6 +2381,10 @@ striping:
 .hero {
   color: #cccccc;
   justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 .hero div {
   display: flex;

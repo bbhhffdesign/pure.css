@@ -6,11 +6,11 @@
     @include flex(row,center, center, none);
     gap: .5rem;
     color: $blanco;
-
     border-top: $border-white;
     border-bottom: $border-white;
     padding: .3rem 0;
-    // font-family: 'raleway';
+    @include font-rajdhani(600);
+    
     
     & > div{
         display: grid;
@@ -18,10 +18,11 @@
         grid-template-rows: 1.2fr 1fr;
         justify-items: end;
         align-items: center;
+        
 
         // & span[class*="number"] {
         // }
-        & span[class*="text"] {
+        & p[class*="text"] {
             justify-self: center;
         }
     }
