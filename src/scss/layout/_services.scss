@@ -5,18 +5,26 @@
   color: $blanco;
   
   & div {
-    max-width: 73rem;
+    // max-width: 73rem;
   }
   
   .services-text {
     z-index: 1;
+
+    @include desktop-sm{
+      br{
+        display: none;
+      }
+    }
   }
 
   .services-boxes{
-    @include flex($direction:column);
+    justify-content: center;
 
-
-
+    @include desktop-sm{
+      gap: clamp(0.5rem, -4.423rem + 7.692vw, 2.5rem);
+    }
+    
     .service{
       position: relative;
       border: $border-white;
@@ -29,11 +37,18 @@
       @include glass-bg{
         border-radius: $border-rad-s
       };
-      
 
       @include tablet{
         padding: $spac-m;
       }
+      @include desktop-sm{
+        padding: $spac-s;
+        max-width: 20rem;
+      }
+      @include desktop-lg{
+        max-width: 24rem;
+      }
+
 
     }
   }
