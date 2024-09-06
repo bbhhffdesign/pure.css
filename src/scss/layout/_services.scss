@@ -26,7 +26,9 @@
       text-align: center;
       max-width: $mobile;
       z-index: 1;
-      @include glass-bg;
+      @include glass-bg{
+        border-radius: $border-rad-s
+      };
       
 
       @include tablet{
