@@ -1,30 +1,38 @@
 @use "../abstract/mixins" as *;
 @use "../abstract/variables" as *;
-// @use '../abstract/' as *;
 
 .services {
+  color: $blanco;
+  
   & div {
     max-width: 73rem;
   }
   
   .services-text {
-    height: 30%;
     z-index: 1;
-    color: $blanco;
-
-    @include desktop-sm {
-      br {
-        display: none;
-      }
-    }
   }
 
-  @include tablet {
-    .services-text {
-      height: 25%;
-    }
-    .membership__container {
-      height: 75%;
+  .services-boxes{
+    @include flex($direction:column);
+
+
+
+    .service{
+      position: relative;
+      border: $border-white;
+      border-radius: $border-rad-s;
+      margin-bottom: $spac-m;
+      padding: $spac-xs;
+      text-align: center;
+      max-width: $mobile;
+      z-index: 1;
+      @include glass-bg;
+      
+
+      @include tablet{
+        padding: $spac-m;
+      }
+
     }
   }
 }
