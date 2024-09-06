@@ -27,17 +27,18 @@
         color: $blanco;
         @include centrarhorizontal;
         width: 100%;
+        max-width: 550px;
         margin-top: clamp(1rem, -0.429rem + 7.143vw, 3rem);
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: clamp(0rem, -2.857rem + 14.286vw, 4rem);
 
         .logo-title{
             text-align: center;
 
-            h3{
-               font-size: clamp(1.17rem, 0.863rem + 1.536vw, 1.6rem); 
-            }
+            // h3{
+            //    font-size: clamp(1.17rem, 0.863rem + 1.536vw, 1.6rem); 
+            // }
 
         }
 

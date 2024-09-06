@@ -16,10 +16,10 @@ let activeTimeline = null;
 let lastClickedItem = null;
 let isAnimating = false;
 
-tl_item1.to(item1,{flexGrow:3},"<").to(item2,{flexGrow:.3},"<").to(item3,{flexGrow:.3},"<").to(item4,{flexGrow:.3},"<").to(ofertaTxt,{opacity: 1},"<");
-tl_item2.to(item1,{flexGrow:.3},"<").to(item2,{flexGrow:3},"<").to(item3,{flexGrow:.3},"<").to(item4,{flexGrow:.3},"<").to(comunicacionTxt,{opacity: 1},"<");
-tl_item3.to(item1,{flexGrow:.3},"<").to(item2,{flexGrow:.3},"<").to(item3,{flexGrow:3},"<").to(item4,{flexGrow:.3},"<").to(marcaTxt,{opacity: 1},"<");
-tl_item4.to(item1,{flexGrow:.3},"<").to(item2,{flexGrow:.3},"<").to(item3,{flexGrow:.3},"<").to(item4,{flexGrow:3},"<");
+tl_item1.to(item1,{flexGrow:3},"<").to(item2,{flexGrow:.2},"<").to(item3,{flexGrow:.2},"<").to(item4,{flexGrow:.2},"<").to(ofertaTxt,{opacity: 1},"<");
+tl_item2.to(item1,{flexGrow:.2},"<").to(item2,{flexGrow:3},"<").to(item3,{flexGrow:.2},"<").to(item4,{flexGrow:.2},"<").to(comunicacionTxt,{opacity: 1},"<");
+tl_item3.to(item1,{flexGrow:.2},"<").to(item2,{flexGrow:.2},"<").to(item3,{flexGrow:2},"<").to(item4,{flexGrow:.2},"<").to(marcaTxt,{opacity: 1},"<");
+tl_item4.to(item1,{flexGrow:.2},"<").to(item2,{flexGrow:.2},"<").to(item3,{flexGrow:.2},"<").to(item4,{flexGrow:3},"<");
 
 function handleClick(item, timeline) {
     if (isAnimating) return; // Evitar que se inicie una nueva animación si ya hay una en curso

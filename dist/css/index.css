@@ -1974,6 +1974,10 @@ h2 {
   }
 }
 
+h3 {
+  font-size: clamp(1.17rem, 0.863rem + 1.536vw, 1.6rem);
+}
+
 p {
   font-size: clamp(1rem, 0.643rem + 1.786vw, 1.5rem);
 }
@@ -2580,16 +2584,14 @@ span {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  max-width: 550px;
   margin-top: clamp(1rem, -0.429rem + 7.143vw, 3rem);
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: clamp(0rem, -2.857rem + 14.286vw, 4rem);
 }
 .services__container .service .logo-title {
   text-align: center;
-}
-.services__container .service .logo-title h3 {
-  font-size: clamp(1.17rem, 0.863rem + 1.536vw, 1.6rem);
 }
 @media (min-width: 64rem) {
   .services__container .service {
