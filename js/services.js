@@ -8,13 +8,17 @@ let item2 = document.getElementById("item2");
 let item3 = document.getElementById("item3");
 let item4 = document.getElementById("item4");
 
+let ofertaTxt = document.getElementById("ofertaTxt");
+let comunicacionTxt = document.getElementById("comunicacionTxt");
+let marcaTxt = document.getElementById("marcaTxt");
+
 let activeTimeline = null;
 let lastClickedItem = null;
 let isAnimating = false;
 
-tl_item1.to(item1,{flexGrow:3},"<").to(item2,{flexGrow:.3},"<").to(item3,{flexGrow:.3},"<").to(item4,{flexGrow:.3},"<");
-tl_item2.to(item1,{flexGrow:.3},"<").to(item2,{flexGrow:3},"<").to(item3,{flexGrow:.3},"<").to(item4,{flexGrow:.3},"<");
-tl_item3.to(item1,{flexGrow:.3},"<").to(item2,{flexGrow:.3},"<").to(item3,{flexGrow:3},"<").to(item4,{flexGrow:.3},"<");
+tl_item1.to(item1,{flexGrow:3},"<").to(item2,{flexGrow:.3},"<").to(item3,{flexGrow:.3},"<").to(item4,{flexGrow:.3},"<").to(ofertaTxt,{opacity: 1},"<");
+tl_item2.to(item1,{flexGrow:.3},"<").to(item2,{flexGrow:3},"<").to(item3,{flexGrow:.3},"<").to(item4,{flexGrow:.3},"<").to(comunicacionTxt,{opacity: 1},"<");
+tl_item3.to(item1,{flexGrow:.3},"<").to(item2,{flexGrow:.3},"<").to(item3,{flexGrow:3},"<").to(item4,{flexGrow:.3},"<").to(marcaTxt,{opacity: 1},"<");
 tl_item4.to(item1,{flexGrow:.3},"<").to(item2,{flexGrow:.3},"<").to(item3,{flexGrow:.3},"<").to(item4,{flexGrow:3},"<");
 
 function handleClick(item, timeline) {

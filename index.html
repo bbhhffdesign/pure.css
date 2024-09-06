@@ -404,21 +404,62 @@
 
             </div>
          </div>
-         <div class="bg__hero" id="bgHero"></div> 
+         <div class="bg__hero" id="bgHero"></div>
       </section>
-      <section class="services pure-g">
-         <div class="pure-u-1 fh m-s m-md-m m-lg-l">
-            <div class="membership__container m-auto">
-               <div class="item item1" id="item1">1</div>
-               <div class="item item2" id="item2">2</div>
-               <div class="item item3" id="item3">3</div>
+      <section class="services pure-g fh">
+         <div class="services-text pure-u-1 p-s p-md-m p-lg-l m-auto">
+            <p class="txt-cntr">El secreto detrás de marcas exitosas <br><u>no es solo vender</u></p>
+            <p class="txt-cntr">Es desarrollar una experiencia de marca <br> <span>integral</span> y
+               <span>diferencial</span></p>
+            <h2 class="txt-cntr">¿Como lo hacemos nosotros?</h2>
+         </div>
+
+
+         <div class="services__container pure-u-1 p-s p-md-l m-auto">
+            <div class="item item1" id="item1">
+               <div class="service offer">
+                  <div class="logo-title">
+                     <img src="assets/img/oferta-sm.svg" alt="oferta">
+                     <h3>Estructura de oferta</h3>
+                  </div>
+                  <div class="text-anim p-l" id="ofertaTxt" style="opacity: 0;">
+                     <p style="font-weight: 800;">Existe una sobrecarga de productos y servicios en RRSS</p>
+                     <p>Creamos estrategias de venta y retencion de clientes aumentando la <strong>rentabilidad</strong>
+                     </p>
+                  </div>
+               </div>
             </div>
-
-
+            <div class="item item2" id="item2">
+               <div class="service comunicacion">
+                  <div class="logo-title">
+                     <img src="assets/img/comunicacion-sm.svg" alt="oferta">
+                     <h3>Desarrollo de comunicación</h3>
+                  </div>
+                  <div class="text-anim p-l" id="comunicacionTxt" style="opacity: 0;">
+                     <p style="font-weight: 800;">Hay una crisis de confianza en los mercados.</p>
+                     <p>Nesecitas <strong>autoridad</strong> para vender, y eso se logra con la comunicacion efectiva</p>
+                  </div>
+               </div>
+            </div>
+            <div class="item item3" id="item3">
+               <div class="service marca">
+                  <div class="logo-title">
+                     <img src="assets/img/marca-sm.svg" alt="oferta">
+                     <h3>Desarrollo de marca</h3>
+                  </div>
+                  <div class="text-anim p-l" id="marcaTxt" style="opacity: 0;">
+                     <p style="font-weight: 800;">El mercado está saturado de marcas genéricas</p>
+                     <p>Diseñamos identidades de marcas memorables ganando <strong>notoriedad</strong>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
          </div>
       </section>
    </main>
-   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js">
+   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+   <script>
       const lenis = new Lenis()
 
       lenis.on('scroll', (e) => {
@@ -438,8 +479,8 @@
    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js"></script>
    <script src="js/particles-settings.js"></script>
    <script src="js/counter.js"></script>
-   <script src="js/mindMapAni.js"></script>
-   <script src="js/membership.js"></script>
+   <!-- <script src="js/mindMapAni.js"></script> -->
+   <script src="js/services.js"></script>
 </body>
 
 </html>

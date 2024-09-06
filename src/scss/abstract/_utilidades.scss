@@ -1,6 +1,12 @@
 @use "./variables" as *;
 @use "../../css/pure.css";
 
+//textalign center
+
+.txt-cntr{
+  text-align: center;
+}
+
 //paddings y margins responsive
 
 .m-auto{
@@ -72,6 +78,10 @@
   .p-md-m {
     padding-left: $spac-s;
     padding-right: $spac-s;
+  }
+  .p-md-l {
+    padding-left: $spac-l;
+    padding-right: $spac-l;
   }
   .p-md-s {
     padding-left: $spac-m;

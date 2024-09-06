@@ -1,0 +1,58 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+
+.services__container {
+    height: 70%;
+
+    //CAMBIO VERTICAL HORIZONTAL
+    display: flex;
+    flex-direction: column;
+
+    @include desktop-sm {
+      flex-direction: row;
+    }
+
+    .item {
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      border: $border-white;
+      @include glass-bg(transparent, 4px);
+      flex-grow: 1;
+      overflow: hidden;
+    }
+
+    .service{
+        position: absolute;
+        color: $blanco;
+        @include centrarhorizontal;
+        width: 100%;
+        margin-top: clamp(1rem, -0.429rem + 7.143vw, 3rem);
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .logo-title{
+            text-align: center;
+
+            h3{
+               font-size: clamp(1.17rem, 0.863rem + 1.536vw, 1.6rem); 
+            }
+
+        }
+
+        .text-anim{
+            p{
+                // margin-top: 2rem;
+            }
+        }
+
+
+        @include desktop-sm{
+            min-width: 400px;
+            max-width: 400px;
+            @include centrarhorizontal;
+        }
+
+    }
+  }

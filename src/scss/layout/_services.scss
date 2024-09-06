@@ -1,36 +1,30 @@
-@use '../abstract/mixins' as *;
-@use '../abstract/variables' as *;
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
 // @use '../abstract/' as *;
 
-.services {    
-    .membership__container {
-        // background-color: rgb(131, 130, 130);
-        max-width: 80rem;
-        height: 80%;
+.services {
+  & div {
+    max-width: 73rem;
+  }
+  
+  .services-text {
+    height: 30%;
+    z-index: 1;
+    color: $blanco;
 
-    //SI ACTIVO flex-direction: column, se pone vertical el fla
-    display: flex;
-    flex-direction: column;
-    @include desktop-sm{
-        flex-direction: row;
+    @include desktop-sm {
+      br {
+        display: none;
+      }
     }
   }
-  .item {
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    border: $border-white;
-    @include glass-bg(transparent, 4px);
-  }
-  .item1 {
-    flex-grow: 1;
-  }
-  .item2 {
-    flex-grow: 1;
-  }
-  .item3 {
-    flex-grow: 1;
 
+  @include tablet {
+    .services-text {
+      height: 25%;
+    }
+    .membership__container {
+      height: 75%;
+    }
   }
-
 }
