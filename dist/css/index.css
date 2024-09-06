@@ -2550,58 +2550,6 @@ span {
   }
 }
 
-.services__container {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 64rem) {
-  .services__container {
-    flex-direction: row;
-  }
-}
-.services__container .item {
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  border: solid 1px #cccccc;
-  background-color: transparent;
-  flex-grow: 1;
-  overflow: hidden;
-}
-.services__container .item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-}
-.services__container .service {
-  position: absolute;
-  color: #cccccc;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 550px;
-  margin-top: clamp(1rem, -0.429rem + 7.143vw, 3rem);
-  display: flex;
-  flex-direction: column;
-  gap: clamp(0rem, -2.857rem + 14.286vw, 4rem);
-}
-.services__container .service .logo-title {
-  text-align: center;
-}
-@media (min-width: 64rem) {
-  .services__container .service {
-    min-width: 400px;
-    max-width: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
 body {
   background-color: #000000;
 }/*# sourceMappingURL=index.css.map */
