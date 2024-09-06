@@ -2,7 +2,9 @@
 @use "../abstract/variables" as *;
 
 .services__container {
+    position: relative;
     height: 70%;
+    width: 80%;
 
     //CAMBIO VERTICAL HORIZONTAL
     display: flex;
@@ -23,36 +25,55 @@
     }
 
     .service{
+        height: 100%;
         position: absolute;
-        color: $blanco;
-        @include centrarhorizontal;
-        width: 100%;
-        max-width: 550px;
         margin-top: clamp(1rem, -0.429rem + 7.143vw, 3rem);
         display: flex;
         flex-direction: column;
-        gap: clamp(0rem, -2.857rem + 14.286vw, 4rem);
+        color: $blanco;
 
         .logo-title{
             text-align: center;
 
-            // h3{
-            //    font-size: clamp(1.17rem, 0.863rem + 1.536vw, 1.6rem); 
-            // }
-
+            img{
+                width: auto;
+                height: 50%;
+            }
         }
 
         .text-anim{
-            p{
-                // margin-top: 2rem;
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
 
         @include desktop-sm{
-            min-width: 400px;
-            max-width: 400px;
-            @include centrarhorizontal;
+                position: relative;
+                width: 80%;
+                margin: 0 auto;
+                .logo-title{
+                    height: 40%;
+                    position: absolute;
+                    top: 0;
+                    @include centrarhorizontal;
+
+                    h3{
+                       width: 340px;               
+                    }
+
+                    img{
+                        width: 100px;
+                    }
+
+                }
+                .text-anim{
+                    height: 60%;
+                     position: absolute;  
+                     bottom: 0; 
+                     width: 650px; 
+                     @include centrarhorizontal2;   
+                }
         }
 
     }
