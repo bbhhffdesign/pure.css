@@ -4,7 +4,6 @@
 .services {
   color: $blanco;
   height: auto;
-  // gap: 10rem;
 
   // @include mobile-sm{
   //   height: 100dvh;
@@ -12,7 +11,10 @@
 
   @include desktop-sm{
     height: 150dvh;
-
+    // gap: 2rem;
+  }
+  @include desktop-lg{
+    // gap: 3rem;
   }
 
 
@@ -38,8 +40,11 @@
 
   .services-boxes{
     justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
 
     @include desktop-sm{
+      margin-top: clamp(3rem, -1.923rem + 7.692vw, 5rem);
       gap: clamp(0.5rem, -4.423rem + 7.692vw, 2.5rem);
     }
     

@@ -2609,9 +2609,12 @@ span {
 }
 .services .services-boxes {
   justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
 }
 @media (min-width: 64rem) {
   .services .services-boxes {
+    margin-top: clamp(3rem, -1.923rem + 7.692vw, 5rem);
     gap: clamp(0.5rem, -4.423rem + 7.692vw, 2.5rem);
   }
 }
