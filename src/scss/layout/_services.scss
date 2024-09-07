@@ -19,7 +19,7 @@
   
   .services-text {
     position: relative;
-    height: 20%;
+    height: auto;
     @include glass-bg;
     @include flex(column, center, center, none);
     border-top: $border-white;

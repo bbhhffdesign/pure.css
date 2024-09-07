@@ -2577,7 +2577,7 @@ span {
 }
 .services .services-text {
   position: relative;
-  height: 20%;
+  height: auto;
   background-color: transparent;
   display: flex;
   flex-direction: column;
