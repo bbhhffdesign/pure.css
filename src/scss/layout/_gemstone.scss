@@ -1,38 +1,64 @@
 @use "../abstract/mixins" as *;
 @use "../abstract/variables" as *;
 
-.gemstone{
-    border-top: $border-white;
-    color: $blanco;
-    
-    .gemstone-text{
-        z-index: 1;
-        text-align: center;
+.gemstone {
+  position: relative;
+  color: $blanco;
+
+  .gemstone-text {
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .paso {
+    position: relative;
+    padding: $spac-s;
+    margin: $spac-xs;
+    z-index: 1;
+    border: $border-white;
+    border-radius: $border-rad-s;
+
+    @include glass-bg {
+      border-radius: $border-rad-s;
     }
 
-    .paso{
-        position: relative;
-        padding: $spac-s;
-        margin: $spac-xs;
-        z-index: 1;
-        border: $border-white;
-        border-radius: $border-rad-s;
-        @include glass-bg{
-            border-radius: $border-rad-s
-        };
-        
-        h3{
-            margin: 0;
-        }
-
-        @include tablet{
-            margin: $spac-m;
-        }
-    }
-    .paso-2{
-        h3{
-            text-align: end;
-        }
+    h3 {
+      margin: 0;
     }
 
+    @include tablet {
+      margin: $spac-m;
+      padding: $spac-m;
+    }
+    @include desktop-xlg {
+      margin: $spac-l;
+      padding-left: 3rem;
+      padding-right:3rem ;
+    }
+  }
+  .paso-2 {
+    h3 {
+      text-align: end;
+    }
+  }
+
+  @include desktop-sm {
+    .paso-2 {
+      transform: translateX(72%);
+    }
+  }
+  @include desktop-lg {
+    .paso-2 {
+      transform: translateX(75%);
+    }
+  }
+  @include desktop-xlg {
+    max-width: none;
+    .paso-2 {
+      transform: translateX(73%);
+    }
+  }
 }
+
+//toggle

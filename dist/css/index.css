@@ -2023,6 +2023,18 @@ span {
   color: #ccff66;
 }
 
+.spacer-sm {
+  height: 5rem;
+}
+
+.spacer-md {
+  height: 10rem;
+}
+
+.spacer-lg {
+  height: 15rem;
+}
+
 .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
   background-color: #ccff66;
   border-radius: 0.3rem 0.05rem;
@@ -2670,12 +2682,13 @@ span {
 }
 
 .gemstone {
-  border-top: solid 1px #cccccc;
+  position: relative;
   color: #b6b6b6;
 }
 .gemstone .gemstone-text {
   z-index: 1;
   text-align: center;
+  margin-bottom: 5rem;
 }
 .gemstone .paso {
   position: relative;
@@ -2702,10 +2715,36 @@ span {
 @media (min-width: 37.5rem) {
   .gemstone .paso {
     margin: 2rem;
+    padding: 2rem;
+  }
+}
+@media (min-width: 120rem) {
+  .gemstone .paso {
+    margin: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 .gemstone .paso-2 h3 {
   text-align: end;
+}
+@media (min-width: 64rem) {
+  .gemstone .paso-2 {
+    transform: translateX(72%);
+  }
+}
+@media (min-width: 90rem) {
+  .gemstone .paso-2 {
+    transform: translateX(75%);
+  }
+}
+@media (min-width: 120rem) {
+  .gemstone {
+    max-width: none;
+  }
+  .gemstone .paso-2 {
+    transform: translateX(73%);
+  }
 }
 
 body {
