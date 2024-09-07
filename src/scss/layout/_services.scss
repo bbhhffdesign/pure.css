@@ -3,18 +3,33 @@
 
 .services {
   color: $blanco;
-  
-  // & div {
-  //   // max-width: 73rem;
-  // }
+  height: 150dvh;
+  gap: 10rem;
+  @include desktop-sm{
+
+  }
+
+
   
   .services-text {
+    position: relative;
+    height: 20%;
+    @include glass-bg;
+    @include flex(column,  center, center, none);
+  
+    // border-top: $border-white;
+    // border-bottom: $border-white;
     z-index: 1;
     padding: $spac-s;
-    height: 20%;
+    // height: 20%;
+    // @include glass-bg;
 
     p{
       margin-bottom: 1rem;
+      // text-align: start;
+    }
+    h2{
+      // text-align: center;
     }
 
     @include desktop-sm{
@@ -32,13 +47,14 @@
     }
     
     .service{
+      margin: $spac-s;
       position: relative;
       border: $border-white;
       border-radius: $border-rad-s;
-      margin-bottom: $spac-m;
-      padding: $spac-xs;
-      text-align: center;
-      max-width: $mobile;
+      // margin-bottom: $spac-m;
+      padding: $spac-s;
+      text-align: start;
+      // max-width: $mobile;
       z-index: 1;
       @include glass-bg{
         border-radius: $border-rad-s
@@ -54,6 +70,13 @@
       }
       @include desktop-lg{
         max-width: 24rem;
+      }
+
+      .logo-title{
+        text-align: center;
+      }
+      p{
+        margin-bottom: 1rem;
       }
 
 
