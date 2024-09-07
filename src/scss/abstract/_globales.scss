@@ -17,8 +17,12 @@ h2{
     }
 }
 h3{
-    @include font-raleway(500);
-    font-size: clamp(1.17rem, 0.863rem + 1.536vw, 1.6rem); 
+    @include font-raleway(600);
+    font-size: clamp(1.2rem, 0.343rem + 4.286vw, 2.4rem); 
+
+    @include desktop-sm{
+        font-size: 2.3rem;
+    }
  }
 p{
     @include font-raleway(400);

@@ -47,7 +47,8 @@
       };
 
       @include tablet{
-        padding: $spac-m;
+        width: 70%;
+        padding: $spac-s $spac-m;
       }
       @include desktop-sm{
         padding: $spac-s;
@@ -60,6 +61,23 @@
 
       .logo-title{
         text-align: center;
+      
+        img{
+          @include tablet{
+            height: 80px;
+          }
+          @include tablet-l{
+            height: 100px;
+          }
+          @include desktop-sm{
+            height: 60px;
+          }
+        }
+
+        h3{
+
+          margin-top: .5rem;
+        }
       }
     }
   }
