@@ -2572,7 +2572,7 @@ span {
 }
 @media (min-width: 64rem) {
   .services {
-    height: 150dvh;
+    height: 130dvh;
   }
 }
 .services .services-text {
