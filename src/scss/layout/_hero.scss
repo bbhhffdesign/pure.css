@@ -5,7 +5,6 @@
     position: relative;
     color: $blanco;
     justify-content: center;
-    @include font-raleway(300);
     padding-top: 2rem;   
     z-index: 1;
 
@@ -17,8 +16,8 @@
     }
     .hero-text{
         position: relative;
-        gap: clamp(2rem, 1.714rem + 1.429vw, 3rem);
-
+        gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
+        
         h1{
             margin: 0;
         }

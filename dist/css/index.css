@@ -1957,16 +1957,24 @@ striping:
   }
 }
 h1 {
-  font-size: clamp(2.2rem, 0.929rem + 5.357vw, 3.5rem);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(2.2rem, 0.171rem + 9.02vw, 4.5rem);
 }
 @media (min-width: 64rem) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
   }
 }
 
 h2 {
-  font-size: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(1.5rem, 0.618rem + 3.922vw, 2.5rem);
 }
 @media (min-width: 64rem) {
   h2 {
@@ -1975,15 +1983,29 @@ h2 {
 }
 
 h3 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   font-size: clamp(1.17rem, 0.863rem + 1.536vw, 1.6rem);
 }
 
 p {
-  font-size: clamp(1rem, 0.643rem + 1.786vw, 1.5rem);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 0.294rem + 3.137vw, 1.8rem);
+}
+@media (min-width: 64rem) {
+  p {
+    font-size: 1.7rem;
+  }
 }
 
 strong {
-  font-weight: 800;
+  font-weight: 500;
+  color: white;
 }
 
 span {
@@ -2050,7 +2072,7 @@ span {
 .btn-pri-xxl:hover {
   box-shadow: none;
   background-color: transparent;
-  color: #cccccc;
+  color: #949494;
   border: solid 1px #cccccc;
 }
 
@@ -2344,7 +2366,7 @@ span {
   align-items: center;
   gap: none;
   gap: 0.5rem;
-  color: #cccccc;
+  color: #949494;
   border-top: solid 1px #cccccc;
   border-bottom: solid 1px #cccccc;
   padding: 0.3rem 0;
@@ -2423,12 +2445,8 @@ span {
 
 .hero {
   position: relative;
-  color: #cccccc;
+  color: #949494;
   justify-content: center;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
   padding-top: 2rem;
   z-index: 1;
 }
@@ -2446,7 +2464,7 @@ span {
 }
 .hero .hero-text {
   position: relative;
-  gap: clamp(2rem, 1.714rem + 1.429vw, 3rem);
+  gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
 }
 .hero .hero-text h1 {
   margin: 0;
@@ -2529,21 +2547,22 @@ span {
 }
 
 .services {
-  color: #cccccc;
+  color: #949494;
   height: 150dvh;
   gap: 10rem;
 }
 .services .services-text {
   position: relative;
-  height: 20%;
+  height: 30%;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: none;
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
   z-index: 1;
-  padding: 1rem;
 }
 .services .services-text::before {
   content: "";
@@ -2553,9 +2572,6 @@ span {
   background: transparent;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-}
-.services .services-text p {
-  margin-bottom: 1rem;
 }
 @media (min-width: 64rem) {
   .services .services-text br {
@@ -2609,9 +2625,6 @@ span {
 }
 .services .services-boxes .service .logo-title {
   text-align: center;
-}
-.services .services-boxes .service p {
-  margin-bottom: 1rem;
 }
 
 body {
