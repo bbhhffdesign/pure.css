@@ -5,19 +5,9 @@
   color: $blanco;
   height: auto;
 
-  // @include mobile-sm{
-  //   height: 100dvh;
-  // }
-
   @include desktop-sm{
     height: 130dvh;
-    // gap: 2rem;
   }
-  @include desktop-lg{
-    // gap: 3rem;
-  }
-
-
   
   .services-text {
     position: relative;
@@ -68,7 +58,6 @@
         padding: $spac-s;
         max-width: 21rem;
         margin: 0;
-        // flex-grow: 2;
       }
       @include desktop-lg{
         &.oferta{

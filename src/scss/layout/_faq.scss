@@ -1,0 +1,30 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+
+.faq{
+    color: $blanco;
+
+   .faq-text{
+    z-index: 1;
+    background-color: #333;
+   }
+
+   .faq-container{
+    z-index: 1;
+    background-color: #666;
+   }
+}
+
+.question{
+    img{
+        height: inherit;
+    }
+    // img{
+    //     display: inline-block;
+    //     height: 10%;
+    //     width: auto;
+    // }
+    // p{
+    //     display: inline-block;
+    // }
+}

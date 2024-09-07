@@ -2023,6 +2023,11 @@ span {
   color: #ccff66;
 }
 
+.italic {
+  color: #b6b6b6;
+  font-style: italic;
+}
+
 .spacer-sm {
   height: 5rem;
 }
@@ -2123,6 +2128,10 @@ span {
 
 .fh {
   height: 100vh;
+}
+
+.mw {
+  width: 50%;
 }
 
 .m-s {
@@ -2687,6 +2696,7 @@ span {
 .gemstone {
   position: relative;
   color: #b6b6b6;
+  height: auto;
 }
 .gemstone .gemstone-text {
   z-index: 1;
@@ -2748,6 +2758,22 @@ span {
   .gemstone .paso-2 {
     transform: translateX(73%);
   }
+}
+
+.faq {
+  color: #b6b6b6;
+}
+.faq .faq-text {
+  z-index: 1;
+  background-color: #333;
+}
+.faq .faq-container {
+  z-index: 1;
+  background-color: #666;
+}
+
+.question img {
+  height: inherit;
 }
 
 body {
