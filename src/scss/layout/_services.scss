@@ -4,12 +4,18 @@
 .services {
   color: $blanco;
   
-  & div {
-    // max-width: 73rem;
-  }
+  // & div {
+  //   // max-width: 73rem;
+  // }
   
   .services-text {
     z-index: 1;
+    padding: $spac-s;
+    height: 20%;
+
+    p{
+      margin-bottom: 1rem;
+    }
 
     @include desktop-sm{
       br{
@@ -44,6 +50,7 @@
       @include desktop-sm{
         padding: $spac-s;
         max-width: 20rem;
+        margin-bottom: 0;
       }
       @include desktop-lg{
         max-width: 24rem;
