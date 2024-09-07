@@ -1,0 +1,38 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+
+.gemstone{
+    border-top: $border-white;
+    color: $blanco;
+    
+    .gemstone-text{
+        z-index: 1;
+        text-align: center;
+    }
+
+    .paso{
+        position: relative;
+        padding: $spac-s;
+        margin: $spac-xs;
+        z-index: 1;
+        border: $border-white;
+        border-radius: $border-rad-s;
+        @include glass-bg{
+            border-radius: $border-rad-s
+        };
+        
+        h3{
+            margin: 0;
+        }
+
+        @include tablet{
+            margin: $spac-m;
+        }
+    }
+    .paso-2{
+        h3{
+            text-align: end;
+        }
+    }
+
+}

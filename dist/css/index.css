@@ -2083,7 +2083,7 @@ span {
 .btn-pri-xxl:hover {
   box-shadow: none;
   background-color: transparent;
-  color: #949494;
+  color: #b6b6b6;
   border: solid 1px #cccccc;
 }
 
@@ -2377,7 +2377,7 @@ span {
   align-items: center;
   gap: none;
   gap: 0.5rem;
-  color: #949494;
+  color: #b6b6b6;
   border-top: solid 1px #cccccc;
   border-bottom: solid 1px #cccccc;
   padding: 0.3rem 0;
@@ -2453,7 +2453,7 @@ span {
 
 .hero {
   position: relative;
-  color: #949494;
+  color: #b6b6b6;
   justify-content: center;
   padding-top: 2rem;
   z-index: 1;
@@ -2555,13 +2555,17 @@ span {
 }
 
 .services {
-  color: #949494;
-  height: 150dvh;
-  gap: 10rem;
+  color: #b6b6b6;
+  height: auto;
+}
+@media (min-width: 64rem) {
+  .services {
+    height: 150dvh;
+  }
 }
 .services .services-text {
   position: relative;
-  height: 30%;
+  height: 20%;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -2663,6 +2667,45 @@ span {
 }
 .services .services-boxes .service .logo-title h3 {
   margin-top: 0.5rem;
+}
+
+.gemstone {
+  border-top: solid 1px #cccccc;
+  color: #b6b6b6;
+}
+.gemstone .gemstone-text {
+  z-index: 1;
+  text-align: center;
+}
+.gemstone .paso {
+  position: relative;
+  padding: 1rem;
+  margin: 0.5rem;
+  z-index: 1;
+  border: solid 1px #cccccc;
+  border-radius: 0.5rem 0.05rem;
+  background-color: transparent;
+}
+.gemstone .paso::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 0.5rem 0.05rem;
+}
+.gemstone .paso h3 {
+  margin: 0;
+}
+@media (min-width: 37.5rem) {
+  .gemstone .paso {
+    margin: 2rem;
+  }
+}
+.gemstone .paso-2 h3 {
+  text-align: end;
 }
 
 body {

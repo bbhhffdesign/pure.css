@@ -3,9 +3,15 @@
 
 .services {
   color: $blanco;
-  height: 150dvh;
-  gap: 10rem;
+  height: auto;
+  // gap: 10rem;
+
+  // @include mobile-sm{
+  //   height: 100dvh;
+  // }
+
   @include desktop-sm{
+    height: 150dvh;
 
   }
 
@@ -13,7 +19,7 @@
   
   .services-text {
     position: relative;
-    height: 30%;
+    height: 20%;
     @include glass-bg;
     @include flex(column, center, center, none);
     border-top: $border-white;
