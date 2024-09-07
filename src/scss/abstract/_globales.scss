@@ -4,7 +4,8 @@
 h1{
     @include font-raleway(600);
     font-size: clamp(2.2rem, 0.171rem + 9.02vw, 4.5rem);
-
+    margin-bottom: 1.5rem;
+    margin-top: 1.6rem;
     @include desktop-sm{
         font-size: 3.8rem;
     }
@@ -12,6 +13,8 @@ h1{
 h2{
     @include font-raleway(600);
     font-size: clamp(1.5rem, 0.618rem + 3.922vw, 2.5rem);
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
     @include desktop-sm{
         font-size: 2.5rem;
     }
@@ -21,10 +24,12 @@ h3{
     font-size: clamp(1.2rem, 0.343rem + 4.286vw, 2.4rem); 
 
     @include desktop-sm{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
  }
 p{
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
     @include font-raleway(400);
     font-size: clamp(1rem, 0.294rem + 3.137vw, 1.8rem);
     

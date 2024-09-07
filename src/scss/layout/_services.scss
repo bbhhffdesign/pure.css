@@ -20,6 +20,9 @@
     border-bottom: $border-white;
     z-index: 1;
 
+    @include tablet{
+      gap: 2.5rem;
+    }
     @include desktop-sm{
       br{
         display: none;
@@ -40,7 +43,7 @@
       border: $border-white;
       border-radius: $border-rad-s;
       padding: $spac-s;
-      text-align: start;
+      text-align: center;
       z-index: 1;
       @include glass-bg{
         border-radius: $border-rad-s
@@ -52,11 +55,21 @@
       }
       @include desktop-sm{
         padding: $spac-s;
-        max-width: 20rem;
-        margin-bottom: 0;
+        max-width: 21rem;
+        margin: 0;
+        // flex-grow: 2;
       }
       @include desktop-lg{
-        max-width: 24rem;
+        &.oferta{
+          max-width: 24rem;
+        }
+        &.comunicacion{
+          max-width: 26rem;
+        }
+        &.marca{
+          max-width: 24rem;
+        }
+        
       }
 
       .logo-title{
@@ -70,7 +83,7 @@
             height: 100px;
           }
           @include desktop-sm{
-            height: 60px;
+            height: 80px;
           }
         }
 

@@ -1962,6 +1962,8 @@ h1 {
   font-weight: 600;
   font-style: normal;
   font-size: clamp(2.2rem, 0.171rem + 9.02vw, 4.5rem);
+  margin-bottom: 1.5rem;
+  margin-top: 1.6rem;
 }
 @media (min-width: 64rem) {
   h1 {
@@ -1975,6 +1977,8 @@ h2 {
   font-weight: 600;
   font-style: normal;
   font-size: clamp(1.5rem, 0.618rem + 3.922vw, 2.5rem);
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
 }
 @media (min-width: 64rem) {
   h2 {
@@ -1991,11 +1995,13 @@ h3 {
 }
 @media (min-width: 64rem) {
   h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 }
 
 p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -2397,7 +2403,6 @@ span {
   position: fixed;
   inset: 0;
   height: 3rem;
-  max-width: 74rem;
   background-color: black;
   padding: 0.5rem 0;
   border: none;
@@ -2431,8 +2436,6 @@ span {
 }
 @media (min-width: 80rem) {
   .nav {
-    border: solid 1px #cccccc;
-    border-radius: 0 0 1rem 1rem;
     border-top: none;
   }
   .nav::before {
@@ -2464,7 +2467,7 @@ span {
 }
 @media (min-width: 64rem) {
   .hero div {
-    max-width: 36rem;
+    max-width: 40rem;
   }
 }
 .hero .hero-text {
@@ -2578,6 +2581,11 @@ span {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
+@media (min-width: 37.5rem) {
+  .services .services-text {
+    gap: 2.5rem;
+  }
+}
 @media (min-width: 64rem) {
   .services .services-text br {
     display: none;
@@ -2597,7 +2605,7 @@ span {
   border: solid 1px #cccccc;
   border-radius: 0.5rem 0.05rem;
   padding: 1rem;
-  text-align: start;
+  text-align: center;
   z-index: 1;
   background-color: transparent;
 }
@@ -2620,12 +2628,18 @@ span {
 @media (min-width: 64rem) {
   .services .services-boxes .service {
     padding: 1rem;
-    max-width: 20rem;
-    margin-bottom: 0;
+    max-width: 21rem;
+    margin: 0;
   }
 }
 @media (min-width: 90rem) {
-  .services .services-boxes .service {
+  .services .services-boxes .service.oferta {
+    max-width: 24rem;
+  }
+  .services .services-boxes .service.comunicacion {
+    max-width: 26rem;
+  }
+  .services .services-boxes .service.marca {
     max-width: 24rem;
   }
 }
@@ -2644,7 +2658,7 @@ span {
 }
 @media (min-width: 64rem) {
   .services .services-boxes .service .logo-title img {
-    height: 60px;
+    height: 80px;
   }
 }
 .services .services-boxes .service .logo-title h3 {

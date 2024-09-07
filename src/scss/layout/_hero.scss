@@ -11,7 +11,7 @@
     div{
         @include flex(column, center, flex-start, auto);
         @include desktop-sm{
-            max-width: 36rem;
+            max-width: 40rem;
         }
     }
     .hero-text{
