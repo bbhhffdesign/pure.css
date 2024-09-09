@@ -1,0 +1,32 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+
+.footer{
+    max-width: $desktop-lg;
+    color: $blanco;
+    text-align: center;
+
+    &>div{
+        box-sizing: border-box;
+        // background-color: rgb(116, 116, 116);
+        // border: solid 1px black;
+        // margin-bottom: $spac-xs;
+    }
+
+    p{
+        font-size: 75%;
+        margin: 0;
+        @include tablet{
+            font-size: 90%;
+        }
+    }
+    img{
+        height: 30px;
+    }
+    .footer-social{
+        img{
+            height: 20px;
+        }
+    }
+   
+}
