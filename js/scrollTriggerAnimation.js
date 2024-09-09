@@ -50,7 +50,7 @@ let tl_gemstone = gsap.timeline({
         markers: true,
         scrub: 1,
         start: "-100% center",
-        end: "350% center"
+        end: "400% center"
     }
 });
 

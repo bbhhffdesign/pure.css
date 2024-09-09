@@ -19,14 +19,11 @@
     @include tablet{
         height: 4rem;
         justify-content: space-evenly;
-        // gap: clamp(3rem, 0.714rem + 4.762vw, 5rem);
-        // gap: 2rem;
+
     }
     @include desktop-sm{
     }
     @include desktop-md{
-        // border: $border-white;
-        // border-radius: 0 0 $spac-s $spac-s;
         border-top: none;
         &::before{
             border-radius: 0 0 $spac-s $spac-s;
