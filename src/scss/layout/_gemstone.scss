@@ -21,6 +21,7 @@
     border-radius: $border-rad-s;
 
     @include glass-bg {
+      background-color: #3333338f;
       border-radius: $border-rad-s;
     }
 

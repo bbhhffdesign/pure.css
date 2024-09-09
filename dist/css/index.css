@@ -2389,36 +2389,6 @@ span {
     font-size: 160%;
   }
 }
-.count__container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: none;
-  gap: 0.5rem;
-  color: #b6b6b6;
-  border-top: solid 1px #cccccc;
-  border-bottom: solid 1px #cccccc;
-  padding: 0.3rem 0;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-.count__container > div {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.2fr 1fr;
-  justify-items: end;
-  align-items: center;
-}
-.count__container > div p {
-  margin: 0;
-}
-.count__container > div p[class*=text] {
-  justify-self: center;
-}
-
 .nav {
   position: fixed;
   inset: 0;
@@ -2469,6 +2439,36 @@ span {
 }
 .nav a {
   height: 90%;
+}
+
+.count__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  gap: 0.5rem;
+  color: #b6b6b6;
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  padding: 0.3rem 0;
+}
+.count__container > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.2fr 1fr;
+  justify-items: end;
+  align-items: center;
+}
+.count__container > div p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+}
+.count__container > div p[class*=text] {
+  justify-self: center;
 }
 
 .hero {
@@ -2719,6 +2719,7 @@ span {
   background: transparent;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+  background-color: rgba(51, 51, 51, 0.5607843137);
   border-radius: 0.5rem 0.05rem;
 }
 .gemstone .paso h3 {
@@ -2773,6 +2774,7 @@ span {
 }
 
 .faq-qanda {
+  position: relative;
   border: solid 1px #cccccc;
   border-radius: 0.5rem 0.05rem;
   padding: 1rem;
@@ -2781,7 +2783,17 @@ span {
   justify-content: center;
   align-items: center;
   gap: none;
+  background-color: transparent;
   background-color: rgba(0, 51, 153, 0.3098039216);
+}
+.faq-qanda::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 .faq-qanda:hover .answer {
   max-height: 1000px;
@@ -2820,12 +2832,16 @@ span {
   margin: 0;
 }
 
+footer {
+  position: relative;
+  background: black;
+  z-index: 10;
+}
+
 .footer {
   max-width: 80rem;
   color: #b6b6b6;
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 .footer > div {
   box-sizing: border-box;

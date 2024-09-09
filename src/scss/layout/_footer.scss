@@ -1,12 +1,18 @@
 @use "../abstract/mixins" as *;
 @use "../abstract/variables" as *;
 
+footer{
+    position: relative;
+    background: black;
+    z-index: 10;
+}
+
 .footer{
     max-width: $desktop-md;
     color: $blanco;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    // margin-top: 1rem;
+    // margin-bottom: 1rem;
 
 
     &>div{

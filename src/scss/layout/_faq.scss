@@ -18,10 +18,12 @@
 }
 
 .faq-qanda{
+    position: relative;
     border: $border-white;
     border-radius: $border-rad-s;
     padding: $spac-s;
     @include flex(column, center, center,none);
+    @include glass-bg;
     background-color: $colorPrimarioTransparent;
 
 
