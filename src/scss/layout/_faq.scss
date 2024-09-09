@@ -6,43 +6,59 @@
 
    .faq-text{
     z-index: 1;
+    text-align: center;
     // background-color: #333;
    }
 
    .faq-container{
     z-index: 1;
 
-    .faq-qanda{
-        border: $border-white;
-        border-radius: $border-rad-s;
-        padding: $spac-s;
-        @include flex(column, center, center,none);
-    }
    }
 }
 
-.question{
-    cursor: pointer;
-    @include flex(row, flex-start, center,none);
+.faq-qanda{
+    border: $border-white;
+    border-radius: $border-rad-s;
+    padding: $spac-s;
+    @include flex(column, center, center,none);
 
-    img{
-        width: 20%;
-        height: clamp(1rem, 0.643rem + 1.786vw, 1.5rem);
 
+    &:hover{
+
+        .answer{
+            max-height: 1000px;
+        }
+        img{
+            transform: rotate(90deg);
+            // transform-origin: center;
+        }
+        
     }
-    p{
-        margin: 0;
 
+
+
+    .question{
+        cursor: pointer;
+        @include flex(row, flex-start, center,none);
+    
+        img{
+            transition: all 0.3s ease;
+            width: 20%;
+            height: clamp(1rem, 0.643rem + 1.786vw, 1.5rem);
+    
+        }
+        p{
+            margin: 0;
+    
+        }
+    
     }
-
-}
-.answer{
-    flex-grow: 0;
-    // hr{
-    //     display: none;
-    // }
-    // p{
-    //     display: none;
-    //     margin: 0;
-    // }
+    .answer{
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        p{
+            margin: 0;
+        }
+    }
 }

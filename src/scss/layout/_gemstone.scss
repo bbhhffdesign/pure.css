@@ -55,9 +55,10 @@
     }
   }
   @include desktop-xlg {
-    max-width: none;
+    margin: 0 auto;
+    max-width: $desktop-lg;
     .paso-2 {
-      transform: translateX(73%);
+      transform: translateX(70%);
     }
   }
 }
