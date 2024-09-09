@@ -1,0 +1,1 @@
+gsap.to("#svg",{duration:100, strokeDashoffset:0})

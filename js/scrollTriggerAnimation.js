@@ -17,6 +17,23 @@ const gemstoneText1 = document.getElementById("gemstone-text-1");
 const gemstoneText2 = document.getElementById("gemstone-text-2");
 const gemstoneText3 = document.getElementById("gemstone-text-3");
 
+//gemstoneSvg
+const gemstoneSvg = document.getElementById("gemstoneSvg");
+// const gemstoneSvgLenght = gemstoneSvg.getTotalLenght();
+
+// gemstoneSvg.style.strokeDasharray = gemstoneSvgLenght;
+// gemstoneSvg.style.strokeDashoffset = gemstoneSvgLenght;
+
+// gsap.to(gemstoneSvg, {duration: 3 ,ease: "power1.inOut", strokeDashoffset:0})
+
+
+// gsap.set(gemstoneSvg,{
+//     strokeDasharray: gemstoneSvgLenght,
+//     strokeDashoffset: gemstoneSvgLenght,
+// })
+
+// gsap.to(gemstoneSvg,{duration:3, strokeDashoffset:0,ease: "power1.inOut" })
+
 //gemstonePaso
 const gemstonePaso1 = document.getElementById("gemstone-paso-1");
 const gemstonePaso2 = document.getElementById("gemstone-paso-2");
@@ -67,9 +84,10 @@ tl_gemstone
             .from(gemstoneText1,{opacity:0})
             .from(gemstoneText2,{opacity:0})
             .from(gemstoneText3,{opacity:0})
-            .from(gemstonePaso1,{opacity:0,x:-500})
-            .from(gemstonePaso2,{opacity:0,x:500})
-            .from(gemstonePaso3,{opacity:0,x:-500})
+            .to(gemstoneSvg,{strokeDashoffset:0})
+            .from(gemstonePaso1,{opacity:0})
+            .from(gemstonePaso2,{opacity:0})
+            .from(gemstonePaso3,{opacity:0})
 
 
            

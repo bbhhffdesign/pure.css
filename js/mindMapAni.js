@@ -36,7 +36,6 @@ for (let i = 1; i <= 8; i++) {
   window[`flecha${i}`] = flecha;
 }
 
-// //tween de flecha que me quedo al reves
 
 // flechaFinal
 for (let i = 1; i <= 6; i++) {
