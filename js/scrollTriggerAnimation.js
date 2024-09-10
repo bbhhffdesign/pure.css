@@ -1,4 +1,3 @@
-const matchMedia = gsap.matchMedia();
 
 //services text
 const servicesContainer = document.getElementById("services-container") 
@@ -23,20 +22,7 @@ const gemstoneText3 = document.getElementById("gemstone-text-3");
 
 //gemstoneSvg
 const gemstoneSvg = document.getElementById("gemstoneSvg");
-// const gemstoneSvgLenght = gemstoneSvg.getTotalLenght();
 
-// gemstoneSvg.style.strokeDasharray = gemstoneSvgLenght;
-// gemstoneSvg.style.strokeDashoffset = gemstoneSvgLenght;
-
-// gsap.to(gemstoneSvg, {duration: 3 ,ease: "power1.inOut", strokeDashoffset:0})
-
-
-// gsap.set(gemstoneSvg,{
-//     strokeDasharray: gemstoneSvgLenght,
-//     strokeDashoffset: gemstoneSvgLenght,
-// })
-
-// gsap.to(gemstoneSvg,{duration:3, strokeDashoffset:0,ease: "power1.inOut" })
 
 //gemstonePaso
 const gemstonePaso1 = document.getElementById("gemstone-paso-1");
@@ -55,73 +41,124 @@ const faqQuestion3 = document.getElementById("faq-question-3");
 const faqQuestion4 = document.getElementById("faq-question-4");
 const faqQuestion5 = document.getElementById("faq-question-5");
 
-//timeLineServices
-let tl_servicesText = gsap.timeline({
-    scrollTrigger:{
-        trigger:servicesContainer,
-        // markers: true,
-        pin: true,
-        scrub: 1,
-        start: "top 35%",
-        end: "30% 40%"
-    }
+
+//matchMedias
+
+const matchMediaMobile = gsap.matchMedia();
+
+matchMediaMobile.add("(max-width: 768px)", () =>{
+    const tl_servicesTextMobile = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesText,
+            // markers: true,
+            start : "top center",
+            end: "bottom center" ,
+            onLeave: ()=> tl_servicesTextMobile.stop(),
+            onLeaveBack: ()=> tl_servicesTextMobile.reverse()
+        }
+
+    })
+    tl_servicesTextMobile
+                .from(servicesText1,{opacity:0})
+                .from(servicesText2,{opacity:0, delay: .3})
+                .from(servicesText3,{opacity:0, delay: .3})
+
+    const tl_servicesBox1Mobile = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesBox1,
+            // markers: true,
+            start: "-130% center",
+            end: "top center",
+            onEnter: () => tl_servicesBox1Mobile.play(),
+            onEnterBack: () => tl_servicesBox1Mobile.play(),
+            onLeaveBack: () => tl_servicesBox1Mobile.reverse()
+        }
+    })
+
+    tl_servicesBox1Mobile
+                .from(servicesBox1,{y:"120%", duration:1})
+                .from(servicesBox1Content,{opacity:0})
+
+
+    const tl_servicesBox2Mobile = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesBox2,
+            // markers: true,
+            start: "-170% center",
+            end: "center center",
+            onEnter: () => tl_servicesBox2Mobile.play(),
+            onEnterBack: () => tl_servicesBox2Mobile.play(),
+            onLeaveBack: () => tl_servicesBox2Mobile.reverse()
+        }
+    })
+
+    tl_servicesBox2Mobile
+                .from(servicesBox2,{y:"120%", duration:1})
+                .from(servicesBox2Content,{opacity:0})
+    
+    const tl_servicesBox3Mobile = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesBox3,
+            markers: true,
+            start: "-170% center",
+            end: "center center",
+            onEnter: () => tl_servicesBox3Mobile.play(),
+            onEnterBack: () => tl_servicesBox3Mobile.play(),
+            onLeaveBack: () => tl_servicesBox3Mobile.reverse()
+        }
+    })  
+    tl_servicesBox3Mobile
+                .from(servicesBox3,{y:"120%", duration:1})
+                .from(servicesBox3Content,{opacity:0})
 });
-let tl_servicesBoxes = gsap.timeline({
-    scrollTrigger:{
-        trigger: servicesBox1,
-        markers: true,
-        // pin: true,
-        scrub: 1,
-        start: "top bottom",
-        end: "300% bottom"
-    }
-});
-// let tl_gemstone = gsap.timeline({
+
+
+// //timeLineServices
+// let tl_servicesText = gsap.timeline({
 //     scrollTrigger:{
-//         trigger:gemstoneText,
+//         trigger:servicesContainer,
 //         // markers: true,
+//         pin: true,
 //         scrub: 1,
-//         start: "-100% center",
-//         end: "bottom center"
+//         start: "top 35%",
+//         end: "30% 40%",
+//         // invalidateOnRefresh: true
+//     }
+// });
+// let tl_servicesBoxes = gsap.timeline({
+//     scrollTrigger:{
+//         trigger: servicesText,
+//         markers: true,   
+//         // pin: true,
+//         scrub: 1,
+//         start: "bottom center",
+//         end: "400% center",
+//         // invalidateOnRefresh: true
 //     }
 // });
 
-//para escritorio las cajas deben quedar escalonadas !!!
-tl_servicesText
-            .from(servicesText1,{opacity:0})
-            .from(servicesText2,{opacity:0})
-            .from(servicesText3,{opacity:0})
-            .from(servicesBox1Content,{y:100})
+// tl_servicesText
+//             .from(servicesText1,{opacity:0})
+//             .from(servicesText2,{opacity:0})
+//             .from(servicesText3,{opacity:0});
 
-tl_servicesBoxes
-.from(servicesBox1,{y:200})
-.from(servicesBox1Content,{opacity:0})
-.from(servicesBox2,{y:200})
-.from(servicesBox2Content,{opacity:0})
-.from(servicesBox3,{y:200})
-.from(servicesBox3Content,{opacity:0})
 
-tl_gemstone
-            .from(gemstoneText1,{opacity:0})
-            .from(gemstoneText2,{opacity:0})
-            .from(gemstoneText3,{opacity:0})
-            .from(gemstonePaso1,{opacity:0})
-            .from(gemstonePaso2,{opacity:0})
-            .from(gemstonePaso3,{opacity:0})
+// tl_servicesBoxes
+// .from(servicesBox1,{y:"100%"})
+// .from(servicesBox1Content,{opacity:0})
+// .from(servicesBox2,{y:"100%"})
+// .from(servicesBox2Content,{opacity:0})
+// .from(servicesBox3,{y:"100%"})
+// .from(servicesBox3Content,{opacity:0})
 
-// let gemstoneAnimation = gsap.to(gemstoneSvg, {
-//     strokeDashoffset: 0,
-//     duration: 20, // Duración fija que desees
-//     paused: true // Para controlar manualmente la animación
-// });
+// tl_gemstone
+//             .from(gemstoneText1,{opacity:0})
+//             .from(gemstoneText2,{opacity:0})
+//             .from(gemstoneText3,{opacity:0})
+//             .from(gemstonePaso1,{opacity:0})
+//             .from(gemstonePaso2,{opacity:0})
+//             .from(gemstonePaso3,{opacity:0})
 
-// ScrollTrigger.create({
-//     trigger: gemstoneText,
-//     start: "center center",
-//     end: "400% center",
-//     onEnter: () => gemstoneAnimation.timeScale(1).play(),  // Reproduce la animación cuando se cruza el start hacia abajo
-//     onLeaveBack: () => gemstoneAnimation.timeScale(10).reverse(), // Reviértela cuando se cruza el start hacia arriba
-//     // markers: true
-// });            
+      
 
 
