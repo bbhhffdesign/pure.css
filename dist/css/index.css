@@ -2924,10 +2924,6 @@ footer {
   text-align: center;
 }
 
-html, body {
-  overflow: hidden; /* Evita el scroll nativo del navegador */
-}
-
 body {
   background-color: #000000;
   overflow-x: hidden;
