@@ -76,7 +76,7 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
     })
 
     tl_servicesBox1Mobile
-                .from(servicesBox1,{y:"120%", duration:1, ease: "power2.out"})
+                .from(servicesBox1,{y:"120%", duration:.5, ease: "power2.out"})
                 .from(servicesBox1Content,{opacity:0})
 
 
@@ -93,7 +93,7 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
     })
 
     tl_servicesBox2Mobile
-                .from(servicesBox2,{y:"120%", duration:1, ease: "power2.out"})
+                .from(servicesBox2,{y:"120%", duration:.5, ease: "power2.out"})
                 .from(servicesBox2Content,{opacity:0})
     
     const tl_servicesBox3Mobile = gsap.timeline({
@@ -108,7 +108,7 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
         }
     })  
     tl_servicesBox3Mobile
-                .from(servicesBox3,{y:"120%", duration:1, ease: "power2.out"})
+                .from(servicesBox3,{y:"120%", duration:.5, ease: "power2.out"})
                 .from(servicesBox3Content,{opacity:0})
 });
 
