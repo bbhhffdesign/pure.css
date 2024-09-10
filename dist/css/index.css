@@ -2574,6 +2574,11 @@ span {
   }
 }
 
+#tsparticles {
+  position: absolute;
+  z-index: -1;
+}
+
 .services {
   color: #b6b6b6;
   height: auto;
@@ -2587,11 +2592,7 @@ span {
   position: relative;
   height: auto;
   background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: none;
+  padding: 1rem 0;
   border-top: solid 1px #cccccc;
   border-bottom: solid 1px #cccccc;
   z-index: 1;
@@ -2605,12 +2606,10 @@ span {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-@media (min-width: 37.5rem) {
-  .services .services-text {
-    gap: 2.5rem;
-  }
-}
 @media (min-width: 64rem) {
+  .services .services-text {
+    padding: 2rem 0;
+  }
   .services .services-text br {
     display: none;
   }
@@ -2660,14 +2659,11 @@ span {
   }
 }
 @media (min-width: 90rem) {
-  .services .services-boxes .service.oferta {
+  .services .services-boxes .service.oferta, .services .services-boxes .service.marca {
     max-width: 24rem;
   }
   .services .services-boxes .service.comunicacion {
     max-width: 26rem;
-  }
-  .services .services-boxes .service.marca {
-    max-width: 24rem;
   }
 }
 .services .services-boxes .service .logo-title {
@@ -2770,6 +2766,11 @@ span {
   color: #b6b6b6;
   height: auto;
   min-height: 150vh;
+}
+@media (min-width: 64rem) {
+  .faq {
+    min-height: 90vh;
+  }
 }
 .faq .faq-text {
   z-index: 1;

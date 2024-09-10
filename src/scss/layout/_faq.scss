@@ -5,6 +5,9 @@
     color: $blanco;
     height: auto;
     min-height: 150vh;
+    @include desktop-sm{
+        min-height: 90vh;
+    }
 
    .faq-text{
     z-index: 1;

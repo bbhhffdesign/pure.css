@@ -13,15 +13,13 @@
     position: relative;
     height: auto;
     @include glass-bg;
-    @include flex(column, center, center, none);
+    padding: 1rem 0;
     border-top: $border-white;
     border-bottom: $border-white;
     z-index: 1;
 
-    @include tablet{
-      gap: 2.5rem;
-    }
     @include desktop-sm{
+      padding: 2rem 0;
       br{
         display: none;
       }
@@ -60,15 +58,14 @@
         margin: 0;
       }
       @include desktop-lg{
-        &.oferta{
+        &.oferta,
+        &.marca{
           max-width: 24rem;
         }
         &.comunicacion{
           max-width: 26rem;
         }
-        &.marca{
-          max-width: 24rem;
-        }
+      
         
       }
 

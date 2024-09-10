@@ -1,2 +1,7 @@
 @use '../abstract/variables' as *;
 @use '../abstract/mixins' as *;
+
+#tsparticles{
+    position: absolute;
+    z-index: -1;
+}
