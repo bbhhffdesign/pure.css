@@ -9,8 +9,11 @@ const servicesText3 = document.getElementById("services-text-3")
 
 //servicesBoxes
 const servicesBox1 = document.getElementById("services-box-1");
+const servicesBox1Content = document.getElementById("services-box-1-content");
 const servicesBox2 = document.getElementById("services-box-2");
+const servicesBox2Content = document.getElementById("services-box-2-content");
 const servicesBox3 = document.getElementById("services-box-3");
+const servicesBox3Content = document.getElementById("services-box-3-content");
 
 //gemstoneText
 const gemstoneText = document.getElementById("gemstone-text");
@@ -69,8 +72,8 @@ let tl_servicesBoxes = gsap.timeline({
         markers: true,
         // pin: true,
         scrub: 1,
-        start: "top center",
-        end: "250% center"
+        start: "top bottom",
+        end: "300% bottom"
     }
 });
 // let tl_gemstone = gsap.timeline({
@@ -88,11 +91,15 @@ tl_servicesText
             .from(servicesText1,{opacity:0})
             .from(servicesText2,{opacity:0})
             .from(servicesText3,{opacity:0})
+            .from(servicesBox1Content,{y:100})
 
 tl_servicesBoxes
-            .from(servicesBox1,{opacity:0})
-            .from(servicesBox2,{opacity:0})
-            .from(servicesBox3,{opacity:0});
+.from(servicesBox1,{y:200})
+.from(servicesBox1Content,{opacity:0})
+.from(servicesBox2,{y:200})
+.from(servicesBox2Content,{opacity:0})
+.from(servicesBox3,{y:200})
+.from(servicesBox3Content,{opacity:0})
 
 tl_gemstone
             .from(gemstoneText1,{opacity:0})
