@@ -820,7 +820,7 @@
             </div>
          </div>
       </section>
-      <div class="spacer-md"></div>
+      <!-- <div class="spacer-md"></div> -->
       <footer>
          <hr style="width: 100%" />
          <div class="footer pure-g m-auto p-s p-md-l">
@@ -855,10 +855,14 @@
    </main>
    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
    <script>
-      const lenis = new Lenis();
+      const lenis = new Lenis({
+         smooth: true,
+         lerp: 0.05,
+         wheelMultiplier: 0.3,
+      });
 
       lenis.on("scroll", (e) => {
-         console.log(e);
+         // console.log(e);
       });
 
       function raf(time) {
@@ -870,9 +874,8 @@
    </script>
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-
-   <!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js"></script> -->
-   <!-- <script src="js/particles-settings.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js"></script>
+   <script src="js/particles-settings.js"></script>
    <script src="js/counter.js"></script>
    <!-- <script src="js/mindMapAni.js"></script> -->
    <script src="js/scrollTriggerAnimation.js"></script>

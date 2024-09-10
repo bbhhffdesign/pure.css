@@ -4,6 +4,7 @@
 .faq{
     color: $blanco;
     height: auto;
+    min-height: 150vh;
 
    .faq-text{
     z-index: 1;
@@ -11,6 +12,7 @@
    }
 
    .faq-container{
+    background: $colorPrimarioTransparent;
     z-index: 1;
 
    }
@@ -23,8 +25,7 @@
     padding: $spac-s;
     @include flex(column, center, center,none);
     @include glass-bg;
-    background-color: $colorPrimarioTransparent;
-
+    // background-color: $colorPrimarioTransparent;
 
     &:hover{
 
