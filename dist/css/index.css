@@ -2596,6 +2596,7 @@ span {
   border-top: solid 1px #cccccc;
   border-bottom: solid 1px #cccccc;
   z-index: 1;
+  overflow-y: hidden;
 }
 .services .services-text::before {
   content: "";

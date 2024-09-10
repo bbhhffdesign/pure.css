@@ -17,6 +17,7 @@
     border-top: $border-white;
     border-bottom: $border-white;
     z-index: 1;
+    overflow-y: hidden;
 
     @include desktop-sm{
       padding: 2rem 0;
