@@ -9,6 +9,8 @@
   .gemstone-text {
     z-index: 1;
     text-align: center;
+    min-height: 350px;
+    overflow-y: hidden;
   }
 
   .gemstone-svg{

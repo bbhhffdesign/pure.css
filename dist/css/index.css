@@ -2697,6 +2697,8 @@ span {
 .gemstone .gemstone-text {
   z-index: 1;
   text-align: center;
+  min-height: 350px;
+  overflow-y: hidden;
 }
 .gemstone .gemstone-svg {
   height: 100px;

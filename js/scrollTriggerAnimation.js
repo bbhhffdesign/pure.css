@@ -20,7 +20,26 @@ const gemstoneText1 = document.getElementById("gemstone-text-1");
 const gemstoneText2 = document.getElementById("gemstone-text-2");
 const gemstoneText3 = document.getElementById("gemstone-text-3");
 
-//gemstoneSvg
+tl_gemstoneTextMobile = gsap.timeline({
+    scrollTrigger:{
+        trigger: gemstoneText,
+        // markers: true,
+        start: "-50% center",
+        end: "bottom center"
+    }
+})
+
+tl_gemstoneTextMobile.to(gemstoneText1, {
+    duration: 3,
+    text: "Creamos el metodo Gemstone: ",
+    ease: "power1.inOut"
+}).to(gemstoneText2, {
+    duration: 5,
+    text: "Nuestro objetivo es esculpir tu negocio encontrado la gema que diferencia tu marca.",
+    ease: "linear"
+}).from(gemstoneText3,{y:500, duration:1, ease: "circ.out" })
+
+//gemstoneSvgs
 const gemstoneSvg = document.getElementById("gemstoneSvg");
 
 
@@ -54,15 +73,14 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
             start : "top center",
             end: "bottom center" ,
             onLeave: ()=> tl_servicesTextMobile.stop(),
-            onLeaveBack: ()=> tl_servicesTextMobile.reverse()
+            // onLeaveBack: ()=> tl_servicesTextMobile.reverse()
         }
 
     })
     tl_servicesTextMobile
                 .from(servicesText1,{y:500, ease: "circ.out"}, "<")
-                .from(servicesText2,{y:500, ease: "circ.out"}, "<")
-                .from(servicesText3,{y:500, ease: "circ.out"}, "<")
-
+                .from(servicesText2,{y:500, ease: "circ.out", delay: .5}, "<")
+                .from(servicesText3,{y:500, ease: "circ.out", delay: .6}, "<")
     const tl_servicesBox1Mobile = gsap.timeline({
         scrollTrigger:{
             trigger: servicesBox1,
@@ -71,7 +89,7 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
             end: "top center",
             onEnter: () => tl_servicesBox1Mobile.play(),
             onEnterBack: () => tl_servicesBox1Mobile.play(),
-            onLeaveBack: () => tl_servicesBox1Mobile.reverse()
+            // onLeaveBack: () => tl_servicesBox1Mobile.reverse()
         }
     })
 
@@ -88,7 +106,7 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
             end: "center center",
             onEnter: () => tl_servicesBox2Mobile.play(),
             onEnterBack: () => tl_servicesBox2Mobile.play(),
-            onLeaveBack: () => tl_servicesBox2Mobile.reverse()
+            // onLeaveBack: () => tl_servicesBox2Mobile.reverse()
         }
     })
 
@@ -99,12 +117,12 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
     const tl_servicesBox3Mobile = gsap.timeline({
         scrollTrigger:{
             trigger: servicesBox3,
-            markers: true,
+            // markers: true,
             start: "-170% center",
             end: "center center",
             onEnter: () => tl_servicesBox3Mobile.play(),
             onEnterBack: () => tl_servicesBox3Mobile.play(),
-            onLeaveBack: () => tl_servicesBox3Mobile.reverse()
+            // onLeaveBack: () => tl_servicesBox3Mobile.reverse()
         }
     })  
     tl_servicesBox3Mobile
