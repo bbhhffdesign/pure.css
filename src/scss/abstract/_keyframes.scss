@@ -1,0 +1,15 @@
+.blinking-cursor{
+    animation: blink .5s steps(1) infinite;
+}
+
+@keyframes blink{
+    0%{
+        display: none;
+    }
+    50%{
+        display: inline-block;
+    }
+    100%{
+        display: none;
+    }
+}

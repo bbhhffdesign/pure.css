@@ -8,9 +8,14 @@
 
   .gemstone-text {
     z-index: 1;
-    text-align: center;
+    // text-align: center;
     min-height: 350px;
     overflow-y: hidden;
+  }
+
+  #gemstone-text-1,
+  #gemstone-text-2{
+    color: $blanco;
   }
 
   .gemstone-svg{

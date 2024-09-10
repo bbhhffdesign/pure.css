@@ -3,6 +3,7 @@
 @forward './abstract/globales';
 @forward 'components/buttons';
 @forward './abstract/utilidades';
+@forward './abstract/keyframes';
 @forward './layout/nav';
 @forward 'components/counter';
 @forward './layout/hero';
@@ -12,13 +13,8 @@
 @forward './layout/faq';
 @forward './layout/footer';
 
-html, body {
-    // overflow: hidden; /* Evita el scroll nativo del navegador */
-  }
-
 body{
     background-color: #000000;
     overflow-x: hidden;
-    max-width: 100vw;
 }
 

@@ -668,12 +668,17 @@
       </section>
       <div class="spacer-md"></div>
       <section class="gemstone pure-g fh">
-         <div class="gemstone-text pure-u-1" id="gemstone-text">
-            <h2 id="gemstone-text-1"></h2>
-            <p id="gemstone-text-2">
-
+         <div class="gemstone-text pure-u-1 p-s" id="gemstone-text">
+            <h2 >
+               <span id="gemstone-text-1" ></span>
+               <span class="blinking-cursor" id="gemstone-text-1-cursor">|</span>
+            </h2>
+            <p>
+               <span id="gemstone-text-2" ></span>
+               <span class="blinking-cursor" id="gemstone-text-2-cursor">|</span>
+            
             </p>
-            <h3 id="gemstone-text-3"><span>¿Como funciona?</span></h3>
+            <h3 class="txt-cntr" id="gemstone-text-3" ><span>¿Como funciona?</span></h3>
             <svg width="auto" height="auto" viewBox="0 0 25.746197 52.576607" version="1.1" class="gemstone-svg"
                id="gemstoneSvg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
@@ -861,29 +866,11 @@
    </main>
    <div class="bg__hero" id="tsparticles"></div>
    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-   <script class="lenisnew">
-      function isMobile() {
-         return window.innerWidth <= 768;
-      }
 
-      const lenis = new Lenis({
-         lerp: isMobile() ? 0.001 : 0.1, // Cambiar la velocidad del scroll, donde 0.01 es más lento
-         smooth: true,
-         direction: 'vertical',
-      })
-
-      function raf(time) {
-         lenis.raf(time)
-         requestAnimationFrame(raf)
-      }
-
-      requestAnimationFrame(raf)
-
-   </script>
-   <!-- <script>
+   <script>
   const lenis = new Lenis({
   smooth: true,
-  lerp: 0.01, // Reduce el valor de lerp para hacer el scroll más pesado
+  lerp: 0.1, // Reduce el valor de lerp para hacer el scroll más pesado
   wheelMultiplier: 0.3,
   smoothTouch: true,
   touchMultiplier: 10 // Aumenta este valor para que el scroll en móviles sea mucho más lento
@@ -899,7 +886,7 @@
       }
 
       requestAnimationFrame(raf);
-   </script> -->
+   </script>
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>

@@ -45,6 +45,7 @@
       padding: $spac-s;
       text-align: center;
       z-index: 1;
+      overflow-y: hidden;
       @include glass-bg{
         border-radius: $border-rad-s
       };
