@@ -12,6 +12,10 @@
 @forward './layout/faq';
 @forward './layout/footer';
 
+html, body {
+    overflow: hidden; /* Evita el scroll nativo del navegador */
+  }
+
 body{
     background-color: #000000;
     overflow-x: hidden;
