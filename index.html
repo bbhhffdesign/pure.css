@@ -24,7 +24,7 @@
 </head>
 
 <body>
-   
+
    <main>
       <nav class="nav p-s p-md-m m-auto">
          <a href="#">
@@ -650,7 +650,7 @@
                </div>
             </div>
             <div class="service pure-1 pure-lg-1-3" id="services-box-3">
-               <div class="marca" id="services-box-3-content">   
+               <div class="marca" id="services-box-3-content">
                   <div class="logo-title">
                      <img src="assets/img/marca-sm.svg" alt="oferta" />
                      <h3>Desarrollo de marca</h3>
@@ -662,7 +662,7 @@
                         <strong>notoriedad</strong>
                      </p>
                   </div>
-               </div>      
+               </div>
             </div>
          </div>
       </section>
@@ -674,8 +674,8 @@
 
             </p>
             <h3 id="gemstone-text-3"><span>¿Como funciona?</span></h3>
-            <svg width="auto" height="auto" viewBox="0 0 25.746197 52.576607" version="1.1" class="gemstone-svg" id="gemstoneSvg"
-               xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            <svg width="auto" height="auto" viewBox="0 0 25.746197 52.576607" version="1.1" class="gemstone-svg"
+               id="gemstoneSvg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
                xmlns:svg="http://www.w3.org/2000/svg">
                <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
@@ -862,6 +862,22 @@
    <div class="bg__hero" id="tsparticles"></div>
    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
    <script class="lenisnew">
+      function isMobile() {
+         return window.innerWidth <= 768;
+      }
+
+      const lenis = new Lenis({
+         lerp: isMobile() ? 0.01 : 0.1, // Cambiar la velocidad del scroll, donde 0.01 es más lento
+         smooth: true,
+         direction: 'vertical',
+      })
+
+      function raf(time) {
+         lenis.raf(time)
+         requestAnimationFrame(raf)
+      }
+
+      requestAnimationFrame(raf)
 
    </script>
    <!-- <script>
