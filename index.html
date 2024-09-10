@@ -862,13 +862,13 @@
    <div class="bg__hero" id="tsparticles"></div>
    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
    <script>
-      const lenis = new Lenis({
-         smooth: true,
-         lerp: 0.05,
-         wheelMultiplier: 0.3,
-         smoothTouch: true,
-         touchMultiplier: 3
-      });
+  const lenis = new Lenis({
+  smooth: true,
+  lerp: 0.01, // Reduce el valor de lerp para hacer el scroll más pesado
+  wheelMultiplier: 0.3,
+  smoothTouch: true,
+  touchMultiplier: 10 // Aumenta este valor para que el scroll en móviles sea mucho más lento
+});
 
       lenis.on("scroll", (e) => {
          // console.log(e);
