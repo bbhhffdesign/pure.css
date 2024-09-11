@@ -25,6 +25,7 @@
         h2{
             width: 100%;
             text-align: center;
+            @include text-gradient;
         }
     }
     .hero-text{

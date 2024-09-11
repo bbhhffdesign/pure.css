@@ -12,7 +12,7 @@
   .services-text {
     position: relative;
     height: auto;
-    @include glass-bg($transparentGrey);
+    // @include glass-bg($transparentGrey);
     border-top: $border-white;
     border-bottom: $border-white;
     z-index: 1;
@@ -50,9 +50,9 @@
       text-align: center;
       z-index: 1;
       overflow-y: hidden;
-      @include glass-bg($transparentBlack){
-        border-radius: $border-rad-s
-      };
+      // @include glass-bg($transparentBlack){
+      //   border-radius: $border-rad-s
+      // };
 
       @include tablet{
         width: 70%;

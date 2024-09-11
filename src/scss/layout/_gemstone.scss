@@ -13,30 +13,11 @@
   }
 
 
-  // h2{
-  //   background-color: red;
-  //   display: inline-block;
-  //   width: 98%;
-  //   margin: 0 auto;
+  h2{
+    @include text-gradient;
 
-  // }
-
-  #gemstone-text-1,
-  #gemstone-text-2{
-    color: $blanco;
-    // display: inline;
-    // width: 100%;
   }
-  // #gemstone-text-3{
 
-  // }
-
-  .gemstone-svg{
-    height: 100px;
-    width: auto;
-    stroke-dashoffset: 200;
-    stroke-dasharray: 200;
-  }
 
   .paso {
     position: relative;
@@ -45,11 +26,12 @@
     z-index: 1;
     border: $border-white;
     border-radius: $border-rad-s;
+    @include glass-bg;
 
-    @include glass-bg(rgba(0, 0, 0, 0.562)) {
-      // background-color: #3333338f;
-      border-radius: $border-rad-s;
-    }
+    // @include glass-bg(rgba(0, 0, 0, 0.562)) {
+    //   // background-color: #3333338f;
+    //   border-radius: $border-rad-s;
+    // }
 
     h3 {
       margin: 0;
