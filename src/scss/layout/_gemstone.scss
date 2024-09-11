@@ -8,15 +8,28 @@
 
   .gemstone-text {
     z-index: 1;
-    // text-align: center;
     min-height: 350px;
     overflow-y: hidden;
   }
 
+
+  // h2{
+  //   background-color: red;
+  //   display: inline-block;
+  //   width: 98%;
+  //   margin: 0 auto;
+
+  // }
+
   #gemstone-text-1,
   #gemstone-text-2{
     color: $blanco;
+    // display: inline;
+    // width: 100%;
   }
+  // #gemstone-text-3{
+
+  // }
 
   .gemstone-svg{
     height: 100px;

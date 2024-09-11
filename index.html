@@ -51,9 +51,9 @@
                <p class="seconds__text fs-s fs-md-m fs-xxlg-l">seg</p>
             </div>
          </div>
-         <button class="btn-pri">AGENDATE</button>
+         <button class="btn-pri" id="navBtn">AGENDATE</button>
       </nav>
-      <section class="pure-g p-md-m p-lg-l hero" id="hero">
+      <section class="hero pure-g p-md-m p-lg-l" id="hero">
          <div class="pure-u-1 pure-u-lg-1-2 fh">
             <div class="hero-text p-m">
                <h1>Crafting brands, amplifying impact</h1>
@@ -64,8 +64,8 @@
                <div>
                   <p>
                      Te ayudamos a posicionarte en el mercado.<br />
-                     <span>Diferenciando</span> tu negocio.<br />
-                     <span>Aumentando</span> la rentabilidad.
+                     <span id="hero-text-1">Diferenciando</span> tu negocio.<br />
+                     <span id="hero-text-2">Aumentando</span> la rentabilidad.
                   </p>
                </div>
                <button class="button btn-pri">AGENDATE</button>
@@ -669,16 +669,21 @@
       <div class="spacer-md"></div>
       <section class="gemstone pure-g fh">
          <div class="gemstone-text pure-u-1 p-s" id="gemstone-text">
-            <h2 >
-               <span id="gemstone-text-1" ></span>
-               <span class="blinking-cursor" id="gemstone-text-1-cursor">|</span>
-            </h2>
+               <h2 >
+                  <span id="gemstone-text-1" ></span>
+                  <span id="gemstone-text-1-2" style="color: white;" ></span>
+                  <span class="blinking-cursor" id="gemstone-text-1-cursor">|</span>
+               </h2>
             <p>
                <span id="gemstone-text-2" ></span>
                <span class="blinking-cursor" id="gemstone-text-2-cursor">|</span>
             
             </p>
-            <h3 class="txt-cntr" id="gemstone-text-3" ><span>¿Como funciona?</span></h3>
+            <h3 class="txt-cntr">
+               <span class="gemstone-text-3" id="gemstone-text-3"></span>
+               <span class="blinking-cursor" id="gemstone-text-3-cursor" style="color: white;">|</span>
+
+            </h3>
             <svg width="auto" height="auto" viewBox="0 0 25.746197 52.576607" version="1.1" class="gemstone-svg"
                id="gemstoneSvg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
@@ -893,7 +898,8 @@
    <!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js"></script> -->
    <script src="js/particles-settings.js"></script>
    <script src="js/counter.js"></script>
-   <!-- <script src="js/mindMapAni.js"></script> -->
+   <script src="js/text_animations.js"></script>
+   <script src="js/mindMapAni2.js"></script>
    <script src="js/scrollTriggerAnimation.js"></script>
 </body>
 

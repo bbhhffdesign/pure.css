@@ -16,11 +16,13 @@ const servicesBox3Content = document.getElementById("services-box-3-content");
 
 //gemstoneText
 const gemstoneText = document.getElementById("gemstone-text");
+const gemstoneText1_2 = document.getElementById("gemstone-text-1-2");
 const gemstoneText1 = document.getElementById("gemstone-text-1");
 const gemstoneText1Cursor = document.getElementById("gemstone-text-1-cursor");
 const gemstoneText2 = document.getElementById("gemstone-text-2");
 const gemstoneText2Cursor = document.getElementById("gemstone-text-2-cursor");
 const gemstoneText3 = document.getElementById("gemstone-text-3");
+const gemstoneText3Cursor = document.getElementById("gemstone-text-3-cursor");
 
 tl_gemstoneTextMobile = gsap.timeline({
     scrollTrigger:{
@@ -34,17 +36,27 @@ tl_gemstoneTextMobile = gsap.timeline({
 tl_gemstoneTextMobile
 .from(gemstoneText1Cursor, {opacity:0})
 .to(gemstoneText1, {
-    duration: 3,
-    text: "Creamos el metodo Gemstone: ",
+    duration: 2,
+    text: "Creamos el metodo ",
     ease: "power1.inOut"})
-.to(gemstoneText1Cursor, {duration:0, opacity:0})
+.to(gemstoneText1_2, {
+    duration: 1,
+    text: "Gemstone: ",
+    ease: "power1.inOut"})
+.to(gemstoneText1Cursor, {duration:0, display: "none"})
 .from(gemstoneText2Cursor, {opacity:0})
 .to(gemstoneText2, {
     duration: 5,
-    text: "Nuestro objetivo es esculpir tu negocio encontrado la gema que diferencia tu marca.",
+    text: "Nuestro objetivo es esculpir &nbsp; tu negocio  encontrado la gema que diferencia tu marca.",
     ease: "linear"})
-.to(gemstoneText2Cursor, {duration:0, opacity:0})
-.from(gemstoneText3,{y:500, duration:1, delay: .5, ease: "circ.out" })
+.to(gemstoneText2Cursor, {duration:0, display: "none"})
+.from(gemstoneText3Cursor, {opacity:0})
+.to(gemstoneText3,{
+    duration: 2,
+    text: "¿Como funciona? ",
+    ease: "power1.inOut"
+})
+.to(gemstoneText3Cursor, {duration:0, display: "none"})
 
 //gemstoneSvgs
 const gemstoneSvg = document.getElementById("gemstoneSvg");
