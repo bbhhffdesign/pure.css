@@ -71,14 +71,18 @@
     }
 
     .mindmap-title-container{
-        position: relative;
+        position: absolute;
         margin: 2rem auto;
         overflow: hidden;
         // padding: 1rem;
+        @include centrarhorizontal;
+        width: 100%;
+        top: 50%;
+
 
         h2{
             margin: 0;
-            @include glass-bg;
+            // @include glass-bg;
             // padding:  2rem 0;
             
         }
@@ -95,8 +99,10 @@
 
     .mindmap-container{
         position: relative;
+        // display: inline-block;
         width: 95%;
-        height: auto;
+        // height: 100px;
+        // height: 500px;
         background-color: #333;
         padding: 1rem 0;
         border: $border-white;
@@ -114,6 +120,7 @@
 
         svg{
             width: 95%;
+            opacity: 0;
         }
 
         @include desktop-sm{

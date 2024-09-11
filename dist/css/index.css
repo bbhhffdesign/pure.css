@@ -2570,22 +2570,16 @@ span {
   }
 }
 .hero .mindmap-title-container {
-  position: relative;
+  position: absolute;
   margin: 2rem auto;
   overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  top: 50%;
 }
 .hero .mindmap-title-container h2 {
   margin: 0;
-  background-color: transparent;
-}
-.hero .mindmap-title-container h2::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: transparent;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
 }
 .hero .mindmap-gradient {
   position: absolute;
@@ -2597,7 +2591,6 @@ span {
 .hero .mindmap-container {
   position: relative;
   width: 95%;
-  height: auto;
   background-color: #333;
   padding: 1rem 0;
   border: solid 1px #cccccc;
@@ -2623,6 +2616,7 @@ span {
 }
 .hero .mindmap-container svg {
   width: 95%;
+  opacity: 0;
 }
 @media (min-width: 64rem) {
   .hero .mindmap-container {
@@ -2700,6 +2694,10 @@ span {
 }
 .services .services-boxes h2 {
   margin: 5rem 0 4rem 0;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0;
 }
 .services .services-boxes .service {
   margin: 1rem;

@@ -5,6 +5,9 @@ const servicesText = document.getElementById("services-text")
 const servicesText1 = document.getElementById("services-text-1") 
 const servicesText2 = document.getElementById("services-text-2") 
 const servicesText3 = document.getElementById("services-text-3") 
+const servicesLogoTitle1 = document.getElementById("services-logo-title-1") 
+const servicesLogoTitle2 = document.getElementById("services-logo-title-2") 
+const servicesLogoTitle3 = document.getElementById("services-logo-title-3") 
 
 //servicesBoxes
 const servicesBox1 = document.getElementById("services-box-1");
@@ -116,7 +119,7 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
 
     tl_servicesBox1Mobile
                 // .from(servicesBox1,{y:"120%", duration:.5, ease: "power2.out"})
-                .from(servicesBox1Content,{opacity:0, y:0})
+                .from(servicesLogoTitle1,{opacity:0, y:0})
 
 
     const tl_servicesBox2Mobile = gsap.timeline({

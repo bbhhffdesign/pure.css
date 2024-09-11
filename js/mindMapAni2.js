@@ -104,32 +104,32 @@ tl_mindmap
     .from(agendaBig, { opacity: 0 })
     .from(agendaBigBg, { opacity: 0 }, "<")
     .to(flecha8, { strokeDashoffset: 0 })
-    .from(no3, { opacity: 0 }, "<10%")
-    .from(camino, { opacity: 0 })
-    .from(
-      iconoTick,
-      {
-        opacity: 0,
-        scale: 0.5,
-        transformOrigin: "50% 50%",
-        ease: "bounce.out",
-        duration: 0.8,
-      },
-      "<"
-    )
+    // .from(no3, { opacity: 0 }, "<10%")
+    // .from(camino, { opacity: 0 })
+    // .from(
+    //   iconoTick,
+    //   {
+    //     opacity: 0,
+    //     scale: 0.5,
+    //     transformOrigin: "50% 50%",
+    //     ease: "bounce.out",
+    //     duration: 0.8,
+    //   },
+    //   "<"
+    // )
 
-    .to(flechaF1, { strokeDashoffset: 0 }, "<")
-    .from(logoGallmarquez, { opacity: 0 },"< +50%")
-    .to(flechaF2, { strokeDashoffset: 0 }, "<")
-    .from(logoUdana, { opacity: 0 },"< +50%")
-    .to(flechaF3, { strokeDashoffset: 0 }, "<")
-    .from(logoX, { opacity: 0 }, "< +50%")
-    .to(flechaF4, { strokeDashoffset: 0 }, "<")
-    .from(logoBelen, { opacity: 0 }, "< +50%")
-    .to(flechaF5, { strokeDashoffset: 0 }, "<")
-    .from(logoSound, { opacity: 0 }, "< +50%")
-    .to(flechaF6, { strokeDashoffset: 0 }, "<")
-    .from(logoYamatec, { opacity: 0 }, "< +60%");
+    // .to(flechaF1, { strokeDashoffset: 0 }, "<")
+    // .from(logoGallmarquez, { opacity: 0 },"< +50%")
+    // .to(flechaF2, { strokeDashoffset: 0 }, "<")
+    // .from(logoUdana, { opacity: 0 },"< +50%")
+    // .to(flechaF3, { strokeDashoffset: 0 }, "<")
+    // .from(logoX, { opacity: 0 }, "< +50%")
+    // .to(flechaF4, { strokeDashoffset: 0 }, "<")
+    // .from(logoBelen, { opacity: 0 }, "< +50%")
+    // .to(flechaF5, { strokeDashoffset: 0 }, "<")
+    // .from(logoSound, { opacity: 0 }, "< +50%")
+    // .to(flechaF6, { strokeDashoffset: 0 }, "<")
+    // .from(logoYamatec, { opacity: 0 }, "< +60%");
 
 aniStartBtn.addEventListener("click",()=>{
     tl_mindmap.play()
