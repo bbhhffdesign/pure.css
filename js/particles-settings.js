@@ -10,7 +10,7 @@
             },
             color: "#003399",
             links:{
-                enable: true,
+                enable: false,
                 distance: 300,
                 color: "#003399",
             },
@@ -20,7 +20,7 @@
             },
             size:{
                 // value:{min:10, max:50}
-                value:0            },
+                value:2            },
             opacity: {
                 value: 0.8
             }
