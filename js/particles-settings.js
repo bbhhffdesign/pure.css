@@ -10,8 +10,8 @@
             },
             color: "#003399",
             links:{
-                enable: false,
-                distance: 300,
+                enable: true,
+                distance: 100,
                 color: "#003399",
             },
             move:{
@@ -19,10 +19,11 @@
                 speed: 1
             },
             size:{
-                // value:{min:10, max:50}
-                value:2            },
+                // value:{min:1, max:2}
+                value:0
+                        },
             opacity: {
-                value: 0.8
+                value: 1
             }
          
         }
