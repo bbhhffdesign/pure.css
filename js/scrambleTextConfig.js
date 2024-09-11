@@ -13,7 +13,7 @@ var scrambleText_1 = new ScrambleText(
 var scrambleText_2 = new ScrambleText(
 	heroTextScram_2,
 	{
-		timeOffset : 300,
+		timeOffset : 400,
 	}
 ).stop();
 
@@ -22,5 +22,5 @@ let tl_hero = gsap.timeline();
 tl_hero
     .add( ()=> scrambleText_1.play().start())
     .add( ()=> scrambleText_2.play().start())
-    .from(heroTextNoScram_1, {delay: 4,duration:.1, opacity:0})
+    .from(heroTextNoScram_1, {delay: 4.1,duration:.1, opacity:0})
     .from(heroTextNoScram_2, {duration:.1, opacity:0},"<")
