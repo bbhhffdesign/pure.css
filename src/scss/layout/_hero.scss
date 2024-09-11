@@ -21,7 +21,7 @@
         }
     }
 
-    &>:nth-child(2){
+    & > :nth-child(2){
         h2{
             width: 100%;
             text-align: center;
@@ -30,7 +30,18 @@
     .hero-text{
         position: relative;
         gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
-        
+
+        .hero-p-container > p{
+            overflow-y: hidden;
+
+            span{
+                display: inline-block;
+            }
+
+        }
+
+
+
         h1{
             margin: 0;
         }
@@ -59,6 +70,29 @@
         }
     }
 
+    .mindmap-title-container{
+        position: relative;
+        margin: 2rem auto;
+        overflow: hidden;
+        // padding: 1rem;
+
+        h2{
+            margin: 0;
+            @include glass-bg;
+            // padding:  2rem 0;
+            
+        }
+    }
+
+    .mindmap-gradient{
+        position: absolute;
+        width: 100%;
+        bottom: -50%;
+        z-index: -1;
+        opacity: .5;
+
+    }
+
     .mindmap-container{
         position: relative;
         width: 95%;
@@ -67,10 +101,8 @@
         padding: 1rem 0;
         border: $border-white;
         border-radius: $border-rad-xs;
-        // @include glass-bg(rgba(0, 0, 0, 0.493));
         @include glass-bg(rgba(0, 0, 0, 0.61));
         overflow: hidden;
-
 
 
         .scrolldown{
