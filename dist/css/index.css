@@ -2042,6 +2042,14 @@ span {
   height: 15rem;
 }
 
+.color-white {
+  color: #c6c6c6;
+}
+
+.color-white-true {
+  color: #ffffff;
+}
+
 .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
   background-color: #ccff66;
   border-radius: 0.3rem 0.05rem;
