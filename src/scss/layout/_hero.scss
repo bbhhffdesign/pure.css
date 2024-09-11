@@ -36,6 +36,19 @@
         }
         button{
             width: 40%;
+
+            // &::before{
+            //     content: '';
+            //     position: absolute;
+            //     inset: 0;
+            //     height: 10px;
+            //     width: 10px;
+            //     background-color: red;
+            //     left: 50%;
+            //     top: 50%;
+            //     filter: drop-shadow(0 10px 10px rgb(160, 0, 210));
+
+            // }
         }
 
         @include desktop-sm{

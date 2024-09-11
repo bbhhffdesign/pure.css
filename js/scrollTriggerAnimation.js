@@ -97,9 +97,9 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
 
     })
     tl_servicesTextMobile
-                .from(servicesText1,{y:500, ease: "circ.out"}, "<")
-                .from(servicesText2,{y:500, ease: "circ.out", delay: .5}, "<")
-                .from(servicesText3,{y:500, ease: "circ.out", delay: .6}, "<")
+                .from(servicesText1,{curation: .8, opacity:0, y:50, ease: "power4.out"}, "<")
+                .from(servicesText2,{curation: .8, opacity:0, y:50, ease: "power4.out"}, "<")
+                // .from(servicesText3,{curation: .8, opacity:0, y:50, ease: "power4.out"}, "<")
 
 
     const tl_servicesBox1Mobile = gsap.timeline({
@@ -116,7 +116,7 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
 
     tl_servicesBox1Mobile
                 // .from(servicesBox1,{y:"120%", duration:.5, ease: "power2.out"})
-                .from(servicesBox1Content,{opacity:0})
+                .from(servicesBox1Content,{opacity:0, y:30})
 
 
     const tl_servicesBox2Mobile = gsap.timeline({
@@ -133,7 +133,7 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
 
     tl_servicesBox2Mobile
                 // .from(servicesBox2,{y:"120%", duration:.5, ease: "power2.out"})
-                .from(servicesBox2Content,{y:500})
+                .from(servicesBox2Content,{opacity:0, y:30})
     
     const tl_servicesBox3Mobile = gsap.timeline({
         scrollTrigger:{
@@ -148,7 +148,7 @@ matchMediaMobile.add("(max-width: 768px)", () =>{
     })  
     tl_servicesBox3Mobile
                 // .from(servicesBox3,{y:"120%", duration:.5, ease: "power2.out"})
-                .from(servicesBox3Content,{opacity:0})
+                .from(servicesBox3Content,{opacity:0, y:30})
 });
 
 

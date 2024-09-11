@@ -19,7 +19,7 @@
             },
             move:{
                 enable: true,
-                speed: 3
+                speed: 2
             },
             size:{
                 // value:{min:1, max:2}

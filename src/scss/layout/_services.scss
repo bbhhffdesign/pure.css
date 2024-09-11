@@ -4,6 +4,9 @@
 .services {
   color: $blanco;
   height: auto;
+  
+
+
 
   @include desktop-sm{
     height: 130dvh;
@@ -86,6 +89,10 @@
           }
         }
 
+        h2,
+        h3{
+          color: white;
+        }
         h3{
 
           margin-top: .5rem;

@@ -2,13 +2,14 @@
 @use './mixins' as *;
 
 h1{
-    @include font-raleway(600);
-    font-size: clamp(2.2rem, 0.171rem + 9.02vw, 4.5rem);
-    margin-bottom: 1.5rem;
-    margin-top: 1.6rem;
-    @include desktop-sm{
-        font-size: 3.8rem;
-    }
+    font-size: 3rem;
+    // @include font-raleway(600);
+    // font-size: clamp(2.2rem, 0.171rem + 9.02vw, 4.5rem);
+    // margin-bottom: 1.5rem;
+    // margin-top: 1.6rem;
+    // @include desktop-sm{
+    //     font-size: 3.8rem;
+    // }
 }
 h2{
     @include font-raleway(600);

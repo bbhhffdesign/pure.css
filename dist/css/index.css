@@ -1957,18 +1957,7 @@ striping:
   }
 }
 h1 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: clamp(2.2rem, 0.171rem + 9.02vw, 4.5rem);
-  margin-bottom: 1.5rem;
-  margin-top: 1.6rem;
-}
-@media (min-width: 64rem) {
-  h1 {
-    font-size: 3.8rem;
-  }
+  font-size: 3rem;
 }
 
 h2 {
@@ -2700,6 +2689,10 @@ span {
   .services .services-boxes .service .logo-title img {
     height: 80px;
   }
+}
+.services .services-boxes .service .logo-title h2,
+.services .services-boxes .service .logo-title h3 {
+  color: white;
 }
 .services .services-boxes .service .logo-title h3 {
   margin-top: 0.5rem;
