@@ -36,7 +36,7 @@ font-style: normal;
 }
 
 //glassfx
-@mixin glass-bg($color: transparent, $blur:4px ){
+@mixin glass-bg($color: transparent, $blur:10px ){
   background-color: $transparent0;
 
   &::before{

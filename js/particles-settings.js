@@ -6,21 +6,24 @@
       options: {
         particles:{
             number:{
-                value:10
+                value:4
             },
             color: "#003399",
             links:{
                 enable: true,
+                size:{
+                    value: 10
+                },
                 distance: 100,
                 color: "#003399",
             },
             move:{
                 enable: true,
-                speed: 1
+                speed: 3
             },
             size:{
                 // value:{min:1, max:2}
-                value:0
+                value:100
                         },
             opacity: {
                 value: 1
