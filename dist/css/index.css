@@ -1957,10 +1957,23 @@ striping:
   }
 }
 h1 {
-  font-size: 3rem;
+  color: #ffffff;
+  font-size: clamp(3.2rem, 1.2rem + 10vw, 6rem);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 1.5rem;
+  margin-top: 1.6rem;
+}
+@media (min-width: 64rem) {
+  h1 {
+    font-size: 3.8rem;
+  }
 }
 
 h2 {
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -1976,6 +1989,7 @@ h2 {
 }
 
 h3 {
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -2088,7 +2102,7 @@ span {
 .btn-pri-xxl:hover {
   box-shadow: none;
   background-color: transparent;
-  color: #b6b6b6;
+  color: #c6c6c6;
   border: solid 1px #cccccc;
 }
 
@@ -2453,7 +2467,7 @@ span {
   align-items: center;
   gap: none;
   gap: 0.5rem;
-  color: #b6b6b6;
+  color: #c6c6c6;
   border-top: solid 1px #cccccc;
   border-bottom: solid 1px #cccccc;
   padding: 0.3rem 0;
@@ -2477,10 +2491,16 @@ span {
 
 .hero {
   position: relative;
-  color: #b6b6b6;
+  color: #c6c6c6;
   justify-content: center;
   padding-top: 2rem;
   z-index: 1;
+  height: 200dvh;
+}
+@media (min-width: 64rem) {
+  .hero {
+    height: 100dvh;
+  }
 }
 .hero div {
   display: flex;
@@ -2493,6 +2513,10 @@ span {
   .hero div {
     max-width: 40rem;
   }
+}
+.hero > :nth-child(2) h2 {
+  width: 100%;
+  text-align: center;
 }
 .hero .hero-text {
   position: relative;
@@ -2521,6 +2545,11 @@ span {
 .hero .hero-text button {
   width: 40%;
 }
+@media (min-width: 37.5rem) {
+  .hero .hero-text button {
+    width: 30%;
+  }
+}
 @media (min-width: 64rem) {
   .hero .hero-text {
     padding-left: 0;
@@ -2547,6 +2576,8 @@ span {
           backdrop-filter: blur(10px);
 }
 .hero .mindmap-container .scrolldown {
+  padding: 0.5rem 2rem;
+  font-size: 200%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -2584,7 +2615,7 @@ span {
 }
 
 .services {
-  color: #b6b6b6;
+  color: #c6c6c6;
   height: auto;
 }
 @media (min-width: 64rem) {
@@ -2596,7 +2627,6 @@ span {
   position: relative;
   height: auto;
   background-color: transparent;
-  padding: 1rem 0;
   border-top: solid 1px #cccccc;
   border-bottom: solid 1px #cccccc;
   z-index: 1;
@@ -2613,7 +2643,7 @@ span {
 }
 @media (min-width: 64rem) {
   .services .services-text {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
   .services .services-text br {
     display: none;
@@ -2622,13 +2652,15 @@ span {
 .services .services-boxes {
   justify-content: center;
   width: 100%;
-  margin-top: 3rem;
 }
 @media (min-width: 64rem) {
   .services .services-boxes {
     margin-top: clamp(3rem, -1.923rem + 7.692vw, 5rem);
     gap: clamp(0.5rem, -4.423rem + 7.692vw, 2.5rem);
   }
+}
+.services .services-boxes h2 {
+  margin: 5rem 0 4rem 0;
 }
 .services .services-boxes .service {
   margin: 1rem;
@@ -2690,17 +2722,13 @@ span {
     height: 80px;
   }
 }
-.services .services-boxes .service .logo-title h2,
-.services .services-boxes .service .logo-title h3 {
-  color: white;
-}
 .services .services-boxes .service .logo-title h3 {
   margin-top: 0.5rem;
 }
 
 .gemstone {
   position: relative;
-  color: #b6b6b6;
+  color: #c6c6c6;
   height: auto;
 }
 .gemstone .gemstone-text {
@@ -2710,7 +2738,7 @@ span {
 }
 .gemstone #gemstone-text-1,
 .gemstone #gemstone-text-2 {
-  color: #b6b6b6;
+  color: #c6c6c6;
 }
 .gemstone .gemstone-svg {
   height: 100px;
@@ -2777,7 +2805,7 @@ span {
 }
 
 .faq {
-  color: #b6b6b6;
+  color: #c6c6c6;
   height: auto;
   min-height: 150vh;
 }
@@ -2861,7 +2889,7 @@ footer {
 
 .footer {
   max-width: 80rem;
-  color: #b6b6b6;
+  color: #c6c6c6;
   text-align: center;
 }
 .footer > div {

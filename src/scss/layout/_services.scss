@@ -5,9 +5,6 @@
   color: $blanco;
   height: auto;
   
-
-
-
   @include desktop-sm{
     height: 130dvh;
   }
@@ -15,15 +12,14 @@
   .services-text {
     position: relative;
     height: auto;
-    @include glass-bg(rgba(61, 61, 61, 0.45));
-    padding: 1rem 0;
+    @include glass-bg($transparentGrey);
     border-top: $border-white;
     border-bottom: $border-white;
     z-index: 1;
     overflow-y: hidden;
 
     @include desktop-sm{
-      padding: 2rem 0;
+      padding: 1rem 0;
       br{
         display: none;
       }
@@ -33,13 +29,15 @@
   .services-boxes{
     justify-content: center;
     width: 100%;
-    margin-top: 3rem;
 
     @include desktop-sm{
       margin-top: clamp(3rem, -1.923rem + 7.692vw, 5rem);
       gap: clamp(0.5rem, -4.423rem + 7.692vw, 2.5rem);
     }
     
+    h2{
+      margin: 5rem 0 4rem 0;
+    }
     .service{
       margin: $spac-s;
       position: relative;
@@ -49,7 +47,7 @@
       text-align: center;
       z-index: 1;
       overflow-y: hidden;
-      @include glass-bg(rgba(0, 0, 0, 0.466)){
+      @include glass-bg($transparentBlack){
         border-radius: $border-rad-s
       };
 
@@ -89,10 +87,6 @@
           }
         }
 
-        h2,
-        h3{
-          color: white;
-        }
         h3{
 
           margin-top: .5rem;

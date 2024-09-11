@@ -2,16 +2,17 @@
 @use './mixins' as *;
 
 h1{
-    font-size: 3rem;
-    // @include font-raleway(600);
-    // font-size: clamp(2.2rem, 0.171rem + 9.02vw, 4.5rem);
-    // margin-bottom: 1.5rem;
-    // margin-top: 1.6rem;
-    // @include desktop-sm{
-    //     font-size: 3.8rem;
-    // }
+    color: $blancoTrue;
+    font-size: clamp(3.2rem, 1.2rem + 10vw, 6rem);
+    @include font-raleway(600);
+    margin-bottom: 1.5rem;
+    margin-top: 1.6rem;
+    @include desktop-sm{
+        font-size: 3.8rem;
+    }
 }
 h2{
+    color:$blancoTrue;
     @include font-raleway(600);
     font-size: clamp(1.5rem, 0.618rem + 3.922vw, 2.5rem);
     margin-bottom: 1.2rem;
@@ -21,6 +22,7 @@ h2{
     }
 }
 h3{
+    color: $blancoTrue;
     @include font-raleway(600);
     font-size: clamp(1.2rem, 0.343rem + 4.286vw, 2.4rem); 
 
@@ -47,7 +49,6 @@ span{
     color: $colorSecundario;
 }
 .italic{
-    // color: $blanco;
     font-style: italic;
 }
 

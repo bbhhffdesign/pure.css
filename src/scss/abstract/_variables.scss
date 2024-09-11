@@ -2,15 +2,17 @@ $colorPrimario: #003399;
 $colorPrimarioTransparent: #0033993b;
 $colorSecundario: #ccff66;
 $colorSecundarioTransparent: #ccff663d;
-$blanco: #b6b6b6;
-$blancoViejo: #cccccc;
-$gris1: #999999;
+$blanco: #c6c6c6;
+$blancoTrue: #ffffff;
+$gris1: #cccccc;
 $gris2: #666666;
 $gris3: #333333;
 $negro: #000000;
 $transparent0: transparent;
 $transparent1: #cccccc0a;
 $transparent2: #cccccc0e;
+$transparentGrey: rgba(61, 61, 61, 0.45);
+$transparentBlack: rgba(0, 0, 0, 0.466);
 
 //media queries
 $mobile-sm: 24rem;

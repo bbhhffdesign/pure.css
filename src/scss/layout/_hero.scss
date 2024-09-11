@@ -7,11 +7,24 @@
     justify-content: center;
     padding-top: 2rem;   
     z-index: 1;
+    height: 200dvh;
+
+    @include desktop-sm{
+        height: 100dvh
+    }
+
 
     div{
         @include flex(column, center, flex-start, auto);
         @include desktop-sm{
             max-width: 40rem;
+        }
+    }
+
+    &>:nth-child(2){
+        h2{
+            width: 100%;
+            text-align: center;
         }
     }
     .hero-text{
@@ -36,19 +49,9 @@
         }
         button{
             width: 40%;
-
-            // &::before{
-            //     content: '';
-            //     position: absolute;
-            //     inset: 0;
-            //     height: 10px;
-            //     width: 10px;
-            //     background-color: red;
-            //     left: 50%;
-            //     top: 50%;
-            //     filter: drop-shadow(0 10px 10px rgb(160, 0, 210));
-
-            // }
+            @include tablet{
+                width: 30%;
+            }
         }
 
         @include desktop-sm{
@@ -68,7 +71,11 @@
         @include glass-bg(rgba(0, 0, 0, 0.61));
         overflow: hidden;
 
+
+
         .scrolldown{
+            padding: .5rem 2rem;
+            font-size: 200%;
             position: absolute;
             @include centrarhorizontal;
         }
@@ -98,9 +105,4 @@
         }
 
     }
-}
-
-#bgHero{
-    // position: absolute;
-    // z-index: -10;
 }
