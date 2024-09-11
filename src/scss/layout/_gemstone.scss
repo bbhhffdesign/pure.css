@@ -46,8 +46,8 @@
     border: $border-white;
     border-radius: $border-rad-s;
 
-    @include glass-bg {
-      background-color: #3333338f;
+    @include glass-bg(rgba(0, 0, 0, 0.562)) {
+      // background-color: #3333338f;
       border-radius: $border-rad-s;
     }
 
