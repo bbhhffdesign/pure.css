@@ -80,7 +80,7 @@
             font-family: 'monument_dos';
             font-weight: 100;
             letter-spacing: .5px;
-            font-size: clamp(1rem, 0.5rem + 2.5vw, 1.7rem);
+            font-size: clamp(1rem, 0.571rem + 2.143vw, 1.6rem);
             // @include text-gradient;
             color: $blanco;
             
@@ -90,14 +90,14 @@
             }
             
         }
-
-
-        //    width: 100%;
-
-    //     h2{
-    // //         margin: 0;
-
-    //     }
+        @include tablet{
+            br{
+                display: none;
+            }
+        }
+        @include desktop-sm{
+            display: none;
+        }
     }
 
     .mindmap-container{
@@ -112,17 +112,14 @@
 
 
         .scrolldown{
-            padding: .5rem 2rem;
+            padding: .3rem 2rem;
             font-size: 200%;
             position: absolute;
             @include centrarhorizontal;
         }
 
         svg{
-            width: 90%;
-            // width: 100%;
-            // width: 95%;
-            // opacity: 0;
+            margin: .5rem 0;
         }
 
 

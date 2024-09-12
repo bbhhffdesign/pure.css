@@ -4,13 +4,14 @@
 
 .nav{
     @extend .pure-menu-horizontal;
-    @include glass-bg($position: fixed, $zIndex1:0, $zIndex2:1,  $zIndex3:0);
+    @include glass-bg-only;
     inset: 0;
     height: 3rem;
     padding: $spac-xs 0;
-    border: none;
+    border: none; 
+    position: fixed;
     border-bottom: $border-white;
-    // z-index: 2;
+    z-index: 2;
 
 
 

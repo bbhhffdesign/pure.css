@@ -1,7 +1,13 @@
 @use './variables' as *;
 @use './mixins' as *;
 
+section{
+    margin-bottom: 10rem;
 
+    @include desktop-sm{
+        margin-bottom: 0;
+    }
+}
 
 h1{
     color: $blancoTrue;

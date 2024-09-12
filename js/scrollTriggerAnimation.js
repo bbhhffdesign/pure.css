@@ -36,30 +36,30 @@ tl_gemstoneTextMobile = gsap.timeline({
     }
 })
 
-tl_gemstoneTextMobile
-.from(gemstoneText1Cursor, {opacity:0})
-.to(gemstoneText1, {
-    duration: 2,
-    text: "Creamos el metodo ",
-    ease: "power1.inOut"})
-.to(gemstoneText1_2, {
-    duration: 1,
-    text: "Gemstone: ",
-    ease: "power1.inOut"})
-.to(gemstoneText1Cursor, {duration:0, display: "none"})
-.from(gemstoneText2Cursor, {opacity:0})
-.to(gemstoneText2, {
-    duration: 5,
-    text: "Nuestro objetivo es esculpir &nbsp; tu negocio  encontrado la gema que diferencia tu marca.",
-    ease: "linear"})
-.to(gemstoneText2Cursor, {duration:0, display: "none"})
-.from(gemstoneText3Cursor, {opacity:0})
-.to(gemstoneText3,{
-    duration: 2,
-    text: "¿Como funciona? ",
-    ease: "power1.inOut"
-})
-.to(gemstoneText3Cursor, {duration:0, display: "none"})
+// tl_gemstoneTextMobile
+// .from(gemstoneText1Cursor, {opacity:0})
+// .to(gemstoneText1, {
+//     duration: 2,
+//     text: "Creamos el metodo ",
+//     ease: "power1.inOut"})
+// .to(gemstoneText1_2, {
+//     duration: 1,
+//     text: "Gemstone: ",
+//     ease: "power1.inOut"})
+// .to(gemstoneText1Cursor, {duration:0, display: "none"})
+// .from(gemstoneText2Cursor, {opacity:0})
+// .to(gemstoneText2, {
+//     duration: 5,
+//     text: "Nuestro objetivo es esculpir &nbsp; tu negocio  encontrado la gema que diferencia tu marca.",
+//     ease: "linear"})
+// .to(gemstoneText2Cursor, {duration:0, display: "none"})
+// .from(gemstoneText3Cursor, {opacity:0})
+// .to(gemstoneText3,{
+//     duration: 2,
+//     text: "¿Como funciona? ",
+//     ease: "power1.inOut"
+// })
+// .to(gemstoneText3Cursor, {duration:0, display: "none"})
 
 //gemstoneSvgs
 const gemstoneSvg = document.getElementById("gemstoneSvg");

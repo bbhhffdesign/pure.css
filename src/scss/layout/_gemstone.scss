@@ -35,7 +35,10 @@
     //   border-radius: $border-rad-s;
     // }
 
-    h3 {
+    .paso-title {
+      color: white;
+      font-family: 'monument_dos';
+      font-weight: 100;
       margin: 0;
     }
 
@@ -50,7 +53,7 @@
     }
   }
   .paso-2 {
-    h3 {
+    .paso-title {
       text-align: end;
     }
   }

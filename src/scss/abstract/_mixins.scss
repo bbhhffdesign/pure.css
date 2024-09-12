@@ -42,6 +42,23 @@ font-style: normal;
   font-style: normal;
 }
 
+@mixin glass-bg-only($zIndex1: -1, $bg-color: transparent, $blur: 4px){
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $zIndex1;
+    border-radius: inherit; 
+    background: $bg-color; 
+    backdrop-filter: blur($blur);
+  }
+
+}
+
 @mixin glass-bg($color1: $blancoTrue, $color2: $gris2, $border-width: 1px,
  $blur: 4px, $bg-color: transparent, $position: relative, $zIndex1: -1, $zIndex2:0, $zIndex3:1 ) {
   
@@ -70,7 +87,6 @@ font-style: normal;
     z-index: $zIndex3;
   }
 
-  /* Pseudo-elemento para el fondo con desenfoque */
   &:before {
     content: '';
     position: absolute;

@@ -5,6 +5,7 @@
   color: $blanco;
   height: auto;
   
+  
   @include desktop-sm{
     height: 130dvh;
   }
@@ -42,10 +43,12 @@
       gap: clamp(0.5rem, -4.423rem + 7.692vw, 2.5rem);
     }
     
-    h2{
+    .services-boxes-title{
       margin: 5rem 0 4rem 0;
-      // @include font-rajdhani;
-      opacity: 0; 
+      font-family: 'monument_dos';
+      font-weight: 100;
+      @include text-gradient;
+      // opacity: 0; 
 
     }
     .service{
@@ -53,13 +56,16 @@
       position: relative;
       border: $border-white;
       border-radius: $border-rad-s;
-      padding: $spac-s;
       text-align: center;
       overflow-y: hidden;
       @include glass-bg();
+      padding: $spac-s $spac-s;
+
       @include tablet{
+        width: 80%;
+      }
+      @include tablet-l{
         width: 70%;
-        padding: $spac-s $spac-m;
       }
       @include desktop-sm{
         padding: $spac-s;

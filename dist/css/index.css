@@ -1956,6 +1956,15 @@ striping:
     width: 100%;
   }
 }
+section {
+  margin-bottom: 10rem;
+}
+@media (min-width: 64rem) {
+  section {
+    margin-bottom: 0;
+  }
+}
+
 h1 {
   color: #ffffff;
   font-size: clamp(3.2rem, 1.2rem + 10vw, 6rem);
@@ -2416,19 +2425,13 @@ span {
   }
 }
 .nav {
-  position: fixed;
-  padding: 1px;
-  border-radius: 0.5rem 0.05rem;
-  background-clip: padding-box;
-  border: 1px solid transparent;
-  z-index: 1;
-  /* Pseudo-elemento para el borde gradiente */
-  /* Pseudo-elemento para el fondo con desenfoque */
   inset: 0;
   height: 3rem;
   padding: 0.5rem 0;
   border: none;
+  position: fixed;
   border-bottom: solid 1px #cccccc;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -2439,22 +2442,6 @@ span {
   font-weight: 400;
   font-style: normal;
 }
-.nav:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(to right, #ffffff, #666666);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-  z-index: 0;
-}
 .nav:before {
   content: "";
   position: absolute;
@@ -2462,7 +2449,7 @@ span {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
   border-radius: inherit;
   background: transparent;
   -webkit-backdrop-filter: blur(4px);
@@ -2607,12 +2594,22 @@ span {
   font-family: "monument_dos";
   font-weight: 100;
   letter-spacing: 0.5px;
-  font-size: clamp(1rem, 0.5rem + 2.5vw, 1.7rem);
+  font-size: clamp(1rem, 0.571rem + 2.143vw, 1.6rem);
   color: #c6c6c6;
 }
 .hero .mindmap-title-container h3 span {
   color: #ffffff;
   letter-spacing: 4px;
+}
+@media (min-width: 37.5rem) {
+  .hero .mindmap-title-container br {
+    display: none;
+  }
+}
+@media (min-width: 64rem) {
+  .hero .mindmap-title-container {
+    display: none;
+  }
 }
 .hero .mindmap-container {
   position: relative;
@@ -2628,7 +2625,6 @@ span {
   border: 1px solid transparent;
   z-index: 0;
   /* Pseudo-elemento para el borde gradiente */
-  /* Pseudo-elemento para el fondo con desenfoque */
   overflow: hidden;
 }
 .hero .mindmap-container:after {
@@ -2661,14 +2657,14 @@ span {
           backdrop-filter: blur(4px);
 }
 .hero .mindmap-container .scrolldown {
-  padding: 0.5rem 2rem;
+  padding: 0.3rem 2rem;
   font-size: 200%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 .hero .mindmap-container svg {
-  width: 90%;
+  margin: 0.5rem 0;
 }
 @media (min-width: 64rem) {
   .hero .mindmap-container {
@@ -2745,16 +2741,19 @@ span {
     gap: clamp(0.5rem, -4.423rem + 7.692vw, 2.5rem);
   }
 }
-.services .services-boxes h2 {
+.services .services-boxes .services-boxes-title {
   margin: 5rem 0 4rem 0;
-  opacity: 0;
+  font-family: "monument_dos";
+  font-weight: 100;
+  background: radial-gradient(circle, #ffffff, #666666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .services .services-boxes .service {
   margin: 1rem;
   position: relative;
   border: solid 1px #cccccc;
   border-radius: 0.5rem 0.05rem;
-  padding: 1rem;
   text-align: center;
   overflow-y: hidden;
   position: relative;
@@ -2764,7 +2763,7 @@ span {
   border: 1px solid transparent;
   z-index: 0;
   /* Pseudo-elemento para el borde gradiente */
-  /* Pseudo-elemento para el fondo con desenfoque */
+  padding: 1rem 1rem;
 }
 .services .services-boxes .service:after {
   content: "";
@@ -2797,8 +2796,12 @@ span {
 }
 @media (min-width: 37.5rem) {
   .services .services-boxes .service {
+    width: 80%;
+  }
+}
+@media (min-width: 48rem) {
+  .services .services-boxes .service {
     width: 70%;
-    padding: 1rem 2rem;
   }
 }
 @media (min-width: 64rem) {
@@ -2862,7 +2865,10 @@ span {
   border: solid 1px #cccccc;
   border-radius: 0.5rem 0.05rem;
 }
-.gemstone .paso h3 {
+.gemstone .paso .paso-title {
+  color: white;
+  font-family: "monument_dos";
+  font-weight: 100;
   margin: 0;
 }
 @media (min-width: 37.5rem) {
@@ -2878,7 +2884,7 @@ span {
     padding-right: 3rem;
   }
 }
-.gemstone .paso-2 h3 {
+.gemstone .paso-2 .paso-title {
   text-align: end;
 }
 @media (min-width: 64rem) {
