@@ -64,16 +64,15 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_mindmapTitles = gsap.timeline({
         scrollTrigger:{
             trigger: mindmapTitles,
-            markers: true,
+            // markers: true,
             start:"top 80%",
             end: "40% 80%",
-            scrub: 3
         }
     })
 
     tl_mindmapTitles
         .from(mindmapTitle, {y:150, ease: "power4.out", duration: 1})
-        .from(mindmapSubtitle, {y:150, ease: "power4.out", duration: 1})
+        .from(mindmapSubtitle, {y:150, ease: "power4.out", duration: 1, delay: .5},"<")
 
     //aca va la del mindmapGem
 
@@ -90,5 +89,39 @@ mm_mobile.add("(max-width: 768px)", () => {
     tl_servicesText
         .from(servicesText1,{opacity: .5, y:150, ease: "power4.out", duration: 1})
         .from(servicesText2,{opacity: .5, y:150, ease: "power4.out", duration: 1},"<")
+        .from(servicesText3,{opacity: 0, ease: "power4.out", duration: 1})
+
+    const tl_servicesBox_1 = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesBox1,
+            markers: true,
+            start:"top 90%",
+            end: "top 90%"
+        }
+    })
+    tl_servicesBox_1
+        .from(servicesBox1Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
+    
+    const tl_servicesBox_2 = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesBox2,
+            markers: true,
+            start:"top 90%",
+            end: "top 90%"
+        }
+    })
+    tl_servicesBox_2
+        .from(servicesBox2Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
+    
+    const tl_servicesBox_3 = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesBox3,
+            markers: true,
+            start:"top 90%",
+            end: "top 90%"
+        }
+    })
+    tl_servicesBox_3
+        .from(servicesBox3Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
 
 })
