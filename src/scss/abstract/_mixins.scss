@@ -52,7 +52,16 @@ font-style: normal;
   font-style: normal;
 }
 
+@mixin border-gradient{
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, $blanco, $gris3);
+  border-left:  none;
+  border-right: none ;
+}
+
 @mixin glass-bg-only($zIndex1: -1, $bg-color: transparent, $blur: 4px){
+  z-index: 0;
 
   &:before {
     content: '';

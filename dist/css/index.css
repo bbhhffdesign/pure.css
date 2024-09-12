@@ -2425,6 +2425,7 @@ span {
   }
 }
 .nav {
+  z-index: 0;
   inset: 0;
   height: 3rem;
   padding: 0.5rem 0;
@@ -2722,14 +2723,26 @@ span {
 .services .services-text {
   position: relative;
   height: auto;
-  background-color: rgba(85, 84, 84, 0.185);
   overflow-y: hidden;
+  z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-width: 1px;
   border-image-source: linear-gradient(to right, #c6c6c6, #333333);
   border-left: none;
   border-right: none;
+}
+.services .services-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 @media (min-width: 64rem) {
   .services .services-text {

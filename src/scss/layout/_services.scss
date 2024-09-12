@@ -13,15 +13,9 @@
   .services-text {
     position: relative;
     height: auto;
-    background-color: $transparent0;
     overflow-y: hidden;
-    
-    border: 1px solid;
-    border-image-slice: 1;
-    border-width: 1px;
-    border-image-source: linear-gradient(to right, $blanco, $gris3);
-    border-left:  none;
-    border-right: none ;
+    @include glass-bg-only;
+    @include border-gradient;
 
     @include desktop-sm{
       padding: 1rem 0;
