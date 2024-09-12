@@ -40,7 +40,7 @@ let tl = gsap.timeline({
     scrollTrigger:{
         trigger: "#hero",
         markers: true,
-        start: "top top",
+        start: "30% top",
         end: "110% top",
         scrub: true
     }
