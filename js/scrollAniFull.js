@@ -78,20 +78,44 @@ mm_mobile.add("(max-width: 768px)", () => {
 
     //aca va la del mindmapGem
 
-    const tl_servicesText = gsap.timeline({
+    const tl_servicesText_1 = gsap.timeline({
         scrollTrigger:{
-            trigger: servicesText,
+            trigger: servicesText1,
             // markers: true,
-            start:"top 80%",
-            end: "bottom 80%"
+            start:"-150 90%",
+            end: "bottom 90%"
         }
     }
     )
-    
-    tl_servicesText
+    tl_servicesText_1
         .from(servicesText1,{opacity: .5, y:150, ease: "power4.out", duration: 1})
-        .from(servicesText2,{opacity: .5, y:150, ease: "power4.out", duration: 1, delay:.5}, "<")
+
+    const tl_servicesText_2 = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesText2,
+            // markers: true,
+            start:"-150 90%",
+            end: "bottom 90%"
+        }
+    }
+    )
+    tl_servicesText_2
+        .from(servicesText2,{opacity: .5, y:150, ease: "power4.out", duration: 1})
+
+
+
+    const tl_servicesText_3 = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesText3,
+            markers: true,
+            start:"top 90%",
+            end: "bottom 90%"
+        }
+    }
+    )
+    tl_servicesText_3
         .from(servicesText3,{opacity: 0, ease: "power4.out", duration: 1})
+
 
     const tl_servicesBox_1 = gsap.timeline({
         scrollTrigger:{
@@ -164,7 +188,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_paso_1 = gsap.timeline({
         scrollTrigger:{
             trigger: paso1,
-            markers: true,
+            // markers: true,
             start:"-10% 90%",
             end: "bottom 90%"
         }        
@@ -176,7 +200,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_paso_2 = gsap.timeline({
         scrollTrigger:{
             trigger: paso2,
-            markers: true,
+            // markers: true,
             start:"10% 90%",
             end: "bottom 90%"
         }        
@@ -188,7 +212,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_paso_3 = gsap.timeline({
         scrollTrigger:{
             trigger: paso3,
-            markers: true,
+            // markers: true,
             start:"-10% 90%",
             end: "bottom 90%"
         }        
@@ -196,6 +220,29 @@ mm_mobile.add("(max-width: 768px)", () => {
     tl_paso_3
         .from(paso3title, {opacity:0, x:50, ease: "power4.out", duration: 1})
         .from(paso3Content,{opacity:0, ease: "power4.out", duration:3},"<")
+
+    const tl_faqText_1 = gsap.timeline({
+        scrollTrigger:{
+            trigger:faqText1,
+            // markers: true,
+            start:"-40% 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_faqText_1
+        .from(faqText1,{opacity: 0, y:100, ease: "power4.out", duration: 1})
+
+        
+    const tl_faqText_2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:faqText2,
+            // markers: true,
+            start:"-40% 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_faqText_2
+        .from(faqText2,{opacity: 0, y:100, ease: "power4.out", duration: 1})
 
 
 })
