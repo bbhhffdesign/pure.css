@@ -2605,14 +2605,17 @@ span {
 }
 .hero .mindmap-title-container h2 {
   font-family: "monument";
-  font-size: 1.5rem;
 }
 .hero .mindmap-title-container h3 {
   text-align: center;
   font-family: "monument_dos";
   font-weight: 100;
-  letter-spacing: 1px;
-  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: #c6c6c6;
+}
+.hero .mindmap-title-container h3 span {
+  color: #ffffff;
+  letter-spacing: 4px;
 }
 .hero .mindmap-container {
   position: relative;
@@ -2692,6 +2695,13 @@ span {
   .hero .mindmap-container {
     height: 48%;
   }
+}
+
+.hero-gem {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  opacity: 0.5;
 }
 
 #tsparticles {
@@ -2839,6 +2849,9 @@ span {
 .gemstone .gemstone-text {
   min-height: 350px;
   overflow-y: hidden;
+}
+.gemstone .gemstone-svg {
+  height: 100px;
 }
 .gemstone h2 {
   background: radial-gradient(circle, #ffffff, #666666);
