@@ -1956,14 +1956,6 @@ striping:
     width: 100%;
   }
 }
-@font-face {
-  font-family: "monument";
-  src: url("../assets/MonumentExtended-Ultrabold.otf") format("opentype");
-}
-@font-face {
-  font-family: "monument_dos";
-  src: url("../assets/MonumentExtended-Regular.otf") format("opentype");
-}
 h1 {
   color: #ffffff;
   font-size: clamp(3.2rem, 1.2rem + 10vw, 6rem);
