@@ -2956,8 +2956,16 @@ span {
 .faq .faq-text {
   text-align: center;
 }
-.faq .faq-container {
-  background: rgba(0, 51, 153, 0.231372549);
+.faq .faq-text p,
+.faq .faq-text h3 {
+  font-family: "monument_dos";
+  font-weight: 100;
+  font-style: normal;
+}
+.faq .faq-text h3 {
+  background: radial-gradient(circle, #ffffff, #666666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .faq-qanda {
@@ -2970,6 +2978,20 @@ span {
   justify-content: center;
   align-items: center;
   gap: none;
+  z-index: 0;
+}
+.faq-qanda:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 .faq-qanda:hover .answer {
   max-height: 1000px;

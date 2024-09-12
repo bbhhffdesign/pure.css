@@ -11,12 +11,17 @@
 
    .faq-text{
     text-align: center;
+
+    p,
+    h3{
+        @include font-monument-normal;
+    }
+    h3{
+        @include text-gradient;
+    }
    }
 
-   .faq-container{
-    background: $colorPrimarioTransparent;
 
-   }
 }
 
 .faq-qanda{
@@ -25,7 +30,7 @@
     border-radius: $border-rad-s;
     padding: $spac-s;
     @include flex(column, center, center,none);
-    // @include glass-bg;
+    @include glass-bg-only;
     // background-color: $colorPrimarioTransparent;
 
     &:hover{
