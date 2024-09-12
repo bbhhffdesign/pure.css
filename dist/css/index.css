@@ -2539,6 +2539,9 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.hero .mindmap-click {
+  margin-top: 0.5rem;
+}
 .hero .hero-text {
   position: relative;
   gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
@@ -2586,13 +2589,16 @@ span {
   padding: 0 1rem;
 }
 .hero .mindmap-title-container h2 {
-  font-family: "monument";
+  font-family: "monument_dos";
+  font-weight: 100;
+  font-style: normal;
   font-size: clamp(1.2rem, 0.629rem + 2.857vw, 2rem);
 }
 .hero .mindmap-title-container h3 {
   text-align: center;
   font-family: "monument_dos";
   font-weight: 100;
+  font-style: normal;
   letter-spacing: 0.5px;
   font-size: clamp(1rem, 0.571rem + 2.143vw, 1.6rem);
   color: #c6c6c6;
@@ -2615,6 +2621,7 @@ span {
   position: relative;
   width: 95%;
   padding: 1rem 0;
+  margin-top: 5rem;
   border: solid 1px #cccccc;
   border-radius: 0.3rem 0.05rem;
   background-color: rgba(0, 0, 0, 0.4156862745);
@@ -2693,8 +2700,9 @@ span {
 .hero-gem {
   position: absolute;
   right: -20px;
-  bottom: -20px;
+  bottom: -8%;
   opacity: 0.5;
+  z-index: 2;
 }
 
 #tsparticles {
@@ -2745,6 +2753,7 @@ span {
   margin: 5rem 0 4rem 0;
   font-family: "monument_dos";
   font-weight: 100;
+  font-style: normal;
   background: radial-gradient(circle, #ffffff, #666666);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2854,6 +2863,9 @@ span {
   height: 100px;
 }
 .gemstone h2 {
+  font-family: "monument_dos";
+  font-weight: 100;
+  font-style: normal;
   background: radial-gradient(circle, #ffffff, #666666);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2869,6 +2881,7 @@ span {
   color: white;
   font-family: "monument_dos";
   font-weight: 100;
+  font-style: normal;
   margin: 0;
 }
 @media (min-width: 37.5rem) {

@@ -17,6 +17,7 @@
 
 
   h2{
+    @include font-monument-normal(100);
     @include text-gradient;
 
   }
@@ -37,8 +38,7 @@
 
     .paso-title {
       color: white;
-      font-family: 'monument_dos';
-      font-weight: 100;
+      @include font-monument-normal;
       margin: 0;
     }
 

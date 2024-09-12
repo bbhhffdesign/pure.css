@@ -45,8 +45,7 @@
     
     .services-boxes-title{
       margin: 5rem 0 4rem 0;
-      font-family: 'monument_dos';
-      font-weight: 100;
+      @include font-monument-normal; 
       @include text-gradient;
       // opacity: 0; 
 

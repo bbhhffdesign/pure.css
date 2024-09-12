@@ -41,6 +41,16 @@ font-style: normal;
   font-weight: $weight;
   font-style: normal;
 }
+@mixin font-monument-ultrabold($weight:400){
+  font-family: "monument";
+  font-weight: $weight;
+  font-style: normal;
+}
+@mixin font-monument-normal($weight:100){
+  font-family: "monument_dos";
+  font-weight: $weight;
+  font-style: normal;
+}
 
 @mixin glass-bg-only($zIndex1: -1, $bg-color: transparent, $blur: 4px){
 
@@ -102,22 +112,6 @@ font-style: normal;
 }
 
 
-
-//glassfx
-
-// @mixin glass-bg($color: transparent, $blur:10px ){
-//   background-color: $transparent0;
-
-//   &::before{
-//     content: "";
-//     position: absolute;
-//     inset: 0;
-//     z-index: -1;
-//     background: $color;
-//     backdrop-filter: blur($blur);
-//     @content;
-//   }
-// }
 @mixin glass-mask($color: transparent, $blur:4px ){
   background-color: $transparent0;
 
