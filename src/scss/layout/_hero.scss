@@ -15,6 +15,7 @@
 
     div{
         @include flex(column, center, flex-start, auto);
+
         @include desktop-sm{
             max-width: 40rem;
         }
@@ -113,7 +114,7 @@
         border-radius: $border-rad-xs;
         background-color: #0000006a;
         @include glass-bg();
-        overflow: hidden;
+        overflow-y: hidden;
 
 
         .scrolldown{
@@ -154,7 +155,7 @@
 
 .hero-gem{
     position: absolute;
-    right: -20px;
+    right: 0;
     bottom: -8%;
     opacity: .5;
     z-index: 2;
