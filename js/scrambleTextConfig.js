@@ -26,5 +26,3 @@ tl_hero
     .add( ()=> scrambleText_2.play().start())
     .from(heroTextNoScram_1, {delay: 1, y: "2rem", duration:".5"})
     .from(heroTextNoScram_2, {y: "2rem", duration:".5"},"<")
-
-gsap.from(mindMapTitle,{ y:100})

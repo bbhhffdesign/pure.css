@@ -17,6 +17,10 @@
     @include glass-bg-only;
     @include border-gradient;
 
+    & > div{
+      overflow-y: hidden;
+    }
+
     @include desktop-sm{
       padding: 1rem 0;
       br{

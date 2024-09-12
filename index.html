@@ -82,9 +82,13 @@
             </div>
          </div>
          <div class="pure-u-1 pure-u-lg-1-2 fh">
-            <div class="mindmap-title-container">
-               <h2 id="mindMapTitle">Si pudieras resolver los problemas de tu marca</h2>
-               <h3 class="m-auto">¿Aprovecharías la <br><span class="space-letter">oportunidad</span> o la <br> dejarias pasar?</h3>
+            <div class="mindmap-title-container" id="mindmap-title-container">
+               <div>
+                  <h2 id="mindmap-title">Si pudieras resolver los problemas de tu marca</h2>
+               </div>
+               <div>
+                  <h3 id="mindmap-subtitle">¿Aprovecharías la <br><span class="space-letter">oportunidad</span> o la <br> dejarias pasar?</h3>
+               </div>
 
             </div>
             <div class="mindmap-container m-auto" id="mindMapContainer">
@@ -292,18 +296,21 @@
 
          
       </section>
-      <!-- <div class="spacer-sm"></div> -->
 
       <section class="services pure-g fh" id="services-container">
          <div class="services-text pure-u-1 p-s p-md-m p-lg-l m-auto" id="services-text">
-            <p class="txt-cntr" id="services-text-1">
-               El secreto detrás de marcas exitosas no es solo
-               <strong>vender</strong>
-            </p>
-            <p class="txt-cntr" id="services-text-2">
-               Es desarrollar una experiencia de marca <br />
-               <span>integral</span> y <span>diferencial</span>
-            </p>
+            <div>
+               <p class="txt-cntr" id="services-text-1">
+                  El secreto detrás de marcas exitosas no es solo
+                  <strong>vender</strong>
+               </p>
+            </div>
+            <div>
+               <p class="txt-cntr" id="services-text-2">
+                  Es desarrollar una experiencia de marca <br />
+                  <span>integral</span> y <span>diferencial</span>
+               </p>
+            </div>
          </div>
 
          <div class="services-boxes pure-g">
@@ -355,17 +362,13 @@
             </div>
          </div>
       </section>
-      <!-- <div class="spacer-md"></div> -->
       <section class="gemstone pure-g fh">
          <div class="gemstone-text pure-u-1 p-s" id="gemstone-text">
             <h2 class="txt-cntr">Creamos el metodo <span>Gemstone</span>
             </h2>
-
             <p class="txt-cntr">
                Nuestro objetivo es esculpir tu negocio  encontrado la gema que diferencia tu marca.
             </p>
-            <!-- <div class="spacer-md"></div> -->
-            <!-- <div class="spacer-sm"></div> -->
             <h3 class="txt-cntr" id="gemstone-text-3">¿Como funciona?</h3>
             <svg width="auto" height="auto" viewBox="0 0 25.746197 52.576607" version="1.1" class="gemstone-svg"
                id="gemstoneSvg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -418,7 +421,6 @@
          </div>
 
       </section>
-      <div class="spacer-md"></div>
       <section class="faq pure-g fh">
          <div class="faq-text p-s pure-u-1" id="faq-text">
             <p id="faq-text-1">
@@ -522,8 +524,7 @@
                </div>
             </div>
          </div>
-      </section>
-      <!-- <div class="spacer-md"></div> -->
+
       <footer>
          <hr style="width: 100%" />
          <div class="footer pure-g m-auto p-s p-md-l">
@@ -588,7 +589,7 @@
    <script src="js/particles-settings.js"></script>
    <script src="js/counter.js"></script>
    <script src="js/mindMapShortAni.js"></script>
-   <script src="js/scrollTriggerAnimation.js"></script>
+   <script src="js/scrollAniFull.js"></script>
 </body>
 
 </html>

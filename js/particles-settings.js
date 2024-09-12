@@ -36,17 +36,21 @@
 })
 ();
 
-let tl = gsap.timeline({
-    scrollTrigger:{
-        trigger: "#hero",
-        markers: true,
-        start: "30% top",
-        end: "110% top",
-        scrub: true
-    }
-});
+let mm = gsap.matchMedia()
+mm.add("(max-width: 768px)",()=>{
 
-tl
-    .to("#tsparticles", {opacity:0})
-    .to("#tsparticles", {opacity:1})
+    const tl = gsap.timeline({
+        scrollTrigger:{
+            trigger: "#hero",
+            // markers: true,
+            start: "30% top",
+            end: "110% top",
+            scrub: true
+        }
+    });
+    
+    tl
+        .to("#tsparticles", {opacity:0})
+        .to("#tsparticles", {opacity:1})
+})
     
