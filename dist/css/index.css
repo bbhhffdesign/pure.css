@@ -2856,15 +2856,25 @@ span {
   height: auto;
 }
 .gemstone .gemstone-text {
-  min-height: 350px;
-  overflow-y: hidden;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .gemstone .gemstone-svg {
-  height: 100px;
+  height: 150px;
 }
 .gemstone h2 {
   font-family: "monument_dos";
   font-weight: 100;
+  font-style: normal;
+  background: radial-gradient(circle, #ffffff, #666666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gemstone h3 {
+  font-family: "monument";
+  font-weight: 400;
   font-style: normal;
   background: radial-gradient(circle, #ffffff, #666666);
   -webkit-background-clip: text;

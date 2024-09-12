@@ -7,19 +7,25 @@
   height: auto;
 
   .gemstone-text {
-    min-height: 350px;
-    overflow-y: hidden;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
   }
   
   .gemstone-svg{
-    height: 100px
+    height: 150px
   }
 
 
   h2{
     @include font-monument-normal(100);
     @include text-gradient;
-
+  }
+  h3{
+    @include font-monument-ultrabold;
+    @include text-gradient;
   }
 
 
