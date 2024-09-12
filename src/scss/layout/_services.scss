@@ -12,11 +12,18 @@
   .services-text {
     position: relative;
     height: auto;
-    // @include glass-bg($transparentGrey);
-    border-top: $border-white;
-    border-bottom: $border-white;
-    z-index: 1;
+    background-color: $transparent0;
+    // @include glass-bg;
+    // border-top: $border-white;
+    // border-bottom: $border-white;
     overflow-y: hidden;
+    
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to right, $blanco, $gris3);
+    border-left:  none;
+    border-right: none ;
 
     @include desktop-sm{
       padding: 1rem 0;
@@ -37,8 +44,8 @@
     
     h2{
       margin: 5rem 0 4rem 0;
-      @include font-rajdhani;
-      opacity: 0;
+      // @include font-rajdhani;
+      opacity: 0; 
 
     }
     .service{
@@ -48,12 +55,8 @@
       border-radius: $border-rad-s;
       padding: $spac-s;
       text-align: center;
-      z-index: 1;
       overflow-y: hidden;
-      // @include glass-bg($transparentBlack){
-      //   border-radius: $border-rad-s
-      // };
-
+      @include glass-bg();
       @include tablet{
         width: 70%;
         padding: $spac-s $spac-m;
@@ -71,8 +74,6 @@
         &.comunicacion{
           max-width: 26rem;
         }
-      
-        
       }
 
       .logo-title{

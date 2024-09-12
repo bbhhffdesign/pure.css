@@ -10,13 +10,11 @@
     }
 
    .faq-text{
-    z-index: 1;
     text-align: center;
    }
 
    .faq-container{
     background: $colorPrimarioTransparent;
-    z-index: 1;
 
    }
 }
@@ -27,7 +25,7 @@
     border-radius: $border-rad-s;
     padding: $spac-s;
     @include flex(column, center, center,none);
-    @include glass-bg;
+    // @include glass-bg;
     // background-color: $colorPrimarioTransparent;
 
     &:hover{

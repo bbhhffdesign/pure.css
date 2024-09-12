@@ -6,7 +6,6 @@
     color: $blanco;
     justify-content: center;
     padding-top: 2rem;   
-    z-index: 1;
     height: 200dvh;
 
     @include desktop-sm{
@@ -42,7 +41,6 @@
         }
 
 
-
         h1{
             margin: 0;
         }
@@ -72,40 +70,36 @@
     }
 
     .mindmap-title-container{
-        position: absolute;
-        margin: 2rem auto;
-        overflow: hidden;
-        // padding: 1rem;
-        @include centrarhorizontal;
-        width: 100%;
-        top: 50%;
-
-
         h2{
-            margin: 0;
-            // @include glass-bg;
-            // padding:  2rem 0;
+            font-family: 'monument';
+            font-size: 1.5rem;
+        }
+        h3{
+            text-align: center;
+            font-family: 'monument_dos';
+            font-weight: 100;
+            letter-spacing: 1px;
+            font-size: 1rem;
             
         }
+
+
+        //    width: 100%;
+
+    //     h2{
+    // //         margin: 0;
+
+    //     }
     }
-
-    // .mindmap-gradient{
-    //     position: absolute;
-    //     width: 100%;
-    //     bottom: -50%;
-    //     z-index: -1;
-    //     opacity: .5;
-
-    // }
 
     .mindmap-container{
         position: relative;
         width: 95%;
-        background-color: #333;
         padding: 1rem 0;
         border: $border-white;
         border-radius: $border-rad-xs;
-        @include glass-bg(rgba(0, 0, 0, 0.61));
+        background-color: #0000006a;
+        @include glass-bg();
         overflow: hidden;
 
 
@@ -145,10 +139,3 @@
 
     }
 }
-
-
-// #hero-text-noscram-1,
-// #hero-text-noscram-2{
-//     position: absolute;
-//     left: 150px;
-// }

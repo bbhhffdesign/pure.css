@@ -1,6 +1,15 @@
 @use './variables' as *;
 @use './mixins' as *;
 
+@font-face{
+    font-family: 'monument';
+    src: url('/assets/MonumentExtended-Ultrabold.otf') format('opentype');
+}
+@font-face{
+    font-family: 'monument_dos';
+    src: url(/assets/MonumentExtended-Regular.otf) format('opentype');
+}
+
 h1{
     color: $blancoTrue;
     font-size: clamp(3.2rem, 1.2rem + 10vw, 6rem);
@@ -14,6 +23,7 @@ h1{
 h2{
     color:$blancoTrue;
     @include font-raleway(600);
+    // font-family: 'monument';
     font-size: clamp(1.5rem, 0.618rem + 3.922vw, 2.5rem);
     margin-bottom: 1.2rem;
     margin-top: 1.2rem;
@@ -69,4 +79,3 @@ span{
 .color-white-true{
     color: $blancoTrue;
 }
-

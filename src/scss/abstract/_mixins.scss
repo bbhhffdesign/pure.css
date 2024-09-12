@@ -42,33 +42,17 @@ font-style: normal;
   font-style: normal;
 }
 
-@mixin glass-bg($color1: $blancoTrue, $color2: $gris2, $border-width: 1px, $blur: 10px, $bg-color: transparent) {
-  position: relative; /* Necesario para los pseudo-elementos */
-  padding: $border-width; /* Añade espacio suficiente para el borde */
-  border-radius: $border-rad-s; /* Ajusta el radio según sea necesario */
-  background-clip: padding-box; /* Permite que el fondo sea transparente */
-  border: $border-width solid transparent; /* Borde transparente para mostrar el gradiente */
-  z-index: 1;
-
+@mixin glass-bg($color1: $blancoTrue, $color2: $gris2, $border-width: 1px,
+ $blur: 4px, $bg-color: transparent, $position: relative, $zIndex1: -1, $zIndex2:0, $zIndex3:1 ) {
+  
+  position: $position;
+  padding: $border-width;
+  border-radius: $border-rad-s;
+  background-clip: padding-box;
+  border: $border-width solid transparent;
+  z-index: $zIndex2;
   /* Pseudo-elemento para el borde gradiente */
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: inherit; /* Hereda el border-radius */
-    padding: $border-width;
-    background: linear-gradient(to right, $color1, $color2); /* Gradiente para el borde */
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); /* Recorta la caja interna */
-    -webkit-mask-composite: xor; /* Excluye el área interna del gradiente */
-    mask-composite: exclude; /* Excluye el área interna del gradiente (Firefox) */
-    pointer-events: none; /* Hace que el pseudo-elemento no interfiera con los clics */
-    z-index: 1; /* Coloca el pseudo-elemento del borde detrás del contenido pero sobre el fondo */
-  }
 
-  /* Pseudo-elemento para el fondo con desenfoque */
   &:after {
     content: '';
     position: absolute;
@@ -76,10 +60,28 @@ font-style: normal;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 0; /* Coloca el pseudo-elemento de fondo detrás de todo */
-    border-radius: inherit; /* Hereda el border-radius */
-    background: $bg-color; /* Color del fondo */
-    backdrop-filter: blur($blur); /* Aplica el efecto de desenfoque */
+    border-radius: inherit;
+    padding: $border-width;
+    background: linear-gradient(to right, $color1, $color2); 
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); 
+    -webkit-mask-composite: xor;
+    mask-composite: exclude; 
+    pointer-events: none;
+    z-index: $zIndex3;
+  }
+
+  /* Pseudo-elemento para el fondo con desenfoque */
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $zIndex1;
+    border-radius: inherit; 
+    background: $bg-color; 
+    backdrop-filter: blur($blur);
   }
 }
 

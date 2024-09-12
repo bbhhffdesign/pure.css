@@ -7,7 +7,6 @@
   height: auto;
 
   .gemstone-text {
-    z-index: 1;
     min-height: 350px;
     overflow-y: hidden;
   }
@@ -23,10 +22,9 @@
     position: relative;
     padding: $spac-s;
     margin: $spac-xs;
-    z-index: 1;
     border: $border-white;
     border-radius: $border-rad-s;
-    @include glass-bg;
+    // @include glass-bg;
 
     // @include glass-bg(rgba(0, 0, 0, 0.562)) {
     //   // background-color: #3333338f;
@@ -72,4 +70,3 @@
   }
 }
 
-//toggle
