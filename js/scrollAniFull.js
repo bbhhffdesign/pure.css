@@ -27,23 +27,25 @@ const servicesBox3 = document.getElementById("services-box-3");
 const servicesBox3Content = document.getElementById("services-box-3-content");
 
 //gemstoneText
-const gemstoneText = document.getElementById("gemstone-text");
-const gemstoneText1_2 = document.getElementById("gemstone-text-1-2");
+const gemstoneTextContainer = document.getElementById("gemstone-text");
 const gemstoneText1 = document.getElementById("gemstone-text-1");
-const gemstoneText1Cursor = document.getElementById("gemstone-text-1-cursor");
 const gemstoneText2 = document.getElementById("gemstone-text-2");
-const gemstoneText2Cursor = document.getElementById("gemstone-text-2-cursor");
 const gemstoneText3 = document.getElementById("gemstone-text-3");
-const gemstoneText3Cursor = document.getElementById("gemstone-text-3-cursor");
 
 //gemstoneSvgs
 const gemstoneSvg = document.getElementById("gemstoneSvg");
 
 
 //gemstonePaso
-const gemstonePaso1 = document.getElementById("gemstone-paso-1");
-const gemstonePaso2 = document.getElementById("gemstone-paso-2");
-const gemstonePaso3 = document.getElementById("gemstone-paso-3");
+const paso1title = document.getElementById("paso-1-title");
+const paso1 = document.getElementById("gemstone-paso-1");
+const paso1Content = document.getElementById("paso-1-content");
+const paso2title = document.getElementById("paso-2-title");
+const paso2 = document.getElementById("gemstone-paso-2");
+const paso2Content = document.getElementById("paso-2-content");
+const paso3title = document.getElementById("paso-3-title");
+const paso3 = document.getElementById("gemstone-paso-3");
+const paso3Content = document.getElementById("paso-3-content");
 
 //faqText
 const faqText = document.getElementById("faq-text")
@@ -88,13 +90,13 @@ mm_mobile.add("(max-width: 768px)", () => {
     
     tl_servicesText
         .from(servicesText1,{opacity: .5, y:150, ease: "power4.out", duration: 1})
-        .from(servicesText2,{opacity: .5, y:150, ease: "power4.out", duration: 1},"<")
+        .from(servicesText2,{opacity: .5, y:150, ease: "power4.out", duration: 1, delay:.5}, "<")
         .from(servicesText3,{opacity: 0, ease: "power4.out", duration: 1})
 
     const tl_servicesBox_1 = gsap.timeline({
         scrollTrigger:{
             trigger: servicesBox1,
-            markers: true,
+            // markers: true,
             start:"top 90%",
             end: "top 90%"
         }
@@ -105,7 +107,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_servicesBox_2 = gsap.timeline({
         scrollTrigger:{
             trigger: servicesBox2,
-            markers: true,
+            // markers: true,
             start:"top 90%",
             end: "top 90%"
         }
@@ -116,12 +118,84 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_servicesBox_3 = gsap.timeline({
         scrollTrigger:{
             trigger: servicesBox3,
-            markers: true,
+            // markers: true,
             start:"top 90%",
             end: "top 90%"
         }
     })
     tl_servicesBox_3
         .from(servicesBox3Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
+
+    const tl_gemstoneText_1 = gsap.timeline({
+        scrollTrigger:{
+            trigger: gemstoneText1,
+            // markers: true,
+            start:"-20% 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_gemstoneText_1
+        .from(gemstoneText1,{opacity:0, y:80, duration:.5})
+
+    const tl_gemstoneText_2 = gsap.timeline({
+        scrollTrigger:{
+            trigger: gemstoneText2,
+            // markers: true,
+            start:"-20% 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_gemstoneText_2
+        .from(gemstoneText2,{opacity:0, y:80, duration:.5})
+
+    const tl_gemstoneText_3 = gsap.timeline({
+        scrollTrigger:{
+            trigger: gemstoneText3,
+            // markers: true,
+            start:"-20% 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_gemstoneText_3
+        .from(gemstoneText3,{opacity:0, y:80, duration:.5})
+
+        //aca va la animacion del gemstone gem xd
+
+    const tl_paso_1 = gsap.timeline({
+        scrollTrigger:{
+            trigger: paso1,
+            markers: true,
+            start:"-10% 90%",
+            end: "bottom 90%"
+        }        
+    })
+    tl_paso_1
+        .from(paso1title, {opacity:0, x:50, ease: "power4.out", duration: 1})
+        .from(paso1Content,{opacity:0, ease: "power4.out", duration:3},"<")
+
+    const tl_paso_2 = gsap.timeline({
+        scrollTrigger:{
+            trigger: paso2,
+            markers: true,
+            start:"10% 90%",
+            end: "bottom 90%"
+        }        
+    })
+    tl_paso_2
+        .from(paso2title, {opacity:0, x:-50, ease: "power4.out", duration: 1})
+        .from(paso2Content,{opacity:0, ease: "power4.out", duration:3},"<")
+
+    const tl_paso_3 = gsap.timeline({
+        scrollTrigger:{
+            trigger: paso3,
+            markers: true,
+            start:"-10% 90%",
+            end: "bottom 90%"
+        }        
+    })
+    tl_paso_3
+        .from(paso3title, {opacity:0, x:50, ease: "power4.out", duration: 1})
+        .from(paso3Content,{opacity:0, ease: "power4.out", duration:3},"<")
+
 
 })
