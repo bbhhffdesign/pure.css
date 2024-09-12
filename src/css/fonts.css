@@ -1,0 +1,8 @@
+@font-face{
+    font-family: 'monument';
+    src: url(/assets/MonumentExtended-Ultrabold.otf) format('opentype');
+}
+@font-face{
+    font-family: 'monument_dos';
+    src: url(/assets/MonumentExtended-Regular.otf) format('opentype');
+}

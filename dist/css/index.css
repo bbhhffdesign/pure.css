@@ -1958,11 +1958,11 @@ striping:
 }
 @font-face {
   font-family: "monument";
-  src: url("/assets/MonumentExtended-Ultrabold.otf") format("opentype");
+  src: url("../assets/MonumentExtended-Ultrabold.otf") format("opentype");
 }
 @font-face {
   font-family: "monument_dos";
-  src: url(/assets/MonumentExtended-Regular.otf) format("opentype");
+  src: url("../assets/MonumentExtended-Regular.otf") format("opentype");
 }
 h1 {
   color: #ffffff;
@@ -2603,14 +2603,19 @@ span {
     padding-left: 0;
   }
 }
+.hero .mindmap-title-container {
+  padding: 0 1rem;
+}
 .hero .mindmap-title-container h2 {
   font-family: "monument";
+  font-size: clamp(1.2rem, 0.629rem + 2.857vw, 2rem);
 }
 .hero .mindmap-title-container h3 {
   text-align: center;
   font-family: "monument_dos";
   font-weight: 100;
   letter-spacing: 0.5px;
+  font-size: clamp(1rem, 0.5rem + 2.5vw, 1.7rem);
   color: #c6c6c6;
 }
 .hero .mindmap-title-container h3 span {

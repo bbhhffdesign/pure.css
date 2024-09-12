@@ -70,16 +70,17 @@
     }
 
     .mindmap-title-container{
+        padding: 0 $spac-s;
         h2{
             font-family: 'monument';
-            // font-size: 1.5rem;
+            font-size: clamp(1.2rem, 0.629rem + 2.857vw, 2rem);
         }
         h3{
             text-align: center;
             font-family: 'monument_dos';
             font-weight: 100;
             letter-spacing: .5px;
-            // font-size: 1rem;
+            font-size: clamp(1rem, 0.5rem + 2.5vw, 1.7rem);
             // @include text-gradient;
             color: $blanco;
             
