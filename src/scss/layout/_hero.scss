@@ -108,7 +108,7 @@
     .mindmap-container{
         position: relative;
         width: 95%;
-        padding: 1rem 0;
+        padding: 1rem;
         margin-top: 5rem;
         border: $border-white;
         border-radius: $border-rad-xs;
@@ -125,7 +125,8 @@
         }
 
         svg{
-            margin: .5rem 0;
+            width: 95%;
+            margin: $spac-s auto;
         }
 
 

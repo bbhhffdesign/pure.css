@@ -2621,7 +2621,7 @@ span {
 .hero .mindmap-container {
   position: relative;
   width: 95%;
-  padding: 1rem 0;
+  padding: 1rem;
   margin-top: 5rem;
   border: solid 1px #cccccc;
   border-radius: 0.3rem 0.05rem;
@@ -2672,7 +2672,8 @@ span {
   transform: translateX(-50%);
 }
 .hero .mindmap-container svg {
-  margin: 0.5rem 0;
+  width: 95%;
+  margin: 1rem auto;
 }
 @media (min-width: 64rem) {
   .hero .mindmap-container {
