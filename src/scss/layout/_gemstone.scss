@@ -32,15 +32,11 @@
   .paso {
     position: relative;
     padding: $spac-s;
-    margin: $spac-xs;
+    margin: $spac-s;
     border: $border-white;
     border-radius: $border-rad-s;
-    // @include glass-bg;
-
-    // @include glass-bg(rgba(0, 0, 0, 0.562)) {
-    //   // background-color: #3333338f;
-    //   border-radius: $border-rad-s;
-    // }
+    @include glass-bg-only;
+    @include border-gradient;
 
     .paso-title {
       color: white;

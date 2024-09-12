@@ -1,3 +1,4 @@
+
 (async () => {
     await loadFull(tsParticles);
   
@@ -32,30 +33,20 @@
         }
       },
     });
-  })();
+})
+();
 
-// const options = {
-//     particles:{
-//         number:{
-//             value:10
-//         },
-//         color: "#003399",
-//         links:{
-//             enable: false,
-//             distance: 30,
-//             color: "#003399",
-//         },
-//         move:{
-//             enable: true
-//         },
-//         size:{
-//             value:{min:1, max:20}
-//         },
-//         opacity: {
-//             value: 0.8
-//         }
-     
-//     }
-// }
+let tl = gsap.timeline({
+    scrollTrigger:{
+        trigger: "#hero",
+        markers: true,
+        start: "top top",
+        end: "110% top",
+        scrub: true
+    }
+});
 
-// tsParticles.load("bgHero", options)
+tl
+    .to("#tsparticles", {opacity:0})
+    .to("#tsparticles", {opacity:1})
+    

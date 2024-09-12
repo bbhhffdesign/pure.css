@@ -2897,9 +2897,28 @@ span {
 .gemstone .paso {
   position: relative;
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1rem;
   border: solid 1px #cccccc;
   border-radius: 0.5rem 0.05rem;
+  z-index: 0;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #c6c6c6, #333333);
+  border-left: none;
+  border-right: none;
+}
+.gemstone .paso:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 .gemstone .paso .paso-title {
   color: white;
