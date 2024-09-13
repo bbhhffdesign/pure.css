@@ -48,12 +48,16 @@
     .service{
       margin: $spac-s;
       position: relative;
-      border: $border-white;
-      border-radius: $border-rad-s;
+      padding: $spac-s $spac-s;
       text-align: center;
       overflow-y: hidden;
-      @include glass-bg();
-      padding: $spac-s $spac-s;
+      @include border-gradient;
+      @include glass-bg-only;
+
+  
+      
+      // border: $border-white;
+      // border-radius: $border-rad-s;
 
       @include tablet{
         width: 80%;

@@ -2039,6 +2039,10 @@ span {
   font-style: italic;
 }
 
+.spacer-xsm {
+  height: 3rem;
+}
+
 .spacer-sm {
   height: 5rem;
 }
@@ -2513,6 +2517,7 @@ span {
   position: relative;
   color: #c6c6c6;
   justify-content: center;
+  height: auto;
   padding-top: 2rem;
   height: 200dvh;
 }
@@ -2597,7 +2602,6 @@ span {
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
-  font-size: clamp(1.2rem, 0.629rem + 2.857vw, 2rem);
 }
 .hero .mindmap-title-container h3 {
   text-align: center;
@@ -2606,7 +2610,7 @@ span {
 }
 .hero .mindmap-title-container h3 span {
   color: #ffffff;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 @media (min-width: 37.5rem) {
   .hero .mindmap-title-container br {
@@ -2622,7 +2626,6 @@ span {
   position: relative;
   width: 95%;
   padding: 1rem;
-  margin-top: 5rem;
   border: solid 1px #cccccc;
   border-radius: 0.3rem 0.05rem;
   background-color: rgba(0, 0, 0, 0.4156862745);
@@ -2634,6 +2637,7 @@ span {
   z-index: 0;
   /* Pseudo-elemento para el borde gradiente */
   overflow-y: hidden;
+  min-height: 250px;
 }
 .hero .mindmap-container:after {
   content: "";
@@ -2778,34 +2782,15 @@ span {
 .services .services-boxes .service {
   margin: 1rem;
   position: relative;
-  border: solid 1px #cccccc;
-  border-radius: 0.5rem 0.05rem;
+  padding: 1rem 1rem;
   text-align: center;
   overflow-y: hidden;
-  position: relative;
-  padding: 1px;
-  border-radius: 0.5rem 0.05rem;
-  background-clip: padding-box;
-  border: 1px solid transparent;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #c6c6c6, #333333);
+  border-left: none;
+  border-right: none;
   z-index: 0;
-  /* Pseudo-elemento para el borde gradiente */
-  padding: 1rem 1rem;
-}
-.services .services-boxes .service:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(to right, #ffffff, #666666);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-  z-index: 1;
 }
 .services .services-boxes .service:before {
   content: "";
@@ -2817,8 +2802,8 @@ span {
   z-index: -1;
   border-radius: inherit;
   background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 @media (min-width: 37.5rem) {
   .services .services-boxes .service {
@@ -2889,13 +2874,11 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.gemstone h3 {
-  font-family: "monument";
-  font-weight: 400;
+.gemstone h2 span {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
-  background: radial-gradient(circle, #ffffff, #666666);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .gemstone .paso {
   position: relative;

@@ -22,12 +22,11 @@
   h2{
     @include font-monument-normal(100);
     @include text-gradient;
+    
+    span{
+      @include font-raleway(600);
+    }
   }
-  h3{
-    @include font-monument-ultrabold;
-    @include text-gradient;
-  }
-
 
   .paso {
     position: relative;
