@@ -7,7 +7,7 @@
       options: {
         particles:{
             number:{
-                value:20
+                value:5
             },
             color: "#003399",
             links:{

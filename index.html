@@ -5,7 +5,7 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="dist/css/index.css" />
-   <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" />
+   <!-- <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" /> -->
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -27,35 +27,37 @@
 <body>
 
    <main>
-      <nav class="nav p-s p-md-m m-auto">
-         <a href="#">
-            <img src="assets/img/logoContenido.svg" class="pure-img menu-item nav-logo" />
-         </a>
-         <div class="count__container" id="countEnd" style="display: none">
-            <p>termino papito</p>
-         </div>
-         <div class="count__container" id="countRun">
-            <div class="count__days">
-               <p class="days__number fs-m fs-md-l fs-xxlg-xxl" id="days"></p>
-               <p class="days__text fs-s fs-md-m fs-xxlg-l">dias</p>
-            </div>
-            <div class="count__hours">
-               <p class="hour__number fs-m fs-md-l fs-xxlg-xxl" id="hours"></p>
-               <p class="hours__tex fs-s fs-md-m fs-xxlg-l">hrs</p>
-            </div>
-            <div class="count__minutes">
-               <p class="minutes__number fs-m fs-md-l fs-xxlg-xxl" id="minutes"></p>
-               <p class="minutes__text fs-s fs-md-m fs-xxlg-l">min</p>
-            </div>
-            <div class="count__seconds">
-               <p class="seconds__number fs-m fs-md-l fs-xxlg-xxl" id="seconds"></p>
-               <p class="seconds__text fs-s fs-md-m fs-xxlg-l">seg</p>
-            </div>
-         </div>
-         <button class="btn-pri">AGENDATE</button>
-      </nav>
       <section class="pure-g  p-md-m p-lg-l hero" id="hero">
+         
+         
          <div class="pure-u-1 pure-u-lg-1-2">
+            <nav class="nav p-s p-md-m m-auto">
+               <a href="#">
+                  <img src="assets/img/logoContenido.svg" class="pure-img menu-item nav-logo" />
+               </a>
+               <div class="count__container" id="countEnd" style="display: none">
+                  <p>termino papito</p>
+               </div>
+               <div class="count__container" id="countRun">
+                  <div class="count__days">
+                     <p class="days__number fs-m fs-md-l fs-xxlg-xxl" id="days"></p>
+                     <p class="days__text fs-s fs-md-m fs-xxlg-l">dias</p>
+                  </div>
+                  <div class="count__hours">
+                     <p class="hour__number fs-m fs-md-l fs-xxlg-xxl" id="hours"></p>
+                     <p class="hours__tex fs-s fs-md-m fs-xxlg-l">hrs</p>
+                  </div>
+                  <div class="count__minutes">
+                     <p class="minutes__number fs-m fs-md-l fs-xxlg-xxl" id="minutes"></p>
+                     <p class="minutes__text fs-s fs-md-m fs-xxlg-l">min</p>
+                  </div>
+                  <div class="count__seconds">
+                     <p class="seconds__number fs-m fs-md-l fs-xxlg-xxl" id="seconds"></p>
+                     <p class="seconds__text fs-s fs-md-m fs-xxlg-l">seg</p>
+                  </div>
+               </div>
+               <button class="btn-pri">AGENDATE</button>
+            </nav>
             <div class="hero-text p-m">
                <h1>Crafting brands, Amplifying impact.</h1>
                <h2>
@@ -572,8 +574,8 @@
          smooth: true,
          lerp: 0.1, // Reduce el valor de lerp para hacer el scroll más pesado
          wheelMultiplier: 0.3,
-         smoothTouch: true,
-         touchMultiplier: 10 // Aumenta este valor para que el scroll en móviles sea mucho más lento
+         // smoothTouch: true,
+         // touchMultiplier: 10 // Aumenta este valor para que el scroll en móviles sea mucho más lento
       });
 
       lenis.on("scroll", (e) => {
