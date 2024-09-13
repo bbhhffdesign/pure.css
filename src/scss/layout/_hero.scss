@@ -5,12 +5,12 @@
     position: relative;
     color: $blanco;
     justify-content: center;
-    height: auto;
+    // height: auto;
     // padding-top: 2rem;   
 
-    & > div{
-        height: 100vh;
-    }
+    // & > div{
+    //     // height: 100vh;
+    // }
 
     @include desktop-sm{
 
