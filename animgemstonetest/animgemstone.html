@@ -1,66 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tsparticles - Ejemplo de Cambio de Propiedad</title>
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.10.0/tsparticles.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
 </head>
 <body style="background-color: black;">
-  <!-- Contenedor de partículas -->
-  <div id="tsparticles" style="width: 100vw; height: 100vh;"></div>
-
-  <button id="changeSpeedButton">Cambiar Velocidad</button>
-
-  <script>
-    let particlesInstance;
-    const initialSpeed = 1;
-    const newSpeed = 10;
-    const duration = 2000; // Duración de la transición en milisegundos
-
-    // Inicializa tsparticles con configuración inicial
-    tsParticles.load("tsparticles", {
-      particles: {
-        number: {
-          value: 100,
-        },
-        move: {
-          enable: true,
-          speed: initialSpeed, // Velocidad inicial de las partículas
-        },
-        size: {
-          value: 3,
-        },
-      },
-    }).then(instance => {
-      particlesInstance = instance;
-    });
-
-    // Cambiar velocidad al hacer clic en el botón
-    document.getElementById("changeSpeedButton").addEventListener("click", () => {
-      const startTime = performance.now();
-      const initialSpeedValue = particlesInstance.actualOptions.particles.move.speed;
-
-      const animate = (currentTime) => {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const currentSpeed = initialSpeedValue + progress * (newSpeed - initialSpeedValue);
-        
-        particlesInstance.updateOptions({
-          particles: {
-            move: {
-              speed: currentSpeed,
-            },
-          },
-        });
-
-        if (progress < 1) {
-          requestAnimationFrame(animate);
-        }
-      };
-
-      requestAnimationFrame(animate);
-    });
-  </script>
+  
 </body>
 </html>

@@ -1,0 +1,27 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+
+.brands{}
+
+.brandsbar{
+    // height: 8rem;
+    background-color: $blanco;
+
+
+    & > div{
+        box-sizing: border-box;
+        height: 4rem;
+        // border: solid 1px rgb(177, 18, 18);
+        @include flex(row, space-around, center);
+        margin: 1rem 0;
+    }
+
+
+
+    // .brands-container{
+    //     img{
+    //         height: 5rem;
+    //         width: auto;
+    //     }
+    // }
+}

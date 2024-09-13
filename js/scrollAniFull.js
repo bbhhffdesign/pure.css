@@ -47,6 +47,17 @@ const paso3title = document.getElementById("paso-3-title");
 const paso3 = document.getElementById("gemstone-paso-3");
 const paso3Content = document.getElementById("paso-3-content");
 
+//brandsbar
+const brandsbarCont_1 = document.getElementById("brands-container1");
+const brandsbarCont_2 = document.getElementById("brands-container2");
+const brandGm = document.getElementById("logo-gm");
+const brandX = document.getElementById("logo-x");
+const brandYam = document.getElementById("logo-yam");
+const brandSou = document.getElementById("logo-sou");
+const brandBel = document.getElementById("logo-bel");
+const brandUda = document.getElementById("logo-uda");
+
+
 //faqText
 const faqText = document.getElementById("faq-text")
 const faqText1 = document.getElementById("faq-text-1")
@@ -107,7 +118,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_servicesText_3 = gsap.timeline({
         scrollTrigger:{
             trigger: servicesText3,
-            markers: true,
+            // markers: true,
             start:"top 90%",
             end: "bottom 90%"
         }
@@ -243,6 +254,28 @@ mm_mobile.add("(max-width: 768px)", () => {
     })
     tl_faqText_2
         .from(faqText2,{opacity: 0, y:100, ease: "power4.out", duration: 1})
+
+    const tl_brandsbar_1 = gsap.timeline({
+        scrollTrigger:{
+            trigger: brandsbarCont_1,
+            // markers: true,
+            start:"top 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_brandsbar_1
+        .from(brandsbarCont_1, {opacity: 0, x:-60,  duration: 1.2, ease: "power2.out" })
+
+    const tl_brandsbar_2 = gsap.timeline({
+        scrollTrigger:{
+            trigger: brandsbarCont_2,
+            // markers: true,
+            start:"top 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_brandsbar_2
+    .from(brandsbarCont_2, {opacity: 0, x:60,  duration: 1.2, ease: "power2.out" })
 
 
 })
