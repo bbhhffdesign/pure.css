@@ -2519,12 +2519,6 @@ span {
   justify-content: center;
   height: auto;
   padding-top: 2rem;
-  height: 200dvh;
-}
-@media (min-width: 64rem) {
-  .hero {
-    height: 100dvh;
-  }
 }
 .hero div {
   display: flex;
@@ -2962,15 +2956,8 @@ span {
 .faq .faq-text {
   text-align: center;
 }
-.faq .faq-text p {
-  font-family: "monument_dos";
-  font-weight: 100;
-  font-style: normal;
-}
 .faq .faq-text h3 {
-  background: radial-gradient(circle, #ffffff, #666666);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #c6c6c6;
 }
 
 .faq-qanda {

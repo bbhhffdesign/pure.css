@@ -12,12 +12,11 @@
    .faq-text{
     text-align: center;
 
-    p{
-        @include font-monument-normal;
-    }
     h3{
-        @include text-gradient;
+        color: $blanco;
     }
+
+
    }
 
 

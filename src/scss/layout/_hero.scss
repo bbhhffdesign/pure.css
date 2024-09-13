@@ -7,10 +7,10 @@
     justify-content: center;
     height: auto;
     padding-top: 2rem;   
-    height: 200dvh;
+    // height: 200dvh;
 
     @include desktop-sm{
-        height: 100dvh
+        // height: 100dvh
     }
 
     div{
