@@ -2600,7 +2600,6 @@ span {
   font-size: clamp(1.2rem, 0.629rem + 2.857vw, 2rem);
 }
 .hero .mindmap-title-container h3 {
-  width: 100vw;
   text-align: center;
   font-size: clamp(1rem, 0.571rem + 2.143vw, 1.6rem);
   color: #c6c6c6;
