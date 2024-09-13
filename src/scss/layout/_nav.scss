@@ -5,14 +5,14 @@
 .nav{
     @extend .pure-menu-horizontal;
     @include glass-bg-only;
-    padding: $spac-xs 0;
+    position: fixed;
+    top: 0;
     height: 3rem;
+    padding: $spac-xs 0;
     border: none; 
     border-bottom: $border-white;
     z-index: 2;
 
-    position: sticky;
-    top: 0;
 
 
 

@@ -1,9 +1,18 @@
 // const  = document.getElementById()
 
+//navbar
+const navBar = document.getElementById("navbar");
+
+//hero
+const hero  = document.getElementById("hero");
+const heroText  = document.getElementById("hero-text");
+
 //mindmap titles 
-const mindmapTitles = document.getElementById("mindmap-title-container")
-const mindmapTitle = document.getElementById("mindmap-title")
-const mindmapSubtitle = document.getElementById("mindmap-subtitle")
+const mindmapText_1 = document.getElementById("mindmap-text-1")
+const mindmapText_2 = document.getElementById("mindmap-text-2")
+const mindmapText_3 = document.getElementById("mindmap-text-3")
+const mindmapText_4 = document.getElementById("mindmap-text-4")
+
 
 //mindmap gem
 const mindmapGem = document.getElementById('mindmap-gem');
@@ -31,6 +40,9 @@ const gemstoneTextContainer = document.getElementById("gemstone-text");
 const gemstoneText1 = document.getElementById("gemstone-text-1");
 const gemstoneText2 = document.getElementById("gemstone-text-2");
 const gemstoneText3 = document.getElementById("gemstone-text-3");
+const gemstoneText4 = document.getElementById("gemstone-text-4");
+const gemstoneText5 = document.getElementById("gemstone-text-5");
+const gemstoneText6 = document.getElementById("gemstone-text-6");
 
 //gemstoneSvgs
 const gemstoneSvg = document.getElementById("gemstoneSvg");
@@ -74,18 +86,66 @@ const mm_mobile = gsap.matchMedia();
 
 mm_mobile.add("(max-width: 768px)", () => {
 
-    const tl_mindmapTitles = gsap.timeline({
+    const tl_navbar = gsap.timeline({
         scrollTrigger:{
-            trigger: mindmapTitles,
+            trigger: heroText,
             // markers: true,
-            start:"top 80%",
-            end: "40% 80%",
+            start:"90% 10%",
+            end: "110% 10%",
+            scrub: true
+        }
+    })
+    tl_navbar
+        .to(navBar,{y:-100})
+
+    const tl_mindmapText_1 = gsap.timeline({
+        scrollTrigger:{
+            trigger: mindmapText_1,
+            markers: true,
+            start:"-20% 90%",
+            end: "-20% 90%",
         }
     })
 
-    tl_mindmapTitles
-        .from(mindmapTitle, {y:150, ease: "power4.out", duration: 1})
-        .from(mindmapSubtitle, {y:150, ease: "power4.out", duration: 1, delay: .5},"<")
+    tl_mindmapText_1
+        .from(mindmapText_1, {y:150, ease: "power4.out", duration: 1})
+
+    const tl_mindmapText_2 = gsap.timeline({
+        scrollTrigger:{
+            trigger: mindmapText_2,
+            markers: true,
+            start:"-20% 90%",
+            end: "-20% 90%",
+        }
+    })
+
+    tl_mindmapText_2
+        .from(mindmapText_2, {y:150, ease: "power4.out", duration: 1})
+
+    const tl_mindmapText_3 = gsap.timeline({
+        scrollTrigger:{
+            trigger: mindmapText_3,
+            markers: true,
+            start:"-20% 90%",
+            end: "-20% 90%",
+        }
+    })
+
+    tl_mindmapText_3
+        .from(mindmapText_3, {y:150, ease: "power4.out", duration: 1})
+
+    const tl_mindmapText_4 = gsap.timeline({
+        scrollTrigger:{
+            trigger: mindmapText_4,
+            markers: true,
+            start:"-20% 90%",
+            end: "-20% 90%",
+        }
+    })
+
+    tl_mindmapText_4
+        .from(mindmapText_4, {y:150, ease: "power4.out", duration: 1})
+
 
     //aca va la del mindmapGem
 
@@ -193,6 +253,39 @@ mm_mobile.add("(max-width: 768px)", () => {
     })
     tl_gemstoneText_3
         .from(gemstoneText3,{opacity:0, y:80, duration:.5})
+
+    const tl_gemstoneText_4 = gsap.timeline({
+        scrollTrigger:{
+            trigger: gemstoneText4,
+            // markers: true,
+            start:"-20% 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_gemstoneText_4
+        .from(gemstoneText4,{opacity:0, y:80, duration:.5})
+
+    const tl_gemstoneText_5 = gsap.timeline({
+        scrollTrigger:{
+            trigger: gemstoneText5,
+            // markers: true,
+            start:"-20% 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_gemstoneText_5
+        .from(gemstoneText5,{opacity:0, y:80, duration:.5})
+
+    const tl_gemstoneText_6 = gsap.timeline({
+        scrollTrigger:{
+            trigger: gemstoneText6,
+            // markers: true,
+            start:"-20% 90%",
+            end: "bottom 90%"
+        }
+    })
+    tl_gemstoneText_6
+        .from(gemstoneText6,{opacity:0, y:80, duration:.5})
 
         //aca va la animacion del gemstone gem xd
 

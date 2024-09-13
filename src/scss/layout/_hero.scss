@@ -74,14 +74,11 @@
 
         @include desktop-sm{
             padding-left    : 0;
-        }
-
-    
+        }    
     }
 
     .mindmap-title-container{
         padding: 0 $spac-s;
-        // padding-bottom: 5rem;
 
         & > div{
             overflow-y: hidden;
@@ -93,7 +90,6 @@
         }
         h3{
             text-align: center;
-            font-size: clamp(1rem, 0.571rem + 2.143vw, 1.6rem);
             color: $blanco;
             
             span{
@@ -129,6 +125,7 @@
             font-size: 200%;
             position: absolute;
             @include centrarhorizontal;
+            top: 40%;
         }
 
         svg{
