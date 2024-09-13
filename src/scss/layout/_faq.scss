@@ -12,8 +12,7 @@
    .faq-text{
     text-align: center;
 
-    p,
-    h3{
+    p{
         @include font-monument-normal;
     }
     h3{
@@ -31,7 +30,6 @@
     padding: $spac-s;
     @include flex(column, center, center,none);
     @include glass-bg-only;
-    // background-color: $colorPrimarioTransparent;
 
     &:hover{
 
@@ -62,7 +60,6 @@
     
         }
         p{
-            // align-self: center;
             margin: 0;
     
         }

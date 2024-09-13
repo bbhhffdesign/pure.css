@@ -255,27 +255,27 @@ mm_mobile.add("(max-width: 768px)", () => {
     tl_faqText_2
         .from(faqText2,{opacity: 0, y:100, ease: "power4.out", duration: 1})
 
-    const tl_brandsbar_1 = gsap.timeline({
-        scrollTrigger:{
-            trigger: brandsbarCont_1,
-            // markers: true,
-            start:"top 90%",
-            end: "bottom 90%"
-        }
-    })
-    tl_brandsbar_1
-        .from(brandsbarCont_1, {opacity: 0, x:-60,  duration: 1.2, ease: "power2.out" })
+    // const tl_brandsbar_1 = gsap.timeline({
+    //     scrollTrigger:{
+    //         trigger: brandsbarCont_1,
+    //         // markers: true,
+    //         start:"top 90%",
+    //         end: "bottom 90%"
+    //     }
+    // })
+    // tl_brandsbar_1
+    //     .from(brandsbarCont_1, {opacity: 0, x:-60,  duration: 1.2, ease: "power2.out" })
 
-    const tl_brandsbar_2 = gsap.timeline({
-        scrollTrigger:{
-            trigger: brandsbarCont_2,
-            // markers: true,
-            start:"top 90%",
-            end: "bottom 90%"
-        }
-    })
-    tl_brandsbar_2
-    .from(brandsbarCont_2, {opacity: 0, x:60,  duration: 1.2, ease: "power2.out" })
+    // const tl_brandsbar_2 = gsap.timeline({
+    //     scrollTrigger:{
+    //         trigger: brandsbarCont_2,
+    //         // markers: true,
+    //         start:"top 90%",
+    //         end: "bottom 90%"
+    //     }
+    // })
+    // tl_brandsbar_2
+    // .from(brandsbarCont_2, {opacity: 0, x:60,  duration: 1.2, ease: "power2.out" })
 
 
 })

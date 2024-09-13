@@ -6,3 +6,15 @@
     font-family: 'monument_dos';
     src: url(../../assets/MonumentExtended-Regular.otf) format('opentype');
 }
+@font-face{
+    font-family: 'menseal_medium' ;
+    src: url(../../assets/Menseal-Medium.ttf) format('opentype');
+}
+@font-face{
+    font-family: 'menseal_regular' ;
+    src: url(../../assets/Menseal-Regular.ttf) format('opentype');
+}
+@font-face{
+    font-family: 'menseal_semibold' ;
+    src: url(../../assets/Menseal-SemiBold.ttf) format('opentype');
+}

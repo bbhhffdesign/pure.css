@@ -89,14 +89,12 @@
         }
         h3{
             text-align: center;
-            @include font-monument-normal;
-            letter-spacing: .5px;
             font-size: clamp(1rem, 0.571rem + 2.143vw, 1.6rem);
             color: $blanco;
             
             span{
                 color: $blancoTrue;
-                letter-spacing: 4px;
+                letter-spacing: 3px;
             }
             
         }

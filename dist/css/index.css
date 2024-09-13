@@ -2453,8 +2453,8 @@ span {
   z-index: -1;
   border-radius: inherit;
   background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 @media (min-width: 37.5rem) {
   .nav {
@@ -2600,17 +2600,14 @@ span {
   font-size: clamp(1.2rem, 0.629rem + 2.857vw, 2rem);
 }
 .hero .mindmap-title-container h3 {
+  width: 100vw;
   text-align: center;
-  font-family: "monument_dos";
-  font-weight: 100;
-  font-style: normal;
-  letter-spacing: 0.5px;
   font-size: clamp(1rem, 0.571rem + 2.143vw, 1.6rem);
   color: #c6c6c6;
 }
 .hero .mindmap-title-container h3 span {
   color: #ffffff;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 @media (min-width: 37.5rem) {
   .hero .mindmap-title-container br {
@@ -2746,8 +2743,8 @@ span {
   z-index: -1;
   border-radius: inherit;
   background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .services .services-text > div {
   overflow-y: hidden;
@@ -2924,8 +2921,8 @@ span {
   z-index: -1;
   border-radius: inherit;
   background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .gemstone .paso .paso-title {
   color: white;
@@ -2983,8 +2980,7 @@ span {
 .faq .faq-text {
   text-align: center;
 }
-.faq .faq-text p,
-.faq .faq-text h3 {
+.faq .faq-text p {
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
@@ -3017,8 +3013,8 @@ span {
   z-index: -1;
   border-radius: inherit;
   background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .faq-qanda:hover .answer {
   max-height: 1000px;
@@ -3058,17 +3054,36 @@ span {
 }
 
 .brandsbar {
-  background-color: #c6c6c6;
+  position: relative;
+  border: solid 1px #cccccc;
+  z-index: 0;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #c6c6c6, #333333);
+  border-left: none;
+  border-right: none;
+}
+.brandsbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .brandsbar > div {
   box-sizing: border-box;
-  height: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   gap: none;
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 footer {
