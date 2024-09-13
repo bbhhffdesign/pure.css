@@ -6,16 +6,17 @@
     color: $blanco;
     justify-content: center;
     height: auto;
-    // padding-top: 2rem;   
-    // height: 200dvh;
+    padding-top: 2rem;   
+
+    & > div{
+        height: 100vh;
+    }
 
     @include desktop-sm{
-        // height: 100dvh
+
     }
 
     div{
-        
-        @include flex(column, center, flex-start, auto);
         @include desktop-sm{
             max-width: 40rem;
         }
@@ -34,7 +35,8 @@
     }
 
     .hero-text{
-        // height: auto;
+        @include flex(column, center, flex-start, none);
+        height: inherit;
         position: relative;
         gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
 

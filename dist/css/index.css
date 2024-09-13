@@ -2518,13 +2518,10 @@ span {
   color: #c6c6c6;
   justify-content: center;
   height: auto;
+  padding-top: 2rem;
 }
-.hero div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: auto;
+.hero > div {
+  height: 100vh;
 }
 @media (min-width: 64rem) {
   .hero div {
@@ -2542,6 +2539,12 @@ span {
   margin-top: 0.5rem;
 }
 .hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: none;
+  height: inherit;
   position: relative;
   gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
 }
