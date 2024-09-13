@@ -101,9 +101,9 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_mindmapText_1 = gsap.timeline({
         scrollTrigger:{
             trigger: mindmapText_1,
-            markers: true,
-            start:"-20% 90%",
-            end: "-20% 90%",
+            // markers: true,
+            start:"-30% 90%",
+            end: "-30% 90%",
         }
     })
 
@@ -113,9 +113,9 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_mindmapText_2 = gsap.timeline({
         scrollTrigger:{
             trigger: mindmapText_2,
-            markers: true,
-            start:"-20% 90%",
-            end: "-20% 90%",
+            // markers: true,
+            start:"-30% 90%",
+            end: "-30% 90%",
         }
     })
 
@@ -125,9 +125,9 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_mindmapText_3 = gsap.timeline({
         scrollTrigger:{
             trigger: mindmapText_3,
-            markers: true,
-            start:"-20% 90%",
-            end: "-20% 90%",
+            // markers: true,
+            start:"-40% 90%",
+            end: "-40% 90%",
         }
     })
 
@@ -137,9 +137,9 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_mindmapText_4 = gsap.timeline({
         scrollTrigger:{
             trigger: mindmapText_4,
-            markers: true,
-            start:"-20% 90%",
-            end: "-20% 90%",
+            // markers: true,
+            start:"-40% 90%",
+            end: "-40% 90%",
         }
     })
 
@@ -289,50 +289,50 @@ mm_mobile.add("(max-width: 768px)", () => {
 
         //aca va la animacion del gemstone gem xd
 
-    const tl_paso_1 = gsap.timeline({
-        scrollTrigger:{
-            trigger: paso1,
-            // markers: true,
-            start:"-10% 90%",
-            end: "bottom 90%"
-        }        
-    })
-    tl_paso_1
-        .from(paso1title, {opacity:0, x:50, ease: "power4.out", duration: 1})
-        .from(paso1Content,{opacity:0, ease: "power4.out", duration:3},"<")
+    // const tl_paso_1 = gsap.timeline({
+    //     scrollTrigger:{
+    //         trigger: paso1,
+    //         // markers: true,
+    //         start:"-10% 90%",
+    //         end: "bottom 90%"
+    //     }        
+    // })
+    // tl_paso_1
+    //     .from(paso1title, {opacity:0, x:50, ease: "power4.out", duration: 1})
+    //     .from(paso1Content,{opacity:0, ease: "power4.out", duration:3},"<")
 
-    const tl_paso_2 = gsap.timeline({
-        scrollTrigger:{
-            trigger: paso2,
-            // markers: true,
-            start:"10% 90%",
-            end: "bottom 90%"
-        }        
-    })
-    tl_paso_2
-        .from(paso2title, {opacity:0, x:-50, ease: "power4.out", duration: 1})
-        .from(paso2Content,{opacity:0, ease: "power4.out", duration:3},"<")
+    // const tl_paso_2 = gsap.timeline({
+    //     scrollTrigger:{
+    //         trigger: paso2,
+    //         // markers: true,
+    //         start:"10% 90%",
+    //         end: "bottom 90%"
+    //     }        
+    // })
+    // tl_paso_2
+    //     .from(paso2title, {opacity:0, x:-50, ease: "power4.out", duration: 1})
+    //     .from(paso2Content,{opacity:0, ease: "power4.out", duration:3},"<")
 
-    const tl_paso_3 = gsap.timeline({
-        scrollTrigger:{
-            trigger: paso3,
-            // markers: true,
-            start:"-10% 90%",
-            end: "bottom 90%"
-        }        
-    })
-    tl_paso_3
-        .from(paso3title, {opacity:0, x:50, ease: "power4.out", duration: 1})
-        .from(paso3Content,{opacity:0, ease: "power4.out", duration:3},"<")
+    // const tl_paso_3 = gsap.timeline({
+    //     scrollTrigger:{
+    //         trigger: paso3,
+    //         // markers: true,
+    //         start:"-10% 90%",
+    //         end: "bottom 90%"
+    //     }        
+    // })
+    // tl_paso_3
+    //     .from(paso3title, {opacity:0, x:50, ease: "power4.out", duration: 1})
+    //     .from(paso3Content,{opacity:0, ease: "power4.out", duration:3},"<")
 
-    const tl_faqText_1 = gsap.timeline({
-        scrollTrigger:{
-            trigger:faqText1,
-            // markers: true,
-            start:"-40% 90%",
-            end: "bottom 90%"
-        }
-    })
+    // const tl_faqText_1 = gsap.timeline({
+    //     scrollTrigger:{
+    //         trigger:faqText1,
+    //         // markers: true,
+    //         start:"-40% 90%",
+    //         end: "bottom 90%"
+    //     }
+    // })
     tl_faqText_1
         .from(faqText1,{opacity: 0, y:100, ease: "power4.out", duration: 1})
 

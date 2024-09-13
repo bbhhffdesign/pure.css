@@ -31,20 +31,31 @@
   .paso {
     position: relative;
     padding: $spac-s;
-    margin: $spac-s;
+    margin: $spac-m;
     border: $border-white;
-    border-radius: $border-rad-s;
+    // border-radius: $border-rad-s;
     @include glass-bg-only;
     @include border-gradient;
+
+    h1{
+      @include font-raleway;
+      position: absolute;
+      z-index: -2;
+      font-size: clamp(15rem, 10.714rem + 21.429vw, 21rem);
+      top: -40%;
+      left: -10%;
+      margin: 0;
+      line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
+    }
 
     .paso-title {
       color: white;
       @include font-monument-normal;
       margin: 0;
     }
-
+    
     @include tablet {
-      margin: $spac-m;
+      margin: $spac-l;
       padding: $spac-m;
     }
     @include desktop-xlg {
