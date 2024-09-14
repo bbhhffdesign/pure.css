@@ -228,7 +228,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_gemstoneText_1 = gsap.timeline({
         scrollTrigger:{
             trigger: gemstoneSection,
-            markers: true,
+           // markers: true,
             pin: true,
             start:"20% center",
             end: "center center",
