@@ -114,6 +114,9 @@
       z-index: 1;
     }
 
+    //mindmap svg 
+
+
     svg {
       // position: relative;
       height: auto;
@@ -123,6 +126,37 @@
       @include glass-bg-only;
       background-color: var(--transparentGrisSuave);
       // overflow-y: hidden;
+
+      .mindmap-like{
+        fill: var(--colorSecundario);
+        stroke-width: 1px;
+        stroke: var(--negroTexto);
+      }
+      .owner-svg,
+      .ventas-svg,
+      .branding-svg,
+      .agendabigtext-svg,
+      .estrategia-svg,
+      .excelente-svg,
+      .no-svg,
+      .si-svg,
+      .agenda-svg{
+        fill: var(--negroTexto);
+        stroke-width: 1px;
+        stroke: var(--negroTexto);
+      }
+      .agendabigfill-svg{
+        fill: var(--colorSecundario);
+      }
+      .flecha{
+        stroke-width: 2px;
+        stroke: var(--negroTexto);
+        fill: none;
+      }
+      .posicionmarca-svg{
+        fill: var(--negroTexto);
+        stroke: var(--negroTexto);
+      }
     }
 
     @include desktop-sm {
