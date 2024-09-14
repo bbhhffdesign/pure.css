@@ -1966,7 +1966,7 @@ section {
 }
 
 h1 {
-  color: #ffffff;
+  color: #000000;
   font-size: clamp(3.2rem, 1.2rem + 10vw, 6rem);
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -1982,7 +1982,7 @@ h1 {
 }
 
 h2 {
-  color: #ffffff;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -1998,7 +1998,7 @@ h2 {
 }
 
 h3 {
-  color: #ffffff;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -2032,7 +2032,7 @@ strong {
 }
 
 span {
-  color: #ccff66;
+  color: #003399;
 }
 
 .italic {
@@ -2056,15 +2056,15 @@ span {
 }
 
 .color-white {
-  color: #c6c6c6;
+  color: #131313;
 }
 
 .color-white-true {
-  color: #ffffff;
+  color: #000000;
 }
 
 .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
-  background-color: #ccff66;
+  background-color: #003399;
   border-radius: 0.3rem 0.05rem;
   font-size: 80%;
   font-weight: 600;
@@ -2081,7 +2081,7 @@ span {
   z-index: -1;
   inset: 0;
   border-radius: 0.3rem 0.05rem;
-  background: #ccff66;
+  background: #003399;
   transform: scaleX(1);
   transition: transform 0.3s ease-out;
   transform-origin: right;
@@ -2123,7 +2123,7 @@ span {
 .btn-pri-xxl:hover {
   box-shadow: none;
   background-color: rgba(85, 84, 84, 0.185);
-  color: #c6c6c6;
+  color: #131313;
   border: solid 1px #cccccc;
 }
 
@@ -2491,7 +2491,7 @@ span {
   align-items: center;
   gap: none;
   gap: 0.5rem;
-  color: #c6c6c6;
+  color: #131313;
   border-top: solid 1px #cccccc;
   border-bottom: solid 1px #cccccc;
   padding: 0.3rem 0;
@@ -2515,7 +2515,7 @@ span {
 
 .hero {
   position: relative;
-  color: #c6c6c6;
+  color: #131313;
   justify-content: center;
 }
 @media (min-width: 64rem) {
@@ -2526,7 +2526,7 @@ span {
 .hero > :nth-child(2) h2 {
   width: 100%;
   text-align: center;
-  background: radial-gradient(circle, #ffffff, #666666);
+  background: radial-gradient(circle, #000000, #666666);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2596,10 +2596,10 @@ span {
 }
 .hero .mindmap-title-container h3 {
   text-align: center;
-  color: #c6c6c6;
+  color: #131313;
 }
 .hero .mindmap-title-container h3 span {
-  color: #ffffff;
+  color: #000000;
   letter-spacing: 2px;
 }
 @media (min-width: 37.5rem) {
@@ -2638,7 +2638,7 @@ span {
   bottom: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(to right, #ffffff, #666666);
+  background: linear-gradient(to right, #000000, #666666);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -2708,7 +2708,7 @@ span {
 }
 
 .services {
-  color: #c6c6c6;
+  color: #131313;
   height: auto;
 }
 .services .services-text {
@@ -2717,7 +2717,7 @@ span {
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #c6c6c6, #333333);
+  border-image-source: linear-gradient(to right, #131313, #333333);
   border-left: none;
   border-right: none;
 }
@@ -2761,11 +2761,10 @@ span {
   justify-content: center;
   align-items: center;
   gap: none;
-  height: 100vh;
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
-  background: radial-gradient(circle, #ffffff, #666666);
+  background: radial-gradient(circle, #000000, #666666);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2777,7 +2776,7 @@ span {
   overflow-y: hidden;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #c6c6c6, #333333);
+  border-image-source: linear-gradient(to right, #131313, #333333);
   border-left: none;
   border-right: none;
   z-index: 0;
@@ -2844,7 +2843,7 @@ span {
 
 .gemstone {
   position: relative;
-  color: #c6c6c6;
+  color: #131313;
   height: auto;
 }
 .gemstone .gemstone-text {
@@ -2859,7 +2858,7 @@ span {
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
-  background: radial-gradient(circle, #ffffff, #666666);
+  background: radial-gradient(circle, #000000, #666666);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2877,7 +2876,7 @@ span {
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #c6c6c6, #333333);
+  border-image-source: linear-gradient(to right, #131313, #333333);
   border-left: none;
   border-right: none;
 }
@@ -2906,6 +2905,9 @@ span {
   left: -10%;
   margin: 0;
   line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
+}
+.gemstone .paso h1:hover {
+  color: #ccff66;
 }
 .gemstone .paso .paso-title {
   color: white;
@@ -2951,7 +2953,7 @@ span {
 }
 
 .faq {
-  color: #c6c6c6;
+  color: #131313;
   height: auto;
   min-height: 150vh;
 }
@@ -2964,7 +2966,7 @@ span {
   text-align: center;
 }
 .faq .faq-text h3 {
-  color: #c6c6c6;
+  color: #131313;
 }
 
 .faq-qanda {
@@ -3035,7 +3037,7 @@ span {
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #c6c6c6, #333333);
+  border-image-source: linear-gradient(to right, #131313, #333333);
   border-left: none;
   border-right: none;
 }
@@ -3070,7 +3072,7 @@ footer {
 
 .footer {
   max-width: 80rem;
-  color: #c6c6c6;
+  color: #131313;
   text-align: center;
 }
 .footer > div {
@@ -3150,7 +3152,7 @@ html, body {
 }
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   overflow-x: hidden;
   overscroll-behavior: none;
 }/*# sourceMappingURL=index.css.map */

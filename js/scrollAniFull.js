@@ -173,17 +173,17 @@ mm_mobile.add("(max-width: 768px)", () => {
         .from(servicesText2,{opacity: .5, y:150, ease: "power4.out", duration: 1})
 
 
-    const tl_servicesText_3 = gsap.timeline({
-        scrollTrigger:{
-            trigger: servicesText3,
-            markers: true,
-            pin: true,
-            start:"center center",
-            end: "200% bottom",
-            scrub: 3,
+    // const tl_servicesText_3 = gsap.timeline({
+    //     scrollTrigger:{
+    //         trigger: servicesText3,
+    //         markers: true,
+    //         pin: true,
+    //         start:"center center",
+    //         end: "200% center",
+    //         scrub: 3,
 
-        }
-    })
+    //     }
+    // })
 
     tl_servicesText_3
         .from(servicesText3,{opacity: 0, ease: "power4.out", duration: 3})

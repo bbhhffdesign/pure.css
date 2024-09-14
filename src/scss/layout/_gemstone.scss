@@ -38,6 +38,7 @@
     @include border-gradient;
 
     h1{
+      // color: $colorPrimarioTransparent;
       @include font-raleway;
       position: absolute;
       z-index: -2;
@@ -46,6 +47,10 @@
       left: -10%;
       margin: 0;
       line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
+
+      &:hover{
+        color: $colorPrimario;
+      }
     }
 
     .paso-title {
