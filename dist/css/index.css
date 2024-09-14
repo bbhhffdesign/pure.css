@@ -1972,6 +1972,9 @@ striping:
   --transparentGrisSuave: #c8c8c85e;
   --graadientRad-1: #c6c6c6;
   --gradientRad-2: #000000;
+  --svgNegro: black;
+  --svgBlanco: rgb(255, 255, 255);
+  --svgGris: #c6c6c6;
 }
 
 section {
@@ -2658,7 +2661,6 @@ span {
   border-radius: 0.3rem 0.05rem;
   z-index: 0;
   background-color: var(--transparentGrisSuave);
-  overflow-y: hidden;
 }
 .hero .mindmap-container svg:before {
   content: "";
@@ -2868,8 +2870,10 @@ span {
   width: 70%;
   z-index: -1;
 }
-.gemstone .gemstone-svg .svg-gemstone {
-  stroke: black;
+.gemstone .gemstone-svg .cls-1 {
+  stroke: var(--svgBlanco);
+  stroke-width: 1;
+  fill: none;
 }
 .gemstone h2 {
   font-family: "monument_dos";
