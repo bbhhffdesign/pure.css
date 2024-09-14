@@ -5,11 +5,9 @@
     position: relative;
     @include flex(row,center, center, none);
     gap: .5rem;
-    color: $blanco;
     border-top: $border-white;
     border-bottom: $border-white;
     padding: .3rem 0;
-    // @include font-rajdhani(600);
     
     
     & > div{

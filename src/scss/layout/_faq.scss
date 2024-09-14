@@ -2,9 +2,7 @@
 @use "../abstract/variables" as *;
 
 .faq{
-    background-color: rgba(100, 100, 100, 0.69);
-    // filter: saturate(0%);
-    color: $blanco;
+    background-color:var(--transparentFaq);
     height: auto;
     min-height: 150vh;
     @include desktop-sm{
@@ -13,11 +11,6 @@
 
    .faq-text{
     text-align: center;
-
-    h3{
-        color: $blanco;
-    }
-
 
    }
 
@@ -30,7 +23,6 @@
     border-radius: $border-rad-s;
     padding: $spac-s;
     @include flex(column, center, center,none);
-    // background-color: #2b19b928;
     @include glass-bg-only;
 
     &:hover{

@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 //text gradient
-@mixin text-gradient($color1:$blancoTrue, $color2:$gris2) {
+@mixin text-gradient($color1:var(--gris), $color2:var(--negro)) {
   background: radial-gradient(circle, $color1, $color2); 
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
@@ -73,7 +73,7 @@ font-style: normal;
 @mixin border-gradient{
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, $blanco, $gris3);
+  border-image-source: radial-gradient(circle, var(--gris), var(--negro));
   border-left:  none;
   border-right: none ;
 }
@@ -96,8 +96,8 @@ font-style: normal;
 
 }
 
-@mixin glass-bg($color1: $blancoTrue, $color2: $gris2, $border-width: 1px,
- $blur: 4px, $bg-color: transparent, $position: relative, $zIndex1: -1, $zIndex2:0, $zIndex3:1 ) {
+@mixin glass-bg($color1: var(--negro), $color2: var(--blanco), $border-width: 1px,
+ $blur: 4px, $bg-color: transparent, $position: relative, $zIndex1: -1, $zIndex2:0, $zIndex3:1){
   
   position: $position;
   padding: $border-width;
@@ -140,7 +140,7 @@ font-style: normal;
 
 
 @mixin glass-mask($color: transparent, $blur:4px ){
-  background-color: $transparent0;
+  background-color: transparent;
 
   &::after{
     content: "";
@@ -222,7 +222,7 @@ font-style: normal;
 
 @mixin hvr-right($direction:right, $time1:.1s, $time2:.3s){
     will-change: transform;
-    background-color: $transparent0;
+    background-color: transparent;
     transition:color $time2 ease-in;
     &::before{
         will-change: transform;
@@ -231,7 +231,7 @@ font-style: normal;
         z-index: -1;
         inset: 0;
         border-radius: $border-rad-xs;
-        background: $colorSecundario;
+        background: var(--colorSecundario);
         transform: scaleX(1);
         transition: transform $time2 ease-out;
         transform-origin: right;

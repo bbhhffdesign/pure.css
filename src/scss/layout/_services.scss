@@ -2,7 +2,6 @@
 @use "../abstract/variables" as *;
 
 .services {
-  color: $blanco;
   height: auto;
   
   
@@ -38,13 +37,10 @@
     }
     
     .services-boxes-title{
-      
       @include flex(column, center, center,none);
-      // margin: 5rem 0 4rem 0;
-      // height: 100vh;
       @include font-monument-normal; 
       @include text-gradient;
-      // opacity: 0; 
+
 
     }
     .service{
@@ -57,9 +53,6 @@
       @include glass-bg-only;
 
   
-      
-      // border: $border-white;
-      // border-radius: $border-rad-s;
 
       @include tablet{
         width: 80%;

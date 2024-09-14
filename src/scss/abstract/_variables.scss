@@ -1,14 +1,30 @@
-$colorPrimario:#0B4599 ;
+:root{
+    --colorPrimario: #0B4599;
+    --colorSecundario: #eba94d;
+    --textoPrincipal: black;
+    --textoSecundario: #c6c6c6;
+    --blanco: white;
+    --gris: #c6c6c6;
+    --negro: rgb(0, 0, 0);
+    --borderBlanco: black ;
+    --transparentAzul: rgba(106, 154, 237, 0.69);
+    --transparentGrisSuave: rgba(200, 200, 200, 0.368);
+    --borderNegro: white;
+  }
+
+
+$colorPrimario:#0B4599;
 $colorPrimarioTransparent: #0033993b;
+// $colorSecundario: #C9FC59;
 // $colorSecundario: #FF6700;
 // $colorSecundario: #f38a6a;
 // $colorSecundario: #F7931E;
-// $colorSecundario: #eba94d;
-$colorSecundario: #0B4599;
+$colorSecundario: #eba94d;
+// $colorSecundario: #0B4599;
 // $colorSecundario: #f7a839;
 // $colorSecundario: #F7931E ;
 $colorSecundarioTransparent: #ccff663d;
-$blanco: #131313;
+$blanco: #000000;
 $blancoTrue: #000000;
 $gris1: #cccccc;
 $gris2: #666666;
@@ -38,10 +54,10 @@ $fuenteTerciaria: 'rajdhani', sans-serif;
 
 
 // border
-$border-black: solid 1px black;
-$border-black-2: solid 2px black;
-$border-white: solid 1px #cccccc;
-$border-white-2: solid 2px #cccccc;
+$border-black: solid 1px var(--borderNegro);
+// $border-black-2: solid 2px black;
+$border-white: solid 1px var(--borderBlanco);
+// $border-white-2: solid 2px #cccccc;
 
 //medidas
 $vh100: 100vh;

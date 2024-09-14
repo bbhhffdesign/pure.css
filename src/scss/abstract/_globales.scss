@@ -10,7 +10,7 @@ section{
 }
 
 h1{
-    color: $blancoTrue;
+    color: var(--negro);
     font-size: clamp(3.2rem, 1.2rem + 10vw, 6rem);
     @include font-raleway(600);
     margin-bottom: 1.5rem;
@@ -20,7 +20,7 @@ h1{
     }
 }
 h2{
-    color:$blancoTrue;
+    color:var(--negro);
     @include font-raleway(600);
     // font-family: 'monument';
     font-size: clamp(1.5rem, 0.618rem + 3.922vw, 2.5rem);
@@ -31,7 +31,7 @@ h2{
     }
 }
 h3{
-    color: $blancoTrue;
+    color: var(--negro);
     @include font-raleway(600);
     font-size: clamp(1.2rem, 0.343rem + 4.286vw, 2.4rem); 
 
@@ -40,6 +40,7 @@ h3{
     }
  }
 p{
+    color: var(--negro);
     margin-top: 1rem; 
     margin-bottom: 1rem; 
     @include font-raleway(400);
@@ -52,10 +53,10 @@ p{
 }
 strong{
     font-weight: 500;
-    color: white;
+    color: var(--negro);
 }
 span{
-    color: $colorSecundario;
+    color: var(--colorSecundario);
 }
 .italic{
     font-style: italic;
@@ -73,11 +74,4 @@ span{
 }
 .spacer-lg{
     height: 15rem;
-}
-
-.color-white{
-    color: $blanco;
-}
-.color-white-true{
-    color: $blancoTrue;
 }

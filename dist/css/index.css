@@ -1956,6 +1956,20 @@ striping:
     width: 100%;
   }
 }
+:root {
+  --colorPrimario: #0B4599;
+  --colorSecundario: #eba94d;
+  --textoPrincipal: black;
+  --textoSecundario: #c6c6c6;
+  --blanco: white;
+  --gris: #c6c6c6;
+  --negro: rgb(0, 0, 0);
+  --borderBlanco: black ;
+  --transparentAzul: rgba(106, 154, 237, 0.69);
+  --transparentGrisSuave: rgba(200, 200, 200, 0.368);
+  --borderNegro: white;
+}
+
 section {
   margin-bottom: 10rem;
 }
@@ -1966,7 +1980,7 @@ section {
 }
 
 h1 {
-  color: #000000;
+  color: var(--negro);
   font-size: clamp(3.2rem, 1.2rem + 10vw, 6rem);
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -1982,7 +1996,7 @@ h1 {
 }
 
 h2 {
-  color: #000000;
+  color: var(--negro);
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -1998,7 +2012,7 @@ h2 {
 }
 
 h3 {
-  color: #000000;
+  color: var(--negro);
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -2012,6 +2026,7 @@ h3 {
 }
 
 p {
+  color: var(--negro);
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
@@ -2028,11 +2043,11 @@ p {
 
 strong {
   font-weight: 500;
-  color: white;
+  color: var(--negro);
 }
 
 span {
-  color: #0B4599;
+  color: var(--colorSecundario);
 }
 
 .italic {
@@ -2055,23 +2070,13 @@ span {
   height: 15rem;
 }
 
-.color-white {
-  color: #131313;
-}
-
-.color-white-true {
-  color: #000000;
-}
-
 .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
-  background-color: #FF6700;
   border-radius: 0.3rem 0.05rem;
   font-size: 80%;
   font-weight: 600;
   padding: 0.5rem 0.2rem;
-  border: solid 1px black;
   will-change: transform;
-  background-color: rgba(85, 84, 84, 0.185);
+  background-color: transparent;
   transition: color 0.3s ease-in;
 }
 .btn-pri::before, .btn-pri-m::before, .btn-pri-xxl::before, .btn-pri-xl::before, .btn-pri-l::before {
@@ -2081,7 +2086,7 @@ span {
   z-index: -1;
   inset: 0;
   border-radius: 0.3rem 0.05rem;
-  background: #0B4599;
+  background: var(--colorSecundario);
   transform: scaleX(1);
   transition: transform 0.3s ease-out;
   transform-origin: right;
@@ -2123,8 +2128,7 @@ span {
 .btn-pri-xxl:hover {
   box-shadow: none;
   background-color: rgba(85, 84, 84, 0.185);
-  color: #131313;
-  border: solid 1px #cccccc;
+  color: var(--blanco);
 }
 
 .btn-pri:hover::before,
@@ -2413,21 +2417,6 @@ span {
     font-size: 160%;
   }
 }
-.blinking-cursor {
-  animation: blink 0.5s steps(1) infinite;
-}
-
-@keyframes blink {
-  0% {
-    display: none;
-  }
-  50% {
-    display: inline-block;
-  }
-  100% {
-    display: none;
-  }
-}
 .nav {
   z-index: 0;
   position: fixed;
@@ -2435,7 +2424,7 @@ span {
   height: 3rem;
   padding: 0.5rem 0;
   border: none;
-  border-bottom: solid 1px #cccccc;
+  border-bottom: solid 1px var(--borderBlanco);
   z-index: 2;
   display: flex;
   flex-direction: row;
@@ -2491,9 +2480,8 @@ span {
   align-items: center;
   gap: none;
   gap: 0.5rem;
-  color: #131313;
-  border-top: solid 1px #cccccc;
-  border-bottom: solid 1px #cccccc;
+  border-top: solid 1px var(--borderBlanco);
+  border-bottom: solid 1px var(--borderBlanco);
   padding: 0.3rem 0;
 }
 .count__container > div {
@@ -2515,7 +2503,6 @@ span {
 
 .hero {
   position: relative;
-  color: #131313;
   justify-content: center;
 }
 @media (min-width: 64rem) {
@@ -2526,7 +2513,7 @@ span {
 .hero > :nth-child(2) h2 {
   width: 100%;
   text-align: center;
-  background: radial-gradient(circle, #000000, #666666);
+  background: radial-gradient(circle, var(--gris), var(--negro));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2596,10 +2583,10 @@ span {
 }
 .hero .mindmap-title-container h3 {
   text-align: center;
-  color: #131313;
 }
 .hero .mindmap-title-container h3 span {
-  color: #000000;
+  font-weight: 700;
+  color: var(--negro);
   letter-spacing: 2px;
 }
 @media (min-width: 37.5rem) {
@@ -2616,9 +2603,8 @@ span {
   position: relative;
   width: 95%;
   padding: 1rem;
-  border: solid 1px #cccccc;
+  border: solid 1px var(--borderBlanco);
   border-radius: 0.3rem 0.05rem;
-  background-color: rgba(0, 0, 0, 0.4156862745);
   position: relative;
   padding: 1px;
   border-radius: 0.5rem 0.05rem;
@@ -2626,6 +2612,7 @@ span {
   border: 1px solid transparent;
   z-index: 0;
   /* Pseudo-elemento para el borde gradiente */
+  background-color: var(--transparentGrisSuave);
   overflow-y: hidden;
   min-height: 250px;
 }
@@ -2638,7 +2625,7 @@ span {
   bottom: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(to right, #000000, #666666);
+  background: linear-gradient(to right, var(--negro), var(--blanco));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -2708,7 +2695,6 @@ span {
 }
 
 .services {
-  color: #131313;
   height: auto;
 }
 .services .services-text {
@@ -2717,7 +2703,7 @@ span {
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #131313, #333333);
+  border-image-source: radial-gradient(circle, var(--gris), var(--negro));
   border-left: none;
   border-right: none;
 }
@@ -2764,7 +2750,7 @@ span {
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
-  background: radial-gradient(circle, #000000, #666666);
+  background: radial-gradient(circle, var(--gris), var(--negro));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2776,7 +2762,7 @@ span {
   overflow-y: hidden;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #131313, #333333);
+  border-image-source: radial-gradient(circle, var(--gris), var(--negro));
   border-left: none;
   border-right: none;
   z-index: 0;
@@ -2843,7 +2829,6 @@ span {
 
 .gemstone {
   position: relative;
-  color: #131313;
   height: auto;
 }
 .gemstone .gemstone-text {
@@ -2858,7 +2843,7 @@ span {
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
-  background: radial-gradient(circle, #000000, #666666);
+  background: radial-gradient(circle, var(--gris), var(--negro));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2872,11 +2857,11 @@ span {
   position: relative;
   padding: 1rem;
   margin: 2rem;
-  border: solid 1px #cccccc;
+  border: solid 1px var(--borderBlanco);
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #131313, #333333);
+  border-image-source: radial-gradient(circle, var(--gris), var(--negro));
   border-left: none;
   border-right: none;
 }
@@ -2907,10 +2892,9 @@ span {
   line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
 }
 .gemstone .paso h1:hover {
-  color: #0B4599;
+  color: var(--colorPrimario);
 }
 .gemstone .paso .paso-title {
-  color: white;
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
@@ -2953,8 +2937,7 @@ span {
 }
 
 .faq {
-  background-color: rgba(100, 100, 100, 0.69);
-  color: #131313;
+  background-color: var(--transparentFaq);
   height: auto;
   min-height: 150vh;
 }
@@ -2966,13 +2949,10 @@ span {
 .faq .faq-text {
   text-align: center;
 }
-.faq .faq-text h3 {
-  color: #131313;
-}
 
 .faq-qanda {
   position: relative;
-  border: solid 1px #cccccc;
+  border: solid 1px var(--borderBlanco);
   border-radius: 0.5rem 0.05rem;
   padding: 1rem;
   display: flex;
@@ -3034,11 +3014,11 @@ span {
 
 .brandsbar {
   position: relative;
-  border: solid 1px #cccccc;
+  border: solid 1px var(--borderBlanco);
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #131313, #333333);
+  border-image-source: radial-gradient(circle, var(--gris), var(--negro));
   border-left: none;
   border-right: none;
 }
@@ -3067,13 +3047,11 @@ span {
 
 footer {
   position: relative;
-  background: black;
-  z-index: 10;
+  background: var(--blanco);
 }
 
 .footer {
   max-width: 80rem;
-  color: #131313;
   text-align: center;
 }
 .footer > div {

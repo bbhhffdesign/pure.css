@@ -6,15 +6,13 @@
 
 .btn-pri {
     @extend .pure-button;
-    background-color: #FF6700;
-    // background-color: $colorSecundario;
     border-radius: $border-rad-xs;
     font-size: 80%;
     font-weight: 600;
     padding: $spac-xs .2rem;
-    border: $border-black;
-
+    // border: var(--borderBlanco);
     @include hvr-right;
+
     
     @include tablet{
         font-size: 100%;
@@ -50,10 +48,8 @@
 .btn-pri-xxl:hover {
     box-shadow: none;
     background-color: $transparent0;
-    color: $blanco;
-    border: $border-white;
-    // @include ani-padding-right($spac-s, 2rem, ease-out, .1s);
-    // @include ani-btn
+    color: var(--blanco);
+    // border: $border-black;
 }
 // .btn-pri-s:hover::before,
 .btn-pri:hover::before,

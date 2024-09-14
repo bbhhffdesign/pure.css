@@ -3,18 +3,7 @@
 
 .hero{
     position: relative;
-    color: $blanco;
     justify-content: center;
-    // height: auto;
-    // padding-top: 2rem;   
-
-    // & > div{
-    //     // height: 100vh;
-    // }
-
-    @include desktop-sm{
-
-    }
 
     div{
         @include desktop-sm{
@@ -90,10 +79,10 @@
         }
         h3{
             text-align: center;
-            color: $blanco;
             
             span{
-                color: $blancoTrue;
+                font-weight: 700;
+                color: var(--negro);
                 letter-spacing: 2px;
             }
             
@@ -114,8 +103,8 @@
         padding: 1rem;
         border: $border-white;
         border-radius: $border-rad-xs;
-        background-color: #0000006a;
-        @include glass-bg();
+        @include glass-bg;
+        background-color: var(--transparentGrisSuave);
         overflow-y: hidden;
         min-height: 250px;
 
