@@ -147,11 +147,15 @@
   }
 }
 
-.hero-gem {
+#hero-gem {
   position: absolute;
   right: 0;
   bottom: -8%;
   opacity: 0.5;
   z-index: 2;
   // background: red;
+
+  .hero-gem{
+    fill: var(--blanco);
+  }
 }
