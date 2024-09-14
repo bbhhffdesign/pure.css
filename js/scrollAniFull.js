@@ -1,5 +1,8 @@
 // const  = document.getElementById()
 
+
+const bgParticles = document.getElementById("tsparticles")
+
 //navbar
 const navBar = document.getElementById("navbar");
 
@@ -106,7 +109,6 @@ mm_mobile.add("(max-width: 768px)", () => {
             end: "-30% 90%",
         }
     })
-
     tl_mindmapText_1
         .from(mindmapText_1, {y:150, ease: "power4.out", duration: 1})
 
@@ -118,7 +120,6 @@ mm_mobile.add("(max-width: 768px)", () => {
             end: "-30% 90%",
         }
     })
-
     tl_mindmapText_2
         .from(mindmapText_2, {y:150, ease: "power4.out", duration: 1})
 
@@ -130,7 +131,6 @@ mm_mobile.add("(max-width: 768px)", () => {
             end: "-40% 90%",
         }
     })
-
     tl_mindmapText_3
         .from(mindmapText_3, {y:150, ease: "power4.out", duration: 1})
 
@@ -142,7 +142,6 @@ mm_mobile.add("(max-width: 768px)", () => {
             end: "-40% 90%",
         }
     })
-
     tl_mindmapText_4
         .from(mindmapText_4, {y:150, ease: "power4.out", duration: 1})
 
@@ -174,18 +173,23 @@ mm_mobile.add("(max-width: 768px)", () => {
         .from(servicesText2,{opacity: .5, y:150, ease: "power4.out", duration: 1})
 
 
-
     const tl_servicesText_3 = gsap.timeline({
         scrollTrigger:{
             trigger: servicesText3,
-            // markers: true,
-            start:"top 90%",
-            end: "bottom 90%"
+            markers: true,
+            pin: true,
+            start:"center center",
+            end: "200% bottom",
+            scrub: 3,
+
         }
-    }
-    )
+    })
+
     tl_servicesText_3
-        .from(servicesText3,{opacity: 0, ease: "power4.out", duration: 1})
+        .from(servicesText3,{opacity: 0, ease: "power4.out", duration: 3})
+        .to(bgParticles,{opacity: 0}, "<")
+        .to(servicesBox2,{opacity: 0})
+        // .from(bgParticles,{opacity: 0})
 
 
     const tl_servicesBox_1 = gsap.timeline({
@@ -196,6 +200,7 @@ mm_mobile.add("(max-width: 768px)", () => {
             end: "top 90%"
         }
     })
+
     tl_servicesBox_1
         .from(servicesBox1Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
     

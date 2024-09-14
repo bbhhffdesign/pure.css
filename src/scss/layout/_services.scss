@@ -12,7 +12,6 @@
   
   .services-text {
     position: relative;
-    height: auto;
     overflow-y: hidden;
     @include glass-bg-only;
     @include border-gradient;
@@ -39,7 +38,10 @@
     }
     
     .services-boxes-title{
-      margin: 5rem 0 4rem 0;
+      
+      @include flex(column, center, center,none);
+      // margin: 5rem 0 4rem 0;
+      height: 100vh;
       @include font-monument-normal; 
       @include text-gradient;
       // opacity: 0; 
