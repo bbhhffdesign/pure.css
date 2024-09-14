@@ -2032,7 +2032,7 @@ strong {
 }
 
 span {
-  color: #eba94d;
+  color: #0B4599;
 }
 
 .italic {
@@ -2081,7 +2081,7 @@ span {
   z-index: -1;
   inset: 0;
   border-radius: 0.3rem 0.05rem;
-  background: #eba94d;
+  background: #0B4599;
   transform: scaleX(1);
   transition: transform 0.3s ease-out;
   transform-origin: right;
@@ -2907,7 +2907,7 @@ span {
   line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
 }
 .gemstone .paso h1:hover {
-  color: #990000;
+  color: #0B4599;
 }
 .gemstone .paso .paso-title {
   color: white;
@@ -2953,6 +2953,7 @@ span {
 }
 
 .faq {
+  background-color: rgba(100, 100, 100, 0.69);
   color: #131313;
   height: auto;
   min-height: 150vh;
