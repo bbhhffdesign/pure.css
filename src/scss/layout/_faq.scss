@@ -19,7 +19,7 @@
 
 .faq-qanda{
     position: relative;
-    border: $border-white;
+    border: $border-black;
     border-radius: $border-rad-s;
     padding: $spac-s;
     @include flex(column, center, center,none);

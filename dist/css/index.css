@@ -1964,10 +1964,11 @@ striping:
   --blanco: white;
   --gris: #c6c6c6;
   --negro: rgb(0, 0, 0);
-  --borderBlanco: black ;
-  --transparentAzul: rgba(106, 154, 237, 0.69);
-  --transparentGrisSuave: rgba(200, 200, 200, 0.368);
-  --borderNegro: white;
+  --borderBlanco: rgb(255, 255, 255) ;
+  --borderNegro: rgb(0, 0, 0);
+  --transparentAzul: rgba(109, 147, 214, 0.85);
+  --transparentFaq: #6d93d6d9;
+  --transparentGrisSuave: #c8c8c85e;
 }
 
 section {
@@ -2068,6 +2069,22 @@ span {
 
 .spacer-lg {
   height: 15rem;
+}
+
+.txt-negro {
+  color: var(--negro);
+}
+
+.txt-blanco {
+  color: var(--blanco);
+}
+
+.txt-primario {
+  color: var(--colorPrimario);
+}
+
+.txt-secundario {
+  color: var(--colorSecundario);
 }
 
 .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
@@ -2480,8 +2497,8 @@ span {
   align-items: center;
   gap: none;
   gap: 0.5rem;
-  border-top: solid 1px var(--borderBlanco);
-  border-bottom: solid 1px var(--borderBlanco);
+  border-top: solid 1px var(--borderNegro);
+  border-bottom: solid 1px var(--borderNegro);
   padding: 0.3rem 0;
 }
 .count__container > div {
@@ -2892,7 +2909,7 @@ span {
   line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
 }
 .gemstone .paso h1:hover {
-  color: var(--colorPrimario);
+  color: var(--colorSecundario);
 }
 .gemstone .paso .paso-title {
   font-family: "monument_dos";
@@ -2952,7 +2969,7 @@ span {
 
 .faq-qanda {
   position: relative;
-  border: solid 1px var(--borderBlanco);
+  border: solid 1px var(--borderNegro);
   border-radius: 0.5rem 0.05rem;
   padding: 1rem;
   display: flex;
@@ -3131,7 +3148,7 @@ html, body {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--blanco);
   overflow-x: hidden;
   overscroll-behavior: none;
 }/*# sourceMappingURL=index.css.map */
