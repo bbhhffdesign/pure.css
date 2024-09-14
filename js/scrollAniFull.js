@@ -27,8 +27,11 @@ const servicesText1 = document.getElementById("services-text-1")
 const servicesText2 = document.getElementById("services-text-2") 
 const servicesText3 = document.getElementById("services-text-3") 
 const servicesLogoTitle1 = document.getElementById("services-logo-title-1") 
+const servicesLogo1 = document.getElementById("oferta-logo") 
 const servicesLogoTitle2 = document.getElementById("services-logo-title-2") 
+const servicesLogo2 = document.getElementById("comunicacion-logo") 
 const servicesLogoTitle3 = document.getElementById("services-logo-title-3") 
+const servicesLogo3 = document.getElementById("marca-logo") 
 
 //servicesBoxes
 const servicesBox1 = document.getElementById("services-box-1");
@@ -190,6 +193,7 @@ mm_mobile.add("(max-width: 768px)", () => {
 
     tl_servicesBox_1
         .from(servicesBox1Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
+        .from(servicesLogo1 ,{fill:"#c6c6c6", duration:3, ease: "power4.out"}, "<")
     
     const tl_servicesBox_2 = gsap.timeline({
         scrollTrigger:{
@@ -201,6 +205,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     })
     tl_servicesBox_2
         .from(servicesBox2Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
+        .from(servicesLogo2 ,{fill:"#c6c6c6", duration:3, ease: "power4.out"}, "<")
     
     const tl_servicesBox_3 = gsap.timeline({
         scrollTrigger:{
@@ -212,6 +217,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     })
     tl_servicesBox_3
         .from(servicesBox3Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
+        .from(servicesLogo3 ,{fill:"#c6c6c6", duration:3, ease: "power4.out"}, "<")
 
     // const tl_gemstoneText_1 = gsap.timeline({
     //     scrollTrigger:{

@@ -99,7 +99,7 @@
 
   .mindmap-container {
     height: 60vh;
-    @include flex(column, center, center, none);
+    // @include flex(column, center, center, none);
     position: relative;
     width: 100%;
     overflow-y: hidden;
@@ -116,16 +116,20 @@
 
     //mindmap svg 
 
+    .mindmap-overflow{
+      overflow-y: hidden;
+        @include flex(column, center, center, none);      
+    }
+
 
     svg {
-      // position: relative;
       height: auto;
       width: 90%;
       padding: 0.5rem;
       border-radius: $border-rad-xs;
       @include glass-bg-only;
       background-color: var(--transparentGrisSuave);
-      // overflow-y: hidden;
+
 
       .mindmap-like{
         fill: var(--colorSecundario);
