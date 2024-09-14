@@ -110,13 +110,14 @@
       font-size: 200%;
       position: absolute;
       @include centrarhorizontal;
-      top: 40%;
+      top: 20%;
       z-index: 1;
     }
 
     //mindmap svg 
 
     .mindmap-overflow{
+      position: relative;
       overflow-y: hidden;
         @include flex(column, center, center, none);      
     }
