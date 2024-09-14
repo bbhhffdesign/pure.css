@@ -11,7 +11,7 @@
             },
             color: "#003399",
             links:{
-                enable: true,
+                // enable: true,
                 size:{
                     value: 10
                 },
@@ -23,9 +23,9 @@
                 speed: 2
             },
             size:{
+                value:{min:150, max:200}
                 // value:{min:100, max:200}
-                // value:{min:100, max:200}
-                value:230
+                // value:200
                         },
             opacity: {
                 value: 1
