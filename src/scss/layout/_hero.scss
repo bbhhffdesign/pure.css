@@ -12,8 +12,10 @@
     }
 
     & > :nth-child(2){
+        @include flex(column, space-evenly, center,none);
+        height: 100vh;
         h2{
-
+            align-self: flex-start;
             width: 100%;
             text-align: center;
             @include text-gradient;

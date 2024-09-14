@@ -2434,6 +2434,12 @@ span {
     font-size: 160%;
   }
 }
+#nightMode {
+  position: fixed;
+  top: 50%;
+  z-index: 3;
+}
+
 .nav {
   z-index: 0;
   position: fixed;
@@ -2527,7 +2533,16 @@ span {
     max-width: 40rem;
   }
 }
+.hero > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: none;
+  height: 100vh;
+}
 .hero > :nth-child(2) h2 {
+  align-self: flex-start;
   width: 100%;
   text-align: center;
   background: radial-gradient(circle, var(--gris), var(--negro));
