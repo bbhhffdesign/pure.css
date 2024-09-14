@@ -2,10 +2,18 @@
 @use "../abstract/variables" as *;
 
 .gemstone {
-  position: relative;
+  // position: relative;
   height: auto;
 
+
+.gemstone-text-1-container{
+  @include flex(column, center, center,none);
+  height: 120vh;
+
+}
   .gemstone-text {
+    position: relative;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -13,7 +21,19 @@
   }
   
   .gemstone-svg{
-    height: 150px
+    // height: 150px
+    position: absolute;
+    @include centrarhorizontal;
+    top: 0;
+    // top: 40%;
+    // bottom: 0;
+    width: 70%;
+    z-index: -1;
+
+    .svg-gemstone{
+      stroke: black;
+    }
+    
   }
 
 

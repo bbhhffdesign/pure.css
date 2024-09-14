@@ -115,12 +115,14 @@
     }
 
     svg {
+      // position: relative;
       height: auto;
       width: 90%;
       padding: 0.5rem;
       border-radius: $border-rad-xs;
       @include glass-bg-only;
       background-color: var(--transparentGrisSuave);
+      // overflow-y: hidden;
     }
 
     @include desktop-sm {

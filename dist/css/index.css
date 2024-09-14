@@ -1964,11 +1964,14 @@ striping:
   --blanco: white;
   --gris: #c6c6c6;
   --negro: rgb(0, 0, 0);
-  --borderBlanco: rgb(255, 255, 255) ;
+  --borderGrad-1: rgb(255, 255, 255) ;
+  --borderGrad-2: #c6c6c6 ;
   --borderNegro: rgb(0, 0, 0);
   --transparentAzul: rgba(109, 147, 214, 0.85);
   --transparentFaq: #6d93d6d9;
   --transparentGrisSuave: #c8c8c85e;
+  --graadientRad-1: #c6c6c6;
+  --gradientRad-2: #000000;
 }
 
 section {
@@ -2538,7 +2541,7 @@ span {
 .hero > :nth-child(2) h2 {
   align-self: flex-start;
   width: 100%;
-  background: radial-gradient(circle, var(--gris), var(--negro));
+  background: radial-gradient(circle, var(--gradientGrad-1), var(--gradientGrad-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2655,6 +2658,7 @@ span {
   border-radius: 0.3rem 0.05rem;
   z-index: 0;
   background-color: var(--transparentGrisSuave);
+  overflow-y: hidden;
 }
 .hero .mindmap-container svg:before {
   content: "";
@@ -2697,10 +2701,10 @@ span {
   height: auto;
 }
 .services .services-text-container {
-  height: 50vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: none;
 }
@@ -2710,7 +2714,7 @@ span {
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: radial-gradient(circle, var(--gris), var(--negro));
+  border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
   border-left: none;
   border-right: none;
 }
@@ -2741,6 +2745,9 @@ span {
 .services .services-boxes {
   justify-content: center;
   width: 100%;
+  height: 200vh;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 @media (min-width: 64rem) {
   .services .services-boxes {
@@ -2749,6 +2756,7 @@ span {
   }
 }
 .services .services-boxes .services-boxes-title {
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2757,7 +2765,7 @@ span {
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
-  background: radial-gradient(circle, var(--gris), var(--negro));
+  background: radial-gradient(circle, var(--gradientGrad-1), var(--gradientGrad-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2769,7 +2777,7 @@ span {
   overflow-y: hidden;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: radial-gradient(circle, var(--gris), var(--negro));
+  border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
   border-left: none;
   border-right: none;
   z-index: 0;
@@ -2835,22 +2843,39 @@ span {
 }
 
 .gemstone {
-  position: relative;
   height: auto;
 }
+.gemstone .gemstone-text-1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  height: 120vh;
+}
 .gemstone .gemstone-text {
+  position: relative;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 .gemstone .gemstone-svg {
-  height: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 70%;
+  z-index: -1;
+}
+.gemstone .gemstone-svg .svg-gemstone {
+  stroke: black;
 }
 .gemstone h2 {
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
-  background: radial-gradient(circle, var(--gris), var(--negro));
+  background: radial-gradient(circle, var(--gradientGrad-1), var(--gradientGrad-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2868,7 +2893,7 @@ span {
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: radial-gradient(circle, var(--gris), var(--negro));
+  border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
   border-left: none;
   border-right: none;
 }
@@ -3025,7 +3050,7 @@ span {
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: radial-gradient(circle, var(--gris), var(--negro));
+  border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
   border-left: none;
   border-right: none;
 }

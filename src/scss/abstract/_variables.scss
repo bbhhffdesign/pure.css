@@ -6,16 +6,19 @@
     --blanco: white;
     --gris: #c6c6c6;
     --negro: rgb(0, 0, 0);
-    --borderBlanco: rgb(255, 255, 255) ;
+    --borderGrad-1: rgb(255, 255, 255) ;
+    --borderGrad-2: #c6c6c6 ;
     --borderNegro: rgb(0, 0, 0);
     --transparentAzul: rgba(109, 147, 214, 0.85);
     --transparentFaq: #6d93d6d9;
     --transparentGrisSuave: #c8c8c85e;
+    --graadientRad-1: #c6c6c6; 
+    --gradientRad-2: #000000; 
   }
 
 
 $colorPrimario:#0B4599;
-$colorPrimarioTransparent: #0033993b;
+$colorPrimarioTransparent: #00000000;
 // $colorSecundario: #C9FC59;
 // $colorSecundario: #FF6700;
 // $colorSecundario: #f38a6a;

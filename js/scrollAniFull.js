@@ -39,7 +39,8 @@ const servicesBox3 = document.getElementById("services-box-3");
 const servicesBox3Content = document.getElementById("services-box-3-content");
 
 //gemstoneText
-const gemstoneTextContainer = document.getElementById("gemstone-text");
+const gemstoneSection = document.getElementById("gemstone-section");  
+const gemstoneTextContainer = document.getElementById("gemstone-text");  
 const gemstoneText1 = document.getElementById("gemstone-text-1");
 const gemstoneText2 = document.getElementById("gemstone-text-2");
 const gemstoneText3 = document.getElementById("gemstone-text-3");
@@ -173,23 +174,9 @@ mm_mobile.add("(max-width: 768px)", () => {
         .from(servicesText2,{opacity: .5, y:150, ease: "power4.out", duration: 1})
 
 
-    // const tl_servicesText_3 = gsap.timeline({
-    //     scrollTrigger:{
-    //         trigger: servicesText3,
-    //         markers: true,
-    //         pin: true,
-    //         start:"center center",
-    //         end: "200% center",
-    //         scrub: 3,
+        //la epicaaaaaaa ↓↓↓
 
-    //     }
-    // })
 
-    tl_servicesText_3
-        .from(servicesText3,{opacity: 0, ease: "power4.out", duration: 3})
-        .to(bgParticles,{opacity: 0}, "<")
-        .to(servicesBox2,{opacity: 0})
-        // .from(bgParticles,{opacity: 0})
 
 
     const tl_servicesBox_1 = gsap.timeline({
@@ -226,16 +213,36 @@ mm_mobile.add("(max-width: 768px)", () => {
     tl_servicesBox_3
         .from(servicesBox3Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
 
+    // const tl_gemstoneText_1 = gsap.timeline({
+    //     scrollTrigger:{
+    //         trigger: gemstoneText1,
+    //         // markers: true,
+    //         start:"-20% 90%",
+    //         end: "bottom 90%"
+    //     }
+    // })
+    // tl_gemstoneText_1
+    //     .from(gemstoneText1,{opacity:0, y:80,  duration:.5})
+
+
     const tl_gemstoneText_1 = gsap.timeline({
         scrollTrigger:{
-            trigger: gemstoneText1,
-            // markers: true,
-            start:"-20% 90%",
-            end: "bottom 90%"
+            trigger: gemstoneSection,
+            markers: true,
+            pin: true,
+            start:"20% center",
+            end: "center center",
+            scrub: 3,
+
         }
     })
+
     tl_gemstoneText_1
-        .from(gemstoneText1,{opacity:0, y:80, duration:.5})
+        .from(gemstoneText1,{opacity: 0, ease: "power4.out", duration: 3})
+        .to(bgParticles,{opacity: 0}, "<")
+        .to(bgParticles,{opacity: 1})
+        // .to(servicesBox2,{opacity: 0})
+
 
     const tl_gemstoneText_2 = gsap.timeline({
         scrollTrigger:{
@@ -338,8 +345,8 @@ mm_mobile.add("(max-width: 768px)", () => {
     //         end: "bottom 90%"
     //     }
     // })
-    tl_faqText_1
-        .from(faqText1,{opacity: 0, y:100, ease: "power4.out", duration: 1})
+    // tl_faqText_1
+    //     .from(faqText1,{opacity: 0, y:100, ease: "power4.out", duration: 1})
 
         
     const tl_faqText_2 = gsap.timeline({
