@@ -6,12 +6,14 @@
 
 .btn-pri {
     @extend .pure-button;
-    background-color: $colorSecundario;
+    background-color: #FF6700;
+    // background-color: $colorSecundario;
     border-radius: $border-rad-xs;
     font-size: 80%;
     font-weight: 600;
     padding: $spac-xs .2rem;
     border: $border-black;
+
     @include hvr-right;
     
     @include tablet{

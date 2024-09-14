@@ -2032,7 +2032,7 @@ strong {
 }
 
 span {
-  color: #003399;
+  color: #eba94d;
 }
 
 .italic {
@@ -2064,7 +2064,7 @@ span {
 }
 
 .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
-  background-color: #003399;
+  background-color: #FF6700;
   border-radius: 0.3rem 0.05rem;
   font-size: 80%;
   font-weight: 600;
@@ -2081,7 +2081,7 @@ span {
   z-index: -1;
   inset: 0;
   border-radius: 0.3rem 0.05rem;
-  background: #003399;
+  background: #eba94d;
   transform: scaleX(1);
   transition: transform 0.3s ease-out;
   transform-origin: right;
@@ -2907,7 +2907,7 @@ span {
   line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
 }
 .gemstone .paso h1:hover {
-  color: #ccff66;
+  color: #990000;
 }
 .gemstone .paso .paso-title {
   color: white;

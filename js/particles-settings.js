@@ -7,7 +7,7 @@
       options: {
         particles:{
             number:{
-                value:6
+                value:2
             },
             color: "#003399",
             links:{
@@ -23,8 +23,9 @@
                 speed: 2
             },
             size:{
-                value:{min:50, max:100}
-                // value:100
+                // value:{min:100, max:200}
+                // value:{min:100, max:200}
+                value:230
                         },
             opacity: {
                 value: 1
