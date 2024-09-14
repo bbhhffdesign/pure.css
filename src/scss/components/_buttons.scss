@@ -48,7 +48,8 @@
 .btn-pri-xxl:hover {
     box-shadow: none;
     background-color: $transparent0;
-    color: var(--blanco);
+    border: $border-white;
+    color: var(--negro);
     // border: $border-black;
 }
 // .btn-pri-s:hover::before,

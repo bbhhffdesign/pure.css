@@ -20,3 +20,4 @@ let colores = function changeColors() {
 }
 
 nightMode.addEventListener("click", colores);
+colores();

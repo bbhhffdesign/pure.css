@@ -8,8 +8,15 @@
   @include desktop-sm{
     // height: 130dvh;
   }
+
+  .services-text-container{
+    // padding: 0;
+    height: 50vh;
+    @include flex(column, center, center,none);
+  }
   
   .services-text {
+
     position: relative;
     overflow-y: hidden;
     @include glass-bg-only;

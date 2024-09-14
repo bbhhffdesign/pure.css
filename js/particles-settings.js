@@ -236,21 +236,21 @@
   })();
 
 
-let mm = gsap.matchMedia()
-mm.add("(max-width: 768px)",()=>{
+// let mm = gsap.matchMedia()
+// mm.add("(max-width: 768px)",()=>{
 
-    const tl = gsap.timeline({
-        scrollTrigger:{
-            trigger: "#hero",
-            markers: true,
-            start: "center center",
-            end: "bottom center",
-            scrub: true
-        }
-    });
+//     const tl = gsap.timeline({
+//         scrollTrigger:{
+//             trigger: "#hero",
+//             markers: true,
+//             start: "center center",
+//             end: "bottom center",
+//             scrub: true
+//         }
+//     });
     
-    tl
-        .to("#tsparticles", {opacity:0})
-        .to("#tsparticles", {opacity:1})
-})
+//     tl
+//         .to("#tsparticles", {opacity:0})
+//         .to("#tsparticles", {opacity:1})
+// })
     

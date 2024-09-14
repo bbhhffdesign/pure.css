@@ -2145,7 +2145,8 @@ span {
 .btn-pri-xxl:hover {
   box-shadow: none;
   background-color: rgba(85, 84, 84, 0.185);
-  color: var(--blanco);
+  border: solid 1px var(--borderBlanco);
+  color: var(--negro);
 }
 
 .btn-pri:hover::before,
@@ -2436,7 +2437,8 @@ span {
 }
 #nightMode {
   position: fixed;
-  top: 50%;
+  top: 90%;
+  right: 1rem;
   z-index: 3;
 }
 
@@ -2533,18 +2535,9 @@ span {
     max-width: 40rem;
   }
 }
-.hero > :nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: none;
-  height: 100vh;
-}
 .hero > :nth-child(2) h2 {
   align-self: flex-start;
   width: 100%;
-  text-align: center;
   background: radial-gradient(circle, var(--gris), var(--negro));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2603,6 +2596,12 @@ span {
 }
 .hero .mindmap-title-container {
   padding: 0 1rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
 }
 .hero .mindmap-title-container > div {
   overflow-y: hidden;
@@ -2612,9 +2611,6 @@ span {
   font-family: "monument_dos";
   font-weight: 100;
   font-style: normal;
-}
-.hero .mindmap-title-container h3 {
-  text-align: center;
 }
 .hero .mindmap-title-container h3 span {
   font-weight: 700;
@@ -2632,39 +2628,35 @@ span {
   }
 }
 .hero .mindmap-container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
   position: relative;
-  width: 95%;
-  padding: 1rem;
-  border: solid 1px var(--borderBlanco);
-  border-radius: 0.3rem 0.05rem;
-  position: relative;
-  padding: 1px;
-  border-radius: 0.5rem 0.05rem;
-  background-clip: padding-box;
-  border: 1px solid transparent;
-  z-index: 0;
-  /* Pseudo-elemento para el borde gradiente */
-  background-color: var(--transparentGrisSuave);
+  width: 100%;
   overflow-y: hidden;
   min-height: 250px;
 }
-.hero .mindmap-container:after {
-  content: "";
+.hero .mindmap-container .scrolldown {
+  padding: 0.3rem 2rem;
+  font-size: 200%;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(to right, var(--negro), var(--blanco));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
   z-index: 1;
 }
-.hero .mindmap-container:before {
+.hero .mindmap-container svg {
+  height: auto;
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 0.3rem 0.05rem;
+  z-index: 0;
+  background-color: var(--transparentGrisSuave);
+}
+.hero .mindmap-container svg:before {
   content: "";
   position: absolute;
   top: 0;
@@ -2674,45 +2666,20 @@ span {
   z-index: -1;
   border-radius: inherit;
   background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-}
-.hero .mindmap-container .scrolldown {
-  padding: 0.3rem 2rem;
-  font-size: 200%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 40%;
-}
-.hero .mindmap-container svg {
-  width: 95%;
-  margin: 1rem auto;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 @media (min-width: 64rem) {
   .hero .mindmap-container {
-    height: 65%;
     overflow: hidden;
     padding: 1rem;
   }
   .hero .mindmap-container svg {
     position: absolute;
     top: 0.5rem;
-    width: 95%;
     height: auto;
   }
 }
-@media (min-width: 90rem) {
-  .hero .mindmap-container {
-    height: 53%;
-  }
-}
-@media (min-width: 120rem) {
-  .hero .mindmap-container {
-    height: 48%;
-  }
-}
-
 .hero-gem {
   position: absolute;
   right: 0;
@@ -2728,6 +2695,14 @@ span {
 
 .services {
   height: auto;
+}
+.services .services-text-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
 }
 .services .services-text {
   position: relative;

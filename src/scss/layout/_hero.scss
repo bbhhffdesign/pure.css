@@ -1,159 +1,155 @@
-@use '../abstract/variables' as *;
-@use '../abstract/mixins' as *;
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
 
-.hero{
+.hero {
+  position: relative;
+  justify-content: center;
+
+  div {
+    @include desktop-sm {
+      max-width: 40rem;
+    }
+  }
+
+  & > :nth-child(2) {
+    h2 {
+      align-self: flex-start;
+      width: 100%;
+      //   text-align: center;
+      @include text-gradient;
+    }
+  }
+  .mindmap-click {
+    margin-top: $spac-xs;
+  }
+
+  .hero-text {
+    height: 100vh;
+    @include flex(column, center, flex-start, none);
     position: relative;
-    justify-content: center;
+    gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
 
-    div{
-        @include desktop-sm{
-            max-width: 40rem;
-        }
+    .hero-p-container > p {
+      overflow-y: hidden;
+
+      span {
+        display: inline-block;
+      }
     }
 
-    & > :nth-child(2){
-        @include flex(column, space-evenly, center,none);
-        height: 100vh;
-        h2{
-            align-self: flex-start;
-            width: 100%;
-            text-align: center;
-            @include text-gradient;
-        }
+    h1 {
+      margin: 0;
     }
-    .mindmap-click{
-        margin-top: $spac-xs;
+    h2 {
+      margin: 0;
     }
-
-    .hero-text{
-        height: 100vh;
-        @include flex(column, center, flex-start, none);
-        position: relative;
-        gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
-
-        .hero-p-container > p{
-            overflow-y: hidden;
-
-            span{
-                display: inline-block;
-            }
-
-        }
-
-        h1{
-            margin: 0;
-        }
-        h2{
-            margin: 0;
-        }
-        p{
-            margin: 0;
-            line-height: 1.5rem;
-            @include tablet{
-                line-height: 1.8rem;
-            }
-            @include desktop-sm{
-                line-height: 2rem;
-            }
-        }
-        button{
-            width: 40%;
-            @include tablet{
-                width: 30%;
-            }
-        }
-
-        @include desktop-sm{
-            padding-left    : 0;
-        }    
+    p {
+      margin: 0;
+      line-height: 1.5rem;
+      @include tablet {
+        line-height: 1.8rem;
+      }
+      @include desktop-sm {
+        line-height: 2rem;
+      }
+    }
+    button {
+      width: 40%;
+      @include tablet {
+        width: 30%;
+      }
     }
 
-    .mindmap-title-container{
-        padding: 0 $spac-s;
+    @include desktop-sm {
+      padding-left: 0;
+    }
+  }
 
-        & > div{
-            overflow-y: hidden;
-            margin: 0 auto
-        }
+  .mindmap-title-container {
+    padding: 0 $spac-s;
+    height: 80vh;
+    @include flex(column, space-around, center, none);
 
-        h2{
-            @include font-monument-normal;
-        }
-        h3{
-            text-align: center;
-            
-            span{
-                font-weight: 700;
-                color: var(--negro);
-                letter-spacing: 2px;
-            }
-            
-        }
-        @include tablet{
-            br{
-                display: none;
-            }
-        }
-        @include desktop-sm{
-            display: none;
-        }
+    & > div {
+      overflow-y: hidden;
+      margin: 0 auto;
     }
 
-    .mindmap-container{
-        position: relative;
-        width: 95%;
-        padding: 1rem;
-        border: $border-white;
-        border-radius: $border-rad-xs;
-        @include glass-bg;
-        background-color: var(--transparentGrisSuave);
-        overflow-y: hidden;
-        min-height: 250px;
-
-
-        .scrolldown{
-            padding: .3rem 2rem;
-            font-size: 200%;
-            position: absolute;
-            @include centrarhorizontal;
-            top: 40%;
-        }
-
-        svg{
-            width: 95%;
-            margin: $spac-s auto;
-        }
-
-
-
-        @include desktop-sm{
-            height: 65%;
-            overflow: hidden;
-            padding: 1rem;
-
-            svg{
-                position: absolute;
-                top: $spac-xs;
-                width: 95%;
-                height: auto;
-            }
-        }
-
-        @include desktop-lg{
-            height: 53%;
-        }
-        @include desktop-xlg{
-            height: 48%;
-        }
-
+    h2 {
+      @include font-monument-normal;
     }
+    h3 {
+      //   text-align: center;
+
+      span {
+        font-weight: 700;
+        color: var(--negro);
+        letter-spacing: 2px;
+      }
+    }
+    @include tablet {
+      br {
+        display: none;
+      }
+    }
+    @include desktop-sm {
+      display: none;
+    }
+  }
+
+  .mindmap-container {
+    height: 60vh;
+    @include flex(column, center, center, none);
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+    min-height: 250px;
+
+    .scrolldown {
+      padding: 0.3rem 2rem;
+      font-size: 200%;
+      position: absolute;
+      @include centrarhorizontal;
+      top: 40%;
+      z-index: 1;
+    }
+
+    svg {
+      height: auto;
+      width: 90%;
+      padding: 0.5rem;
+      border-radius: $border-rad-xs;
+      @include glass-bg-only;
+      background-color: var(--transparentGrisSuave);
+    }
+
+    @include desktop-sm {
+      // height: 65%;
+      overflow: hidden;
+      padding: 1rem;
+
+      svg {
+        position: absolute;
+        top: $spac-xs;
+        // width: 95%;
+        height: auto;
+      }
+    }
+
+    @include desktop-lg {
+      // height: 53%;
+    }
+    @include desktop-xlg {
+      // height: 48%;
+    }
+  }
 }
 
-.hero-gem{
-    position: absolute;
-    right: 0;
-    bottom: -8%;
-    opacity: .5;
-    z-index: 2;
-    // background: red;
+.hero-gem {
+  position: absolute;
+  right: 0;
+  bottom: -8%;
+  opacity: 0.5;
+  z-index: 2;
+  // background: red;
 }

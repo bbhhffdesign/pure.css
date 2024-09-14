@@ -236,6 +236,25 @@ font-style: normal;
         transition: transform $time2 ease-out;
         transform-origin: right;
     }
+}
+
+
+@mixin hvr-right-2($direction:right, $time1:.1s, $time2:.3s){
+    will-change: transform;
+    background-color: transparent;
+    transition:color $time2 ease-in;
+    &::before{
+        will-change: transform;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        border-radius: $border-rad-xs;
+        background: var(--colorSecundario);
+        transform: scaleX(1);
+        transition: transform $time2 ease-out;
+        transform-origin: right;
+    }
    
 
 }
