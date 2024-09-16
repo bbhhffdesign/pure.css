@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 //text gradient
-@mixin text-gradient($color1:var(--gradientGrad-1), $color2:var(--gradientGrad-2)) {
+@mixin text-gradient($color1:var(--textoPrincipal), $color2:var(--colorBg)) {
   background: radial-gradient(circle, $color1, $color2); 
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
