@@ -2,7 +2,7 @@
 @use "../abstract/variables" as *;
 
 .faq{
-    background-color:var(--transparentFaq);
+    background-color:var(--faqBg);
     height: auto;
     min-height: 150vh;
     @include desktop-sm{

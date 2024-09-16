@@ -1973,7 +1973,8 @@ striping:
   --borderGrad-2: #c6c6c6 ;
   --borderNegro: rgb(0, 0, 0);
   --transparentAzul: rgba(109, 147, 214, 0.85);
-  --transparentFaq: #6d93d6d9;
+  --transparent: #ffffff00;
+  --faqBg: var(--colorPrimario);
   --transparentGrisSuave: #c8c8c85e;
   --graadientRad-1: #c6c6c6;
   --gradientRad-2: #000000;
@@ -2494,6 +2495,17 @@ svg .logo-nav {
   fill: var(--negro);
 }
 
+.gemstone-svg .cls-1 {
+  stroke: var(--svgBlanco);
+  stroke-width: 2;
+  fill: none;
+}
+
+.brand {
+  stroke: var(--svgNegro);
+  fill: var(--svgNegro);
+}
+
 .footer svg {
   fill: var(--negro);
 }
@@ -2924,16 +2936,7 @@ svg .logo-nav {
 }
 .gemstone .gemstone-svg {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  width: 70%;
   z-index: -1;
-}
-.gemstone .gemstone-svg .cls-1 {
-  stroke: var(--svgBlanco);
-  stroke-width: 1;
-  fill: none;
 }
 .gemstone h2 {
   font-family: "monument_dos";
@@ -3033,7 +3036,7 @@ svg .logo-nav {
 }
 
 .faq {
-  background-color: var(--transparentFaq);
+  background-color: var(--faqBg);
   height: auto;
   min-height: 150vh;
 }
@@ -3108,17 +3111,47 @@ svg .logo-nav {
   margin: 0;
 }
 
-.brandsbar {
+@keyframes slide {
+  to {
+    transform: translateX(calc(-100% - 4rem));
+  }
+}
+.brands-container {
   position: relative;
-  border: solid 1px var(--borderBlanco);
-  z-index: 0;
+}
+.brands-container::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  background: linear-gradient(to left, var(--transparent), rgb(255, 255, 255));
+}
+.brands-container::after {
+  top: 0;
+  right: 0;
+  background-color: rgba(10, 75, 166, 0.46);
+  height: 100%;
+  width: 200px;
+  background: linear-gradient(to right, var(--transparent), rgb(255, 255, 255));
+}
+
+.brands-bar {
+  position: relative;
+  padding: 1rem 0;
   border: 1px solid;
   border-image-slice: 1;
   border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
   border-left: none;
   border-right: none;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: nowrap;
 }
-.brandsbar:before {
+.brands-bar:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3131,14 +3164,18 @@ svg .logo-nav {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-.brandsbar > div {
-  box-sizing: border-box;
+
+.brands-slide {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: none;
-  padding: 1rem 0;
+  gap: 4rem;
+  animation: 10s slide linear infinite;
+}
+.brands-slide img {
+  height: 50px;
+  width: auto;
 }
 
 footer {
@@ -3199,6 +3236,10 @@ footer {
 }
 .footer p {
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html, body {

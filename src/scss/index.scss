@@ -15,8 +15,14 @@
 @forward './layout/services';
 @forward './layout/gemstone';
 @forward './layout/faq';
-@forward './layout/brandsbar';
+@forward './layout/testimonials';
 @forward './layout/footer';
+
+
+*{
+  box-sizing: border-box;
+}
+
 
 html, body {
     height: 100%;

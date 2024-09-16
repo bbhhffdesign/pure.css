@@ -1,5 +1,5 @@
-svg{
-  .mindmap-like{
+svg {
+  .mindmap-like {
     fill: var(--colorSecundario);
     stroke-width: 1px;
     stroke: var(--negroTexto);
@@ -12,52 +12,61 @@ svg{
   .excelente-svg,
   .no-svg,
   .si-svg,
-  .agenda-svg{
+  .agenda-svg {
     fill: var(--negroTexto);
     stroke-width: 1px;
     stroke: var(--negroTexto);
   }
-  .agendabigfill-svg{
+  .agendabigfill-svg {
     fill: var(--colorSecundario);
   }
-  .flecha{
+  .flecha {
     stroke-width: 2px;
     stroke: var(--negroTexto);
     fill: none;
   }
-  .posicionmarca-svg{
+  .posicionmarca-svg {
     fill: var(--negroTexto);
     stroke: var(--negroTexto);
   }
 
-.hero-gem{
+  .hero-gem {
     fill: var(--blanco);
   }
 
-  
-
-
-    .oferta-logo-1,
-    .comunicacion-logo-1,
-    .marca-logo-1{
-      fill: var(--blanco)
-    }
-    .oferta-logo-2,
-    .oferta-logo-3,
-    .comunicacion-logo-2,
-    .marca-logo-2{
-      fill: var(--colorSecundario);
-    }
-
-    .logo-nav{
-        fill: var(--negro);
-    }
-
-
+  .oferta-logo-1,
+  .comunicacion-logo-1,
+  .marca-logo-1 {
+    fill: var(--blanco);
+  }
+  .oferta-logo-2,
+  .oferta-logo-3,
+  .comunicacion-logo-2,
+  .marca-logo-2 {
+    fill: var(--colorSecundario);
   }
 
-  .footer{
-    svg{
-      fill: var(--negro);
-    }
+  .logo-nav {
+    fill: var(--negro);
   }
+}
+
+.gemstone-svg{
+  .cls-1{
+    stroke: var(--svgBlanco);
+    stroke-width: 2;
+    fill: none;
+  }
+
+}
+
+.brand{
+  stroke:var(--svgNegro);
+  fill:var(--svgNegro)
+}
+
+.footer {
+  svg {
+    fill: var(--negro);
+  }
+}
