@@ -1,6 +1,13 @@
-#nightMode{
-    position: fixed;
-    top: 90%;
-    right: 1rem;
-    z-index: 3;
+.theme-switch-container{
+
+    #theme-switch-1,
+    #theme-switch-2{
+        position: fixed;
+        top: 90%;
+        z-index: 3;
+    }
+    #theme-switch-2{
+        right: 2rem;
+    }
 }
+

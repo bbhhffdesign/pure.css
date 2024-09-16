@@ -128,59 +128,23 @@
       padding: 0.5rem;
       border-radius: $border-rad-xs;
       @include glass-bg-only;
-      background-color: var(--transparentGrisSuave);
-
-
-      // .mindmap-like{
-      //   fill: var(--colorSecundario);
-      //   stroke-width: 1px;
-      //   stroke: var(--negroTexto);
-      // }
-      // .owner-svg,
-      // .ventas-svg,
-      // .branding-svg,
-      // .agendabigtext-svg,
-      // .estrategia-svg,
-      // .excelente-svg,
-      // .no-svg,
-      // .si-svg,
-      // .agenda-svg{
-      //   fill: var(--negroTexto);
-      //   stroke-width: 1px;
-      //   stroke: var(--negroTexto);
-      // }
-      // .agendabigfill-svg{
-      //   fill: var(--colorSecundario);
-      // }
-      // .flecha{
-      //   stroke-width: 2px;
-      //   stroke: var(--negroTexto);
-      //   fill: none;
-      // }
-      // .posicionmarca-svg{
-      //   fill: var(--negroTexto);
-      //   stroke: var(--negroTexto);
-      // }
+      background-color: #7f7f7f75;
     }
 
     @include desktop-sm {
-      // height: 65%;
       overflow: hidden;
       padding: 1rem;
 
       svg {
         position: absolute;
         top: $spac-xs;
-        // width: 95%;
         height: auto;
       }
     }
 
     @include desktop-lg {
-      // height: 53%;
     }
     @include desktop-xlg {
-      // height: 48%;
     }
   }
 }

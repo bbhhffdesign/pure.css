@@ -13,13 +13,6 @@
     border-bottom: $border-white;
     z-index: 2;
 
-    // .logo-nav{
-    //     fill: var(--negro);
-    // }
-
-
-
-
 
     @include flex(row, space-around, center, auto);
     @include font-raleway;
@@ -36,14 +29,13 @@
         &::before{
             border-radius: 0 0 $spac-s $spac-s;
         }
-
     }
     @include desktop-lg{
         height: 5rem;
     }
 
     a{
-        height: 90%;
+        @include flex(row, center, center,none);
     }
 
 }

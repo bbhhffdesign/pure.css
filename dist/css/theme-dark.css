@@ -1,0 +1,19 @@
+:root{
+    --colorBg: black;
+    --colorBg_invert: white;
+
+    --colorPrimario: #0B4599;
+    --colorSecundario: #C9FC59;
+    --textoPrincipal: #c6c6c6;
+    --textoTitulos: #ffffff;
+    /* --textoSpan: #C9FC59; */
+    --textoStrong: #ffffff;
+
+    --colorSvg_1: #ffffff;
+    --colorSvg_2: #c6c6c6;
+
+    
+
+
+
+}

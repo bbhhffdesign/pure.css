@@ -1,5 +1,4 @@
 @use "../../css/pure.css";
-// @use "../pure.css/buttons";
 @use "../abstract/variables" as *;
 @use "../abstract/mixins" as *;
 
@@ -10,7 +9,7 @@
     font-size: 80%;
     font-weight: 600;
     padding: $spac-xs .2rem;
-    // border: var(--borderBlanco);
+
     @include hvr-right;
 
     
@@ -49,10 +48,9 @@
     box-shadow: none;
     background-color: $transparent0;
     border: $border-white;
-    color: var(--negro);
-    // border: $border-black;
+
+
 }
-// .btn-pri-s:hover::before,
 .btn-pri:hover::before,
 .btn-pri-m:hover::before,
 .btn-pri-l:hover::before,

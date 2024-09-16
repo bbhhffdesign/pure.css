@@ -1,65 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
-  <style>
-    *{
-      box-sizing: border-box;
-    }
-
-    @keyframes slide{
-      to{
-        transform: translateX(calc(-100%));
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="theme-light.css" id="theme-link"/>
+    <style>
+      body {
+        height: 100vh;
+        background-color: black;
+        color: var(--colorTexto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-    }
-
-
-
-    img{
-      height: 100px;
-      width: auto;
-      margin: 0 2rem;
-      /* margin-right: 2rem; */
-    }
-
-    .logos{
-      background-color: #333;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    .logos-slide{
-      display: inline-block;
-
-      animation: 5s slide linear infinite;
-    }
-
-
-  </style>
-</head>
-<body style="background-color: rgb(0, 0, 0);">
-
-  <div class="logos">
-    <div class="logos-slide">
-       <img src="../assets/logos/belen.svg" alt="">
-       <img src="../assets/logos/gallmarquez.svg" alt="">
-       <img src="../assets/logos/sound.svg" alt="">
-       <img src="../assets/logos/udana.svg" alt="">
-       <img src="../assets/logos/x.svg" alt="">
-       <img src="../assets/logos/yamatec.svg" alt="">
+      .text__container {
+        text-align: center;
+        background-color: var(--colorPrimario);
+        height: 200px;
+        width: 400px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="text__container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit blanditiis
+        veniam earum laborum? Vel, enim. Quo, eaque voluptatem similique, velit
+        omnis nisi ut, distinctio esse optio architecto quaerat rerum! Eligendi.
+      </p>
+      <button id="theme-switch">THEME</button>
+      <button id="theme-switch-2">SWITCH</button>
     </div>
-    <div class="logos-slide">
-       <img src="../assets/logos/belen.svg" alt="">
-       <img src="../assets/logos/gallmarquez.svg" alt="">
-       <img src="../assets/logos/sound.svg" alt="">
-       <img src="../assets/logos/udana.svg" alt="">
-       <img src="../assets/logos/x.svg" alt="">
-       <img src="../assets/logos/yamatec.svg" alt="">
-    </div>
- </div>
-  
-</body>
+
+    <script>
+      function setTheme(themeName) {
+        document
+          .getElementById("theme-link")
+          .setAttribute("href", "theme-" + themeName + ".css");
+      }
+
+      let btn = document.getElementById("theme-switch");
+      let btn2 = document.getElementById("theme-switch-2");
+
+      btn.addEventListener("click", () =>{
+        setTheme("dark")
+      })
+      btn2.addEventListener("click", () =>{
+        setTheme("light")
+      })
+
+    </script>
+  </body>
 </html>

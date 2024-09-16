@@ -5,8 +5,8 @@
     position: relative;
     @include flex(row,center, center, none);
     gap: .5rem;
-    border-top: $border-black;
-    border-bottom: $border-black;
+    // border-top: $border-black;
+    // border-bottom: $border-black;
     padding: .3rem 0;
     
     

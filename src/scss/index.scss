@@ -6,7 +6,6 @@
 @forward './abstract/utilidades';
 @forward './abstract/colorSwitches';
 @forward './abstract/keyframes';
-@forward './abstract/colorSwitches';
 @forward 'components/btn_float';
 @forward './layout/nav';
 @forward 'components/counter';
@@ -17,11 +16,12 @@
 @forward './layout/faq';
 @forward './layout/testimonials';
 @forward './layout/footer';
+@forward './abstract/colorSwitches';
 
 
-*{
-  box-sizing: border-box;
-}
+// *{
+//   box-sizing: border-box;
+// }
 
 
 html, body {
@@ -30,7 +30,7 @@ html, body {
   }
 
 body{
-    background-color:var(--blancoBg);
+    background-color:var(--colorBg);
     overflow-x: hidden;
     overscroll-behavior: none;
 }

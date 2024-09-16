@@ -1,9 +1,13 @@
+@use '../abstract/variables' as*;
+@use '../abstract/mixins' as*;
+
 svg {
   .mindmap-like {
     fill: var(--colorSecundario);
     stroke-width: 1px;
-    stroke: var(--negroTexto);
+    stroke: var(--textoPrincipal);
   }
+
   .owner-svg,
   .ventas-svg,
   .branding-svg,
@@ -13,31 +17,32 @@ svg {
   .no-svg,
   .si-svg,
   .agenda-svg {
-    fill: var(--negroTexto);
+    fill: var(--textoPrincipal);
     stroke-width: 1px;
-    stroke: var(--negroTexto);
+    stroke: var(--textoPrincipal);
   }
   .agendabigfill-svg {
     fill: var(--colorSecundario);
   }
   .flecha {
     stroke-width: 2px;
-    stroke: var(--negroTexto);
+    stroke: var(--textoPrincipal);
     fill: none;
   }
   .posicionmarca-svg {
-    fill: var(--negroTexto);
-    stroke: var(--negroTexto);
+    fill: var(--textoPrincipal);
+    stroke: var(--textoPrincipal);
   }
 
   .hero-gem {
-    fill: var(--blanco);
+    fill: var(--colorBg);
   }
+  
 
   .oferta-logo-1,
   .comunicacion-logo-1,
   .marca-logo-1 {
-    fill: var(--blanco);
+    fill: var(--colorBg);
   }
   .oferta-logo-2,
   .oferta-logo-3,
@@ -47,13 +52,13 @@ svg {
   }
 
   .logo-nav {
-    fill: var(--negro);
+    fill: var(--colorBg_invert);
   }
 }
 
 .gemstone-svg{
   .cls-1{
-    stroke: var(--svgBlanco);
+    stroke: var(--colorBg);
     stroke-width: 2;
     fill: none;
   }
@@ -61,12 +66,25 @@ svg {
 }
 
 .brand{
-  stroke:var(--svgNegro);
-  fill:var(--svgNegro)
+  stroke:var(--colorSvg_1);
+  fill:var(--colorSvg_1)
 }
 
 .footer {
   svg {
-    fill: var(--svgNegro);
+    fill: var(--colorSvg_1);
   }
+}
+
+.btn-pri{
+  color: var(--colorBg);
+
+  &:hover{
+    color: var(--textoPrincipal);
+  }
+}
+
+.count__container{
+  border-top: $border-principal;
+  border-bottom: $border-principal;
 }
