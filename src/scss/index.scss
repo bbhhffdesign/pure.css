@@ -6,6 +6,7 @@
 @forward './abstract/utilidades';
 @forward './abstract/colorSwitches';
 @forward './abstract/keyframes';
+@forward './abstract/colorSwitches';
 @forward 'components/btn_float';
 @forward './layout/nav';
 @forward 'components/counter';
@@ -23,7 +24,7 @@ html, body {
   }
 
 body{
-    background-color:var(--blanco);
+    background-color:var(--blancoBg);
     overflow-x: hidden;
     overscroll-behavior: none;
 }

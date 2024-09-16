@@ -83,7 +83,6 @@
 
       span {
         font-weight: 700;
-        color: var(--negro);
         letter-spacing: 2px;
       }
     }
@@ -132,36 +131,36 @@
       background-color: var(--transparentGrisSuave);
 
 
-      .mindmap-like{
-        fill: var(--colorSecundario);
-        stroke-width: 1px;
-        stroke: var(--negroTexto);
-      }
-      .owner-svg,
-      .ventas-svg,
-      .branding-svg,
-      .agendabigtext-svg,
-      .estrategia-svg,
-      .excelente-svg,
-      .no-svg,
-      .si-svg,
-      .agenda-svg{
-        fill: var(--negroTexto);
-        stroke-width: 1px;
-        stroke: var(--negroTexto);
-      }
-      .agendabigfill-svg{
-        fill: var(--colorSecundario);
-      }
-      .flecha{
-        stroke-width: 2px;
-        stroke: var(--negroTexto);
-        fill: none;
-      }
-      .posicionmarca-svg{
-        fill: var(--negroTexto);
-        stroke: var(--negroTexto);
-      }
+      // .mindmap-like{
+      //   fill: var(--colorSecundario);
+      //   stroke-width: 1px;
+      //   stroke: var(--negroTexto);
+      // }
+      // .owner-svg,
+      // .ventas-svg,
+      // .branding-svg,
+      // .agendabigtext-svg,
+      // .estrategia-svg,
+      // .excelente-svg,
+      // .no-svg,
+      // .si-svg,
+      // .agenda-svg{
+      //   fill: var(--negroTexto);
+      //   stroke-width: 1px;
+      //   stroke: var(--negroTexto);
+      // }
+      // .agendabigfill-svg{
+      //   fill: var(--colorSecundario);
+      // }
+      // .flecha{
+      //   stroke-width: 2px;
+      //   stroke: var(--negroTexto);
+      //   fill: none;
+      // }
+      // .posicionmarca-svg{
+      //   fill: var(--negroTexto);
+      //   stroke: var(--negroTexto);
+      // }
     }
 
     @include desktop-sm {
@@ -192,9 +191,4 @@
   bottom: -8%;
   opacity: 0.5;
   z-index: 2;
-  // background: red;
-
-  .hero-gem{
-    fill: var(--blanco);
-  }
 }

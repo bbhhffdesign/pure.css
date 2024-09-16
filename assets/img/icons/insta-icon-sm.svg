@@ -1,30 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   id="Capa_1"
-   data-name="Capa 1"
+   class="logo-instagram"
    viewBox="0 0 49.999999 49.997453"
-   version="1.1"
    width="50"
-   height="49.997452"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1">
-    <style
-       id="style1">
-      .cls-1 {
-        fill: #eaeaea;
-      }
-
-      .cls-1, .cls-2 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #000;
-      }
-    </style>
-  </defs>
+   height="49.997452">
   <g
      id="g4"
      transform="translate(-114.56,-101.83)">

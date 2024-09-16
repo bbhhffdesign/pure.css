@@ -7,6 +7,7 @@ footer{
 }
 
 .footer{
+    // height: auto;
     max-width: $desktop-md;
     text-align: center;
 
@@ -30,14 +31,9 @@ footer{
             font-size: 100%;
         }
     }
-    img{
-        height: 25px;
-        @include tablet-l{
-            height: 30px;
-        }
-        @include desktop-sm{
-            height: 35px
-        }
+    svg{
+        height: 100%;
+        width: 25px;
     }
 
     .footer-text{
@@ -47,25 +43,19 @@ footer{
     }
     
     .footer-social{
-        @include flex(row, center ,center,1rem);
-        height: 100%;
+        @include flex(row, center ,flex-end, 1rem);
+
+        svg{
+            width: 2rem;
+        }
 
         @include desktop-md{    
             gap: 2rem;
         }
 
-        img{
-            height: 20px;
-            @include tablet-l{
-                height: 25px;
-            }
-            @include desktop-sm{
-                height: 35px;
-            }
         }
         p{
             text-align: center;
         }
     }
    
-}
