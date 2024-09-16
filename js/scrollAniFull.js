@@ -205,7 +205,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     })
     tl_servicesBox_2
         .from(servicesBox2Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
-        .from(servicesLogo2 ,{fill:"#c6c6c6", duration:3, ease: "power4.out"}, "<")
+        .from(servicesLogo2 , {fill:"#c6c6c6", duration:3, ease: "power4.out"}, "<")
     
     const tl_servicesBox_3 = gsap.timeline({
         scrollTrigger:{

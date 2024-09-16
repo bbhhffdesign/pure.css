@@ -65,21 +65,21 @@
       @include border-gradient;
       @include glass-bg-only;
 
-      svg{
-        .oferta-logo-1,
-        .comunicacion-logo-1,
-        .marca-logo-1{
-          fill: var(--blanco)
-        }
-        .oferta-logo-2,
-        .oferta-logo-3,
-        .comunicacion-logo-2,
-        .marca-logo-2{
-          fill: var(--colorSecundario);
-        }
+      // svg{
+      //   .oferta-logo-1,
+      //   .comunicacion-logo-1,
+      //   .marca-logo-1{
+      //     fill: var(--blanco)
+      //   }
+      //   .oferta-logo-2,
+      //   .oferta-logo-3,
+      //   .comunicacion-logo-2,
+      //   .marca-logo-2{
+      //     fill: var(--colorSecundario);
+      //   }
 
 
-      }
+      // }
 
   
 
