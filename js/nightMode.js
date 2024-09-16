@@ -16,7 +16,7 @@ let colores = function changeColors() {
         document.documentElement.style.setProperty('--gradientGrad-2', '#000000');
         document.documentElement.style.setProperty('--borderGrad-1', '#000000');
         document.documentElement.style.setProperty('--borderGrad-2', '#ffffff');
-        document.documentElement.style.setProperty('--svgBlanco', '#000000');
+        document.documentElement.style.setProperty('--svgNegro', '#c6c6c6');
         document.documentElement.style.setProperty('--negroTitulos','#ffffff');
         document.documentElement.style.setProperty('--negroTexto','#c6c6c6');
         document.documentElement.style.setProperty('--negroStrong','#ffffff');
@@ -34,7 +34,7 @@ let colores = function changeColors() {
         document.documentElement.style.setProperty('--gradientGrad-2', '#c6c6c6');
         document.documentElement.style.setProperty('--borderGrad-1', '#ffffff');
         document.documentElement.style.setProperty('--borderGrad-2', '#000000');
-        document.documentElement.style.setProperty('--svgBlanco', '#ffffff');
+        document.documentElement.style.setProperty('--svgNegro', '#000000');
         document.documentElement.style.setProperty('--negroTitulos','#000000');
         document.documentElement.style.setProperty('--negroTexto','#000000');
         document.documentElement.style.setProperty('--negroStrong','#000000');

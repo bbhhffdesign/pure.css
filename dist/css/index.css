@@ -2507,7 +2507,7 @@ svg .logo-nav {
 }
 
 .footer svg {
-  fill: var(--negro);
+  fill: var(--svgNegro);
 }
 
 #nightMode {
@@ -3118,21 +3118,6 @@ svg .logo-nav {
 }
 .brands-container {
   position: relative;
-}
-.brands-container::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 200px;
-  background: linear-gradient(to left, var(--transparent), rgb(255, 255, 255));
-}
-.brands-container::after {
-  top: 0;
-  right: 0;
-  background-color: rgba(10, 75, 166, 0.46);
-  height: 100%;
-  width: 200px;
-  background: linear-gradient(to right, var(--transparent), rgb(255, 255, 255));
 }
 
 .brands-bar {
