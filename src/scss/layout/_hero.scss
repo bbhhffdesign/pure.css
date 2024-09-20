@@ -70,6 +70,10 @@
     height: 80vh;
     @include flex(column, space-around, center, none);
 
+    .mindmap-title-cta{
+      padding: .5rem 2rem;
+    }
+
     & > div {
       overflow-y: hidden;
       margin: 0 auto;
@@ -97,8 +101,6 @@
   }
 
   .mindmap-container {
-    height: 60vh;
-    // @include flex(column, center, center, none);
     position: relative;
     width: 100%;
     overflow-y: hidden;
@@ -108,8 +110,7 @@
       padding: 0.3rem 2rem;
       font-size: 200%;
       position: absolute;
-      @include centrarhorizontal;
-      top: 20%;
+      @include centrarAbsolute;
       z-index: 1;
     }
 
@@ -152,7 +153,7 @@
 #hero-gem {
   position: absolute;
   right: 0;
-  bottom: -8%;
+  top: 60%;
   opacity: 0.5;
   z-index: 2;
 }
