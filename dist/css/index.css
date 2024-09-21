@@ -2200,7 +2200,6 @@ input:checked + .slider:before {
   right: 1rem;
 }
 .switch2::after {
-  z-index: 0;
   content: "";
   position: absolute;
   height: 100%;
