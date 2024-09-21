@@ -311,7 +311,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_paso1 = gsap.timeline({
         scrollTrigger:{
             trigger: pasoBox1,
-            markers: true,
+            // markers: true,
             start: "top 80%",
             end: "bottom 80%",
             onEnter: () =>tl_paso1.play(),
