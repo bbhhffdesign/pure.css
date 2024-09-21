@@ -2164,7 +2164,7 @@ span {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--colorBg);
+  background-color: transparent;
   transition: 0.5s;
   border-radius: 30px;
   border: solid 1px var(--colorBg_invert);
@@ -2184,7 +2184,7 @@ span {
 }
 
 input:checked + .slider {
-  background-color: var(--colorBg);
+  background-color: transparent;
 }
 
 input:checked + .slider:before {
