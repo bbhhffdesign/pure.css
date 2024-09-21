@@ -2544,14 +2544,11 @@ svg .logo-nav {
   border-bottom: solid 1px var(--colorBg_invert);
 }
 
-.theme-switch-container #theme-switch-1,
-.theme-switch-container #theme-switch-2 {
-  position: fixed;
-  top: 90%;
+.switch2 {
   z-index: 3;
-}
-.theme-switch-container #theme-switch-2 {
-  right: 2rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 .nav {
