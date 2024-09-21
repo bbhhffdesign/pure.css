@@ -102,14 +102,14 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_navbar = gsap.timeline({
         scrollTrigger:{
             trigger: heroText,
-            markers: true,
+            // markers: true,
             start:"90% 10%",
             end: "110% 10%",
             scrub: true
         }
     })
     tl_navbar
-        .to(navBar,{y:-100})
+        .to(navBar,{y:"-100%"})
         .from(themeSwitch2,{opacity:0})
 
     const tl_mindmapText_1 = gsap.timeline({
