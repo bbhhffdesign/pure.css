@@ -2842,6 +2842,7 @@ svg .logo-nav {
   border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left: none;
   border-right: none;
+  background-color: var(--colorBg_switch);
 }
 .services .services-text:before {
   content: "";
@@ -3093,6 +3094,7 @@ svg .logo-nav {
   align-items: center;
   gap: none;
   z-index: 0;
+  background-color: var(--colorBg_switch);
 }
 .faq-qanda:before {
   content: "";

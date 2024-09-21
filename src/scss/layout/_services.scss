@@ -21,6 +21,7 @@
     overflow-y: hidden;
     @include glass-bg-only;
     @include border-gradient;
+    background-color: var(--colorBg_switch);
 
     & > div{
       overflow-y: hidden;
