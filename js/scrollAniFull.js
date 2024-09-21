@@ -103,14 +103,14 @@ mm_mobile.add("(max-width: 768px)", () => {
         scrollTrigger:{
             trigger: heroText,
             // markers: true,
-            start:"90% 10%",
+            start:"70% 10%",
             end: "110% 10%",
             scrub: true
         }
     })
     tl_navbar
         .to(navBar,{y:"-100%"})
-        .from(themeSwitch2,{opacity:0, zIndex: "auto"})
+        .from(themeSwitch2,{opacity:0, zIndex: "auto"}, "<")
 
     const tl_mindmapText_1 = gsap.timeline({
         scrollTrigger:{
@@ -311,9 +311,11 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_paso1 = gsap.timeline({
         scrollTrigger:{
             trigger: pasoBox1,
-            // markers: true,
+            markers: true,
             start: "top 80%",
-            end: "top 80%"
+            end: "bottom 80%",
+            onEnter: () =>tl_paso1.play(),
+            onEnterBack: () =>tl_paso1.reverse()
         }
     })
 tl_paso1
@@ -327,7 +329,9 @@ tl_paso1
             trigger: pasoBox2,
             // markers: true,
             start: "top 80%",
-            end: "top 80%"
+            end: "bottom 80%",
+            onEnter: () =>tl_paso2.play(),
+            onEnterBack: () =>tl_paso2.reverse()
         }
     })
 tl_paso2
@@ -341,7 +345,9 @@ tl_paso2
             trigger: pasoBox3,
             // markers: true,
             start: "top 80%",
-            end: "top 80%"
+            end: "bottom 80%",
+            onEnter: () =>tl_paso3.play(),
+            onEnterBack: () =>tl_paso3.reverse()
         }
     })
 tl_paso3

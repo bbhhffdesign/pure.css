@@ -3,7 +3,7 @@
 
 
 .switch {
-    // font-size: 17px;
+    // font-size: .9rem;
     position: relative;
     display: inline-block;
     width: 3.5em;
@@ -29,7 +29,7 @@
     background-color: transparent;
     transition: .5s;
     border-radius: 30px;
-    border: $border-principal;
+    border: solid 1px  var(--colorBg_invert);
   }
   
   .slider:before {
@@ -45,18 +45,6 @@
     background: transparent;
     transition: .5s;
   }
-
-  .slider::after{
-    z-index: 1;
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 30px;
-    background-color: rgba(255, 0, 0, 0);
-    backdrop-filter: blur(4px);
-  }
-
   
   input:checked + .slider {
     background-color: transparent;
@@ -73,6 +61,22 @@
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+    
+    
+    .slider{
+      border: none;
+      
+      &::after{
 
+          z-index: 1;
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          border-radius: 30px;
+          backdrop-filter: blur(4px);
+          background-color: var(--colorBg_switch);
+      }
+    }
   }
   

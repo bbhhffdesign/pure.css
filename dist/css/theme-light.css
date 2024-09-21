@@ -1,13 +1,12 @@
 :root{
     --colorBg: #ffffff;
     --colorBg_invert: #000000;
-    --colorBg_switch: #c6c6c6;
+    --colorBg_switch: #c6c6c63c;
 
     --colorPrimario: #0B4599;
     --colorSecundario: #eba94d;
     --textoPrincipal: #0e0e0e;
     --textoTitulos: #000000;
-    --textoSpan: #c6c6c6;
     --textoStrong: #000000;
 
     --colorSvg_1: #000000;

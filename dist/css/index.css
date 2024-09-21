@@ -2184,18 +2184,6 @@ span {
   transition: 0.5s;
 }
 
-.slider::after {
-  z-index: 1;
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 30px;
-  background-color: rgba(255, 0, 0, 0);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-}
-
 input:checked + .slider {
   background-color: transparent;
 }
@@ -2210,6 +2198,20 @@ input:checked + .slider:before {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+}
+.switch2 .slider {
+  border: none;
+}
+.switch2 .slider::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: var(--colorBg_switch);
 }
 
 .txt-cntr {
@@ -2748,7 +2750,7 @@ svg .logo-nav {
   padding: 0.5rem;
   border-radius: 0.3rem 0.05rem;
   z-index: 0;
-  background-color: rgba(127, 127, 127, 0.4588235294);
+  background-color: var(--colorBg_switch);
 }
 .hero .mindmap-container .mindmap:before {
   content: "";
@@ -2983,10 +2985,6 @@ svg .logo-nav {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.gemstone .gemstone-svg {
-  position: absolute;
-  z-index: -1;
-}
 .gemstone h2 {
   font-family: "monument_dos";
   font-weight: 100;
@@ -3000,6 +2998,14 @@ svg .logo-nav {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+}
+.gemstone .pasos-container {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
 }
 .gemstone .paso {
   position: relative;

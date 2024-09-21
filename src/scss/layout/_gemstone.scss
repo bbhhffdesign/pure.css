@@ -18,10 +18,10 @@
 
   }
   
-  .gemstone-svg{
-    position: absolute;
-    z-index: -1;
-  }
+  // .gemstone-svg{
+  //   position: absolute;
+  //   z-index: -1;
+  // }
 
 
   h2{
@@ -32,7 +32,10 @@
       @include font-raleway(600);
     }
   }
-
+.pasos-container{
+  height: 200vh;
+  @include flex(column, space-between, center,none);
+}
   .paso {
     position: relative;
     padding: $spac-s;
