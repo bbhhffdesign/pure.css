@@ -1,0 +1,39 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+
+.mindmap-title-container {
+    padding: 0 $spac-s;
+    height: 150vh;
+    @include flex(column, space-around, center, none);
+
+    .mindmap-title-cta{
+      padding: .5rem 2rem;
+    }
+
+    & > div {
+      overflow-y: hidden;
+      margin: 0 auto;
+    }
+
+    h2 {
+      @include font-monument-normal;
+      @include text-gradient;
+    }
+    h3 {
+      //   text-align: center;
+
+      span {
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+    }
+    @include tablet {
+      br {
+        display: none;
+      }
+    }
+    @include desktop-sm {
+      // display: none;
+    }
+  }

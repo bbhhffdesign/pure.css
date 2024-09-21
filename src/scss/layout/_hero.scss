@@ -65,40 +65,40 @@
     }
   }
 
-  .mindmap-title-container {
-    padding: 0 $spac-s;
-    height: 80vh;
-    @include flex(column, space-around, center, none);
+  // .mindmap-title-container {
+  //   padding: 0 $spac-s;
+  //   height: 80vh;
+  //   @include flex(column, space-around, center, none);
 
-    .mindmap-title-cta{
-      padding: .5rem 2rem;
-    }
+  //   .mindmap-title-cta{
+  //     padding: .5rem 2rem;
+  //   }
 
-    & > div {
-      overflow-y: hidden;
-      margin: 0 auto;
-    }
+  //   & > div {
+  //     overflow-y: hidden;
+  //     margin: 0 auto;
+  //   }
 
-    h2 {
-      @include font-monument-normal;
-    }
-    h3 {
-      //   text-align: center;
+  //   h2 {
+  //     @include font-monument-normal;
+  //   }
+  //   h3 {
+  //     //   text-align: center;
 
-      span {
-        font-weight: 700;
-        letter-spacing: 2px;
-      }
-    }
-    @include tablet {
-      br {
-        display: none;
-      }
-    }
-    @include desktop-sm {
-      display: none;
-    }
-  }
+  //     span {
+  //       font-weight: 700;
+  //       letter-spacing: 2px;
+  //     }
+  //   }
+  //   @include tablet {
+  //     br {
+  //       display: none;
+  //     }
+  //   }
+  //   @include desktop-sm {
+  //     // display: none;
+  //   }
+  // }
 
   .mindmap-container {
     position: relative;
@@ -123,7 +123,7 @@
     }
 
 
-    svg {
+    .mindmap {
       height: auto;
       width: 90%;
       padding: 0.5rem;
@@ -131,29 +131,30 @@
       @include glass-bg-only;
       background-color: #7f7f7f75;
     }
-
+    
     @include desktop-sm {
       overflow: hidden;
       padding: 1rem;
-
+      
       svg {
         position: absolute;
         top: $spac-xs;
         height: auto;
       }
     }
-
+    
     @include desktop-lg {
     }
     @include desktop-xlg {
     }
   }
+  
 }
 
 #hero-gem {
   position: absolute;
   right: 0;
-  top: 60%;
+  bottom: 0;
   opacity: 0.5;
   z-index: 2;
 }

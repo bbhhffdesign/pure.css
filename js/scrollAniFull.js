@@ -46,6 +46,7 @@ const servicesBox3Content = document.getElementById("services-box-3-content");
 const gemstoneSection = document.getElementById("gemstone-section");  
 const gemstoneTextContainer = document.getElementById("gemstone-text");  
 const gemstoneText1 = document.getElementById("gemstone-text-1");
+const gemstoneText1Container = document.getElementById("gemstone-text-1-container");
 const gemstoneText2 = document.getElementById("gemstone-text-2");
 const gemstoneText3 = document.getElementById("gemstone-text-3");
 const gemstoneText4 = document.getElementById("gemstone-text-4");
@@ -188,8 +189,17 @@ mm_mobile.add("(max-width: 768px)", () => {
     tl_servicesText_2
         .from(servicesText2,{opacity: .5, y:150, ease: "power4.out", duration: 1})
 
-
-        //la epicaaaaaaa ↓↓↓
+    const tl_servicesText_3 = gsap.timeline({
+        scrollTrigger:{
+            trigger: servicesText3,
+            markers: true,
+            start:"top 90%",
+            end: "top 90%"
+        }
+    }
+    )
+    tl_servicesText_3
+        .from(servicesText3,{opacity: .5, y:150, ease: "power4.out", duration: 1})
 
 
 
@@ -231,26 +241,19 @@ mm_mobile.add("(max-width: 768px)", () => {
         .from(servicesBox3Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
         .from(servicesLogo3 ,{fill:"#c6c6c6", duration:3, ease: "power4.out"}, "<")
 
-    // const tl_gemstoneText_1 = gsap.timeline({
-    //     scrollTrigger:{
-    //         trigger: gemstoneText1,
-    //         // markers: true,
-    //         start:"-20% 90%",
-    //         end: "bottom 90%"
-    //     }
-    // })
+
     // tl_gemstoneText_1
     //     .from(gemstoneText1,{opacity:0, y:80,  duration:.5})
 
 
     const tl_gemstoneText_1 = gsap.timeline({
         scrollTrigger:{
-            trigger: gemstoneTextContainer,
-           markers: true,
+            trigger:  gemstoneText1Container,
+            // markers: true,
             pin: true,
-            start:"top center",
-            end: "top center",
-            scrub: 3,
+            start:"center center",
+            end: "200% center",
+            scrub: 1,
 
         }
     })
@@ -258,6 +261,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     tl_gemstoneText_1
         .from(gemstoneText1,{opacity: 0, ease: "power4.out", duration: 3})
         .to(bgParticles,{opacity: 0}, "<")
+        .to(gemstoneSection,{background: "var(--colorBg)"})
         .to(bgParticles,{opacity: 1})
         // .to(servicesBox2,{opacity: 0})
 

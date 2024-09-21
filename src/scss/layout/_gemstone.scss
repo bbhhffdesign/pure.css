@@ -2,9 +2,7 @@
 @use "../abstract/variables" as *;
 
 .gemstone {
-  // position: relative;
   height: auto;
-
 
 .gemstone-text-1-container{
   @include flex(column, center, center,none);
@@ -13,7 +11,7 @@
 }
   .gemstone-text {
     position: relative;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -40,12 +38,10 @@
     padding: $spac-s;
     margin: $spac-m;
     border: $border-white;
-    // border-radius: $border-rad-s;
     @include glass-bg-only;
     @include border-gradient;
 
     h1{
-      // color: $colorPrimarioTransparent;
       @include font-raleway;
       position: absolute;
       z-index: -2;
@@ -75,28 +71,6 @@
       padding-right:3rem ;
     }
   }
-  .paso-2 {
-    .paso-title {
-      text-align: end;
-    }
-  }
 
-  @include desktop-sm {
-    .paso-2 {
-      transform: translateX(72%);
-    }
-  }
-  @include desktop-lg {
-    .paso-2 {
-      transform: translateX(75%);
-    }
-  }
-  @include desktop-xlg {
-    margin: 0 auto;
-    max-width: $desktop-lg;
-    .paso-2 {
-      transform: translateX(70%);
-    }
-  }
 }
 
