@@ -3000,10 +3000,10 @@ svg .logo-nav {
   font-style: normal;
 }
 .gemstone .pasos-container {
-  height: 200vh;
+  height: 220vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: none;
 }
