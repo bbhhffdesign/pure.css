@@ -110,7 +110,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     })
     tl_navbar
         .to(navBar,{y:"-100%"})
-        .from(themeSwitch2,{opacity:0})
+        .from(themeSwitch2,{opacity:0, zIndex: "auto"})
 
     const tl_mindmapText_1 = gsap.timeline({
         scrollTrigger:{

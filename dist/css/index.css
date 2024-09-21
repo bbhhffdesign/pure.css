@@ -2171,7 +2171,7 @@ span {
 }
 
 .slider:before {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   content: "";
   height: 1.4em;
@@ -2184,6 +2184,18 @@ span {
   transition: 0.5s;
 }
 
+.slider::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  background-color: rgba(255, 0, 0, 0);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
 input:checked + .slider {
   background-color: transparent;
 }
@@ -2194,20 +2206,10 @@ input:checked + .slider:before {
 }
 
 .switch2 {
-  z-index: 3;
+  z-index: 4;
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-}
-.switch2::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 30px;
-  background-color: rgba(255, 0, 0, 0);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
 }
 
 .txt-cntr {

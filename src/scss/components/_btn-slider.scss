@@ -33,7 +33,7 @@
   }
   
   .slider:before {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     content: "";
     height: 1.4em;
@@ -44,6 +44,17 @@
     box-shadow: inset 8px -4px 0px 0px var(--colorSecundario);
     background: transparent;
     transition: .5s;
+  }
+
+  .slider::after{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    backdrop-filter: blur(4px);
   }
 
   
@@ -58,24 +69,10 @@
 
 
   .switch2 {
-    z-index: 3;
+    z-index: 4;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
 
-    &::before{
-      // z-index: 1;
-    }
-
-    &::after{
-      // z-index: 1;
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      border-radius: 30px;
-      background-color: rgba(255, 0, 0, 0);
-      backdrop-filter: blur(4px);
-    }
   }
   
