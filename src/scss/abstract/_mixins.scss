@@ -82,7 +82,7 @@ font-style: normal;
 @mixin border-gradient{
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
+  border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left:  none;
   border-right: none ;
 }
@@ -104,6 +104,7 @@ font-style: normal;
   }
 
 }
+
 
 @mixin glass-bg($color1: var(--negro), $color2: var(--blanco), $border-width: 1px,
  $blur: 4px, $bg-color: transparent, $position: relative, $zIndex1: -1, $zIndex2:0, $zIndex3:1){

@@ -56,17 +56,16 @@ const gemstoneText6 = document.getElementById("gemstone-text-6");
 //gemstoneSvgs
 const gemstoneSvg = document.getElementById("gemstoneSvg");
 
-
-//gemstonePaso
-const paso1title = document.getElementById("paso-1-title");
-const paso1 = document.getElementById("gemstone-paso-1");
-const paso1Content = document.getElementById("paso-1-content");
-const paso2title = document.getElementById("paso-2-title");
-const paso2 = document.getElementById("gemstone-paso-2");
-const paso2Content = document.getElementById("paso-2-content");
-const paso3title = document.getElementById("paso-3-title");
-const paso3 = document.getElementById("gemstone-paso-3");
-const paso3Content = document.getElementById("paso-3-content");
+//gemstone paso
+const pasoNumber1 = document.getElementById("paso-number-1")
+const pasoText1 = document.getElementById("paso-text-1")
+const pasoBox1 = document.getElementById("paso-1-content")
+const pasoNumber2 = document.getElementById("paso-number-2")
+const pasoText2 = document.getElementById("paso-text-2")
+const pasoBox2 = document.getElementById("paso-2-content")
+const pasoNumber3 = document.getElementById("paso-number-3")
+const pasoText3 = document.getElementById("paso-text-3")
+const pasoBox3 = document.getElementById("paso-3-content")
 
 //brandsbar
 const brandsbarCont_1 = document.getElementById("brands-container1");
@@ -192,7 +191,7 @@ mm_mobile.add("(max-width: 768px)", () => {
     const tl_servicesText_3 = gsap.timeline({
         scrollTrigger:{
             trigger: servicesText3,
-            markers: true,
+            // markers: true,
             start:"top 90%",
             end: "top 90%"
         }
@@ -215,7 +214,8 @@ mm_mobile.add("(max-width: 768px)", () => {
 
     tl_servicesBox_1
         .from(servicesBox1Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
-        .from(servicesLogo1 ,{fill:"#c6c6c6", duration:3, ease: "power4.out"}, "<")
+        .from(servicesLogo1 ,{fill:"#c6c6c6", duration:2, ease: "power4.out"})
+        .to(servicesLogo1,{fill: "var(--colorBg)", duration: 1})
     
     const tl_servicesBox_2 = gsap.timeline({
         scrollTrigger:{
@@ -227,7 +227,8 @@ mm_mobile.add("(max-width: 768px)", () => {
     })
     tl_servicesBox_2
         .from(servicesBox2Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
-        .from(servicesLogo2 , {fill:"#c6c6c6", duration:3, ease: "power4.out"}, "<")
+        .from(servicesLogo2 , {fill:"#c6c6c6", duration:3, ease: "power4.out"})
+        .to(servicesLogo2,{fill: "var(--colorBg)", duration: 1})
     
     const tl_servicesBox_3 = gsap.timeline({
         scrollTrigger:{
@@ -239,7 +240,8 @@ mm_mobile.add("(max-width: 768px)", () => {
     })
     tl_servicesBox_3
         .from(servicesBox3Content,{opacity: .5, y:150, ease: "power4.out", duration: 1})
-        .from(servicesLogo3 ,{fill:"#c6c6c6", duration:3, ease: "power4.out"}, "<")
+        .from(servicesLogo3 ,{fill:"#c6c6c6", duration:3, ease: "power4.out"})
+        .to(servicesLogo3,{fill: "var(--colorBg)", duration: 1})
 
 
     // tl_gemstoneText_1
@@ -263,7 +265,6 @@ mm_mobile.add("(max-width: 768px)", () => {
         .to(bgParticles,{opacity: 0}, "<")
         .to(gemstoneSection,{background: "var(--colorBg)"})
         .to(bgParticles,{opacity: 1})
-        // .to(servicesBox2,{opacity: 0})
 
 
     const tl_gemstoneText_2 = gsap.timeline({
@@ -299,77 +300,49 @@ mm_mobile.add("(max-width: 768px)", () => {
     tl_gemstoneText_4
         .from(gemstoneText4,{opacity:0, y:80, duration:.5})
 
-    const tl_gemstoneText_5 = gsap.timeline({
+
+
+    const tl_paso1 = gsap.timeline({
         scrollTrigger:{
-            trigger: gemstoneText5,
+            trigger: pasoBox1,
             // markers: true,
-            start:"-20% 90%",
-            end: "bottom 90%"
+            start: "top 80%",
+            end: "top 80%"
         }
     })
-    tl_gemstoneText_5
-        .from(gemstoneText5,{opacity:0, y:80, duration:.5})
+tl_paso1
+        .from(pasoNumber1,{scale: .8, opacity:0, y:80, duration:.5})
+        .from(pasoText1,{opacity:0, y:80, duration:.5}, "<")
 
-    const tl_gemstoneText_6 = gsap.timeline({
+    
+        
+    const tl_paso2 = gsap.timeline({
         scrollTrigger:{
-            trigger: gemstoneText6,
+            trigger: pasoBox2,
             // markers: true,
-            start:"-20% 90%",
-            end: "bottom 90%"
+            start: "top 80%",
+            end: "top 80%"
         }
     })
-    tl_gemstoneText_6
-        .from(gemstoneText6,{opacity:0, y:80, duration:.5})
+tl_paso2
+        .from(pasoNumber2,{scale: .8, opacity:0, y:80, duration:.5})
+        .from(pasoText2,{opacity:0, y:80, duration:.5}, "<")
 
-        //aca va la animacion del gemstone gem xd
+    
+        
+    const tl_paso3 = gsap.timeline({
+        scrollTrigger:{
+            trigger: pasoBox3,
+            // markers: true,
+            start: "top 80%",
+            end: "top 80%"
+        }
+    })
+tl_paso3
+        .from(pasoNumber3,{scale: .8, opacity:0, y:80, duration:.5})
+        .from(pasoText3,{opacity:0, y:80, duration:.5}, "<")
 
-    // const tl_paso_1 = gsap.timeline({
-    //     scrollTrigger:{
-    //         trigger: paso1,
-    //         // markers: true,
-    //         start:"-10% 90%",
-    //         end: "bottom 90%"
-    //     }        
-    // })
-    // tl_paso_1
-    //     .from(paso1title, {opacity:0, x:50, ease: "power4.out", duration: 1})
-    //     .from(paso1Content,{opacity:0, ease: "power4.out", duration:3},"<")
-
-    // const tl_paso_2 = gsap.timeline({
-    //     scrollTrigger:{
-    //         trigger: paso2,
-    //         // markers: true,
-    //         start:"10% 90%",
-    //         end: "bottom 90%"
-    //     }        
-    // })
-    // tl_paso_2
-    //     .from(paso2title, {opacity:0, x:-50, ease: "power4.out", duration: 1})
-    //     .from(paso2Content,{opacity:0, ease: "power4.out", duration:3},"<")
-
-    // const tl_paso_3 = gsap.timeline({
-    //     scrollTrigger:{
-    //         trigger: paso3,
-    //         // markers: true,
-    //         start:"-10% 90%",
-    //         end: "bottom 90%"
-    //     }        
-    // })
-    // tl_paso_3
-    //     .from(paso3title, {opacity:0, x:50, ease: "power4.out", duration: 1})
-    //     .from(paso3Content,{opacity:0, ease: "power4.out", duration:3},"<")
-
-    // const tl_faqText_1 = gsap.timeline({
-    //     scrollTrigger:{
-    //         trigger:faqText1,
-    //         // markers: true,
-    //         start:"-40% 90%",
-    //         end: "bottom 90%"
-    //     }
-    // })
-    // tl_faqText_1
-    //     .from(faqText1,{opacity: 0, y:100, ease: "power4.out", duration: 1})
-
+    
         
     const tl_faqText_2 = gsap.timeline({
         scrollTrigger:{
@@ -381,28 +354,5 @@ mm_mobile.add("(max-width: 768px)", () => {
     })
     tl_faqText_2
         .from(faqText2,{opacity: 0, y:100, ease: "power4.out", duration: 1})
-
-    // const tl_brandsbar_1 = gsap.timeline({
-    //     scrollTrigger:{
-    //         trigger: brandsbarCont_1,
-    //         // markers: true,
-    //         start:"top 90%",
-    //         end: "bottom 90%"
-    //     }
-    // })
-    // tl_brandsbar_1
-    //     .from(brandsbarCont_1, {opacity: 0, x:-60,  duration: 1.2, ease: "power2.out" })
-
-    // const tl_brandsbar_2 = gsap.timeline({
-    //     scrollTrigger:{
-    //         trigger: brandsbarCont_2,
-    //         // markers: true,
-    //         start:"top 90%",
-    //         end: "bottom 90%"
-    //     }
-    // })
-    // tl_brandsbar_2
-    // .from(brandsbarCont_2, {opacity: 0, x:60,  duration: 1.2, ease: "power2.out" })
-
 
 })

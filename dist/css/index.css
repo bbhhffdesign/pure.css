@@ -2142,6 +2142,55 @@ span {
   transition: transform 0.3s ease-out;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--colorBg);
+  transition: 0.5s;
+  border-radius: 30px;
+  border: solid 1px var(--colorBg_invert);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px var(--colorSecundario);
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: var(--colorBg);
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px var(--colorSecundario);
+}
+
 .txt-cntr {
   text-align: center;
 }
@@ -2777,7 +2826,7 @@ svg .logo-nav {
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
+  border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left: none;
   border-right: none;
 }
@@ -2840,7 +2889,7 @@ svg .logo-nav {
   overflow-y: hidden;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
+  border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left: none;
   border-right: none;
   z-index: 0;
@@ -2949,7 +2998,7 @@ svg .logo-nav {
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
+  border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left: none;
   border-right: none;
 }
@@ -3092,7 +3141,7 @@ svg .logo-nav {
   padding: 1rem 0;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: radial-gradient(circle, var(--borderGrad-1), var(--borderGrad-2));
+  border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left: none;
   border-right: none;
   z-index: 0;

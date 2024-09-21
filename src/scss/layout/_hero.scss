@@ -65,41 +65,6 @@
     }
   }
 
-  // .mindmap-title-container {
-  //   padding: 0 $spac-s;
-  //   height: 80vh;
-  //   @include flex(column, space-around, center, none);
-
-  //   .mindmap-title-cta{
-  //     padding: .5rem 2rem;
-  //   }
-
-  //   & > div {
-  //     overflow-y: hidden;
-  //     margin: 0 auto;
-  //   }
-
-  //   h2 {
-  //     @include font-monument-normal;
-  //   }
-  //   h3 {
-  //     //   text-align: center;
-
-  //     span {
-  //       font-weight: 700;
-  //       letter-spacing: 2px;
-  //     }
-  //   }
-  //   @include tablet {
-  //     br {
-  //       display: none;
-  //     }
-  //   }
-  //   @include desktop-sm {
-  //     // display: none;
-  //   }
-  // }
-
   .mindmap-container {
     position: relative;
     width: 100%;

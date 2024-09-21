@@ -5,7 +5,7 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
-   <link rel="stylesheet" href="dist/css/theme-dark.css" id="theme">
+   <link rel="stylesheet" href="dist/css/theme-light.css" id="theme">
    <link rel="stylesheet" href="dist/css/index.css" />
    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,11 +29,11 @@
 <body>
 
    <main>
-      <div class="theme-switch-container">
+      <!-- <div class="theme-switch-container">
          <button class="btn-pri" id="theme-switch-1">lighttMode</button>
          <button class="btn-pri" id="theme-switch-2">darkMode</button>
 
-      </div>
+      </div> -->
       <nav class="nav  m-auto" id="navbar">
          <a href="#">
             <svg viewBox="0 0 49.999999 43.306392" width="50" height="43.306393">
@@ -64,7 +64,11 @@
                <p class="seconds__text fs-s fs-md-m fs-xxlg-l">seg</p>
             </div>
          </div>
-         <button class="btn-pri">AGENDATE</button>
+         <!-- <button class="btn-pri">AGENDATE</button> -->
+         <label class="switch" id="themeSwitch">
+            <input type="checkbox" id="theme-toggle" checked>
+            <span class="slider"></span>
+        </label>
       </nav>
 
       <section class="pure-g   hero" id="hero">
@@ -337,58 +341,53 @@
             <div class="gemstone-text-1-container" id="gemstone-text-1-container">
                <h2 class="txt-cntr" id="gemstone-text-1">Creamos el metodo Gemstone</h2>
             </div>
-            <div class="gemstone-text">
+            <div class="gemstone-text p-m">
 
                <p class="txt-cntr" id="gemstone-text-2">
                   Imagina sostener en las manos una piedra. Aparentemente, nada especial. Pero en el interior, existen Cristales de Alto valor, como en una Geoda. <br>
                   En Gall Group, creemos que tu marca es como esa piedra.
                </p>
-               <p class="txt-cntr" id="gemstone-text-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nesciunt dolorem culpa impedit laudantium vel illo.</p>
-               <p class="txt-cntr" id="gemstone-text-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nesciunt dolorem culpa impedit laudantium vel illo.</p>
-               <p class="txt-cntr" id="gemstone-text-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nesciunt dolorem culpa impedit laudantium vel illo.</p>
+               <p class="txt-cntr" id="gemstone-text-3">Nuestro método <strong><em>Gemstone</em></strong> es un viaje de descubrimiento. <br> Analizamos tu negocio para encontrar esa gema oculta: tu valor diferencial. <br> Al igual que un geólogo, examinamos cada faceta de tu marca buscando los elementos únicos que te distinguen de la competencia.</p>
+               <p class="txt-cntr" id="gemstone-text-4">Una vez descubierta esta gema, la trabajamos y pulimos para maximizar su valor. Creamos una marca que conecta emocionalmente con tu público, comunicando con claridad por qué tu marca es especial.</p>
+               <!-- <p class="txt-cntr" id="gemstone-text-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nesciunt dolorem culpa impedit laudantium vel illo.</p> -->
                <h3 class="txt-cntr" id="gemstone-text-6">¿Como funciona?</h3>
             </div>
          </div>
 
-         <div class="pure-u-1 pure-u-lg-1-2 paso paso-1" id="gemstone-paso-1">
-            <div id="paso-1-content">
-            <h1 class="paso-number">1</h1>
-               <p>
+         <div class="pure-u-1 pure-u-lg-1-2 paso paso-1"  id="paso-1-content">
+            <div>
+            <h1 class="paso-number"  id="paso-number-1">1</h1>
+               <p id="paso-text-1">
                   Analizamos el producto/servicio y buscamos un
                   <strong>atributo diferencial.</strong>
-               </p>
-               <p>
+               <br><br>
                   Estructuramos la oferta para que tenga un
                   <strong>aumento de valor</strong> percibido por parte de los
                   consumidores
                </p>
             </div>
          </div>
-         <div class="pure-u-1 pure-u-lg-1-2 paso paso-2" id="gemstone-paso-2">
-            <div id="paso-2-content">
-               <h1 class="paso-number">2</h1>
-               <p>
+         <div class="pure-u-1 pure-u-lg-1-2 paso paso-2" id="paso-2-content">
+            <div>
+               <h1 class="paso-number" id="paso-number-2">2</h1>
+               <p id="paso-text-2">
                   Desarrollamos la <strong>comunicación</strong> para la captación de
                   atención, ya sea orgánica o mediante tráfico pago.
-               </p>
-               <p>
+                  <br><br>
                   Dirigimos ese tráfico hacia un embudo de ventas o tienda on-line
                   apoyado en contenido de alto valor.
                </p>
             </div>
          </div>
-         <div class="pure-u-1 pure-u-lg-1-2 paso paso-3" id="gemstone-paso-3">
-            <div id="paso-3-content">
+         <div class="pure-u-1 pure-u-lg-1-2 paso paso-3" id="paso-3-content">
+            <div>
                <!-- <p class="paso-title" id="paso-3-title">Paso #3</p> -->
-               <h1 class="paso-number">3</h1>
-               <p>
+               <h1 class="paso-number" id="paso-number-3">3</h1>
+               <p id="paso-text-3">
                   Desarrollamos la <strong>identidad visual</strong> de la marca para
                   amplificar el valor de la oferta y la conexión con la audiencia.
-               </p>
-               <p>
+                  <br><br>
                   Además de crear estrategias de venta y de retención de clientes.
                </p>
             </div>
@@ -722,17 +721,13 @@
                <div class="question">
                   <img src="assets/img/arrow.svg" alt="arrow" src="qArrow1" />
                   <p>
-                     <strong>¿Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt, quia?</strong>
+                     <strong>¿Qué servicios ofrecen en Gall Group?</strong>
                   </p>
                </div>
                <div class="answer">
                   <hr style="width: 100%" />
                   <p>
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Deleniti reiciendis suscipit libero exercitationem laudantium
-                     sed ducimus, saepe animi molestiae! Cumque, officiis pariatur!
-                     Ullam dolorem tenetur repudiandae sint, eos velit repellendus.
+                     Ofrecemos Servicios en branding y marketing, incluyendo desarrollo de identidad de marca, Diseño de logotipos, Estrategias de marketing, Diseño y desarrollo web. Nuestro objetivo es ayudarte a construir y comunicar una marca sólida que se destaque en su sector.
                   </p>
                </div>
             </div>
@@ -740,17 +735,13 @@
                <div class="question">
                   <img src="assets/img/arrow.svg" alt="arrow" />
                   <p>
-                     <strong>¿Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt, quia?</strong>
+                     <strong>¿Cómo funciona el proceso de desarrollo de marca?</strong>
                   </p>
                </div>
                <div class="answer">
                   <hr style="width: 100%" />
                   <p>
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Deleniti reiciendis suscipit libero exercitationem laudantium
-                     sed ducimus, saepe animi molestiae! Cumque, officiis pariatur!
-                     Ullam dolorem tenetur repudiandae sint, eos velit repellendus.
+                     Nuestro proceso empieza con un análisis de tu oferta y mercado. Luego, trabajamos en definir tu propuesta de valor y atributos diferenciadores. Posteriormente, desarrollamos la estrategia de comunicación, Finalizando con el fortalecimiento o creación de tu identidad de marca, que tiene como objetivo amplificar los pasos anteriores.
                   </p>
                </div>
             </div>
@@ -758,17 +749,13 @@
                <div class="question">
                   <img src="assets/img/arrow.svg" alt="arrow" />
                   <p>
-                     <strong>¿Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt, quia?</strong>
+                     <strong>¿Cuál es el tiempo estimado para ver resultados?</strong>
                   </p>
                </div>
                <div class="answer">
                   <hr style="width: 100%" />
                   <p>
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Deleniti reiciendis suscipit libero exercitationem laudantium
-                     sed ducimus, saepe animi molestiae! Cumque, officiis pariatur!
-                     Ullam dolorem tenetur repudiandae sint, eos velit repellendus.
+                     El tiempo para ver resultados puede variar según la naturaleza de la marca y los objetivos establecidos. Generalmente, los resultados iniciales son en 6 semanas, pero una evaluación completa puede tardar de 3 a 6 meses, dependiendo de la complejidad y alcance.
                   </p>
                </div>
             </div>
@@ -776,17 +763,13 @@
                <div class="question">
                   <img src="assets/img/arrow.svg" alt="arrow" />
                   <p>
-                     <strong>¿Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt, quia?</strong>
+                     <strong>¿Cómo miden el éxito de las estrategias de branding y marketing?</strong>
                   </p>
                </div>
                <div class="answer">
                   <hr style="width: 100%" />
                   <p>
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Deleniti reiciendis suscipit libero exercitationem laudantium
-                     sed ducimus, saepe animi molestiae! Cumque, officiis pariatur!
-                     Ullam dolorem tenetur repudiandae sint, eos velit repellendus.
+                     Utilizamos una combinación de métricas clave para medir el éxito, incluyendo el aumento en el reconocimiento de marca, la generación de leads cualificados, el tráfico web, la tasa de conversión y el retorno sobre la inversión (ROI).
                   </p>
                </div>
             </div>
@@ -794,17 +777,13 @@
                <div class="question">
                   <img src="assets/img/arrow.svg" alt="arrow" />
                   <p>
-                     <strong>¿Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt, quia?</strong>
+                     <strong>¿Qué distingue a Gall Group de otras agencias?</strong>
                   </p>
                </div>
                <div class="answer">
                   <hr style="width: 100%" />
                   <p>
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Deleniti reiciendis suscipit libero exercitationem laudantium
-                     sed ducimus, saepe animi molestiae! Cumque, officiis pariatur!
-                     Ullam dolorem tenetur repudiandae sint, eos velit repellendus.
+                     En Gall Group, nos diferenciamos por nuestro enfoque personalizado y enfoque en calidad más que cantidad. Buscamos descubrir el valor diferencial oculto en cada marca. No simplemente vender un servicio.
                   </p>
                </div>
             </div>

@@ -6,10 +6,13 @@
     --colorSecundario: #eba94d;
     --textoPrincipal: #0e0e0e;
     --textoTitulos: #000000;
-    /* --textoSpan: #c6c6c6; */
+    --textoSpan: #c6c6c6;
     --textoStrong: #000000;
 
     --colorSvg_1: #000000;
     --colorSvg_2: #000000;
+
+    --borderGradient1: #000000;
+    --borderGradient2: #c6c6c6;
 
 }
