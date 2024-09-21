@@ -3132,7 +3132,7 @@ svg .logo-nav {
 
 footer {
   position: relative;
-  background: var(--blanco);
+  background: var(--colorBg);
 }
 
 .footer {
