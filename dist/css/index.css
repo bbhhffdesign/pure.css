@@ -2179,6 +2179,7 @@ span {
   left: 10%;
   bottom: 15%;
   box-shadow: inset 8px -4px 0px 0px var(--colorSecundario);
+  background: transparent;
   transition: 0.5s;
 }
 
