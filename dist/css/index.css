@@ -2171,6 +2171,7 @@ span {
 }
 
 .slider:before {
+  z-index: 1;
   position: absolute;
   content: "";
   height: 1.4em;
@@ -2190,6 +2191,24 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(100%);
   box-shadow: inset 15px -4px 0px 15px var(--colorSecundario);
+}
+
+.switch2 {
+  z-index: 3;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+.switch2::after {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  background-color: rgba(255, 0, 0, 0);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .txt-cntr {
@@ -2542,13 +2561,6 @@ svg .logo-nav {
 .count__container {
   border-top: solid 1px var(--colorBg_invert);
   border-bottom: solid 1px var(--colorBg_invert);
-}
-
-.switch2 {
-  z-index: 3;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
 }
 
 .nav {

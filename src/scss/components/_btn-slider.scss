@@ -1,6 +1,7 @@
 @use '../abstract/variables' as *;
 @use '../abstract/mixins' as *;
 
+
 .switch {
     // font-size: 17px;
     position: relative;
@@ -32,6 +33,7 @@
   }
   
   .slider:before {
+    z-index: 1;
     position: absolute;
     content: "";
     height: 1.4em;
@@ -43,6 +45,7 @@
     background: transparent;
     transition: .5s;
   }
+
   
   input:checked + .slider {
     background-color: transparent;
@@ -52,3 +55,23 @@
     transform: translateX(100%);
     box-shadow: inset 15px -4px 0px 15px var(--colorSecundario);
   }
+
+
+  .switch2 {
+    z-index: 3;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    &::after{
+      z-index: 0;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 30px;
+      background-color: rgba(255, 0, 0, 0);
+      backdrop-filter: blur(4px);
+    }
+  }
+  
