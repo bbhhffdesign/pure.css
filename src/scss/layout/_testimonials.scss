@@ -19,6 +19,16 @@
     // background-color: var(--colorBg_switch);
     @include flex(row, center, center, 4rem);
     flex-wrap: nowrap;
+
+    @include tablet{
+      transform: scale(1.5);
+    }
+
+    .brand:hover{
+      transform: scale(1.2);
+      transition: transform ease .5s;
+      
+    }
 }
 
 .brands-slide {

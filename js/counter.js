@@ -8,7 +8,7 @@ const secondsBox = document.getElementById("seconds");
 let countdownInterval;
 
 function updateVisibility() {
-  const targetDate = new Date("Sep 29, 2024 12:32:00").getTime(); // Fecha de término
+  const targetDate = new Date("Oct 29, 2024 12:32:00").getTime(); // Fecha de término
   const now = new Date().getTime();
   const distance = targetDate - now;
 
