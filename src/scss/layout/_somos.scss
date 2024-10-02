@@ -5,7 +5,7 @@
 
   @include desktop-sm{
     height: 200vh;
-    @include flex(column, center, center, none)
+    @include flex(row, center, center, none);
   }
 
   .mindmap-title-container {
@@ -14,9 +14,7 @@
       @include flex(column, space-around, center, none);
 
       @include desktop-sm {
-        align-items: center;
         max-width: 60rem;
-        margin: 0 auto;
       }
 
       .mindmap-title-cta{
