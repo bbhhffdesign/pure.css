@@ -89,7 +89,7 @@
       </nav>
 
       <section class="pure-g hero" id="hero">
-        <div class="pure-u-1 pure-u-lg-1-2">
+        <div class="pure-u-1 pure-u-lg-1-2 fhd">
           <div class="hero-text p-m" id="hero-text">
             <h1>Crafting brands, Amplifying impact.</h1>
             <h2>
@@ -121,18 +121,14 @@
             <button class="button btn-pri">AGENDATE</button>
           </div>
         </div>
-        <div class="pure-u-1 pure-u-lg-1-2 hero-video">
+        <div class="pure-u-1 pure-u-lg-1-2 fhd">
           <div>
             <h3 class="txt-cntr">
               ¿No sabes cuales son los <br />
               <span>problemas</span> de tu marca?
             </h3>
           </div>
-          <div>
-            <p class="m-m mindmap-click txt-cntr">
-              <span>Hacé click</span> para descubrir más.
-            </p>
-          </div>
+
           <div class="mindmap-container" id="mindMapContainer">
             <button class="btn-pri scrolldown" id="scrollDown">▶</button>
             <div class="mindmap-overflow">
@@ -317,6 +313,11 @@
                 />
               </svg>
             </div>
+          </div>
+          <div>
+            <p class="m-m mindmap-click txt-cntr">
+              <span>Hacé click</span> para descubrir más.
+            </p>
           </div>
           <svg
             id="hero-gem"
@@ -1493,7 +1494,7 @@
       const lenis = new Lenis({
         smooth: true,
         lerp: 0.1, // Reduce el valor de lerp para hacer el scroll más pesado
-        wheelMultiplier: 0.3,
+        wheelMultiplier: 0.5,
         // smoothTouch: true,
         // touchMultiplier: 10 // Aumenta este valor para que el scroll en móviles sea mucho más lento
       });

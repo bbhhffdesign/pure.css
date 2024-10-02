@@ -4,11 +4,10 @@
 .gemstone {
   height: auto;
 
-.gemstone-text-1-container{
-  @include flex(column, center, center,none);
-  height: 120vh;
-
-}
+  .gemstone-text-1-container {
+    @include flex(column, center, center, none);
+    height: 120vh;
+  }
   .gemstone-text {
     position: relative;
     height: 200vh;
@@ -16,62 +15,78 @@
     flex-direction: column;
     justify-content: space-evenly;
 
+    @include desktop-sm {
+      align-items: center;
+      max-width: 60rem;
+      margin: 0 auto;
+    }
   }
 
-  h2{
+  h2 {
     @include font-monument-normal(100);
     @include text-gradient;
-    
-    span{
+
+    span {
       @include font-raleway(600);
     }
   }
-.pasos-container{
-  height: 220vh;
-  @include flex(column, space-evenly, center,none);
-}
-  .paso {
-    position: relative;
-    padding: $spac-s;
-    margin: $spac-m;
-    border: $border-white;
-    @include glass-bg-only;
-    @include border-gradient;
+  .pasos-container {
+    height: 220vh;
+    @include flex(column, space-evenly, center, none);
 
-    h1{
-      @include font-raleway;
-      position: absolute;
-      z-index: -2;
-      font-size: clamp(15rem, 10.714rem + 21.429vw, 21rem);
-      top: -50%;
-      left: -10%;
-      margin: 0;
-      line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
+    .paso {
+      position: relative;
+      padding: $spac-s;
+      margin: $spac-m;
+      border: $border-white;
+      @include glass-bg-only;
+      @include border-gradient;
 
-      &:hover{
-        color: var(--colorSecundario);
+      @include desktop-sm {
+        max-width: 50%;
       }
 
-      @include tablet{
-        left: -5%;
+      h1 {
+        @include font-raleway;
+        position: absolute;
+        z-index: -2;
+        font-size: clamp(15rem, 10.714rem + 21.429vw, 21rem);
+        top: -50%;
+        left: -10%;
+        margin: 0;
+        line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
+
+        &:hover {
+          color: var(--colorSecundario);
+        }
+
+        @include tablet {
+          left: -5%;
+        }
+      }
+
+      .paso-title {
+        @include font-monument-normal;
+        margin: 0;
+      }
+
+      @include tablet {
+        margin: $spac-l;
+        padding: $spac-m;
       }
     }
 
-    .paso-title {
-      @include font-monument-normal;
-      margin: 0;
+    @include desktop-sm{
+      .paso-1{
+        align-self: flex-start;
+      }
+      .paso-2{
+        align-self: center;
+      }
+      .paso-3{
+        align-self: flex-end;
+      }
     }
-    
-    @include tablet {
-      margin: $spac-l;
-      padding: $spac-m;
-    }
-    @include desktop-xlg {
-      margin: $spac-l;
-      padding-left: 3rem;
-      padding-right:3rem ;
-    }
+
   }
-
 }
-

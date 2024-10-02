@@ -3,21 +3,19 @@
 
 .hero {
   position: relative;
-  justify-content: center;
-
-  div {
-    @include desktop-sm {
-      max-width: 40rem;
-    }
-  }
 
   & > :nth-child(2) {
-    h2 {
-      align-self: flex-start;
-      width: 100%;
-      //   text-align: center;
-      @include text-gradient;
-    }
+
+    @include flex(column, center, center, none)
+
+  }
+
+  @include desktop-sm{
+    box-sizing: border-box;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    height: calc(100vh - 2rem);
+
   }
   .mindmap-click {
     margin-top: $spac-xs;
@@ -28,6 +26,10 @@
     @include flex(column, center, flex-start, none);
     position: relative;
     gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
+
+    @include desktop-sm{
+      // height: 100%;
+    }
 
     .hero-p-container > p {
       overflow-y: hidden;
@@ -94,20 +96,9 @@
       padding: 0.5rem;
       border-radius: $border-rad-xs;
       @include glass-bg-only;
-      // background-color: #7f7f7f75;
       background-color: var(--colorBg_switch);
     }
     
-    @include desktop-sm {
-      overflow: hidden;
-      padding: 1rem;
-      
-      svg {
-        position: absolute;
-        top: $spac-xs;
-        height: auto;
-      }
-    }
     
     @include desktop-lg {
     }
@@ -122,5 +113,5 @@
   right: 0;
   bottom: 0;
   opacity: 0.5;
-  z-index: 2;
+  z-index: 1;
 }

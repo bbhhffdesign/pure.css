@@ -44,14 +44,14 @@
     justify-content: space-evenly;
 
     @include desktop-sm{
-      margin-top: clamp(3rem, -1.923rem + 7.692vw, 5rem);
-      gap: clamp(0.5rem, -4.423rem + 7.692vw, 2.5rem);
+      flex-direction: row;
     }
+
     
     .services-boxes-title{
       height: 50vh;
+      width: 100vw;
 
-      // margin-bottom: 5rem;
       @include flex(column, center, center,none);
       @include font-monument-normal; 
       @include text-gradient;
@@ -71,22 +71,11 @@
       @include tablet{
         width: 90%;
       }
-      
       @include desktop-sm{
-        padding: $spac-s;
-        max-width: 21rem;
-        margin: 0;
+        width: 30%;  
       }
-      @include desktop-lg{
-        &.oferta,
-        &.marca{
-          max-width: 24rem;
-        }
-        &.comunicacion{
-          max-width: 26rem;
-        }
-      }
-
+      
+ 
       .logo-title{
         text-align: center;
       
