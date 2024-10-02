@@ -97,7 +97,7 @@ const faqQuestion5 = document.getElementById("faq-question-5");
 
 const mm_mobile = gsap.matchMedia();
 
-mm_mobile.add("(max-width: 768px)", () => {
+mm_mobile.add("(max-width: 1920px)", () => {
 
     const tl_navbar = gsap.timeline({
         scrollTrigger:{

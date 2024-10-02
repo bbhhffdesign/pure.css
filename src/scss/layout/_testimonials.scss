@@ -7,37 +7,44 @@
   }
 }
 
-.brands-container{
-    position: relative;
-}
-
-.brands-bar {
-    position: relative;
-    padding: 1rem 0;
-    @include border-gradient;
-    @include glass-bg-only;
-    // background-color: var(--colorBg_switch);
-    @include flex(row, center, center, 4rem);
-    flex-wrap: nowrap;
-
-    @include tablet{
-      transform: scale(1.5);
+.testimonials{
+  @include flex(column, flex-start , center, none);
+  
+  @include desktop-sm{
+    height: 50vh;
+  }
+  
+  .brands-container{
+      position: relative;
+  }
+  
+  .brands-bar {
+      position: relative;
+      padding: 1rem 0;
+      @include border-gradient;
+      @include glass-bg-only;
+      @include flex(row, center, center, 4rem);
+      flex-wrap: nowrap;
+  
+      @include tablet{
+        transform: scale(1.5);
+      }
+  
+      .brand:hover{
+        transform: scale(1.2);
+        transition: transform ease .5s;
+        
+      }
+  }
+  
+  .brands-slide {
+      @include flex(row, center, center, 4rem);
+       animation: 10s slide linear infinite;
+  
+  img {
+      height: 50px;
+      width: auto;
+  
     }
-
-    .brand:hover{
-      transform: scale(1.2);
-      transition: transform ease .5s;
-      
-    }
-}
-
-.brands-slide {
-    @include flex(row, center, center, 4rem);
-     animation: 10s slide linear infinite;
-
-img {
-    height: 50px;
-    width: auto;
-
   }
 }

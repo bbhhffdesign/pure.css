@@ -13,6 +13,12 @@
       height: 150vh;
       @include flex(column, space-around, center, none);
 
+      @include desktop-sm {
+        align-items: center;
+        max-width: 60rem;
+        margin: 0 auto;
+      }
+
       .mindmap-title-cta{
         padding: .5rem 2rem;
       }

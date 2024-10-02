@@ -4,6 +4,10 @@
 .gemstone {
   height: auto;
 
+  @include desktop-sm{
+    padding-bottom: 10rem;
+  }
+
   .gemstone-text-1-container {
     @include flex(column, center, center, none);
     height: 120vh;
