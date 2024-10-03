@@ -55,9 +55,8 @@
       @include flex(column, center, center,none);
       @include font-monument-normal; 
       @include text-gradient;
-
-
     }
+
     .service{
       // margin: $spac-s;
       margin: 0 auto;
@@ -74,7 +73,6 @@
       @include desktop-sm{
         width: 30%;  
       }
-      
  
       .logo-title{
         text-align: center;
@@ -95,6 +93,15 @@
 
           margin-top: .5rem;
         }
+      }
+    }
+
+    @include desktop-sm{
+      #services-box-2{
+        transform: translateY(50%);
+      }
+      #services-box-3{
+        transform: translateY(100%);
       }
     }
   }
