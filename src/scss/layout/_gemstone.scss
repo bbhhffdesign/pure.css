@@ -14,7 +14,7 @@
   }
   .gemstone-text {
     position: relative;
-    height: 200vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -35,7 +35,7 @@
     }
   }
   .pasos-container {
-    height: 220vh;
+    height: 150vh;
     @include flex(column, space-evenly, center, none);
 
     .paso {

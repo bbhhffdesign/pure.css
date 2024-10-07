@@ -4,17 +4,16 @@
 .faq{
     background-color:var(--faqBg);
     height: auto;
-    min-height: 150vh;
+    min-height: 95vh;
+    padding-bottom: 0;
+
     @include desktop-sm{
         min-height: 100vh;
     }
 
    .faq-text{
     text-align: center;
-
    }
-
-
 }
 
 .faq-qanda{
