@@ -39,7 +39,7 @@ for (let i = 1; i <= 7; i++) {
   }
 
   let tl_mindmap = gsap.timeline({
-    paused: true
+    paused: true,
   });
 
   tl_mindmap
@@ -76,6 +76,8 @@ for (let i = 1; i <= 7; i++) {
       .to(flecha7, { strokeDashoffset: 0 }, "<")
       .from(agendaBig, { opacity: 0 })
       .from(agendaBigBg, { opacity: 0 }, "<")
+
+tl_mindmap.duration(15);
 
 aniStartBtn.addEventListener("click", ()=>{
     tl_mindmap.play()
