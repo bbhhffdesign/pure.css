@@ -13,6 +13,13 @@
     border-bottom: $border-white;
     z-index: 2;
 
+    a{
+        svg{
+            overflow: visible;
+            height: clamp(2rem, 0.929rem + 5.357vw, 3.5rem);
+            width: auto;
+        }
+    }
 
     @include flex(row, space-around, center, auto);
     @include font-raleway;

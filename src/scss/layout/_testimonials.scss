@@ -26,10 +26,6 @@
       @include glass-bg-only;
       @include flex(row, center, center, 4rem);
       flex-wrap: nowrap;
-
-      //ACAAAAAAAAAAAAAAAA
-      // width: 100%;
-
   
       @include tablet{
         transform: scale(1.5);
