@@ -18,3 +18,7 @@
     font-family: 'menseal_semibold' ;
     src: url(../../assets/Menseal-SemiBold.ttf) format('opentype');
 }
+@font-face{
+    font-family: 'articulat_bold' ;
+    src: url(../../assets/Menseal-SemiBold.ttf) format('opentype');
+}

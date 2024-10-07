@@ -27,7 +27,8 @@
       }
 
       h2 {
-        @include font-monument-normal;
+        // // @include font-monument-normal;
+        // @include font-articulat-bold;
         @include text-gradient;
       }
       h3 {

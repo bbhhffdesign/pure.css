@@ -1,7 +1,12 @@
 @use 'variables' as *;
 
 //text gradient
-@mixin text-gradient($color1:var(--textoPrincipal), $color2:var(--colorBg)) {
+// @mixin text-gradient($color1:var(--textoPrincipal), $color2:var(--colorBg_almost)) {
+//   background: radial-gradient(circle, $color1, $color2); 
+//   -webkit-background-clip: text; 
+//   -webkit-text-fill-color: transparent; 
+// }
+@mixin text-gradient($color1:var(--colorBg_invert), $color2:var(--colorBg_almost)) {
   background: radial-gradient(circle, $color1, $color2); 
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
@@ -43,6 +48,12 @@ font-family: "Raleway", sans-serif;
 font-optical-sizing: auto;
 font-weight: $weight;
 font-style: normal;
+}
+
+@mixin font-articulat-bold($weight:400){
+  font-family: "articulat_bold", sans-serif;
+  font-weight: $weight;
+  font-style: normal;
 }
 
 @mixin font-rajdhani($weight:400){
@@ -233,7 +244,6 @@ font-style: normal;
 @mixin hvr-right($direction:right, $time1:.1s, $time2:.3s){
     will-change: transform;
     background-color: transparent;
-    transition:color $time2 ease-in;
     &::before{
         will-change: transform;
         content: "";

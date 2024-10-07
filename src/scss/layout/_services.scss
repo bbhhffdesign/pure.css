@@ -45,6 +45,7 @@
 
     @include desktop-sm{
       flex-direction: row;
+      height: 100vh;
     }
 
     
@@ -53,7 +54,8 @@
       width: 100vw;
 
       @include flex(column, center, center,none);
-      @include font-monument-normal; 
+      // @include font-monument-normal; 
+      @include font-articulat-bold;
       @include text-gradient;
 
 
@@ -92,7 +94,6 @@
         }
 
         h3{
-
           margin-top: .5rem;
         }
       }

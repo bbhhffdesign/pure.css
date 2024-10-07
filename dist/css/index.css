@@ -1988,7 +1988,7 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: clamp(1.5rem, 0.618rem + 3.922vw, 2.5rem);
+  font-size: clamp(1.5rem, 0.429rem + 5.357vw, 3rem);
   margin-bottom: 1.2rem;
   margin-top: 1.2rem;
 }
@@ -1996,6 +1996,13 @@ h2 {
   h2 {
     font-size: 2.5rem;
   }
+}
+
+.h2-articulat {
+  font-family: "articulat_bold", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(2rem, 1.286rem + 3.571vw, 3rem);
 }
 
 h3 {
@@ -2074,13 +2081,16 @@ span {
 }
 
 .btn-pri, .btn-pri-m, .btn-pri-xxl, .btn-pri-xl, .btn-pri-l {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   border-radius: 0.3rem 0.05rem;
   font-size: 80%;
   font-weight: 600;
   padding: 0.5rem 0.2rem;
   will-change: transform;
   background-color: transparent;
-  transition: color 0.3s ease-in;
 }
 .btn-pri::before, .btn-pri-m::before, .btn-pri-xxl::before, .btn-pri-xl::before, .btn-pri-l::before {
   will-change: transform;
@@ -2669,6 +2679,8 @@ svg .logo-nav {
     padding: 0 2rem;
     margin-top: 2rem;
     height: calc(100vh - 2rem);
+    margin: 0 auto;
+    max-width: 100rem;
   }
 }
 .hero .mindmap-click {
@@ -2716,11 +2728,6 @@ svg .logo-nav {
 @media (min-width: 37.5rem) {
   .hero .hero-text button {
     width: 30%;
-  }
-}
-@media (min-width: 64rem) {
-  .hero .hero-text {
-    padding-left: 0;
   }
 }
 .hero .mindmap-container {
@@ -2808,10 +2815,7 @@ svg .logo-nav {
   margin: 0 auto;
 }
 .somos .mindmap-title-container h2 {
-  font-family: "monument_dos";
-  font-weight: 100;
-  font-style: normal;
-  background: radial-gradient(circle, var(--textoPrincipal), var(--colorBg));
+  background: radial-gradient(circle, var(--colorBg_invert), var(--colorBg_almost));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2886,6 +2890,7 @@ svg .logo-nav {
 @media (min-width: 64rem) {
   .services .services-boxes {
     flex-direction: row;
+    height: 100vh;
   }
 }
 .services .services-boxes .services-boxes-title {
@@ -2896,10 +2901,10 @@ svg .logo-nav {
   justify-content: center;
   align-items: center;
   gap: none;
-  font-family: "monument_dos";
-  font-weight: 100;
+  font-family: "articulat_bold", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  background: radial-gradient(circle, var(--textoPrincipal), var(--colorBg));
+  background: radial-gradient(circle, var(--colorBg_invert), var(--colorBg_almost));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2992,10 +2997,10 @@ svg .logo-nav {
   }
 }
 .gemstone h2 {
-  font-family: "monument_dos";
-  font-weight: 100;
+  font-family: "articulat_bold", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  background: radial-gradient(circle, var(--textoPrincipal), var(--colorBg));
+  background: radial-gradient(circle, var(--colorBg_invert), var(--colorBg_almost));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3176,11 +3181,7 @@ svg .logo-nav {
   justify-content: flex-start;
   align-items: center;
   gap: none;
-}
-@media (min-width: 64rem) {
-  .testimonials {
-    height: 50vh;
-  }
+  width: 100vw;
 }
 .testimonials .brands-container {
   position: relative;
@@ -3234,6 +3235,62 @@ svg .logo-nav {
 .testimonials .brands-slide img {
   height: 50px;
   width: auto;
+}
+
+.cta-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  height: 80vh;
+}
+.cta-email .cta-email-container {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 512px;
+  border-radius: 0.5rem 0.05rem;
+  z-index: 0;
+}
+.cta-email .cta-email-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: rgba(111, 111, 111, 0.3215686275);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.cta-email .cta-email-container button {
+  font-size: 120%;
+  padding: 0.5rem 1rem;
+}
+.cta-email .cta-email-container input {
+  background-color: transparent;
+  border: none;
+  color: var(--textoTitulos);
+}
+.cta-email .cta-email-container input::-moz-placeholder {
+  color: var(--textoPrincipal);
+  text-align: center;
+}
+.cta-email .cta-email-container input::placeholder {
+  color: var(--textoPrincipal);
+  text-align: center;
+}
+@media (min-width: 64rem) {
+  .cta-email .cta-email-container {
+    width: 40%;
+  }
 }
 
 footer {

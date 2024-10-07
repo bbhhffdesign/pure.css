@@ -27,7 +27,7 @@
   }
 
   h2 {
-    @include font-monument-normal(100);
+    @include font-articulat-bold;
     @include text-gradient;
 
     span {

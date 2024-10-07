@@ -5,6 +5,7 @@
 
 .btn-pri {
     @extend .pure-button;
+    @include font-raleway;
     border-radius: $border-rad-xs;
     font-size: 80%;
     font-weight: 600;

@@ -4,6 +4,7 @@
 .hero {
   position: relative;
 
+
   & > :nth-child(2) {
 
     @include flex(column, center, center, none)
@@ -15,6 +16,9 @@
     padding: 0 2rem;
     margin-top: 2rem;
     height: calc(100vh - 2rem);
+    margin: 0 auto;
+
+    max-width: 100rem;
 
   }
   .mindmap-click {
@@ -62,9 +66,7 @@
       }
     }
 
-    @include desktop-sm {
-      padding-left: 0;
-    }
+ 
   }
 
   .mindmap-container {
