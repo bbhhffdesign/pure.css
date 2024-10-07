@@ -67,8 +67,10 @@ svg {
 }
 
 .brand{
-  stroke:var(--colorSvg_1);
-  fill:var(--colorSvg_1)
+  filter: invert(0%);
+}
+.brand-invert{
+  filter: invert(95%);
 }
 
 .footer {
