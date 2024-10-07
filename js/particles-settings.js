@@ -3,7 +3,7 @@
 
   // Verificar el ancho del viewport
   const isDesktop = window.innerWidth > 768;
-  const particleQuantity = isDesktop ? 5 : 3; // 5 partículas en escritorio, 3 en móviles
+  const particleQuantity = isDesktop ? 7 : 3; // 5 partículas en escritorio, 3 en móviles
 
   await tsParticles.load({
       id: "tsparticles",

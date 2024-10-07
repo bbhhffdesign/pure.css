@@ -3100,7 +3100,7 @@ svg .logo-nav {
 }
 @media (min-width: 64rem) {
   .faq {
-    min-height: 150vh;
+    min-height: 100vh;
   }
 }
 .faq .faq-text {
