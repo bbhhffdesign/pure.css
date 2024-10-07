@@ -1,0 +1,51 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+
+@keyframes slide {
+  to {
+    transform: translateX(calc(-100% - 4rem));
+  }
+}
+
+.brands-animation{
+  @include flex(column, flex-start , center, none);
+  width: 100vw;
+  
+  @include desktop-sm{
+    // height: 50vh;
+  }
+  
+  .brands-container{
+      position: relative;
+  }
+  
+  .brands-bar {
+      position: relative;
+      padding: 1rem 0;
+      @include border-gradient;
+      @include glass-bg-only;
+      @include flex(row, center, center, 4rem);
+      flex-wrap: nowrap;
+  
+      @include tablet{
+        transform: scale(1.5);
+      }
+  
+      .brand:hover{
+        transform: scale(1.2);
+        transition: transform ease .5s;
+        
+      }
+  }
+  
+  .brands-slide {
+      @include flex(row, center, center, 4rem);
+       animation: 10s slide linear infinite;
+  
+  img {
+      height: 4rem;
+      width: auto;
+  
+    }
+  }
+}

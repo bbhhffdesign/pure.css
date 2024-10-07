@@ -356,15 +356,15 @@ tl_paso3
 
     
         
-    const tl_faqText_2 = gsap.timeline({
-        scrollTrigger:{
-            trigger:faqText2,
-            // markers: true,
-            start:"-40% 90%",
-            end: "bottom 90%"
-        }
-    })
-    tl_faqText_2
-        .from(faqText2,{opacity: 0, y:100, ease: "power4.out", duration: 1})
+    // const tl_faqText_2 = gsap.timeline({
+    //     scrollTrigger:{
+    //         trigger:faqText2,
+    //         // markers: true,
+    //         start:"-40% 90%",
+    //         end: "bottom 90%"
+    //     }
+    // })
+    // tl_faqText_2
+    //     .from(faqText2,{opacity: 0, y:100, ease: "power4.out", duration: 1})
 
 })

@@ -1,51 +1,37 @@
 @use "../abstract/mixins" as *;
 @use "../abstract/variables" as *;
 
-@keyframes slide {
-  to {
-    transform: translateX(calc(-100% - 4rem));
-  }
-}
+.testimonials {
+  height: 100vh;
+  //   background-color: #333;
 
-.testimonials{
-  @include flex(column, flex-start , center, none);
-  width: 100vw;
-  
-  @include desktop-sm{
-    // height: 50vh;
-  }
-  
-  .brands-container{
+  .testimonials_container {
+    @include flex(column, center, center, none);
+
+
+    .testimonial {
       position: relative;
-  }
-  
-  .brands-bar {
-      position: relative;
-      padding: 1rem 0;
-      @include border-gradient;
+      padding: $spac-s;
+      margin: $spac-s;
       @include glass-bg-only;
-      @include flex(row, center, center, 4rem);
-      flex-wrap: nowrap;
-  
-      @include tablet{
-        transform: scale(1.5);
+      @include border-gradient;
+
+      p:nth-child(2){
+        color: var(--colorSecundario);
       }
-  
-      .brand:hover{
-        transform: scale(1.2);
-        transition: transform ease .5s;
-        
+      p:nth-child(3){
+        color: var(--textoPrincipal);
       }
-  }
-  
-  .brands-slide {
-      @include flex(row, center, center, 4rem);
-       animation: 10s slide linear infinite;
-  
-  img {
-      height: 4rem;
-      width: auto;
-  
+      p:nth-child(4){
+        color: red;
+      }
+
+
+
+      img {
+        height: 2rem;
+        width: auto;
+      }
     }
   }
 }
