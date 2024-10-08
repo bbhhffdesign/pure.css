@@ -4,6 +4,11 @@
 .testimonials {
   height: 150vh;
   @include flex(column, center, center, none);
+  padding: 0 $spac-s;
+
+  @include tablet{
+    padding: 0 $spac-m ;
+  }
 
   .testi__container {
     height: inherit;
@@ -11,7 +16,9 @@
 
     @include desktop-sm {
       flex-direction: row;
+      // flex-wrap: wrap;
     }
+
 
     .testimonial {
       position: relative;
