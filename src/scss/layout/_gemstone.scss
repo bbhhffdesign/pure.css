@@ -31,6 +31,12 @@
     @include font-raleway(600);
     @include text-gradient;
 
+    @include desktop-sm{
+      br{
+        display: none
+      }
+    }
+
     span {
       @include font-raleway(600);
     }

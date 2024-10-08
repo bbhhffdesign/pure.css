@@ -183,13 +183,18 @@ font-style: normal;
 }
 
 //mediaqueries
+@mixin mobile-xsm {
+    @media (min-width: $mobile-xsm) {
+      @content;
+    }
+  }
 @mixin mobile-sm {
-    @media (max-width: $mobile-sm) {
+    @media (min-width: $mobile-sm) {
       @content;
     }
   }
 @mixin mobile {
-    @media (max-width: $mobile) {
+    @media (min-width: $mobile) {
       @content;
     }
   }

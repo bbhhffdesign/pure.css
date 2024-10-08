@@ -4,14 +4,11 @@
 .hero {
   position: relative;
 
-
   & > :nth-child(2) {
-
-    @include flex(column, center, center, none)
-
+    @include flex(column, center, center, none);
   }
 
-  @include desktop-sm{
+  @include desktop-sm {
     box-sizing: border-box;
     padding: 0 2rem;
     padding-top: 2rem;
@@ -20,7 +17,6 @@
     margin: 0 auto;
 
     max-width: 100rem;
-
   }
   .mindmap-click {
     margin-top: $spac-xs;
@@ -30,10 +26,18 @@
     height: 100vh;
     @include flex(column, center, flex-start, none);
     position: relative;
-    gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
+    gap: 1rem;
 
+    @include tablet{
+      padding: 0 3rem;
+    }
     @include desktop-sm{
-      // height: 100%;
+      padding: 0 $spac-m;
+    }
+
+    @include mobile-sm {
+      gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
+      // gap: 4rem;
     }
 
     .hero-p-container > p {
@@ -66,8 +70,6 @@
         width: 30%;
       }
     }
-
- 
   }
 
   .mindmap-container {
@@ -84,14 +86,13 @@
       z-index: 1;
     }
 
-    //mindmap svg 
+    //mindmap svg
 
-    .mindmap-overflow{
+    .mindmap-overflow {
       position: relative;
       overflow-y: hidden;
-        @include flex(column, center, center, none);      
+      @include flex(column, center, center, none);
     }
-
 
     .mindmap {
       height: auto;
@@ -101,14 +102,12 @@
       @include glass-bg-only;
       background-color: var(--colorBg_switch);
     }
-    
-    
+
     @include desktop-lg {
     }
     @include desktop-xlg {
     }
   }
-  
 }
 
 #hero-gem {

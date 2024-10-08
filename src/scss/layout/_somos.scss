@@ -13,6 +13,11 @@
       height: 150vh;
       @include flex(column, space-around, center, none);
 
+      @include tablet{
+        padding: 0 $spac-m;
+
+      }
+
       @include desktop-sm {
         max-width: 60rem;
       }

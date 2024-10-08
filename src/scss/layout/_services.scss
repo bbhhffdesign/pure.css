@@ -3,6 +3,8 @@
 
 .services {
   height: auto;
+  max-width: 90rem;
+  margin: 0 auto;
   
   
   @include desktop-sm{
@@ -59,7 +61,7 @@
 
     .service{
       // margin: $spac-s;
-      margin: 0 auto;
+      margin: 0 $spac-s;
       position: relative;
       padding: $spac-s $spac-s;
       text-align: center;
@@ -68,9 +70,17 @@
       @include glass-bg-only;
 
       @include tablet{
-        width: 90%;
+        margin: 0 $spac-l;
+      }
+      @include tablet-l{
+        margin: 0 4rem;
       }
       @include desktop-sm{
+        margin: 0 ;
+        width: 30%;  
+      }
+      @include desktop-md{
+        // margin: 0 2rem;
         width: 30%;  
       }
  

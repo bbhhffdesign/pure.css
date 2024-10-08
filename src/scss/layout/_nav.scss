@@ -8,21 +8,23 @@
     position: fixed;
     top: 0;
     height: 3rem;
-    padding: $spac-xs 0;
+    padding: $spac-xs 0 1.2rem  0;
     border: none; 
     border-bottom: $border-white;
     z-index: 2;
+    @include flex(row, space-around, center, auto);
+    flex-wrap: wrap;
+    @include font-raleway;
 
     a{
         svg{
             overflow: visible;
-            height: clamp(2rem, 0.929rem + 5.357vw, 3.5rem);
+            // height: clamp(2rem, 0.929rem + 5.357vw, 3.5rem);
+            height: clamp(2.5rem, 1.429rem + 5.357vw, 4rem);
             width: auto;
         }
     }
 
-    @include flex(row, space-around, center, auto);
-    @include font-raleway;
 
     @include tablet{
         height: 4rem;
@@ -33,9 +35,6 @@
     }
     @include desktop-md{
         border-top: none;
-        // &::before{
-        //     border-radius: 0 0 $spac-s $spac-s;
-        // }
     }
     @include desktop-lg{
         height: 5rem;

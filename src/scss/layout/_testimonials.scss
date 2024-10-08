@@ -2,16 +2,16 @@
 @use "../abstract/variables" as *;
 
 .testimonials {
-  height: 100vh;
+  height: 150vh;
   @include flex(column, center, center, none);
 
-  .testimonials_container {
-    @include flex(column, center, center, none);
+  .testi__container {
+    height: inherit;
+    @include flex(column, space-between, center, none);
 
-    @include desktop-sm{
+    @include desktop-sm {
       flex-direction: row;
     }
-
 
     .testimonial {
       position: relative;
@@ -22,18 +22,15 @@
       @include glass-bg-only;
       @include border-gradient;
 
-
-      p:nth-child(2){
+      p:nth-child(2) {
         color: var(--colorSecundario);
       }
-      p:nth-child(3){
+      p:nth-child(3) {
         color: var(--textoTitulos);
       }
-      p:nth-child(4){
+      p:nth-child(4) {
         color: var(--textoPrincipal);
       }
-
-
 
       img {
         height: 2rem;
