@@ -588,7 +588,7 @@ html {
   font-family: inherit;
   font-size: 100%;
   padding: 0.5em 1em;
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
   border: none rgba(0, 0, 0, 0);
   background-color: #E6E6E6;
   text-decoration: none;
@@ -2620,9 +2620,6 @@ svg .logo-nav {
   .nav {
     border-top: none;
   }
-  .nav::before {
-    border-radius: 0 0 1rem 1rem;
-  }
 }
 @media (min-width: 90rem) {
   .nav {
@@ -3066,7 +3063,7 @@ svg .logo-nav {
 }
 @media (min-width: 64rem) {
   .gemstone .pasos-container .paso {
-    max-width: 50%;
+    max-width: 40%;
   }
 }
 .gemstone .pasos-container .paso h1 {
@@ -3261,6 +3258,11 @@ svg .logo-nav {
 
 .testimonials {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
 }
 .testimonials .testimonials_container {
   display: flex;
@@ -3269,10 +3271,17 @@ svg .logo-nav {
   align-items: center;
   gap: none;
 }
+@media (min-width: 64rem) {
+  .testimonials .testimonials_container {
+    flex-direction: row;
+  }
+}
 .testimonials .testimonials_container .testimonial {
   position: relative;
   padding: 1rem;
   margin: 1rem;
+  max-width: 30rem;
+  overflow-y: hidden;
   z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
@@ -3297,10 +3306,10 @@ svg .logo-nav {
   color: var(--colorSecundario);
 }
 .testimonials .testimonials_container .testimonial p:nth-child(3) {
-  color: var(--textoPrincipal);
+  color: var(--textoTitulos);
 }
 .testimonials .testimonials_container .testimonial p:nth-child(4) {
-  color: red;
+  color: var(--textoPrincipal);
 }
 .testimonials .testimonials_container .testimonial img {
   height: 2rem;
@@ -3341,8 +3350,13 @@ svg .logo-nav {
           backdrop-filter: blur(10px);
 }
 .cta-email .cta-email-container button {
-  font-size: 120%;
+  font-size: 100%;
   padding: 0.5rem 1rem;
+}
+@media (min-width: 64rem) {
+  .cta-email .cta-email-container button {
+    font-size: 120%;
+  }
 }
 .cta-email .cta-email-container input {
   background-color: transparent;
@@ -3399,6 +3413,9 @@ footer {
   height: 100%;
   width: 25px;
 }
+.footer #logo-bhf {
+  border: solid 1px white;
+}
 @media (min-width: 64rem) {
   .footer .footer-text {
     text-align: start;
@@ -3425,7 +3442,7 @@ footer {
 
 html, body {
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {

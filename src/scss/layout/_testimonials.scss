@@ -3,27 +3,34 @@
 
 .testimonials {
   height: 100vh;
-  //   background-color: #333;
+  @include flex(column, center, center, none);
 
   .testimonials_container {
     @include flex(column, center, center, none);
+
+    @include desktop-sm{
+      flex-direction: row;
+    }
 
 
     .testimonial {
       position: relative;
       padding: $spac-s;
       margin: $spac-s;
+      max-width: 30rem;
+      overflow-y: hidden;
       @include glass-bg-only;
       @include border-gradient;
+
 
       p:nth-child(2){
         color: var(--colorSecundario);
       }
       p:nth-child(3){
-        color: var(--textoPrincipal);
+        color: var(--textoTitulos);
       }
       p:nth-child(4){
-        color: red;
+        color: var(--textoPrincipal);
       }
 
 

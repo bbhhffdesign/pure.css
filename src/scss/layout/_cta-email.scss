@@ -16,8 +16,12 @@
 
 
         button{
-            font-size: 120%;
+            font-size: 100%;
             padding: .5rem 1rem;
+
+            @include desktop-sm{
+                font-size: 120%;
+            }
         }
 
         input{

@@ -33,9 +33,9 @@
     }
     @include desktop-md{
         border-top: none;
-        &::before{
-            border-radius: 0 0 $spac-s $spac-s;
-        }
+        // &::before{
+        //     border-radius: 0 0 $spac-s $spac-s;
+        // }
     }
     @include desktop-lg{
         height: 5rem;

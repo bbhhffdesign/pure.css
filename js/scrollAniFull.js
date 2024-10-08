@@ -82,6 +82,11 @@ const brandSou = document.getElementById("logo-sou");
 const brandBel = document.getElementById("logo-bel");
 const brandUda = document.getElementById("logo-uda");
 
+//testimonials
+const testimonial_1 = document.getElementById("testimonial-1")
+const testimonial_2 = document.getElementById("testimonial-2")
+const testimonial_3 = document.getElementById("testimonial-3")
+
 
 //faqText
 const faqText = document.getElementById("faq-text")
@@ -314,12 +319,12 @@ mm_mobile.add("(max-width: 1920px)", () => {
             // markers: true,
             start: "top 80%",
             end: "bottom 80%",
-            onEnter: () =>tl_paso1.play(),
-            onEnterBack: () =>tl_paso1.reverse()
+            // onEnter: () =>tl_paso1.play(),
+            // onEnterBack: () =>tl_paso1.reverse()
         }
     })
 tl_paso1
-        .from(pasoNumber1,{scale: .8, opacity:0, y:80, duration:.5})
+        .from(pasoNumber1,{scale: .8, opacity:0, y:80, duration:.8})
         .from(pasoText1,{opacity:0, y:80, duration:.5}, "<")
 
     
@@ -330,13 +335,13 @@ tl_paso1
             // markers: true,
             start: "top 80%",
             end: "bottom 80%",
-            onEnter: () =>tl_paso2.play(),
-            onEnterBack: () =>tl_paso2.reverse()
+            // onEnter: () =>tl_paso2.play(),
+            // onEnterBack: () =>tl_paso2.reverse()
         }
     })
 tl_paso2
         .from(pasoNumber2,{scale: .8, opacity:0, y:80, duration:.5})
-        .from(pasoText2,{opacity:0, y:80, duration:.5}, "<")
+        .from(pasoText2,{opacity:0, y:80, duration:.8}, "<")
 
     
         
@@ -346,25 +351,46 @@ tl_paso2
             // markers: true,
             start: "top 80%",
             end: "bottom 80%",
-            onEnter: () =>tl_paso3.play(),
-            onEnterBack: () =>tl_paso3.reverse()
+            // onEnter: () =>tl_paso3.play(),
+            // onEnterBack: () =>tl_paso3.reverse()
         }
     })
 tl_paso3
-        .from(pasoNumber3,{scale: .8, opacity:0, y:80, duration:.5})
+        .from(pasoNumber3,{scale: .8, opacity:0, y:80, duration:.8})
         .from(pasoText3,{opacity:0, y:80, duration:.5}, "<")
-
-    
-        
-    // const tl_faqText_2 = gsap.timeline({
-    //     scrollTrigger:{
-    //         trigger:faqText2,
-    //         // markers: true,
-    //         start:"-40% 90%",
-    //         end: "bottom 90%"
-    //     }
-    // })
-    // tl_faqText_2
-    //     .from(faqText2,{opacity: 0, y:100, ease: "power4.out", duration: 1})
-
 })
+
+const tl_testimonial1 = gsap.timeline({
+    scrollTrigger:{
+        trigger: testimonial_1,
+        markers: true,
+        start: "top 80%",
+        end: "bottom 80%",
+    }
+})
+tl_testimonial1
+        .from(testimonial_1,{y:100, opacity:0, duration:.8});
+
+      
+const tl_testimonial2 = gsap.timeline({
+    scrollTrigger:{
+        trigger: testimonial_2,
+        markers: true,
+        start: "top 80%",
+        end: "bottom 80%",
+    }
+})
+tl_testimonial2
+        .from(testimonial_2,{y:100, opacity:0, duration:.8});
+        
+        
+  const tl_testimonial3 = gsap.timeline({
+      scrollTrigger:{
+          trigger: testimonial_3,
+          markers: true,
+          start: "top 80%",
+          end: "bottom 80%",
+      }
+  })
+  tl_testimonial3
+          .from(testimonial_3,{y:100, opacity:0, duration:.8});

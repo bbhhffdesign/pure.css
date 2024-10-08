@@ -36,6 +36,10 @@ footer{
         width: 25px;
     }
 
+    #logo-bhf{
+        border: solid 1px white;
+    }
+
     .footer-text{
         @include desktop-sm{
             text-align: start;
