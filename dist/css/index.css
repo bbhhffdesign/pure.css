@@ -2568,13 +2568,6 @@ svg .logo-nav {
   fill: var(--colorSvg_1);
 }
 
-.btn-pri {
-  color: var(--colorBg);
-}
-.btn-pri:hover {
-  color: var(--textoPrincipal);
-}
-
 .count__container {
   border-top: solid 1px var(--colorBg_invert);
   border-bottom: solid 1px var(--colorBg_invert);
@@ -2823,6 +2816,9 @@ svg .logo-nav {
   margin: 0 auto;
 }
 .somos .mindmap-title-container h2 {
+  font-family: "monument_dos";
+  font-weight: 100;
+  font-style: normal;
   background: radial-gradient(circle, var(--colorBg_invert), var(--colorBg_almost));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2830,6 +2826,22 @@ svg .logo-nav {
 .somos .mindmap-title-container h3 span {
   font-weight: 700;
   letter-spacing: 2px;
+}
+.somos .mindmap-title-container button {
+  padding: 0;
+  font-size: 100%;
+  font-weight: 800;
+  color: var(--colorBg);
+}
+.somos .mindmap-title-container button:hover {
+  color: var(--colorBg_invert);
+}
+.somos .mindmap-title-container button span {
+  color: var(--colorBg);
+  font-weight: 500;
+}
+.somos .mindmap-title-container button span:hover {
+  color: var(--colorBg_invert);
 }
 @media (min-width: 37.5rem) {
   .somos .mindmap-title-container br {
@@ -2909,8 +2921,8 @@ svg .logo-nav {
   justify-content: center;
   align-items: center;
   gap: none;
-  font-family: "articulat_bold", sans-serif;
-  font-weight: 400;
+  font-family: "monument_dos";
+  font-weight: 100;
   font-style: normal;
   background: radial-gradient(circle, var(--colorBg_invert), var(--colorBg_almost));
   -webkit-background-clip: text;
@@ -3005,8 +3017,9 @@ svg .logo-nav {
   }
 }
 .gemstone h2 {
-  font-family: "articulat_bold", sans-serif;
-  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
   background: radial-gradient(circle, var(--colorBg_invert), var(--colorBg_almost));
   -webkit-background-clip: text;
@@ -3256,13 +3269,7 @@ svg .logo-nav {
   align-items: center;
   gap: none;
 }
-@media (min-width: 64rem) {
-  .testimonials .testimonials_container {
-    flex-direction: row;
-  }
-}
 .testimonials .testimonials_container .testimonial {
-  box-sizing: border-box;
   position: relative;
   padding: 1rem;
   margin: 1rem;
@@ -3272,7 +3279,6 @@ svg .logo-nav {
   border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left: none;
   border-right: none;
-  max-width: 100%;
 }
 .testimonials .testimonials_container .testimonial:before {
   content: "";
@@ -3286,11 +3292,6 @@ svg .logo-nav {
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-}
-@media (min-width: 64rem) {
-  .testimonials .testimonials_container .testimonial {
-    max-width: 30%;
-  }
 }
 .testimonials .testimonials_container .testimonial p:nth-child(2) {
   color: var(--colorSecundario);

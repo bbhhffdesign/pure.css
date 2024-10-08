@@ -53,8 +53,7 @@
       width: 100vw;
 
       @include flex(column, center, center,none);
-      // @include font-monument-normal; 
-      @include font-articulat-bold;
+      @include font-monument-normal;
       @include text-gradient;
     }
 

@@ -633,7 +633,7 @@ html {
     font-family: inherit;
     font-size: 100%;
     padding: 0.5em 1em;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     border: none rgba(0, 0, 0, 0);
     background-color: #E6E6E6;
     text-decoration: none;

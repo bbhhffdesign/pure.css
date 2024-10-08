@@ -27,7 +27,7 @@
       }
 
       h2 {
-        // // @include font-monument-normal;
+        @include font-monument-normal;
         // @include font-articulat-bold;
         @include text-gradient;
       }
@@ -38,6 +38,27 @@
           font-weight: 700;
           letter-spacing: 2px;
         }
+      }
+
+      button{
+        padding: 0;
+        font-size: 100%;
+        font-weight: 800;
+        color: var(--colorBg);
+
+        &:hover{
+          color: var(--colorBg_invert);
+        }
+
+        span{
+          color: var(--colorBg);
+          font-weight: 500;
+
+          &:hover{
+            color: var(--colorBg_invert);
+          }
+        }
+
       }
       @include tablet {
         br {

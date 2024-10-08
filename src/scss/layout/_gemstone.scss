@@ -27,7 +27,8 @@
   }
 
   h2 {
-    @include font-articulat-bold;
+    // @include font-articulat-bold;
+    @include font-raleway(600);
     @include text-gradient;
 
     span {
