@@ -58,7 +58,10 @@ const gemstoneText5 = document.getElementById("gemstone-text-5");
 const gemstoneText6 = document.getElementById("gemstone-text-6");
 
 //gemstoneSvgs
-const gemstoneSvg = document.getElementById("gemstoneSvg");
+const gemstoneBg = document.getElementById("gemstone-bg");
+const gemstoneBg_path = gemstoneBg.getTotalLenght()
+gemstoneBg_path.style.strokeDashArray= gemstoneBg_path;
+gemstoneBg_path.style.strokeDashOffset= gemstoneBg_path;
 
 //gemstone paso
 const pasoNumber1 = document.getElementById("paso-number-1");

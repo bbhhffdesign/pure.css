@@ -16,7 +16,7 @@
 
   .testi_container_text{
     @include flex(column, center, center,none);
-    height: 50vh;
+    margin-bottom: 10rem;
 
     @include desktop-sm{
       height: 50vh;

@@ -26,6 +26,14 @@
     }
   }
 
+  #gemstone-bg{
+    position: absolute;
+    max-width: 70%;
+    width: auto;
+    overflow: visible;
+    top: 50%
+  }
+
   h2 {
     // @include font-articulat-bold;
     @include font-raleway(600);
