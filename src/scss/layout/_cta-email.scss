@@ -3,8 +3,14 @@
 
 
 .cta-email{
-    @include flex(row, center, center,none);
-    height: 80vh;
+    @include flex(column, center, center,none);
+    height: 100vh;
+
+    p{
+        text-align: center;
+        font-size: 80%;
+        max-width: 512px;
+    }
 
     .cta-email-container{
         @include font-raleway;

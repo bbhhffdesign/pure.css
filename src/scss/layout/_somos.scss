@@ -50,6 +50,11 @@
         font-size: 100%;
         font-weight: 800;
         color: var(--colorBg);
+        
+        @include tablet{
+          transform: scale(1.5);
+        }
+
 
         &:hover{
           color: var(--colorBg_invert);

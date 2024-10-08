@@ -10,9 +10,17 @@
     padding: 0 $spac-m ;
   }
 
+  @include desktop-sm{
+    height: auto;
+  }
+
   .testi_container_text{
     @include flex(column, center, center,none);
     height: 50vh;
+
+    @include desktop-sm{
+      height: 50vh;
+    }
   }
 
   .testi__container {

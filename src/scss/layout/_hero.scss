@@ -79,11 +79,15 @@
     min-height: 250px;
 
     .scrolldown {
-      padding: 0.3rem 2rem;
-      font-size: 200%;
+      padding: clamp(0.3rem, -0.057rem + 1.786vw, 0.8rem) clamp(2rem, 1.286rem + 3.571vw, 3rem);
       position: absolute;
       @include centrarAbsolute;
       z-index: 1;
+      
+      img{
+        height: clamp(2rem, 1.286rem + 3.571vw, 3rem);
+        width: auto;
+      }
     }
 
     //mindmap svg

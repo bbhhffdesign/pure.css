@@ -87,7 +87,8 @@ const testimonial_2 = document.getElementById("testimonial-2");
 const testimonial_3 = document.getElementById("testimonial-3");
 
 //ctaemail
-const ctaemail = document.getElementById("cta-email")
+const ctaemail = document.getElementById("cta-email") 
+const ctaemail_text = document.getElementById("input-email-text")
 
 //faqText
 const faqText = document.getElementById("faq-text");
@@ -406,7 +407,8 @@ const tl_testimonial3 = gsap.timeline({
     end: "bottom 80%",
   },
 });
-tl_testimonial3.from(testimonial_3, { y: 100, opacity: 0, duration: 0.8 });
+tl_testimonial3
+              .from(testimonial_3, { y: 100, opacity: 0, duration: 0.8 });
 
 
 const tl_ctaemail = gsap.timeline({
@@ -417,4 +419,7 @@ const tl_ctaemail = gsap.timeline({
     end: "bottom 80%",
   },
 });
-tl_ctaemail.from(ctaemail, { y: 200, opacity: 0, duration: 0.6,  });
+tl_ctaemail
+          .from(ctaemail, { y: 200, opacity: 0, duration: 0.6})
+          .from(ctaemail_text, {y:200, opacity: 0, duration:0.6}, "<")
+  ;
