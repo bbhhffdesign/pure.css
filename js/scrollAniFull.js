@@ -86,6 +86,9 @@ const testimonial_1 = document.getElementById("testimonial-1");
 const testimonial_2 = document.getElementById("testimonial-2");
 const testimonial_3 = document.getElementById("testimonial-3");
 
+//ctaemail
+const ctaemail = document.getElementById("cta-email")
+
 //faqText
 const faqText = document.getElementById("faq-text");
 const faqText1 = document.getElementById("faq-text-1");
@@ -378,7 +381,7 @@ mm_mobile.add("(max-width: 1920px)", () => {
 const tl_testimonial1 = gsap.timeline({
   scrollTrigger: {
     trigger: testimonial_1,
-    markers: true,
+    // markers: true,
     start: "-50% 80%",
     end: "bottom 80%",
   },
@@ -404,3 +407,14 @@ const tl_testimonial3 = gsap.timeline({
   },
 });
 tl_testimonial3.from(testimonial_3, { y: 100, opacity: 0, duration: 0.8 });
+
+
+const tl_ctaemail = gsap.timeline({
+  scrollTrigger: {
+    trigger: ctaemail,
+      // markers: true,
+    start: "-200% 80%",
+    end: "bottom 80%",
+  },
+});
+tl_ctaemail.from(ctaemail, { y: 200, opacity: 0, duration: 0.6,  });

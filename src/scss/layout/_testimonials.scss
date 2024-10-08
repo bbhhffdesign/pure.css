@@ -10,13 +10,17 @@
     padding: 0 $spac-m ;
   }
 
+  .testi_container_text{
+    @include flex(column, center, center,none);
+    height: 50vh;
+  }
+
   .testi__container {
     height: inherit;
     @include flex(column, space-between, center, none);
 
     @include desktop-sm {
       flex-direction: row;
-      // flex-wrap: wrap;
     }
 
 
