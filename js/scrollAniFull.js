@@ -453,3 +453,33 @@ mm_tablet.add("(min-width: 600px)", () => {
 
   
 });
+mm_tablet.add("(min-width: 768px)", () => {
+
+  const tl_gemstoneBg = gsap.timeline({
+    scrollTrigger: {
+      trigger: gemstoneBg,
+      // markers:true,
+      start: "450% 40%",
+      end: "900% 40%",
+    },
+  });
+
+  tl_gemstoneBg.to(gemstoneBg, { strokeDashoffset: 0, duration: 45 });
+
+  
+});
+mm_tablet.add("(min-width: 1440px)", () => {
+
+  const tl_gemstoneBg = gsap.timeline({
+    scrollTrigger: {
+      trigger: gemstoneBg,
+      // markers:true,
+      start: "350% 40%",
+      end: "900% 40%",
+    },
+  });
+
+  tl_gemstoneBg.to(gemstoneBg, { strokeDashoffset: 0, duration: 45 });
+
+  
+});

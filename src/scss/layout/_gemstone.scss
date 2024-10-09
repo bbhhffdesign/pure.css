@@ -37,14 +37,23 @@
     stroke: #6b6b6b;
     stroke-width: 2px;
 
-    // @include mobile-sm{
-    //   top: 40%
-    // }
     @include mobile-sm{
       top: 45%
     }
     @include tablet{
       top: 50%
+    }
+    @include desktop-sm{
+      top: 45%;
+      max-width: 30%
+    }
+    @include desktop-md{
+      top: 50%;
+      max-width: 25%
+    }
+    @include desktop-xlg{
+      top: 55%;
+      // max-width: 30%
     }
   }
 

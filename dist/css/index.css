@@ -2140,7 +2140,7 @@ span {
 .btn-pri-xl:hover,
 .btn-pri-xxl:hover {
   box-shadow: none;
-  background-color: rgba(85, 84, 84, 0.185);
+  background-color: rgba(147, 147, 147, 0.367);
   border: solid 1px var(--borderBlanco);
 }
 
@@ -2868,22 +2868,15 @@ svg .logo-nav {
 .somos .mindmap-title-container button {
   padding: 0;
   font-size: 100%;
-  font-weight: 800;
   color: var(--colorBg);
 }
-@media (min-width: 37.5rem) {
-  .somos .mindmap-title-container button {
-    transform: scale(1.5);
-  }
+.somos .mindmap-title-container button strong {
+  color: var(--colorBg);
 }
 .somos .mindmap-title-container button:hover {
   color: var(--colorBg_invert);
 }
-.somos .mindmap-title-container button span {
-  color: var(--colorBg);
-  font-weight: 500;
-}
-.somos .mindmap-title-container button span:hover {
+.somos .mindmap-title-container button:hover strong {
   color: var(--colorBg_invert);
 }
 @media (min-width: 37.5rem) {
@@ -3090,6 +3083,23 @@ svg .logo-nav {
 @media (min-width: 37.5rem) {
   .gemstone #gemstone-bg {
     top: 50%;
+  }
+}
+@media (min-width: 64rem) {
+  .gemstone #gemstone-bg {
+    top: 45%;
+    max-width: 30%;
+  }
+}
+@media (min-width: 80rem) {
+  .gemstone #gemstone-bg {
+    top: 50%;
+    max-width: 25%;
+  }
+}
+@media (min-width: 120rem) {
+  .gemstone #gemstone-bg {
+    top: 55%;
   }
 }
 .gemstone h2 {

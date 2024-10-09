@@ -1,82 +1,73 @@
 @use "../abstract/variables" as *;
 @use "../abstract/mixins" as *;
 
-.somos{
-
-  @include desktop-sm{
+.somos {
+  @include desktop-sm {
     height: 200vh;
     @include flex(row, center, center, none);
   }
 
   .mindmap-title-container {
-      padding: 0 $spac-s;
-      height: 150vh;
-      @include flex(column, space-around, center, none);
+    padding: 0 $spac-s;
+    height: 150vh;
+    @include flex(column, space-around, center, none);
 
-      @include tablet{
-        padding: 0 $spac-m;
+    @include tablet {
+      padding: 0 $spac-m;
+    }
 
-      }
+    @include desktop-sm {
+      max-width: 60rem;
+    }
 
-      @include desktop-sm {
-        max-width: 60rem;
-      }
+    .mindmap-title-cta {
+      padding: 0.5rem 2rem;
+    }
 
-      .mindmap-title-cta{
-        padding: .5rem 2rem;
-      }
+    & > div {
+      overflow-y: hidden;
+      margin: 0 auto;
+    }
 
-      & > div {
-        overflow-y: hidden;
-        margin: 0 auto;
-      }
+    h2 {
+      @include font-monument-normal;
+      // @include font-articulat-bold;
+      @include text-gradient;
+    }
+    h3 {
+      //   text-align: center;
 
-      h2 {
-        @include font-monument-normal;
-        // @include font-articulat-bold;
-        @include text-gradient;
-      }
-      h3 {
-        //   text-align: center;
-
-        span {
-          font-weight: 700;
-          letter-spacing: 2px;
-        }
-      }
-
-      button{
-        padding: 0;
-        font-size: 100%;
-        font-weight: 800;
-        color: var(--colorBg);
-        
-        @include tablet{
-          transform: scale(1.5);
-        }
-
-
-        &:hover{
-          color: var(--colorBg_invert);
-        }
-
-        span{
-          color: var(--colorBg);
-          font-weight: 500;
-
-          &:hover{
-            color: var(--colorBg_invert);
-          }
-        }
-
-      }
-      @include tablet {
-        br {
-          display: none;
-        }
-      }
-      @include desktop-sm {
-        // display: none;
+      span {
+        font-weight: 700;
+        letter-spacing: 2px;
       }
     }
+
+    button {
+      padding: 0;
+      font-size: 100%;
+      color: var(--colorBg);
+
+      strong{
+        color: var(--colorBg);
+      }
+
+      &:hover{
+        color: var(--colorBg_invert);
+
+        strong{
+          color: var(--colorBg_invert);
+        }
+      }
+
+    }
+    @include tablet {
+      br {
+        display: none;
+      }
+    }
+    @include desktop-sm {
+      // display: none;
+    }
   }
+}
