@@ -9,6 +9,7 @@
   }
 
   .gemstone-text-1-container {
+    position: relative;
     @include flex(column, center, center, none);
     height: 120vh;
   }
@@ -28,14 +29,18 @@
 
   #gemstone-bg{
     position: absolute;
-    max-width: 70%;
+    max-width: 60%;
     width: auto;
     overflow: visible;
-    top: 50%
+    top: 50%;
+
+    fill: none;
+    // stroke: var(--colorPrimario);
+    stroke: var(--colorBg_invert);
+    stroke-width: 1.5px
   }
 
   h2 {
-    // @include font-articulat-bold;
     @include font-raleway(600);
     @include text-gradient;
 

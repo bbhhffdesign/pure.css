@@ -58,10 +58,11 @@ const gemstoneText5 = document.getElementById("gemstone-text-5");
 const gemstoneText6 = document.getElementById("gemstone-text-6");
 
 //gemstoneSvgs
-const gemstoneBg = document.getElementById("gemstone-bg");
-const gemstoneBg_path = gemstoneBg.getTotalLenght()
-gemstoneBg_path.style.strokeDashArray= gemstoneBg_path;
-gemstoneBg_path.style.strokeDashOffset= gemstoneBg_path;
+const gemstoneBg = document.getElementById("gemstone-bg-path");
+const gemstoneBg_path = gemstoneBg.getTotalLength();
+gemstoneBg.style.strokeDashoffset = gemstoneBg_path;
+gemstoneBg.style.strokeDasharray = gemstoneBg_path;
+
 
 //gemstone paso
 const pasoNumber1 = document.getElementById("paso-number-1");
@@ -308,6 +309,19 @@ mm_mobile.add("(max-width: 1920px)", () => {
     .to(bgParticles, { opacity: 0 }, "<")
     .to(gemstoneSection, { background: "var(--colorBg)" })
     .to(bgParticles, { opacity: 1 });
+
+  
+    const tl_gemstoneBg = gsap.timeline({
+      scrollTrigger:{
+        trigger: gemstoneBg,
+        markers:true,
+        start: "750% center",
+        end: "900% center",
+      }
+    })
+
+    tl_gemstoneBg
+                .to(gemstoneBg, {strokeDashoffset: 0, duration: 45})
 
   const tl_gemstoneText_2 = gsap.timeline({
     scrollTrigger: {
