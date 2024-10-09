@@ -2870,6 +2870,11 @@ svg .logo-nav {
   font-size: 100%;
   color: var(--colorBg);
 }
+@media (min-width: 37.5rem) {
+  .somos .mindmap-title-container button {
+    transform: scale(1.2);
+  }
+}
 .somos .mindmap-title-container button strong {
   color: var(--colorBg);
 }

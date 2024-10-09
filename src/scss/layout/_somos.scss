@@ -48,6 +48,10 @@
       font-size: 100%;
       color: var(--colorBg);
 
+      @include tablet{
+        transform: scale(1.2);
+      }
+
       strong{
         color: var(--colorBg);
       }

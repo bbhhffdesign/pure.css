@@ -9,6 +9,7 @@ var scrambleText_1 = new ScrambleText(
 	heroTextScram_1,
 	{
 		timeOffset : 80,
+		chars:["b", "B","r", "R","a", "A","n", "N","d", "D",]
 	}
 ).stop();
 
@@ -16,6 +17,7 @@ var scrambleText_2 = new ScrambleText(
 	heroTextScram_2,
 	{
 		timeOffset : 100,
+		chars:["b", "B","r", "R","a", "A","n", "N","d", "D",]
 	}
 ).stop();
 
