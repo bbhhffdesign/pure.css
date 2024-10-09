@@ -1,6 +1,78 @@
 @use "../abstract/mixins" as *;
 @use "../abstract/variables" as *;
 
-.form__container{
+#themeSwitch2{
+    display: none;
+}
+
+svg{
+    position: fixed;
+    stroke: var(--colorBg_invert);
+    z-index: -1;
+    width: 150%;
+    @include centrarvertical;
+    @include centrarAbsolute;
+}
+
+
+.form{
+    @include flex(column, center, center, none);
+
+    form{
+        width: 100%;
+    }
+
+    .input__container{
+        height: 100vh;
+        @include flex(column, center, center, none);
+
+
+        .container__inner{
+            position: relative;
+            z-index: 3;
+            @include flex(column, center, center,none);
+            padding: 1rem 2rem;
+            margin: 2rem;
+            @include glass-bg-only;
+            @include border-gradient;
     
+            label{
+                p{
+                    text-align: center;
+                    color: var(--textoTitulos);
+                    font-weight: 600;
+                }
+            }
+    
+            input{
+                width: 100%;
+                border: none;
+                text-align: center;
+                background-color: transparent;
+                color: var(--textoTitulos);
+    
+                &::placeholder{
+                    color: var(--gris);
+                    font-weight: 600;
+                }
+            }
+    
+            hr{
+                border-color: var(--textoTitulos);
+                width: 100%;
+            }
+            
+            .btn-back{
+                color: var(--textoTitulos);
+                border: solid 1px var(--colorBg_invert);
+    
+                &::before{
+                    background-color: transparent;
+    
+                }
+            }
+        }
+
+    }
+   
 }
