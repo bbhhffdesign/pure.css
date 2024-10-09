@@ -5,6 +5,7 @@
 .cta-email{
     @include flex(column, center, center,none);
     height: 100vh;
+    padding: $spac-s;
 
     p{
         text-align: center;

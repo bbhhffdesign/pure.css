@@ -3077,10 +3077,20 @@ svg .logo-nav {
   max-width: 60%;
   width: auto;
   overflow: visible;
-  top: 50%;
+  top: 35%;
   fill: none;
   stroke: #6b6b6b;
   stroke-width: 2px;
+}
+@media (min-width: 24rem) {
+  .gemstone #gemstone-bg {
+    top: 45%;
+  }
+}
+@media (min-width: 37.5rem) {
+  .gemstone #gemstone-bg {
+    top: 50%;
+  }
 }
 .gemstone h2 {
   font-family: "Raleway", sans-serif;
@@ -3423,6 +3433,7 @@ svg .logo-nav {
   align-items: center;
   gap: none;
   height: 100vh;
+  padding: 1rem;
 }
 .cta-email p {
   text-align: center;

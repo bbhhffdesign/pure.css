@@ -63,7 +63,6 @@ const gemstoneBg_path = gemstoneBg.getTotalLength();
 gemstoneBg.style.strokeDashoffset = gemstoneBg_path;
 gemstoneBg.style.strokeDasharray = gemstoneBg_path;
 
-
 //gemstone paso
 const pasoNumber1 = document.getElementById("paso-number-1");
 const pasoText1 = document.getElementById("paso-text-1");
@@ -91,8 +90,8 @@ const testimonial_2 = document.getElementById("testimonial-2");
 const testimonial_3 = document.getElementById("testimonial-3");
 
 //ctaemail
-const ctaemail = document.getElementById("cta-email") 
-const ctaemail_text = document.getElementById("input-email-text")
+const ctaemail = document.getElementById("cta-email");
+const ctaemail_text = document.getElementById("input-email-text");
 
 //faqText
 const faqText = document.getElementById("faq-text");
@@ -310,18 +309,16 @@ mm_mobile.add("(max-width: 1920px)", () => {
     .to(gemstoneSection, { background: "var(--colorBg)" })
     .to(bgParticles, { opacity: 1 });
 
-  
-    const tl_gemstoneBg = gsap.timeline({
-      scrollTrigger:{
-        trigger: gemstoneBg,
-        // markers:true,
-        start: "750% 40%",
-        end: "900% 40%",
-      }
-    })
+  const tl_gemstoneBg = gsap.timeline({
+    scrollTrigger: {
+      trigger: gemstoneBg,
+      // markers:true,
+      start: "750% 40%",
+      end: "900% 40%",
+    },
+  });
 
-    tl_gemstoneBg
-                .to(gemstoneBg, {strokeDashoffset: 0, duration: 45 })
+  tl_gemstoneBg.to(gemstoneBg, { strokeDashoffset: 0, duration: 45 });
 
   const tl_gemstoneText_2 = gsap.timeline({
     scrollTrigger: {
@@ -394,49 +391,65 @@ mm_mobile.add("(max-width: 1920px)", () => {
   tl_paso3
     .from(pasoNumber3, { scale: 0.8, opacity: 0, y: 80, duration: 0.8 })
     .from(pasoText3, { opacity: 0, y: 80, duration: 0.5 }, "<");
+
+    const tl_testimonial1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: testimonial_1,
+        // markers: true,
+        start: "-50% 80%",
+        end: "bottom 80%",
+      },
+    });
+    tl_testimonial1.from(testimonial_1, { y: 100, opacity: 0, duration: 0.8 });
+    
+    const tl_testimonial2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: testimonial_2,
+        // markers: true,
+        start: "-50% 80%",
+        end: "bottom 80%",
+      },
+    });
+    tl_testimonial2.from(testimonial_2, { y: 100, opacity: 0, duration: 0.8 });
+    
+    const tl_testimonial3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: testimonial_3,
+        //   markers: true,
+        start: "-50% 80%",
+        end: "bottom 80%",
+      },
+    });
+    tl_testimonial3.from(testimonial_3, { y: 100, opacity: 0, duration: 0.8 });
+    
+    const tl_ctaemail = gsap.timeline({
+      scrollTrigger: {
+        trigger: ctaemail,
+        // markers: true,
+        start: "-200% 80%",
+        end: "bottom 80%",
+      },
+    });
+    tl_ctaemail
+      .from(ctaemail, { y: 200, opacity: 0, duration: 0.6 })
+      .from(ctaemail_text, { y: 200, opacity: 0, duration: 0.6 }, "<");
+    
 });
 
-const tl_testimonial1 = gsap.timeline({
-  scrollTrigger: {
-    trigger: testimonial_1,
-    // markers: true,
-    start: "-50% 80%",
-    end: "bottom 80%",
-  },
-});
-tl_testimonial1.from(testimonial_1, { y: 100, opacity: 0, duration: 0.8 });
+const mm_tablet = gsap.matchMedia();
 
-const tl_testimonial2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: testimonial_2,
-    // markers: true,
-    start: "-50% 80%",
-    end: "bottom 80%",
-  },
-});
-tl_testimonial2.from(testimonial_2, { y: 100, opacity: 0, duration: 0.8 });
+mm_tablet.add("(min-width: 600px)", () => {
 
-const tl_testimonial3 = gsap.timeline({
-  scrollTrigger: {
-    trigger: testimonial_3,
-    //   markers: true,
-    start: "-50% 80%",
-    end: "bottom 80%",
-  },
-});
-tl_testimonial3
-              .from(testimonial_3, { y: 100, opacity: 0, duration: 0.8 });
+  const tl_gemstoneBg = gsap.timeline({
+    scrollTrigger: {
+      trigger: gemstoneBg,
+      // markers:true,
+      start: "500% 40%",
+      end: "900% 40%",
+    },
+  });
 
+  tl_gemstoneBg.to(gemstoneBg, { strokeDashoffset: 0, duration: 45 });
 
-const tl_ctaemail = gsap.timeline({
-  scrollTrigger: {
-    trigger: ctaemail,
-      // markers: true,
-    start: "-200% 80%",
-    end: "bottom 80%",
-  },
+  
 });
-tl_ctaemail
-          .from(ctaemail, { y: 200, opacity: 0, duration: 0.6})
-          .from(ctaemail_text, {y:200, opacity: 0, duration:0.6}, "<")
-  ;
