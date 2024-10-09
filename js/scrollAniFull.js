@@ -314,14 +314,14 @@ mm_mobile.add("(max-width: 1920px)", () => {
     const tl_gemstoneBg = gsap.timeline({
       scrollTrigger:{
         trigger: gemstoneBg,
-        markers:true,
+        // markers:true,
         start: "750% center",
         end: "900% center",
       }
     })
 
     tl_gemstoneBg
-                .to(gemstoneBg, {strokeDashoffset: 0, duration: 45})
+                .to(gemstoneBg, {strokeDashoffset: 0, duration: 45 })
 
   const tl_gemstoneText_2 = gsap.timeline({
     scrollTrigger: {
