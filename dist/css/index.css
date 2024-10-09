@@ -3079,8 +3079,8 @@ svg .logo-nav {
   overflow: visible;
   top: 50%;
   fill: none;
-  stroke: var(--colorBg_invert);
-  stroke-width: 1.5px;
+  stroke: #6b6b6b;
+  stroke-width: 2px;
 }
 .gemstone h2 {
   font-family: "Raleway", sans-serif;

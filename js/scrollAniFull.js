@@ -315,8 +315,8 @@ mm_mobile.add("(max-width: 1920px)", () => {
       scrollTrigger:{
         trigger: gemstoneBg,
         // markers:true,
-        start: "750% center",
-        end: "900% center",
+        start: "750% 40%",
+        end: "900% 40%",
       }
     })
 
