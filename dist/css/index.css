@@ -2819,7 +2819,7 @@ svg .logo-nav {
 
 @media (min-width: 64rem) {
   .somos {
-    height: 200vh;
+    height: 150vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -2828,7 +2828,7 @@ svg .logo-nav {
   }
 }
 .somos .mindmap-title-container {
-  padding: 0 1rem;
+  padding: 0 2.5rem;
   height: 150vh;
   display: flex;
   flex-direction: column;
@@ -3177,6 +3177,7 @@ svg .logo-nav {
   left: -10%;
   margin: 0;
   line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
+  color: var(--textoPrincipal);
 }
 .gemstone .pasos-container .paso h1:hover {
   color: var(--colorSecundario);
@@ -3575,18 +3576,79 @@ footer {
   position: relative;
   max-width: 100vw;
 }
+.formulario .form__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: none;
+  flex-wrap: nowrap;
+}
+.formulario .input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
 .formulario .input .input__container {
-  border: solid red 1px;
-  margin: 2rem;
+  width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: none;
+  z-index: 0;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
+  border-left: none;
+  border-right: none;
+  min-width: 100vw;
+}
+.formulario .input .input__container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.formulario .input .input__container > * {
+  margin: 1rem;
+}
+.formulario .input .input__container label p {
+  color: var(--textoTitulos);
+}
+.formulario .input .input__container input {
+  width: 80%;
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px var(--colorBg_invert);
+  color: var(--textoTitulos);
+  max-width: 320px;
+}
+.formulario .input .input__container input::-moz-placeholder {
+  text-align: center;
+  color: #616161;
+}
+.formulario .input .input__container input::placeholder {
+  text-align: center;
+  color: #616161;
+}
+.formulario .input .input__container button {
+  padding: 0.5rem 1.5rem;
 }
 .formulario #gemstone-bg {
   z-index: -1;
-  stroke: white;
+  stroke: #616161;
   position: absolute;
   width: 150%;
   top: 50%;

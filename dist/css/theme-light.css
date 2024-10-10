@@ -1,5 +1,6 @@
 :root{
-    --colorBg: #ffffff;
+    --colorBg: #dcdcdc;
+    /* --colorBg: #ffffff; */
     --colorBg_invert: #000000;
     --colorBg_switch: #c6c6c63c;
     --colorBg_almost: #e1e1e1;

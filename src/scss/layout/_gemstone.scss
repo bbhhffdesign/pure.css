@@ -96,6 +96,7 @@
         left: -10%;
         margin: 0;
         line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
+        color: var(--textoPrincipal);
 
         &:hover {
           color: var(--colorSecundario);

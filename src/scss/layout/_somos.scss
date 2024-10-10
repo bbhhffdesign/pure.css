@@ -3,12 +3,12 @@
 
 .somos {
   @include desktop-sm {
-    height: 200vh;
+    height: 150vh;
     @include flex(row, center, center, none);
   }
 
   .mindmap-title-container {
-    padding: 0 $spac-s;
+    padding: 0 $spac-l;
     height: 150vh;
     @include flex(column, space-around, center, none);
 
