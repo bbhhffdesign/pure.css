@@ -25,6 +25,9 @@
     @include glass-bg-only;
     background-color: var(--colorBg_switch);
 
+
+    //ESTO NO VA CON HOVER, VA CON CLIC ! 
+
     &:hover{
 
         .answer{
