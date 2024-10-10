@@ -2590,8 +2590,7 @@ svg .logo-nav {
   z-index: 0;
   position: fixed;
   top: 0;
-  height: 3rem;
-  padding: 0.5rem 0 1.2rem 0;
+  height: 5rem;
   border: none;
   border-bottom: solid 1px var(--borderBlanco);
   z-index: 2;
@@ -2675,11 +2674,21 @@ svg .logo-nav {
   justify-self: center;
 }
 
-.nav__text p {
+.counter__text__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+.counter__text__container .nav__text p {
   text-align: center;
   font-size: clamp(0.8rem, 0.586rem + 1.071vw, 1.1rem);
-  margin: 0.2rem 0 0 0;
-  bottom: 0;
+  margin: 0;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }
 
 .hero {
@@ -3360,7 +3369,7 @@ svg .logo-nav {
   animation: 10s slide linear infinite;
 }
 .brands-animation .brands-slide img {
-  height: 4rem;
+  height: 3.5rem;
   width: auto;
 }
 

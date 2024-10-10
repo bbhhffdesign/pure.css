@@ -27,11 +27,20 @@
     }
 }
 
-.nav__text{
-    p{
-        text-align: center;
-        font-size: clamp(0.8rem, 0.586rem + 1.071vw, 1.1rem);
-        margin: .2rem 0 0 0;
-        bottom: 0;
+.counter__text__container{
+    height: 100%;
+    @include flex(column, center,center, none);
+ 
+    .nav__text{
+        p{
+            text-align: center;
+            font-size: clamp(0.8rem, 0.586rem + 1.071vw, 1.1rem);
+            // margin: .2rem 0 0 0;
+            // bottom: 0;
+            margin: 0;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+        }
     }
 }
