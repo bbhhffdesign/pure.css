@@ -93,17 +93,18 @@
     //mindmap svg
 
     .mindmap-overflow {
+      width: 90%;
+      margin: 0 auto;
       position: relative;
-      overflow-y: hidden;
+      overflow: hidden;
       @include flex(column, center, center, none);
+      @include glass-bg-only;
     }
 
     .mindmap {
       height: auto;
-      width: 90%;
+      width: 100%;
       padding: 0.5rem;
-      border-radius: $border-rad-xs;
-      @include glass-bg-only;
       background-color: var(--colorBg_switch);
     }
 

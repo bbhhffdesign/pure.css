@@ -2,6 +2,7 @@
 @use "../abstract/mixins" as *;
 
 .somos {
+
   @include desktop-sm {
     height: 150vh;
     @include flex(row, center, center, none);
@@ -9,7 +10,7 @@
 
   .mindmap-title-container {
     padding: 0 $spac-l;
-    height: 150vh;
+    height: 100vh;
     @include flex(column, space-around, center, none);
 
     @include tablet {
@@ -47,6 +48,7 @@
       padding: 0;
       font-size: 100%;
       color: var(--colorBg);
+      // transform: translateY(-130px);
 
       @include tablet{
         transform: scale(1.2);

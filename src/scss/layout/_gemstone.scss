@@ -118,6 +118,10 @@
       }
     }
 
+    button{
+      padding: .5rem 2rem;
+    }
+
     @include desktop-sm{
       .paso-1{
         align-self: flex-start;

@@ -2530,6 +2530,9 @@ svg .agenda-svg {
   stroke-width: 1px;
   stroke: var(--textoPrincipal);
 }
+svg .like-1, svg .like-2 {
+  stroke: black;
+}
 svg .agendabigfill-svg {
   fill: var(--colorSecundario);
 }
@@ -2780,23 +2783,18 @@ svg .logo-nav {
   width: auto;
 }
 .hero .mindmap-container .mindmap-overflow {
+  width: 90%;
+  margin: 0 auto;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: none;
-}
-.hero .mindmap-container .mindmap {
-  height: auto;
-  width: 90%;
-  padding: 0.5rem;
-  border-radius: 0.3rem 0.05rem;
   z-index: 0;
-  background-color: var(--colorBg_switch);
 }
-.hero .mindmap-container .mindmap:before {
+.hero .mindmap-container .mindmap-overflow:before {
   content: "";
   position: absolute;
   top: 0;
@@ -2808,6 +2806,12 @@ svg .logo-nav {
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+}
+.hero .mindmap-container .mindmap {
+  height: auto;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--colorBg_switch);
 }
 #hero-gem {
   position: absolute;
@@ -2829,7 +2833,7 @@ svg .logo-nav {
 }
 .somos .mindmap-title-container {
   padding: 0 2.5rem;
-  height: 150vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -3198,6 +3202,9 @@ svg .logo-nav {
     margin: 2.5rem;
     padding: 2rem;
   }
+}
+.gemstone .pasos-container button {
+  padding: 0.5rem 2rem;
 }
 @media (min-width: 64rem) {
   .gemstone .pasos-container .paso-1 {

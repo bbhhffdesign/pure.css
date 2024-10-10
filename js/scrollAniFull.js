@@ -74,6 +74,10 @@ const pasoNumber3 = document.getElementById("paso-number-3");
 const pasoText3 = document.getElementById("paso-text-3");
 const pasoBox3 = document.getElementById("paso-3-content");
 
+//gemstone cta
+const ctaGemstone = document.getElementById("cta-gemstone")
+
+
 //brandsbar
 const brandsbarCont_1 = document.getElementById("brands-container1");
 const brandsbarCont_2 = document.getElementById("brands-container2");
@@ -391,6 +395,17 @@ mm_mobile.add("(max-width: 1920px)", () => {
   tl_paso3
     .from(pasoNumber3, { scale: 0.8, opacity: 0, y: 80, duration: 0.8 })
     .from(pasoText3, { opacity: 0, y: 80, duration: 0.5 }, "<");
+
+
+    const tl_ctaGemstone = gsap.timeline({
+      scrollTrigger:{
+        trigger: ctaGemstone,
+        // markers:true,
+        start: "top 90%",
+        end: "bottom 90%"
+      }
+    })
+    tl_ctaGemstone.from(ctaGemstone,{opacity:0, y: 100})
 
     const tl_testimonial1 = gsap.timeline({
       scrollTrigger: {
