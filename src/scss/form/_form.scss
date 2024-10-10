@@ -1,6 +1,35 @@
 @use "../abstract/mixins" as *;
 @use "../abstract/variables" as *;
 
-.form__container{
+.formulario{
+    position: relative;
+    max-width: 100vw;
+
+
+    .input{
+
+
+        .input__container{
+            border: solid red 1px;
+            margin: 2rem;
+            @include flex(column, center, center)
+ 
+        }
+    }
+
     
+
+    #gemstone-bg{
+        z-index: -1;
+        stroke: white;
+        position: absolute;
+        width: 150%;
+        @include centrarAbsolute;
+        max-width: 40rem;        
+    }
+
+    .switch1{
+        transform: none;
+        display: none;
+    }
 }
