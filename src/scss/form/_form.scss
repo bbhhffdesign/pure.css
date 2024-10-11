@@ -3,6 +3,9 @@
 
 
 .formulario{
+    & > * {
+          @include font-raleway;
+     }
     position: relative;
     max-width: 100vw;
     // background-color: var(--formBg);
