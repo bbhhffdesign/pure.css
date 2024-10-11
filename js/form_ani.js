@@ -1,3 +1,8 @@
+//error
+const error_container = document.getElementById("input_error_container");
+const error_return = document.getElementById("input_error_return");
+
+
 //form containers
 const inputA_container = document.getElementById("input_a_container");
 const inputA_next = document.getElementById("input_a_next");
@@ -25,57 +30,99 @@ inputA_back.addEventListener("click",() =>{
         window.location.href = 'index.html';
 })
 
+
 //timelines next
 const tl_inputA_next = gsap.timeline({ paused: true });
 tl_inputA_next
-  .to(inputA_container, { x: "-100%" })
-  .to(inputB_container, { x: "-100%" }, "<");
+  .to(inputA_container, { x: "-200%" })
+  .to(inputB_container, { x: "-200%" }, "<");
+
+const tl_inputA_error = gsap.timeline({paused: true});
+  tl_inputA_error
+    .to(inputA_container,{x:"-200"})
+    .to(error_container,{x:"0%"})
 
 const tl_inputB_next = gsap.timeline({ paused: true });
 tl_inputB_next
-  .to(inputB_container, { x: "-200%" })
-  .to(inputC_container, { x: "-200%" }, "<");
+  .to(inputB_container, { x: "-300%" })
+  .to(inputC_container, { x: "-300%" }, "<");
+
+  const tl_inputB_error = gsap.timeline({paused: true});
+  tl_inputB_error
+    .to(inputB_container,{x:"-300"})
+    .to(error_container,{x:"0%"})
+
 
 const tl_inputC_next = gsap.timeline({ paused: true });
 tl_inputC_next
-  .to(inputC_container, { x: "-300%" })
-  .to(inputD_container, { x: "-300%" }, "<");
+  .to(inputC_container, { x: "-400%" })
+  .to(inputD_container, { x: "-400%" }, "<");
 
 const tl_inputD_next = gsap.timeline({ paused: true });
-tl_inputD_next.to(inputD_container, { x: "-400%" });
-tl_inputD_next.to(inputE_container, { x: "-400%" }, "<");
+tl_inputD_next.to(inputD_container, { x: "-500%" });
+tl_inputD_next.to(inputE_container, { x: "-500%" }, "<");
 
 const tl_inputE_next = gsap.timeline({ paused: true });
-tl_inputE_next.to(inputE_container, { x: "-500%" });
+tl_inputE_next.to(inputE_container, { x: "-600%" });
+
 
 //timelines back
 const tl_inputB_back = gsap.timeline({ paused: true });
 tl_inputB_back
-  .to(inputB_container, { x: "0%" })
-  .to(inputA_container, { x: "0%" }, "<");
+  .to(inputB_container, { x: "-100%" })
+  .to(inputA_container, { x: "-100%" }, "<");
 
 const tl_inputC_back = gsap.timeline({ paused: true });
 tl_inputC_back
-  .to(inputC_container, { x: "-100%" })
-  .to(inputB_container, { x: "-100%" }, "<");
+  .to(inputC_container, { x: "-200%" })
+  .to(inputB_container, { x: "-200%" }, "<");
 
 const tl_inputD_back = gsap.timeline({ paused: true });
 tl_inputD_back
-  .to(inputD_container, { x: "-200%" })
-  .to(inputC_container, { x: "-200%" }, "<");
+  .to(inputD_container, { x: "-300%" })
+  .to(inputC_container, { x: "-300%" }, "<");
 
 const tl_inputE_back = gsap.timeline({ paused: true });
 tl_inputE_back
-  .to(inputE_container, { x: "-300%" })
-  .to(inputD_container, { x: "-300%" }, "<");
+  .to(inputE_container, { x: "-400%" })
+  .to(inputD_container, { x: "-400%" }, "<");
+
+
 
 //eventlisteners
 inputA_next.addEventListener("click", () => {
-  tl_inputA_next.restart();
-  console.log("aaaaa");
+  let name = String(document.getElementById("input_a").value);
+  if (name.length < 5){
+    tl_inputA_error.restart();
+    console.log("tu nombre debe contener mas de 5 caracteres")
+    
+    error_return.addEventListener("click",()=>{
+      tl_inputA_error.reverse();
+    })
+  }
+  else{
+    console.log(name)
+    tl_inputA_next.restart();
+  }
 });
+
+
 inputB_next.addEventListener("click", () => {
-  tl_inputB_next.restart();
+  let email = String(document.getElementById("input_b").value);
+  if (email.length < 15 || !email.includes("@") || !email.includes(".com")){
+    console.log("error mail")
+    tl_inputB_error.restart()
+
+    error_return.addEventListener("click",()=>{
+      tl_inputB_error.reverse();
+    })
+
+  }
+  else{
+    console.log(email)
+    tl_inputB_next.restart();
+  }
+  
 });
 inputC_next.addEventListener("click", () => {
   tl_inputC_next.restart();
@@ -99,6 +146,12 @@ inputD_back.addEventListener("click", () => {
 inputE_back.addEventListener("click", () => {
   tl_inputE_back.restart();
 });
+
+
+
+
+
+
 
 //svg bg paths
 const gall = document.getElementById("gall");

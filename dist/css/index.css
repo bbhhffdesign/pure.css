@@ -3616,7 +3616,12 @@ footer {
   gap: none;
   flex-wrap: nowrap;
 }
+.formulario .error,
+.formulario .input__container {
+  transform: translateX(-100%);
+}
 .formulario .input {
+  height: 300px;
   position: relative;
   display: flex;
   flex-direction: row;

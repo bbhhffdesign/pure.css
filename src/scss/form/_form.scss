@@ -21,8 +21,13 @@
         flex-wrap: nowrap;
 
     }
+    .error,
+    .input__container{
+        transform: translateX(-100%);
+    }
 
     .input{
+        height: 300px;
         position: relative;
         @include flex(row, center, center,none);
         @include border-gradient;
