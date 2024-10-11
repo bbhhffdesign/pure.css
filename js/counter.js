@@ -5,6 +5,8 @@ const hoursBox = document.getElementById("hours");
 const minutesBox = document.getElementById("minutes");
 const secondsBox = document.getElementById("seconds");
 
+const countMsj = document.getElementById("counter_msj")
+
 let countdownInterval;
 
 function updateVisibility() {
@@ -38,3 +40,15 @@ function updateVisibility() {
 
 updateVisibility();
 countdownInterval = setInterval(updateVisibility, 1000);
+
+
+
+
+const tl_countText = gsap.timeline({repeat:-1});
+
+tl_countText
+  .to(countRun,{y:"-100%", delay:3})
+  .to(countMsj, {y:"-100%"}, "<")
+  .to(countRun, {y: 0, delay:3})
+  .to(countMsj, {y: 0}, "<")
+  

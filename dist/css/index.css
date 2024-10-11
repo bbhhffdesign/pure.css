@@ -2590,18 +2590,13 @@ svg .gall {
   fill: var(--colorSvg_1);
 }
 
-.count__container {
-  border-top: solid 1px var(--colorBg_invert);
-  border-bottom: solid 1px var(--colorBg_invert);
-}
-
 .nav {
   z-index: 0;
   position: fixed;
   top: 0;
-  height: 5rem;
+  height: 4rem;
+  padding: 0.5rem 0;
   border: none;
-  border-bottom: solid 1px var(--borderBlanco);
   z-index: 2;
   display: flex;
   flex-direction: row;
@@ -2634,6 +2629,7 @@ svg .gall {
 }
 @media (min-width: 37.5rem) {
   .nav {
+    padding: 0.5rem 0;
     height: 4rem;
     justify-content: space-evenly;
   }
@@ -2664,7 +2660,6 @@ svg .gall {
   align-items: center;
   gap: none;
   gap: 0.5rem;
-  padding: 0.3rem 0;
 }
 .count__container > div {
   display: grid;
@@ -2684,12 +2679,29 @@ svg .gall {
 }
 
 .counter__text__container {
+  overflow-y: hidden;
+  position: relative;
+  border: solid 1px var(--textoTitulos);
+  border-left: none;
+  border-right: none;
   height: 100%;
+}
+.counter__text__container .counter__msj {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: none;
+  flex-grow: 1;
+  height: 100%;
+}
+.counter__text__container .counter__msj p {
+  display: inline;
+  margin: 0;
+  font-size: 100%;
+}
+.counter__text__container .count__container {
+  height: 100%;
 }
 .counter__text__container .nav__text p {
   text-align: center;
