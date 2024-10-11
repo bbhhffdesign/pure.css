@@ -2562,6 +2562,15 @@ svg .marca-logo-2 {
 svg .logo-nav {
   fill: var(--colorBg_invert);
 }
+svg .borde-ext,
+svg .borde-int,
+svg .gemstone-sup,
+svg .gemstone-inf,
+svg .gall {
+  fill: none;
+  stroke-width: 1px;
+  stroke: var(--formBg_stroke);
+}
 
 .gemstone-svg .cls-1 {
   stroke: var(--colorBg);
@@ -3592,6 +3601,12 @@ footer {
   position: relative;
   max-width: 100vw;
 }
+.formulario .gradient {
+  z-index: -2;
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(var(--formGradient), var(--formBg));
+}
 .formulario .form__container {
   height: 100vh;
   display: flex;
@@ -3602,30 +3617,20 @@ footer {
   flex-wrap: nowrap;
 }
 .formulario .input {
-  opacity: 0;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: none;
-}
-.formulario .input .input__container {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: none;
-  z-index: 0;
   border: 1px solid;
   border-image-slice: 1;
   border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left: none;
   border-right: none;
-  min-width: 100vw;
+  z-index: 0;
 }
-.formulario .input .input__container:before {
+.formulario .input:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3635,8 +3640,18 @@ footer {
   z-index: -1;
   border-radius: inherit;
   background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.formulario .input .input__container {
+  min-width: 100vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  padding: 2rem 0;
 }
 .formulario .input .input__container > * {
   margin: 1rem;
@@ -3650,17 +3665,28 @@ footer {
   border: none;
   border-bottom: solid 1px var(--colorBg_invert);
   color: var(--textoTitulos);
+  font-size: 120%;
   max-width: 320px;
 }
 .formulario .input .input__container input::-moz-placeholder {
   text-align: center;
   color: #616161;
+  font-size: 120%;
 }
 .formulario .input .input__container input::placeholder {
   text-align: center;
   color: #616161;
+  font-size: 120%;
 }
-.formulario .input .input__container button {
+.formulario .input .input__container .input__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.formulario .input .input__container .input__btns button {
+  text-transform: uppercase;
   padding: 0.5rem 1.5rem;
 }
 .formulario #gemstone-bg {
@@ -3676,6 +3702,10 @@ footer {
 .formulario .switch1 {
   transform: none;
   display: none;
+}
+
+ul li::marker {
+  color: var(--textoPrincipal);
 }
 
 html, body {

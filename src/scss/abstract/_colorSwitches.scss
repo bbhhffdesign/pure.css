@@ -58,6 +58,18 @@ svg {
   .logo-nav {
     fill: var(--colorBg_invert);
   }
+
+
+  .borde-ext,
+  .borde-int,
+  .gemstone-sup,
+  .gemstone-inf,
+  .gall{
+    fill: none;
+    stroke-width: 1px;
+    stroke: var(--formBg_stroke);
+    // filter: blur(5px);
+  }
 }
 
 .gemstone-svg{
