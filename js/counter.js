@@ -49,6 +49,6 @@ const tl_countText = gsap.timeline({repeat:-1});
 tl_countText
   .to(countRun,{y:"-100%", delay:3})
   .to(countMsj, {y:"-100%"}, "<")
-  .to(countRun, {y: 0, delay:3})
+  .to(countRun, {y: 0, delay:5})
   .to(countMsj, {y: 0}, "<")
   
