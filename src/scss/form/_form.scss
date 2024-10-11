@@ -1,6 +1,7 @@
 @use "../abstract/mixins" as *;
 @use "../abstract/variables" as *;
 
+
 .formulario{
     position: relative;
     max-width: 100vw;
@@ -13,6 +14,7 @@
     }
 
     .input{
+        opacity: 0;
         @include flex(row, center, center,none);
 
         .input__container{

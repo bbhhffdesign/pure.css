@@ -4,6 +4,10 @@ const inputB_container = document.getElementById("input_b_container")
 const inputC_container = document.getElementById("input_a_container")
 const inputD_container = document.getElementById("input_b_container")
 
+
+// gsap.to(inputA_container,{x:"-100%", duration: 1.5, ease: "expo.out", delay: 2})
+// gsap.to(inputB_container,{x:"-100%", duration: 1.5, ease: "expo.out"}, "<")
+
 //svg bg paths
 const gall = document.getElementById("gall")
 const gall_path = gall.getTotalLength();
@@ -32,15 +36,14 @@ gemstoneInf.style.strokeDashoffset = gemstoneInf_path;
 gemstoneInf.style.strokeDasharray = gemstoneInf_path;
 
 
-// gsap.to(inputA_container,{x:"-100%", duration: 1.5, ease: "expo.out", delay: 2})
-// gsap.to(inputB_container,{x:"-100%", duration: 1.5, ease: "expo.out"}, "<")
 
 const tl_gemstoneBg = gsap.timeline();
 
 tl_gemstoneBg
-        .to(bordeInt,{strokeDashoffset:0, duration:3, delay:0})
-        .to(bordeExt,{strokeDashoffset:0, duration:3, delay:1},"<")
-        // .to(gall,{strokeDashoffset:0, duration: 5},"<")
-        // .to(gall,{strokeDashoffset: gall_path, duration:3})
-        .to(gemstoneInf,{strokeDashoffset:0, duration:15})
-        // .to(gemstoneSup,{strokeDashoffset:0, duration:},"<")
+        // .to(bordeInt,{strokeDashoffset:0, duration:6, delay:0})
+        // .to(bordeExt,{strokeDashoffset:0, duration:6, delay:0}, "<")
+
+        .to(gall,{strokeDashoffset:0, duration: 10})
+        // .to(gall,{strokeDashoffset: gall_path, duration:3, delay: 1, opacity:.5}, "<")
+        // .to(gemstoneInf,{strokeDashoffset:0, strokeDasharray: 0, duration:15, delay:2},"<")
+        // .to(gemstoneSup,{strokeDashoffset:0, duration:5},"<")
