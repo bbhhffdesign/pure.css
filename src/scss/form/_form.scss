@@ -57,12 +57,35 @@
                 color: var(--textoTitulos);
                 font-size: 120%;
                 max-width: 320px;
+                text-align: center;
+
+                &:focus{
+                    background: transparent;
+                }
 
 
                 &::placeholder{
                     text-align: center;
                     color: #616161;
                     font-size: 120%;
+                }
+            }
+
+            ul{
+                li{
+                    & >*{
+                        display: inline-block;
+                        font-size: 120%;
+                        margin: .5rem;
+                        padding: 0;
+                    }
+                    
+                    & > :first-child{
+                        color: var(--textoTitulos)
+                    }
+                    & > :nth-child(2){
+                        color: var(--textoPrincipal)
+                    }
                 }
             }
 

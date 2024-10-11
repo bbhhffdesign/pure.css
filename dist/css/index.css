@@ -3672,6 +3672,10 @@ footer {
   color: var(--textoTitulos);
   font-size: 120%;
   max-width: 320px;
+  text-align: center;
+}
+.formulario .input .input__container input:focus {
+  background: transparent;
 }
 .formulario .input .input__container input::-moz-placeholder {
   text-align: center;
@@ -3682,6 +3686,18 @@ footer {
   text-align: center;
   color: #616161;
   font-size: 120%;
+}
+.formulario .input .input__container ul li > * {
+  display: inline-block;
+  font-size: 120%;
+  margin: 0.5rem;
+  padding: 0;
+}
+.formulario .input .input__container ul li > :first-child {
+  color: var(--textoTitulos);
+}
+.formulario .input .input__container ul li > :nth-child(2) {
+  color: var(--textoPrincipal);
 }
 .formulario .input .input__container .input__btns {
   display: flex;
