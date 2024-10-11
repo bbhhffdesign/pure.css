@@ -1,6 +1,7 @@
 //form containers
 const inputA_container = document.getElementById("input_a_container");
 const inputA_next = document.getElementById("input_a_next");
+const inputA_back = document.getElementById("input_a_back");
 
 const inputB_container = document.getElementById("input_b_container");
 const inputB_back = document.getElementById("input_b_back");
@@ -17,6 +18,12 @@ const inputD_next = document.getElementById("input_d_next");
 const inputE_container = document.getElementById("input_e_container");
 const inputE_back = document.getElementById("input_e_back");
 const inputE_next = document.getElementById("input_e_next");
+
+//HOME
+inputA_back.addEventListener("click",() =>{
+        console.log("aaa")
+        window.location.href = 'index.html';
+})
 
 //timelines next
 const tl_inputA_next = gsap.timeline({ paused: true });
