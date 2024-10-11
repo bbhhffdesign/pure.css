@@ -3687,6 +3687,11 @@ footer {
   color: #616161;
   font-size: 120%;
 }
+.formulario .input .input__container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .formulario .input .input__container ul li > * {
   display: inline-block;
   font-size: 120%;

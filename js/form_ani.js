@@ -1,6 +1,7 @@
 //error
 const error_container = document.getElementById("input_error_container");
 const error_return = document.getElementById("input_error_return");
+const error_text = document.getElementById("input_error_text");
 
 //form containers
 const inputA_container = document.getElementById("input_a_container");
@@ -23,12 +24,14 @@ const inputE_container = document.getElementById("input_e_container");
 const inputE_back = document.getElementById("input_e_back");
 const inputE_next = document.getElementById("input_e_next");
 
+const inputF_container = document.getElementById("input_f_container");
+const form_container = document.getElementById("form_container");
+
 //display information check
 const display_name = document.getElementById("display_name");
 const display_email = document.getElementById("display_email");
 const display_brand = document.getElementById("display_brand");
 const display_social = document.getElementById("display_social");
-
 
 //HOME
 inputA_back.addEventListener("click", () => {
@@ -62,23 +65,25 @@ tl_inputC_next
   .to(inputC_container, { x: "-400%" })
   .to(inputD_container, { x: "-400%" }, "<");
 
-const tl_inputC_error = gsap.timeline({paused: true});
+const tl_inputC_error = gsap.timeline({ paused: true });
 tl_inputC_error
-  .to(inputC_container,{x:"-200%"})
-  .to(error_container,{x:"0%"})
+  .to(inputC_container, { x: "-200%" })
+  .to(error_container, { x: "0%" });
 
 const tl_inputD_next = gsap.timeline({ paused: true });
 tl_inputD_next.to(inputD_container, { x: "-500%" });
 tl_inputD_next.to(inputE_container, { x: "-500%" }, "<");
 
-const tl_inputD_error = gsap.timeline({paused: true});
+const tl_inputD_error = gsap.timeline({ paused: true });
 tl_inputD_error
-  .to(inputD_container,{x:"-300%"})
-  .to(error_container,{x:"0%"})
+  .to(inputD_container, { x: "-300%" })
+  .to(error_container, { x: "0%" });
 
 const tl_inputE_next = gsap.timeline({ paused: true });
-tl_inputE_next.to(inputE_container, { x: "-600%" });
-
+tl_inputE_next
+  .to(inputE_container, { x: "-600%" })
+  .to(inputF_container,{x: "-600%"})
+  .to(form_container,{y: "100%", delay: 3, duration:2})
 //timelines back
 const tl_inputB_back = gsap.timeline({ paused: true });
 tl_inputB_back
@@ -104,9 +109,9 @@ tl_inputE_back
 inputA_next.addEventListener("click", () => {
   let name = String(document.getElementById("input_a").value).toLowerCase();
 
-  if (name.length < 5) {
+  if (name.length < 10) {
+    error_text.innerText = "Tu nombre debe contener mas de 10 caracteres.";
     tl_inputA_error.restart();
-    console.log("tu nombre debe contener mas de 5 caracteres");
 
     error_return.addEventListener("click", () => {
       tl_inputA_error.reverse();
@@ -120,9 +125,9 @@ inputA_next.addEventListener("click", () => {
 
 inputB_next.addEventListener("click", () => {
   let email = String(document.getElementById("input_b").value).toLowerCase();
- 
+
   if (email.length < 15 || !email.includes("@") || !email.includes(".com")) {
-    console.log("error mail");
+    error_text.innerText = "El email no es válido, o el campo está vacío.";
     tl_inputB_error.restart();
 
     error_return.addEventListener("click", () => {
@@ -139,14 +144,13 @@ inputC_next.addEventListener("click", () => {
   let brand = String(document.getElementById("input_c").value).toLowerCase();
 
   if (!brand) {
-    console.log("error BRAND");
+    error_text.innerText = "El campo no puede estar vacío";
     tl_inputC_error.restart();
 
     error_return.addEventListener("click", () => {
       tl_inputC_error.reverse();
     });
-  }
-  else {
+  } else {
     display_brand.innerText = brand;
     console.log(brand);
     tl_inputC_next.restart();
@@ -157,14 +161,14 @@ inputD_next.addEventListener("click", () => {
   let social = String(document.getElementById("input_d").value);
 
   if (!social || !social.includes("/") || !social.includes(".com")) {
-    console.log("error BRAND");
+    error_text.innerText =
+      "No es una red social válida, o el campo está vacío.";
     tl_inputD_error.restart();
 
     error_return.addEventListener("click", () => {
       tl_inputD_error.reverse();
     });
-  }
-  else {
+  } else {
     display_social.innerText = social;
     console.log(social);
     tl_inputD_next.restart();
