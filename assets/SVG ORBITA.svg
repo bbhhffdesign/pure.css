@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 913.24 913.24">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#Degradado_sin_nombre_26-5);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19 {
+        fill: none;
+      }
+
+      .cls-1, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-20, .cls-10, .cls-11, .cls-12, .cls-15, .cls-19 {
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-20, .cls-12, .cls-15, .cls-19 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-10, .cls-11, .cls-12, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19 {
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: url(#Degradado_sin_nombre_44-6);
+      }
+
+      .cls-2, .cls-3, .cls-21, .cls-9, .cls-13, .cls-22, .cls-23, .cls-14, .cls-16, .cls-17, .cls-18, .cls-24 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 14.93 14.93;
+      }
+
+      .cls-3, .cls-21, .cls-20, .cls-22, .cls-23, .cls-24 {
+        stroke: #000;
+      }
+
+      .cls-4 {
+        stroke: url(#Degradado_sin_nombre_43-7);
+      }
+
+      .cls-5 {
+        stroke: url(#Degradado_sin_nombre_26-3);
+      }
+
+      .cls-25 {
+        fill: url(#Degradado_sin_nombre_26);
+      }
+
+      .cls-6 {
+        stroke: url(#Degradado_sin_nombre_26-4);
+      }
+
+      .cls-7 {
+        stroke: url(#Degradado_sin_nombre_43-5);
+      }
+
+      .cls-8 {
+        stroke: url(#Degradado_sin_nombre_43-8);
+      }
+
+      .cls-21 {
+        fill: url(#Degradado_sin_nombre_79);
+      }
+
+      .cls-20 {
+        fill: #fff;
+      }
+
+      .cls-9 {
+        stroke: url(#Degradado_sin_nombre_44-5);
+      }
+
+      .cls-26 {
+        fill: url(#Degradado_sin_nombre_42-2);
+      }
+
+      .cls-10 {
+        stroke: url(#Degradado_sin_nombre_44-2);
+      }
+
+      .cls-11 {
+        stroke: url(#Degradado_sin_nombre_44);
+      }
+
+      .cls-12 {
+        stroke: url(#Degradado_sin_nombre_26-2);
+      }
+
+      .cls-13 {
+        stroke: url(#Degradado_sin_nombre_44-4);
+      }
+
+      .cls-22 {
+        fill: url(#Degradado_sin_nombre_81);
+      }
+
+      .cls-23 {
+        fill: url(#Degradado_sin_nombre_82);
+      }
+
+      .cls-14 {
+        stroke: url(#Degradado_sin_nombre_43-2);
+      }
+
+      .cls-15 {
+        stroke: url(#Degradado_sin_nombre_43-6);
+      }
+
+      .cls-16 {
+        stroke: url(#Degradado_sin_nombre_43-3);
+      }
+
+      .cls-17 {
+        stroke: url(#Degradado_sin_nombre_43);
+      }
+
+      .cls-18 {
+        stroke: url(#Degradado_sin_nombre_43-4);
+      }
+
+      .cls-19 {
+        stroke: url(#Degradado_sin_nombre_44-3);
+      }
+
+      .cls-24 {
+        fill: url(#Degradado_sin_nombre_80);
+      }
+
+      .cls-27 {
+        fill: url(#Degradado_sin_nombre_42);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_82" data-name="Degradado sin nombre 82" x1="456.62" y1="834.93" x2="456.62" y2="78.31" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset=".62" stop-color="#202020" stop-opacity=".03"/>
+      <stop offset="1" stop-color="#666" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_42" data-name="Degradado sin nombre 42" x1="833.67" y1="391.1" x2="833.67" y2="419.96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset=".06" stop-color="#000" stop-opacity=".59"/>
+      <stop offset=".4" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_42-2" data-name="Degradado sin nombre 42" x1="831.44" y1="384.07" x2="831.44" y2="423.82" xlink:href="#Degradado_sin_nombre_42"/>
+    <linearGradient id="Degradado_sin_nombre_81" data-name="Degradado sin nombre 81" x1="456.62" y1="757.12" x2="456.62" y2="156.12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset=".62" stop-color="#202020" stop-opacity=".03"/>
+      <stop offset="1" stop-color="#666" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_44" data-name="Degradado sin nombre 44" x1="220.88" y1="262.02" x2="220.88" y2="296.44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset=".06" stop-color="#000" stop-opacity=".59"/>
+      <stop offset=".4" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_44-2" data-name="Degradado sin nombre 44" x1="220.88" y1="280.96" x2="220.88" y2="282.96" xlink:href="#Degradado_sin_nombre_44"/>
+    <linearGradient id="Degradado_sin_nombre_44-3" data-name="Degradado sin nombre 44" x1="212.78" y1="267.09" x2="212.78" y2="269.09" xlink:href="#Degradado_sin_nombre_44"/>
+    <linearGradient id="Degradado_sin_nombre_44-4" data-name="Degradado sin nombre 44" x1="228.01" y1="253.11" x2="228.01" y2="260.39" gradientTransform="translate(425.5 -24.15) rotate(76.72)" xlink:href="#Degradado_sin_nombre_44"/>
+    <linearGradient id="Degradado_sin_nombre_44-5" data-name="Degradado sin nombre 44" x1="220.88" y1="244.55" x2="220.88" y2="251.83" gradientTransform="translate(411.68 -23.81) rotate(76.72)" xlink:href="#Degradado_sin_nombre_44"/>
+    <linearGradient id="Degradado_sin_nombre_44-6" data-name="Degradado sin nombre 44" x1="214.34" y1="256.25" x2="214.34" y2="263.52" gradientTransform="translate(429 .27) rotate(79.1)" xlink:href="#Degradado_sin_nombre_44"/>
+    <linearGradient id="Degradado_sin_nombre_80" data-name="Degradado sin nombre 80" x1="456.62" y1="679.31" x2="456.62" y2="233.93" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset=".39" stop-color="#0a0a0a" stop-opacity=".03"/>
+      <stop offset=".71" stop-color="#2c2c2c" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#656565" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#666" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_43" data-name="Degradado sin nombre 43" x1="536.36" y1="257.03" x2="536.36" y2="272.98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset=".06" stop-color="#000" stop-opacity=".59"/>
+      <stop offset=".4" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_43-2" data-name="Degradado sin nombre 43" x1="547.17" y1="254.54" x2="547.17" xlink:href="#Degradado_sin_nombre_43"/>
+    <linearGradient id="Degradado_sin_nombre_43-3" data-name="Degradado sin nombre 43" x1="557.98" y1="252.05" x2="557.98" xlink:href="#Degradado_sin_nombre_43"/>
+    <linearGradient id="Degradado_sin_nombre_43-4" data-name="Degradado sin nombre 43" x1="568.79" y1="249.55" x2="568.79" xlink:href="#Degradado_sin_nombre_43"/>
+    <linearGradient id="Degradado_sin_nombre_43-5" data-name="Degradado sin nombre 43" x1="552.58" y1="270.98" x2="552.58" y2="272.98" xlink:href="#Degradado_sin_nombre_43"/>
+    <linearGradient id="Degradado_sin_nombre_43-6" data-name="Degradado sin nombre 43" x1="552.58" y1="237.21" x2="552.58" y2="251.55" xlink:href="#Degradado_sin_nombre_43"/>
+    <linearGradient id="Degradado_sin_nombre_43-7" data-name="Degradado sin nombre 43" x1="569.11" y1="234.15" x2="569.11" y2="239.43" xlink:href="#Degradado_sin_nombre_43"/>
+    <linearGradient id="Degradado_sin_nombre_43-8" data-name="Degradado sin nombre 43" x1="570.49" y1="237.2" x2="570.49" y2="245.23" xlink:href="#Degradado_sin_nombre_43"/>
+    <linearGradient id="Degradado_sin_nombre_79" data-name="Degradado sin nombre 79" x1="456.62" y1="600.62" x2="456.62" y2="310.86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset=".31" stop-color="#060606" stop-opacity=".03"/>
+      <stop offset=".57" stop-color="#1a1a1a" stop-opacity=".13"/>
+      <stop offset=".8" stop-color="#3c3c3c" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#666" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_26" data-name="Degradado sin nombre 26" x1="442.8" y1="302.42" x2="452.4" y2="302.42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset=".15" stop-color="#000" stop-opacity=".59"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_26-2" data-name="Degradado sin nombre 26" x1="447.6" y1="284" x2="447.6" y2="325.4" xlink:href="#Degradado_sin_nombre_26"/>
+    <linearGradient id="Degradado_sin_nombre_26-3" data-name="Degradado sin nombre 26" x1="447.6" y1="323.69" x2="447.6" y2="337.49" xlink:href="#Degradado_sin_nombre_26"/>
+    <linearGradient id="Degradado_sin_nombre_26-4" data-name="Degradado sin nombre 26" x1="442.47" y1="322.49" x2="442.47" y2="340.03" xlink:href="#Degradado_sin_nombre_26"/>
+    <linearGradient id="Degradado_sin_nombre_26-5" data-name="Degradado sin nombre 26" x1="452.73" y1="322.49" x2="452.73" y2="340.03" xlink:href="#Degradado_sin_nombre_26"/>
+  </defs>
+  <g id="Linea_punteada_final">
+    <g id="Línea_punteada">
+      <circle class="cls-3" cx="456.62" cy="456.62" r="456.12"/>
+    </g>
+  </g>
+  <g id="Cuarta_capa">
+    <circle id="_x3C_Trazado_orbita_x3E_" class="cls-23" cx="456.62" cy="456.62" r="378.31"/>
+    <circle class="cls-20" cx="831.44" cy="403.95" r="35"/>
+    <g id="Logo_G">
+      <path class="cls-27" d="M837.48,405.39l-2.07-2.06-1.22-1.22h0c-.26-.27-.62-.44-1.02-.44-.03,0-.05,0-.08,0h-6.17c.1.67.65,1.19,1.34,1.23h1.17c.22-.02.44-.02.66,0,.63.06,1.24.3,1.77.72h0s.05.04.07.06c.24.2.45.44.62.69.04.05.07.11.1.16.02.03.03.06.05.08.01.03.03.06.05.08t0,0c.05.1.1.21.15.31.06.16.12.32.16.49.03.11.05.22.06.34,0,.06.01.11.02.17,0,0,0,0,0,0,0,.13.01.25,0,.38h0s0,.02,0,.02c0,.08,0,.16-.02.24,0,0,0,.01,0,.01,0,.05-.01.09-.02.13,0,.01,0,.03,0,.04,0,.05-.02.1-.03.15s-.02.1-.04.15c-.04.15-.09.3-.16.45-.02.05-.04.1-.07.14h0c-.05.1-.1.19-.16.28t0,0c-.08.12-.16.24-.26.36-.07.08-.13.15-.2.22-.12.12-.24.22-.38.32-.1.08-.21.14-.32.21,0,0,0,0-.02,0-1.08.65-2.3,1.02-3.6,1.02-4.32,0-7.82-4.08-7.82-9.11s3.54-9.12,7.86-9.12c3.63,0,6.64,2.89,7.52,6.79h2.03c.45,0,.76-.45.61-.87-.36-1-.88-1.93-1.54-2.77-.75-.58-1.5-1.14-2.26-1.67-.9-.62-1.81-1.21-2.72-1.75-1.13-.36-2.35-.56-3.62-.56-5.9,0-10.69,4.43-10.69,9.89,0,1.26.26,2.47.72,3.58.48.61.99,1.22,1.53,1.83.81.85,2.03,2.1,3.15,3.19,1.56.83,3.37,1.3,5.29,1.3,3.18,0,6.03-1.28,7.99-3.32l12.54,12.4s.04-.03.06-.04h.02c.36-.21.67-.46.94-.77.26-.31.46-.65.6-1.03v-.02s.04-.07.05-.1l-12.63-12.6Z"/>
+      <path class="cls-26" d="M854.14,419.23c.03-2.21-.97-5.11-2.98-8.5-2.96-5-7.87-10.6-13.48-15.39,0,0,0,0,0,0h0s0,0,0,0c-5.67-4.65-11.65-8.21-16.83-10.01-3.93-1.37-7.1-1.61-9.22-.75,0,0,0,0,0,0-.74.28-1.36.7-1.83,1.26-.71.85-1.04,1.96-1.03,3.28-.02,2.09.83,4.73,2.52,7.74,2.72,4.84,7.31,10.14,12.93,14.93h0s0,0,0,0c5.65,4.64,11.99,8.45,17.38,10.46,2.8,1.05,5.23,1.57,7.18,1.57.03,0,.07,0,.1,0,1.93.02,3.44-.47,4.34-1.55.66-.78.95-1.82.93-3.05ZM850.11,417.99s-.03.07-.05.1v.02c-.14.38-.35.73-.61,1.03-.26.31-.58.56-.94.76h-.02s-.04.04-.06.05c-.88.57-2.07.85-3.51.85-1.82,0-4.04-.45-6.55-1.35-4.51-1.62-9.42-4.49-13.83-8.07-.5-.43-1.19-1.08-1.93-1.8-1.12-1.09-2.34-2.34-3.15-3.19-.54-.61-1.05-1.22-1.53-1.83-2.26-2.86-3.9-5.69-4.79-8.29-1.08-3.16-.93-5.68.42-7.29,1.47-1.75,4.36-2.26,8.14-1.45,2.99.64,6.39,2.08,9.81,4.11.91.54,1.82,1.13,2.72,1.75.75.52,1.51,1.08,2.26,1.67.28.22.56.44.84.67,9.05,7.76,14.74,17.69,12.77,22.26Z"/>
+    </g>
+  </g>
+  <g id="Tercer_capa">
+    <circle id="_x3C_Trazado_orbita_x3E_-2" data-name="_x3C_Trazado_orbita_x3E_" class="cls-22" cx="456.62" cy="456.62" r="300.5"/>
+    <circle class="cls-20" cx="220.88" cy="270.25" r="35"/>
+    <g id="Icono">
+      <polygon class="cls-11" points="205.89 263.02 205.89 268.09 217.17 281.96 217.17 295.44 224.6 292.92 224.6 281.96 235.88 268.09 235.88 263.02 205.89 263.02"/>
+      <line class="cls-10" x1="217.17" y1="281.96" x2="224.6" y2="281.96"/>
+      <line class="cls-19" x1="205.89" y1="268.09" x2="219.66" y2="268.09"/>
+      <circle class="cls-13" cx="228.01" cy="256.75" r="3.14" transform="translate(-74.26 419.67) rotate(-76.72)"/>
+      <circle class="cls-9" cx="220.88" cy="248.19" r="3.14" transform="translate(-71.41 406.14) rotate(-76.72)"/>
+      <circle class="cls-2" cx="214.34" cy="259.89" r="3.14" transform="translate(-81.39 421.21) rotate(-79.1)"/>
+    </g>
+  </g>
+  <g id="Segunda_capa">
+    <circle id="_x3C_Trazado_orbita_x3E_-3" data-name="_x3C_Trazado_orbita_x3E_" class="cls-24" cx="456.62" cy="456.62" r="222.69"/>
+    <circle class="cls-20" cx="553.2" cy="255.92" r="35"/>
+    <g id="Icono-2" data-name="Icono">
+      <rect class="cls-17" x="533.03" y="258.03" width="6.67" height="13.95"/>
+      <rect class="cls-14" x="543.84" y="255.54" width="6.67" height="16.44"/>
+      <rect class="cls-16" x="554.65" y="253.05" width="6.67" height="18.93"/>
+      <rect class="cls-18" x="565.46" y="250.55" width="6.67" height="21.42"/>
+      <line class="cls-7" x1="530.16" y1="271.98" x2="575" y2="271.98"/>
+      <line class="cls-15" x1="533.03" y1="250.55" x2="572.13" y2="238.21"/>
+      <path class="cls-4" d="M572.13,238.19c-2.51.83-5.2-.54-6.03-3.04"/>
+      <path class="cls-8" d="M569.09,244.23c-.83-2.51.54-5.2,3.04-6.03"/>
+    </g>
+  </g>
+  <g id="Capa_centro">
+    <circle id="_x3C_Trazado_orbita_x3E_-4" data-name="_x3C_Trazado_orbita_x3E_" class="cls-21" cx="456.62" cy="456.62" r="144.88"/>
+    <circle class="cls-20" cx="447.6" cy="312.02" r="35"/>
+    <g id="Icono-3" data-name="Icono">
+      <path class="cls-25" d="M452.4,302.42c0,2.65-2.15,4.8-4.8,4.8s-4.8-2.15-4.8-4.8,2.15-4.8,4.8-4.8,4.8,2.15,4.8,4.8Z"/>
+      <path class="cls-12" d="M463.3,308.88l-6.04-2.42h0c-.38-15.7-9.66-21.46-9.66-21.46,0,0-9.28,5.76-9.66,21.46h0s-6.04,2.42-6.04,2.42c-.84.33-1.38,1.14-1.38,2.04v1.93c0,1.22.99,2.2,2.2,2.2h5.83v-.12c.07.52.15,1.04.25,1.58.2,1.08,1.15,1.87,2.25,1.87h1.09v3.73c0,1.26,1.02,2.28,2.28,2.28h6.36c1.26,0,2.28-1.02,2.28-2.28v-3.73h1.09c1.1,0,2.04-.79,2.25-1.87.1-.54.18-1.07.27-1.6v.14s5.82,0,5.82,0c1.22,0,2.2-.99,2.2-2.2v-1.93c0-.9-.55-1.71-1.38-2.04Z"/>
+      <line class="cls-5" x1="447.6" y1="324.69" x2="447.6" y2="336.49"/>
+      <line class="cls-6" x1="442.47" y1="323.49" x2="442.47" y2="339.03"/>
+      <line class="cls-1" x1="452.73" y1="323.49" x2="452.73" y2="339.03"/>
+    </g>
+  </g>
+</svg>
