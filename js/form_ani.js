@@ -122,8 +122,8 @@ gemstoneInf.style.strokeDasharray = gemstoneInf_path;
 const tl_gemstoneBg = gsap.timeline({ repeat: -1, yoyo: true });
 
 tl_gemstoneBg
-  .to(bordeInt, { strokeDashoffset: 0, duration: 3, delay: 0 })
-  .to(bordeExt, { strokeDashoffset: 0, duration: 3, delay: 0 }, "<")
+  .to(bordeInt, { strokeDashoffset: 0, duration: 3, delay: 1 })
+  .to(bordeExt, { strokeDashoffset: 0, duration: 3, delay: 1 }, "<")
 
   .to(gall, { strokeDashoffset: 0, duration: 6 })
   .to(gall, {
