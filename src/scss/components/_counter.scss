@@ -34,8 +34,7 @@
     border: solid 1px var(--textoTitulos);
     border-left: none;
     border-right: none;
-    height: 100%;
-    // @include flex(column, center,center, none);
+    height: 80%;
 
     .counter__msj{
         @include flex(column, center, center,none);
@@ -45,6 +44,7 @@
             display: inline;
             margin: 0;
             font-size: 100%;
+            font-weight: 600;
         }
     }
     .count__container{

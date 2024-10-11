@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 0 2rem;
 
     @include desktop-sm {
       align-items: center;

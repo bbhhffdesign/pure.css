@@ -19,6 +19,7 @@
   .services-text {
     position: relative;
     width: 100%;
+    padding: 1rem 0;
     overflow-y: hidden;
     @include glass-bg-only;
     @include border-gradient;
@@ -26,6 +27,7 @@
 
     & > div{
       overflow-y: hidden;
+      padding: 0 2rem;
     }
 
     @include desktop-sm{
