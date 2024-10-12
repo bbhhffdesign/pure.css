@@ -58,23 +58,33 @@
             }
 
             input{
-                width: 80%;
+                width: 50%;
                 background: transparent;
                 border: none;
-                border-bottom: solid 1px var(--colorBg_invert);
+                border-bottom: solid 1px var(--textoPrincipal);
                 color: var(--textoTitulos);
                 font-size: 100%;
                 max-width: 320px;
                 text-align: center;
 
                 &:focus{
-                    background: transparent;        
+                    background: transparent;  
+                    border: none;   
+                    outline: none;   
+                    border-bottom: 1px solid var(--textoTitulos);
                 }
 
                 &::placeholder{
                     text-align: center;
                     color: #616161;
-                    font-size: 120%;
+                    // font-size: 120%;
+                }
+
+                @include tablet{
+                    width: 30%;
+                }
+                @include tablet-l{
+                    width: 25%;
                 }
             }
 

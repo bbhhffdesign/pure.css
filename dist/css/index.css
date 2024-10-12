@@ -2019,6 +2019,14 @@ h3 {
   }
 }
 
+h4 {
+  color: var(--textoTitulos);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 p {
   color: var(--textoPrincipal);
   margin-top: 1rem;
@@ -2850,6 +2858,18 @@ svg .gall {
   bottom: 0;
   opacity: 0.5;
   z-index: 1;
+}
+
+.cuales-title div {
+  padding: 0 2rem;
+}
+@media (min-width: 64rem) {
+  .cuales-title div {
+    padding: 0;
+  }
+  .cuales-title div h3 {
+    font-size: 160%;
+  }
 }
 
 @media (min-width: 64rem) {
@@ -3695,10 +3715,10 @@ footer {
   color: var(--textoTitulos);
 }
 .formulario .input .input__container input {
-  width: 80%;
+  width: 50%;
   background: transparent;
   border: none;
-  border-bottom: solid 1px var(--colorBg_invert);
+  border-bottom: solid 1px var(--textoPrincipal);
   color: var(--textoTitulos);
   font-size: 100%;
   max-width: 320px;
@@ -3706,16 +3726,27 @@ footer {
 }
 .formulario .input .input__container input:focus {
   background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--textoTitulos);
 }
 .formulario .input .input__container input::-moz-placeholder {
   text-align: center;
   color: #616161;
-  font-size: 120%;
 }
 .formulario .input .input__container input::placeholder {
   text-align: center;
   color: #616161;
-  font-size: 120%;
+}
+@media (min-width: 37.5rem) {
+  .formulario .input .input__container input {
+    width: 30%;
+  }
+}
+@media (min-width: 48rem) {
+  .formulario .input .input__container input {
+    width: 25%;
+  }
 }
 .formulario .input .input__container ul {
   margin: 0;

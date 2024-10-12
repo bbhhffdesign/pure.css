@@ -80,11 +80,14 @@ tl_inputD_error
   .to(inputD_container, { x: "-300%" })
   .to(error_container, { x: "0%" });
 
+
 const tl_inputE_next = gsap.timeline({ paused: true });
 tl_inputE_next
   .to(inputE_container, { x: "-600%" })
   .to(inputF_container, { x: "-600%" })
   .to(form_container, { y: "100%", delay: 3, duration: 2 });
+
+
 //timelines back
 const tl_inputB_back = gsap.timeline({ paused: true });
 tl_inputB_back
@@ -106,15 +109,18 @@ tl_inputE_back
   .to(inputE_container, { x: "-400%" })
   .to(inputD_container, { x: "-400%" }, "<");
 
+
 //eventlisteners
 inputA_next.addEventListener("click", () => {
   let name = String(document.getElementById("input_a").value).toLowerCase();
 
   if (name.length < 10) {
     error_text.innerText = "Tu nombre debe contener mas de 10 caracteres.";
+  
     // tl_inputA_error.restart();
     gsap.to(inputA_container,{x:"+=7", yoyo:true, repeat:3 ,duration: .03});
-    // inputA.placeholder = "ERROR";
+    inputA.value = "Error"
+    inputA.style.borderBottom = "1px solid red"
 
     error_return.addEventListener("click", () => {
       // tl_inputA_error.reverse();

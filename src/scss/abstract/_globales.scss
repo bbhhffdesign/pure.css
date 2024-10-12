@@ -46,6 +46,10 @@ h3{
         font-size: 2rem;
     }
  }
+ h4{
+    color: var(--textoTitulos);
+    @include font-raleway(600);
+ }
 p{
     color: var(--textoPrincipal);
     margin-top: 1rem; 

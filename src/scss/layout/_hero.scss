@@ -122,3 +122,17 @@
   opacity: 0.5;
   z-index: 1;
 }
+
+.cuales-title{
+  div{
+    padding: 0 2rem ;
+    @include desktop-sm{
+      padding: 0;
+      h3{
+        font-size: 160%;
+
+      }
+    }
+
+  }
+}
