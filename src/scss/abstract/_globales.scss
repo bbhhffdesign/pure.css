@@ -49,6 +49,7 @@ h3{
  h4{
     color: var(--textoTitulos);
     @include font-raleway(600);
+    font-size:clamp(1.2rem, 0.771rem + 2.143vw, 1.8rem);
  }
 p{
     color: var(--textoPrincipal);

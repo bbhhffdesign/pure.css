@@ -2025,6 +2025,7 @@ h4 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  font-size: clamp(1.2rem, 0.771rem + 2.143vw, 1.8rem);
 }
 
 p {
@@ -3733,10 +3734,12 @@ footer {
 .formulario .input .input__container input::-moz-placeholder {
   text-align: center;
   color: #616161;
+  font-size: clamp(0.9rem, 0.614rem + 1.429vw, 1.3rem);
 }
 .formulario .input .input__container input::placeholder {
   text-align: center;
   color: #616161;
+  font-size: clamp(0.9rem, 0.614rem + 1.429vw, 1.3rem);
 }
 @media (min-width: 37.5rem) {
   .formulario .input .input__container input {
@@ -3747,6 +3750,26 @@ footer {
   .formulario .input .input__container input {
     width: 25%;
   }
+}
+.formulario .input .input__container textarea {
+  height: 5rem;
+  margin: 0;
+  width: 70%;
+  background-color: transparent;
+  border: none;
+  color: var(--textoTitulos);
+}
+.formulario .input .input__container textarea::-moz-placeholder {
+  border-bottom: solid 1px var(--textoPrincipal);
+  text-align: center;
+  color: var(--textoPrincipal);
+  font-size: clamp(0.9rem, 0.614rem + 1.429vw, 1.3rem);
+}
+.formulario .input .input__container textarea::placeholder {
+  border-bottom: solid 1px var(--textoPrincipal);
+  text-align: center;
+  color: var(--textoPrincipal);
+  font-size: clamp(0.9rem, 0.614rem + 1.429vw, 1.3rem);
 }
 .formulario .input .input__container ul {
   margin: 0;

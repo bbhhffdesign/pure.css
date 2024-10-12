@@ -4,23 +4,27 @@ const error_return = document.getElementById("input_error_return");
 const error_text = document.getElementById("input_error_text");
 
 //form containers
-const inputA = document.getElementById("input_a"); 
+const inputA = document.getElementById("input_a");
 const inputA_container = document.getElementById("input_a_container");
 const inputA_next = document.getElementById("input_a_next");
 const inputA_back = document.getElementById("input_a_back");
 
+const inputB = document.getElementById("input_b");
 const inputB_container = document.getElementById("input_b_container");
 const inputB_back = document.getElementById("input_b_back");
 const inputB_next = document.getElementById("input_b_next");
 
+const inputC = document.getElementById("input_c");
 const inputC_container = document.getElementById("input_c_container");
 const inputC_back = document.getElementById("input_c_back");
 const inputC_next = document.getElementById("input_c_next");
 
+const inputD = document.getElementById("input_d");
 const inputD_container = document.getElementById("input_d_container");
 const inputD_back = document.getElementById("input_d_back");
 const inputD_next = document.getElementById("input_d_next");
 
+const inputE = document.getElementById("input_e");
 const inputE_container = document.getElementById("input_e_container");
 const inputE_back = document.getElementById("input_e_back");
 const inputE_next = document.getElementById("input_e_next");
@@ -80,13 +84,11 @@ tl_inputD_error
   .to(inputD_container, { x: "-300%" })
   .to(error_container, { x: "0%" });
 
-
 const tl_inputE_next = gsap.timeline({ paused: true });
 tl_inputE_next
   .to(inputE_container, { x: "-600%" })
   .to(inputF_container, { x: "-600%" })
   .to(form_container, { y: "100%", delay: 3, duration: 2 });
-
 
 //timelines back
 const tl_inputB_back = gsap.timeline({ paused: true });
@@ -110,84 +112,88 @@ tl_inputE_back
   .to(inputD_container, { x: "-400%" }, "<");
 
 
-//eventlisteners
-inputA_next.addEventListener("click", () => {
-  let name = String(document.getElementById("input_a").value).toLowerCase();
+//funcion ERROR 
+const error = function (input, placeholder) {
+  gsap.to(input, { x: "+=7", yoyo: true, repeat: 3, duration: 0.03 });
+  input.value = "";
+  input.placeholder = "Invalido";
+  input.style.borderBottom = "1px solid red";
 
-  if (name.length < 10) {
-    error_text.innerText = "Tu nombre debe contener mas de 10 caracteres.";
-  
-    // tl_inputA_error.restart();
-    gsap.to(inputA_container,{x:"+=7", yoyo:true, repeat:3 ,duration: .03});
-    inputA.value = "Error"
-    inputA.style.borderBottom = "1px solid red"
+  // setTimeout(() => {
+  //   input.value = "";
+  //   input.placeholder = placeholder;
+  //   input.style.borderBottom = "1px solid var(--textoPrincipal)";
+  // }, 1000);
+};
+//funcion listener 
 
-    error_return.addEventListener("click", () => {
-      // tl_inputA_error.reverse();
-    });
-  } else {
-    display_name.innerText = name;
-    console.log(name);
-    tl_inputA_next.restart();
-  }
-});
+// const inputListener = function(input, placeholder, input_display, next){
+//   console.log("ahre")
+//     let input_value = String(input.value).toLowerCase();
 
-inputB_next.addEventListener("click", () => {
-  let email = String(document.getElementById("input_b").value).toLowerCase();
+//     if (input_value.length < 1){
+//       error(input, placeholder)
+//       console.log(placeholder)
+//     }
+//     else {
+//           input_display.innerText = input_value;
+//           console.log(input_display);
+//           next.restart();
+//         }
+// }
+const inputListener = function(input, placeholder, input_display, next){
+  console.log("ahre")
+    let input_value = String(input.value).toLowerCase();
 
-  if (email.length < 15 || !email.includes("@") || !email.includes(".com")) {
-    error_text.innerText = "El email no es válido, o el campo está vacío.";
-    tl_inputB_error.restart();
+    if (input == inputA || input == inputC){
+      if (input_value === ""){
+        error(input, placeholder)
+        console.log(placeholder)
+      }
+      else {
+        input_display.innerText = input_value;
+        console.log(input_display);
+        next.restart();
+      }
+    }
+    if (input == inputB){
+      if ( !input_value.includes("@") || !input_value.includes(".") || input_value.length < 11){
+        error(input, placeholder)
+      }
+      else{
+        input_display.innerText = input_value;
+        next.restart()
+      }
+    }
+    if (input == inputD){
+      if  (!input_value.includes("/") || !input_value.includes(".com")){
+        error(input, placeholder)
+      }
+      else{
+        input_display.innerText = input_value;
+        next.restart();
+      }
+    }
 
-    error_return.addEventListener("click", () => {
-      tl_inputB_error.reverse();
-    });
-  } else {
-    display_email.innerText = email;
-    console.log(email);
-    tl_inputB_next.restart();
-  }
-});
+}
 
-inputC_next.addEventListener("click", () => {
-  let brand = String(document.getElementById("input_c").value).toLowerCase();
-
-  if (!brand) {
-    error_text.innerText = "El campo no puede estar vacío";
-    tl_inputC_error.restart();
-
-    error_return.addEventListener("click", () => {
-      tl_inputC_error.reverse();
-    });
-  } else {
-    display_brand.innerText = brand;
-    console.log(brand);
-    tl_inputC_next.restart();
-  }
-});
-
-inputD_next.addEventListener("click", () => {
-  let social = String(document.getElementById("input_d").value);
-
-  if (!social || !social.includes("/") || !social.includes(".com")) {
-    error_text.innerText =
-      "No es una red social válida, o el campo está vacío.";
-    tl_inputD_error.restart();
-
-    error_return.addEventListener("click", () => {
-      tl_inputD_error.reverse();
-    });
-  } else {
-    display_social.innerText = social;
-    console.log(social);
-    tl_inputD_next.restart();
-  }
-});
-
+inputA_next.addEventListener("click", function(){
+  inputListener(inputA, "Nombre y Apellido", display_name, tl_inputA_next)
+})
+inputB_next.addEventListener("click", function(){
+  inputListener(inputB, "Email", display_email, tl_inputB_next)
+})
+inputC_next.addEventListener("click", function(){
+  inputListener(inputC, "¿A qué industria pertenece?\n¿Cuál es su producto o servicio?\n¿Qué pretende lograr con su producto/servicio?", display_brand, tl_inputC_next)
+})
+inputD_next.addEventListener("click", function(){
+  inputListener(inputD, "Red Social", display_social, tl_inputD_next)
+})
 inputE_next.addEventListener("click", () => {
   tl_inputE_next.restart();
-});
+} )
 
+//back
 inputB_back.addEventListener("click", () => {
   tl_inputB_back.restart();
 });
@@ -200,6 +206,39 @@ inputD_back.addEventListener("click", () => {
 inputE_back.addEventListener("click", () => {
   tl_inputE_back.restart();
 });
+
+//placeholder effect
+inputA.addEventListener("click", ()=>{
+  inputA.placeholder = ""
+})
+inputA.addEventListener("blur", ()=>{
+  inputA.placeholder = "Nombre y Apellido"
+})
+
+inputB.addEventListener("click", ()=>{
+  inputB.placeholder = ""
+})
+inputB.addEventListener("blur", ()=>{
+  inputB.placeholder = "Email"
+})
+
+inputC.addEventListener("click", ()=>{
+  inputC.placeholder = ""
+})
+inputC.addEventListener("blur", ()=>{
+  inputC.placeholder = "¿A qué industria pertenece?\n¿Cuál es su producto o servicio?\n¿Qué pretende lograr con su producto/servicio?"
+})
+
+inputD.addEventListener("click", ()=>{
+  inputD.placeholder = ""
+})
+inputD.addEventListener("blur", ()=>{
+  inputD.placeholder = "Red social"
+})
+
+
+
+
 
 //svg bg paths
 const gall = document.getElementById("gall");
@@ -245,11 +284,7 @@ tl_gemstoneBg
   .to(gemstoneInf, { strokeDashoffset: gemstoneInf_path, duration: 5 })
   .to(gemstoneSup, { strokeDashoffset: gemstoneSup_path, duration: 5 }, "<");
 
-
-
-  // gsap.to(inputA_container,{x:"+=20", yoyo:true, repeat:1,duration: .05})
-
-  
+// gsap.to(inputA_container,{x:"+=20", yoyo:true, repeat:1,duration: .05})
 
 // gsap.to(bordeInt, { strokeDashoffset: 0, duration: 0 });
 // gsap.to(bordeExt, { strokeDashoffset: 0, duration: 0 }, "<");
@@ -257,14 +292,14 @@ tl_gemstoneBg
 
 //   .to(gall, { strokeDashoffset: 0, duration: 1,  delay:.5})
 
-  // .to(gall, { strokeDashoffset: 0, duration: 2 , delay:1})
-  // .to(gall, {
-  //   strokeDashoffset: gall_path,
-  //   duration: 2,
-  //   delay: 1,
-  //   opacity: 0.5,
-  // })
-  // .to(gemstoneInf, { strokeDashoffset: 0, duration: 6 })
-  // .to(gemstoneSup, { strokeDashoffset: 0, duration: 6 , ease: "power4.out"}, "<");
+// .to(gall, { strokeDashoffset: 0, duration: 2 , delay:1})
+// .to(gall, {
+//   strokeDashoffset: gall_path,
+//   duration: 2,
+//   delay: 1,
+//   opacity: 0.5,
+// })
+// .to(gemstoneInf, { strokeDashoffset: 0, duration: 6 })
+// .to(gemstoneSup, { strokeDashoffset: 0, duration: 6 , ease: "power4.out"}, "<");
 // .to(gemstoneInf, { strokeDashoffset: gemstoneInf_path, duration: 5 })
 // .to(gemstoneSup, { strokeDashoffset: gemstoneSup_path, duration: 5 }, "<");

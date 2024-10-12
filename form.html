@@ -67,7 +67,7 @@
           </div>
           <div class="input">
             <div class="input__container" id="input_a_container">
-              <label for="name"><h4>¿Cuál es tu nombre?</h4></label>
+              <label for="name"><h4>Hola ¿Cuál es tu nombre?</h4></label>
               <input
                 type="text"
                 name="name"
@@ -76,19 +76,20 @@
          
               />
               <div class="input__btns">
-                <!-- <button class="btn-pri" id="input_a_back">home</button> -->
+
                 <button class="btn-pri" id="input_a_next">next</button>
               </div>
             </div>
           </div>
           <div class="input">
             <div class="input__container" id="input_b_container">
-              <label for="email"><h3>¿Cual es tu email?</h3></label>
+              <label for="email"><h3>¿Cuál es tu mejor Email?
+              </h3></label>
               <input
                 type="text"
                 name="email"
                 id="input_b"
-                placeholder="Email"
+                placeholder="GALLGROUP@example.com"
               />
               <div class="input__btns">
                 <button class="btn-pri" id="input_b_back">back</button>
@@ -98,13 +99,16 @@
           </div>
           <div class="input">
             <div class="input__container" id="input_c_container">
-              <label for="brand"><h3>¿Cual es el nombre de tu marca?</h3></label>
-              <input
+              <label for="brand"><h3>¡Hablanos acerca de tu marca!</h3></label>
+              <!-- <input
+                class="input__marca"
                 type="text"
                 name="brand"
                 id="input_c"
-                placeholder="Marca"
-              />
+                placeholder="¿A qué industria pertenece? ¿Cuál es su 
+                producto o servicio? ¿Qué pretende lograr con su producto/servicio?  "
+              /> -->
+              <textarea name="brand" id="input_c" placeholder="¿A qué industria pertenece?&#10;¿Cuál es su producto o servicio?&#10;¿Qué pretende lograr con su producto/servicio?"></textarea>
               <div class="input__btns">
                 <button class="btn-pri" id="input_c_back">back</button>
                 <button class="btn-pri" id="input_c_next">next</button>
@@ -134,7 +138,7 @@
               <ul>
                 <li><p>Nombre:</p><p id="display_name"></p></li>
                 <li><p>Email:</p><p id="display_email"></p></li>
-                <li><p>Marca:</p><p id="display_brand"></p></li>
+                <li style="display: none;"><p>Marca:</p><p id="display_brand"></p></li>
                 <li><p>Red social:</p><p id="display_social"></p></li>
               </ul>
               <div class="input__btns">
