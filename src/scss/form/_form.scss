@@ -101,6 +101,7 @@
       }
       
       .select{
+        @include font-raleway;
         width: 50%;
         text-align: center;
         position: relative;
@@ -108,8 +109,21 @@
         background-color: transparent;
         border-bottom: 1px solid var(--textoPrincipal);
         color: var(--textoTitulos);
+        padding: 1rem 1rem 0 1rem;
+
+        .select__title{
+          color: var(--textoPrincipal);
+        }
+
+        @include tablet {
+          width: 30%;
+        }
+        @include tablet-l {
+          width: 25%;
+        }
 
         .select__items{
+          @include font-raleway;
           cursor: pointer;
           display: none;
           position: absolute;
@@ -117,9 +131,10 @@
           left: 0;
           width: 100%;
           color: var(--textoPrincipal);
-          // background-color: red;
           @include glass-bg-only;
           z-index: 1;
+          padding: .5rem 0;
+          margin:0 0 1rem 0;
         }
       }
 
