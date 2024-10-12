@@ -103,19 +103,16 @@
           </div>
           <div class="input">
             <div class="input__container" id="input_d_container">
-              <label for="socialnet"
-                ><h3>¿Donde nos encontraste?</h3></label
-              >
-              <select name="recomendacion" id="input_d">
-                <option value="Recomendación">Recomendación</option>
-                <option value="Instagram">Instagram</option>
-              </select>
-              <!-- <input
-                type="text"
-                name="socialnet"
-                id="input_d"
-                placeholder="instagram.com/gall_group/"
-              /> -->
+              <label for="">
+                <h3>¿Donde nos encontraste?</h3>
+              </label>
+              <div class="select">
+                <div class="select__title">Seleccioná una opción</div>
+                <div class="select__items">
+                  <div class="item" data-value="recomendacion" id="item-1">Recomendación</div>
+                  <div class="item" data-value="instagram" id="item-2">Instagram</div>
+                </div>
+              </div>
               <div class="input__btns">
                 <button class="btn-pri" id="input_d_back">back</button>
                 <button class="btn-pri" id="input_d_next">next</button>
@@ -171,6 +168,42 @@
       <input type="checkbox" id="theme-toggle2" />
       <span class="slider"></span>
     </label>
+
+
+    <script>document.addEventListener('DOMContentLoaded', function () {
+      const selectTitle = document.querySelector('.select__title');
+      const selectItems = document.querySelector('.select__items');
+      const items = document.querySelectorAll('.item');
+    
+      // Toggle desplegable al hacer clic en el título
+      selectTitle.addEventListener('click', function () {
+        selectItems.style.display = selectItems.style.display === 'block' ? 'none' : 'block';
+      });
+    
+      // Manejar la selección de un item
+      items.forEach(item => {
+        item.addEventListener('click', function () {
+          const selectedValue = item.getAttribute('data-value');
+          const selectedText = item.textContent;
+    
+          // Cambiar el texto del título por la opción seleccionada
+          selectTitle.textContent = selectedText;
+    
+          // Ocultar el desplegable después de seleccionar
+          selectItems.style.display = 'none';
+    
+          // Aquí puedes manejar el valor seleccionado con JS
+          console.log('Valor seleccionado:', selectedValue);
+        });
+      });
+    
+      // Ocultar el menú si se hace clic fuera del componente
+      document.addEventListener('click', function (e) {
+        if (!selectTitle.contains(e.target) && !selectItems.contains(e.target)) {
+          selectItems.style.display = 'none';
+        }
+      });
+    });</script>
     <script src="js/themeSwitch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="js/form_ani.js"></script>
