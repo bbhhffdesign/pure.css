@@ -34,6 +34,7 @@
     }
 
     .input{
+        // opacity: 0;
         height: 300px;
         position: relative;
         @include flex(row, center, center,none);
@@ -62,14 +63,13 @@
                 border: none;
                 border-bottom: solid 1px var(--colorBg_invert);
                 color: var(--textoTitulos);
-                font-size: 120%;
+                font-size: 100%;
                 max-width: 320px;
                 text-align: center;
 
                 &:focus{
-                    background: transparent;
+                    background: transparent;        
                 }
-
 
                 &::placeholder{
                     text-align: center;
@@ -100,11 +100,13 @@
             }
 
             .input__btns{
-                @include flex(row, center, center,1rem);
+                @include flex(row, center, center, 1.5rem);
 
                             button{
                                 text-transform: uppercase;
                                 padding: .5rem 1.5rem;
+                                font-size: 80%;
+                                font-weight: 600;
                             }
 
             }
@@ -137,3 +139,17 @@ ul{
         }
     }
 }
+
+
+
+// #borde-ext{
+//     fill: rgb(150, 150, 150);
+//     z-index: 1;
+// }
+// #borde-int{
+//     fill: black;
+//     z-index: 0;
+// }
+// #gall{
+//     stroke-width: 2px;
+// }

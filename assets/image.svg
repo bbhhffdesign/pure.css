@@ -2,9 +2,9 @@
   <defs id="defs36"/>
   <circle id="orbita-5" cx="149.83583" cy="149.83583" r="149.83583" style="fill:none;stroke:none;stroke-width:.328501;stroke-opacity:1;stroke-dasharray:14.93 14.93;stroke-miterlimit:10"/>
   <g id="orbita-4-g" style="fill:none;stroke:none;stroke-opacity:1" transform="translate(-.16425045 -.16425046) scale(.32850091)">
-    <circle id="orbita-4" cx="456.62" cy="456.62" r="378.31" style="fill:none;stroke:none;stroke-opacity:1;stroke-miterlimit:10"/>
-    <circle id="orbita-4-elemento" cx="831.44" cy="403.95001" r="35" class="cls-20" style="fill:none;stroke:none;stroke-opacity:1"/>
-    <g id="orbita-4-icono" style="fill:none;stroke:none;stroke-opacity:1">
+    <circle id="orbita-4" cx="456.62" cy="456.62" r="378.31"/>
+    <circle id="orbita-4-elemento" cx="831.44" cy="403.95001" r="35" class="cls-20"/>
+    <g id="orbita-4-icono" >
       <path id="orbita-4-icono-2" d="m837.48 405.39-2.07-2.06-1.22-1.22c-.26-.27-.62-.44-1.02-.44h-6.25c.1.67.65 1.19 1.34 1.23h1.17c.22-.02.44-.02.66 0 .63.06 1.24.3 1.77.72 0 0 .05.04.07.06.24.2.45.44.62.69.04.05.07.11.1.16.02.03.03.06.05.08.01.03.03.06.05.08.05.1.1.21.15.31.06.16.12.32.16.49.03.11.05.22.06.34 0 .06.01.11.02.17 0 .13.01.25 0 .38v.02c0 .08 0 .16-.02.24v.01c0 .05-.01.09-.02.13v.04c0 .05-.02.1-.03.15-.01.05-.02.1-.04.15-.04.15-.09.3-.16.45-.02.05-.04.1-.07.14-.05.1-.1.19-.16.28-.08.12-.16.24-.26.36-.07.08-.13.15-.2.22-.12.12-.24.22-.38.32-.1.08-.21.14-.32.21h-.02c-1.08.65-2.3 1.02-3.6 1.02-4.32 0-7.82-4.08-7.82-9.11 0-5.03 3.54-9.12 7.86-9.12 3.63 0 6.64 2.89 7.52 6.79h2.03c.45 0 .76-.45.61-.87-.36-1-.88-1.93-1.54-2.77-.75-.58-1.5-1.14-2.26-1.67-.9-.62-1.81-1.21-2.72-1.75-1.13-.36-2.35-.56-3.62-.56-5.9 0-10.69 4.43-10.69 9.89 0 1.26.26 2.47.72 3.58.48.61.99 1.22 1.53 1.83.81.85 2.03 2.1 3.15 3.19 1.56.83 3.37 1.3 5.29 1.3 3.18 0 6.03-1.28 7.99-3.32l12.54 12.4s.04-.03.06-.04h.02c.36-.21.67-.46.94-.77.26-.31.46-.65.6-1.03v-.02s.04-.07.05-.1l-12.63-12.6z" style="fill:none;stroke:none;stroke-opacity:1"/>
       <path id="orbita-4-icono-1" d="M854.14 419.23c.03-2.21-.97-5.11-2.98-8.5-2.96-5-7.87-10.6-13.48-15.39-5.67-4.65-11.65-8.21-16.83-10.01-3.93-1.37-7.1-1.61-9.22-.75-.74.28-1.36.7-1.83 1.26-.71.85-1.04 1.96-1.03 3.28-.02 2.09.83 4.73 2.52 7.74 2.72 4.84 7.31 10.14 12.93 14.93 5.65 4.64 11.99 8.45 17.38 10.46 2.8 1.05 5.23 1.57 7.18 1.57h.1c1.93.02 3.44-.47 4.34-1.55.66-.78.95-1.82.93-3.05zm-4.03-1.24s-.03.07-.05.1v.02c-.14.38-.35.73-.61 1.03-.26.31-.58.56-.94.76h-.02s-.04.04-.06.05c-.88.57-2.07.85-3.51.85-1.82 0-4.04-.45-6.55-1.35-4.51-1.62-9.42-4.49-13.83-8.07-.5-.43-1.19-1.08-1.93-1.8-1.12-1.09-2.34-2.34-3.15-3.19-.54-.61-1.05-1.22-1.53-1.83-2.26-2.86-3.9-5.69-4.79-8.29-1.08-3.16-.93-5.68.42-7.29 1.47-1.75 4.36-2.26 8.14-1.45 2.99.64 6.39 2.08 9.81 4.11.91.54 1.82 1.13 2.72 1.75.75.52 1.51 1.08 2.26 1.67.28.22.56.44.84.67 9.05 7.76 14.74 17.69 12.77 22.26z" style="fill:none;stroke:none;stroke-opacity:1"/>
     </g>
@@ -12,7 +12,7 @@
   <g id="orbita-3-g" style="fill:none;stroke:none;stroke-opacity:1" transform="translate(-.16425045 -.16425046) scale(.32850091)">
     <circle id="orbita-3" cx="456.62" cy="456.62" r="300.5" data-name="_x3C_Trazado_orbita_x3E_" style="fill:none;stroke:none;stroke-opacity:1;stroke-miterlimit:10"/>
     <circle id="orbita-3-elemento" cx="220.88" cy="270.25" r="35" class="cls-20" style="fill:none;stroke:none;stroke-opacity:1"/>
-    <g id="orbita-3-icono" style="fill:none;stroke:none;stroke-opacity:1">
+    <g id="orbita-3-icono" style="fill:none; stroke:none;stroke-opacity:1">
       <path id="orbita-3-icono-6" d="m205.89 268.09 11.28 13.87v13.48l7.43-2.52v-10.96l11.28-13.87v-5.07h-29.99z" style="fill:none;stroke:none;stroke-opacity:1;stroke-width:2px;stroke-linejoin:round"/>
       <path id="orbita-3-icono-5" d="M217.17 281.95999h7.43001" style="fill:none;stroke:none;stroke-opacity:1;stroke-width:2px;stroke-linejoin:round"/>
       <path id="orbita-3-icono-4" d="M205.89 268.09h13.77" style="fill:none;stroke:none;stroke-opacity:1;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round"/>
