@@ -47,7 +47,7 @@ tl_inputA_next
 
 const tl_inputA_error = gsap.timeline({ paused: true });
 tl_inputA_error
-  .to(inputA_container, { x: "-200" })
+  .to(inputA_container, { x: "0%" })
   .to(error_container, { x: "0%" });
 
 const tl_inputB_next = gsap.timeline({ paused: true });
