@@ -316,9 +316,15 @@ mm_mobile.add("(max-width: 1920px)", () => {
   const tl_gemstoneBg = gsap.timeline({
     scrollTrigger: {
       trigger: gemstoneBg,
-      // markers:true,
+      markers:true,
       start: "750% 40%",
-      end: "900% 40%",
+      end: "750% 40%",
+      onEnter: () =>{
+        tl_gemstoneBg.play()
+      },
+      onEnterBack: ()=>{
+        tl_gemstoneBg.reverse()
+      }
     },
   });
 
