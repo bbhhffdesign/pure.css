@@ -116,36 +116,21 @@ tl_inputE_back
 const error = function (input, placeholder) {
   gsap.to(input, { x: "+=7", yoyo: true, repeat: 3, duration: 0.03 });
   input.value = "";
-  input.placeholder = "Invalido";
+  input.placeholder = "\n\nInvalido";
   input.style.borderBottom = "1px solid red";
 
-  // setTimeout(() => {
-  //   input.value = "";
-  //   input.placeholder = placeholder;
-  //   input.style.borderBottom = "1px solid var(--textoPrincipal)";
-  // }, 1000);
+  setTimeout(() => {
+    input.value = "";
+    input.placeholder = placeholder;
+    input.style.borderBottom = "1px solid var(--textoPrincipal)";
+  }, 1000);
 };
-//funcion listener 
 
-// const inputListener = function(input, placeholder, input_display, next){
-//   console.log("ahre")
-//     let input_value = String(input.value).toLowerCase();
-
-//     if (input_value.length < 1){
-//       error(input, placeholder)
-//       console.log(placeholder)
-//     }
-//     else {
-//           input_display.innerText = input_value;
-//           console.log(input_display);
-//           next.restart();
-//         }
-// }
 const inputListener = function(input, placeholder, input_display, next){
   console.log("ahre")
     let input_value = String(input.value).toLowerCase();
 
-    if (input == inputA || input == inputC){
+    if (input == inputA ){
       if (input_value === ""){
         error(input, placeholder)
         console.log(placeholder)
@@ -163,6 +148,15 @@ const inputListener = function(input, placeholder, input_display, next){
       else{
         input_display.innerText = input_value;
         next.restart()
+      }
+    }
+    if (input == inputC){
+      if (input_value === ""){
+        error(input,placeholder)
+      }
+      else{
+        input_display.innerText = input_value;
+        next.restart();
       }
     }
     if (input == inputD){
