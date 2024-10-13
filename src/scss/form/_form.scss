@@ -9,6 +9,9 @@
   max-width: 100vw;
   // background-color: var(--formBg);
 
+  .home{
+    position: absolute;  
+  }
   .gradient {
     z-index: -2;
     position: absolute;
@@ -41,17 +44,29 @@
     .input__container {
       min-width: 100vw;
       width: 100%;
-      @include flex(column, center, center);
-      padding: 2rem 0;
+      @include flex(column, center, center, .5rem);
+      // padding: 2rem 0;
 
       & > * {
         margin: 1rem;
       }
 
       label {
+        h4{
+          margin: 0;
+          @include font-raleway;
+          @include desktop-sm{
+            // font-size: 1.5rem;
+          }
+        }
+
         p {
           color: var(--textoTitulos);
         }
+
+        // @include desktop-sm{
+
+        // }
       }
 
       input {
@@ -81,7 +96,7 @@
           width: 30%;
         }
         @include tablet-l {
-          width: 25%;
+          width: 30%;
         }
       }
       textarea {
@@ -92,15 +107,28 @@
         border: none;
         color: var(--textoTitulos);
         border-bottom: solid 1px var(--textoPrincipal);
-
+        text-align: center;
+        resize: none;
+        
+        @include desktop-sm{
+          width: 40%;
+        } 
+        
         &::placeholder {
-          text-align: center;
+          // text-align: center;
           color: var(--textoPrincipal);
           font-size: clamp(0.9rem, 0.614rem + 1.429vw, 1.3rem);
+        }
+        &:focus{
+          outline: none;
+          background-color: #ffffff23;
+          // text-align: left;
+          // text-align: center;
         }
       }
       
       .select{
+        position: relative;
         @include font-raleway;
         width: 50%;
         text-align: center;
@@ -109,8 +137,13 @@
         background-color: transparent;
         border-bottom: 1px solid var(--textoPrincipal);
         color: var(--textoTitulos);
-        padding: 1rem 1rem 0 1rem;
+        @include flex(column, center, center, none);
 
+        .title__b{
+          position: absolute;
+          right: 0;
+        }
+        
         .select__title{
           color: var(--textoPrincipal);
         }
@@ -133,8 +166,15 @@
           color: var(--textoPrincipal);
           @include glass-bg-only;
           z-index: 1;
-          padding: .5rem 0;
-          margin:0 0 1rem 0;
+          // padding: .5rem 0;
+          // margin:0 0 1rem 0;
+
+          .item{
+            padding: .5rem 0;
+            &:hover{
+              background-color: #ffffff6f;
+            }
+          }
         }
       }
 
