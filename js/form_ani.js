@@ -1,3 +1,6 @@
+//home
+const btn_home = document.getElementById("btn_home");
+
 //error
 const error_container = document.getElementById("input_error_container");
 const error_return = document.getElementById("input_error_return");
@@ -7,7 +10,6 @@ const error_text = document.getElementById("input_error_text");
 const inputA = document.getElementById("input_a");
 const inputA_container = document.getElementById("input_a_container");
 const inputA_next = document.getElementById("input_a_next");
-const inputA_back = document.getElementById("input_a_back");
 
 const inputB = document.getElementById("input_b");
 const inputB_container = document.getElementById("input_b_container");
@@ -45,17 +47,10 @@ const btn_wpp = document.getElementById("btn_wpp");
 
 const tl_wpp = gsap.timeline({delay:1, repeat: -1, repeatDelay:3});
 
-tl_wpp.to(btn_wpp, { x: "+=7", yoyo: true, repeat: 5, duration: 0.03 });
+tl_wpp
+    .to(btn_wpp, { x: "+=7", yoyo: true, repeat: 5, duration: 0.03 });
 
 
-
-
-
-//HOME
-inputA_back.addEventListener("click", () => {
-  console.log("aaa");
-  window.location.href = "index.html";
-});
 
 //timelines next
 const tl_inputA_next = gsap.timeline({ paused: true });
@@ -87,6 +82,16 @@ tl_inputE_next
   tl_wpp.play()
 
   
+
+
+//form close animation
+
+const tl_formClose = gsap.timeline({paused: true});
+
+tl_formClose
+        .to("#input_frame",{height:"0px"})
+        .to("#input_frame",{scaleX: 0, transformOrigin: "50% 50%"})
+
 
 // //timelines back
 const tl_inputB_back = gsap.timeline({ paused: true });
@@ -204,6 +209,25 @@ inputD_back.addEventListener("click", () => {
 inputE_back.addEventListener("click", () => {
   tl_inputE_back.restart();
 });
+
+
+//HOME
+
+btn_wpp.addEventListener("click", () =>{
+  tl_formClose.restart();
+  
+  setTimeout(() => {
+    window.location.href = 'index.html';
+  }, 2000);
+})
+
+btn_home.addEventListener("click", () =>{
+  tl_formClose.restart();
+
+  setTimeout(() => {
+    window.location.href = 'index.html';
+  }, 2000);
+})
 
 //placeholder effect
 inputA.addEventListener("click", ()=>{
