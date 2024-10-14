@@ -40,6 +40,17 @@ const display_email = document.getElementById("display_email");
 const display_brand = document.getElementById("display_brand");
 const display_social = document.getElementById("display_social");
 
+//wpp
+const btn_wpp = document.getElementById("btn_wpp");
+
+const tl_wpp = gsap.timeline({delay:1, repeat: -1, repeatDelay:3});
+
+tl_wpp.to(btn_wpp, { x: "+=7", yoyo: true, repeat: 5, duration: 0.03 });
+
+
+
+
+
 //HOME
 inputA_back.addEventListener("click", () => {
   console.log("aaa");
@@ -70,11 +81,14 @@ const tl_inputE_next = gsap.timeline({ paused: true });
 tl_inputE_next
   .to(inputE_container, { x: "-500%" })
   .to(inputF_container, { x: "-500%" })
-  .to("#input_frame",{height:"420px"}, "<")
-  .to("#input_frame",{height:"0px", delay:5})
-  .to("#input_frame",{scaleX: 0, transformOrigin: "50% 50%"})
+  .to("#input_frame",{height:"420px"}, "<");
+  // .to("#input_frame",{height:"0px", delay:5})
+  // .to("#input_frame",{scaleX: 0, transformOrigin: "50% 50%"})
+  tl_wpp.play()
 
-//timelines back
+  
+
+// //timelines back
 const tl_inputB_back = gsap.timeline({ paused: true });
 tl_inputB_back
   .to(inputB_container, { x: "-100%" })
@@ -268,22 +282,3 @@ tl_gemstoneBg
   .to(gemstoneInf, { strokeDashoffset: gemstoneInf_path, duration: 5 })
   .to(gemstoneSup, { strokeDashoffset: gemstoneSup_path, duration: 5 }, "<");
 
-// gsap.to(inputA_container,{x:"+=20", yoyo:true, repeat:1,duration: .05})
-
-// gsap.to(bordeInt, { strokeDashoffset: 0, duration: 0 });
-// gsap.to(bordeExt, { strokeDashoffset: 0, duration: 0 }, "<");
-// tl_gemstoneBg
-
-//   .to(gall, { strokeDashoffset: 0, duration: 1,  delay:.5})
-
-// .to(gall, { strokeDashoffset: 0, duration: 2 , delay:1})
-// .to(gall, {
-//   strokeDashoffset: gall_path,
-//   duration: 2,
-//   delay: 1,
-//   opacity: 0.5,
-// })
-// .to(gemstoneInf, { strokeDashoffset: 0, duration: 6 })
-// .to(gemstoneSup, { strokeDashoffset: 0, duration: 6 , ease: "power4.out"}, "<");
-// .to(gemstoneInf, { strokeDashoffset: gemstoneInf_path, duration: 5 })
-// .to(gemstoneSup, { strokeDashoffset: gemstoneSup_path, duration: 5 }, "<");

@@ -230,11 +230,23 @@
       }
     }
       .thank__page{
+        text-align: center;
         p{
+          padding: 0 1rem;
+          max-width: 100%;
+          font-size: 120%;
           margin: .5rem;
+
+          @include tablet{
+            max-width: 80%;
+          }
+          @include desktop-sm{
+            max-width: 50%;
+          }
         }
         .btn_wpp{
           svg{
+            cursor: pointer;
             .logo-wpp-1{
               fill: var(--textoPrincipal);
             }
