@@ -20,7 +20,9 @@ const inputC_back = document.getElementById("input_c_back");
 const inputC_next = document.getElementById("input_c_next");
 
 const inputD = document.getElementById("input_d");
+const inputD_titleA = document.getElementById("title_a");
 const inputD_container = document.getElementById("input_d_container");
+const inputD_check = document.getElementById("input_d_check");
 const inputD_back = document.getElementById("input_d_back");
 const inputD_next = document.getElementById("input_d_next");
 
@@ -47,48 +49,30 @@ inputA_back.addEventListener("click", () => {
 //timelines next
 const tl_inputA_next = gsap.timeline({ paused: true });
 tl_inputA_next
-  .to(inputA_container, { x: "-200%" })
-  .to(inputB_container, { x: "-200%" }, "<");
-
-const tl_inputA_error = gsap.timeline({ paused: true });
-tl_inputA_error
-  .to(inputA_container, { x: "0%" })
-  .to(error_container, { x: "0%" });
+  .to(inputA_container, { x: "-100%" })
+  .to(inputB_container, { x: "-100%" }, "<");
 
 const tl_inputB_next = gsap.timeline({ paused: true });
 tl_inputB_next
-  .to(inputB_container, { x: "-300%" })
-  .to(inputC_container, { x: "-300%" }, "<");
-
-const tl_inputB_error = gsap.timeline({ paused: true });
-tl_inputB_error
-  .to(inputB_container, { x: "-300" })
-  .to(error_container, { x: "0%" });
+  .to(inputB_container, { x: "-200%" })
+  .to(inputC_container, { x: "-200%"}, "<");
 
 const tl_inputC_next = gsap.timeline({ paused: true });
 tl_inputC_next
-  .to(inputC_container, { x: "-400%" })
-  .to(inputD_container, { x: "-400%" }, "<");
-
-const tl_inputC_error = gsap.timeline({ paused: true });
-tl_inputC_error
-  .to(inputC_container, { x: "-200%" })
-  .to(error_container, { x: "0%" });
+  .to(inputC_container, { x: "-300%" })
+  .to(inputD_container, { x: "-300%" }, "<");
 
 const tl_inputD_next = gsap.timeline({ paused: true });
-tl_inputD_next.to(inputD_container, { x: "-500%" });
-tl_inputD_next.to(inputE_container, { x: "-500%" }, "<");
-
-const tl_inputD_error = gsap.timeline({ paused: true });
-tl_inputD_error
-  .to(inputD_container, { x: "-300%" })
-  .to(error_container, { x: "0%" });
+tl_inputD_next.to(inputD_container, { x: "-400%" });
+tl_inputD_next.to(inputE_container, { x: "-400%" }, "<");
 
 const tl_inputE_next = gsap.timeline({ paused: true });
 tl_inputE_next
-  .to(inputE_container, { x: "-600%" })
-  .to(inputF_container, { x: "-600%" })
-  .to(form_container, { y: "100%", delay: 3, duration: 2 });
+  .to(inputE_container, { x: "-500%" })
+  .to(inputF_container, { x: "-500%" })
+  .to("#input_frame",{height:"360px"}, "<")
+  .to("#input_frame",{height:"0px", delay:2})
+  .to("#input_frame",{scaleX: 0, transformOrigin: "50% 50%"})
 
 //timelines back
 const tl_inputB_back = gsap.timeline({ paused: true });
@@ -127,7 +111,6 @@ const error = function (input, placeholder) {
 };
 
 const inputListener = function(input, placeholder, input_display, next){
-  console.log("ahre")
     let input_value = String(input.value).toLowerCase();
 
     if (input == inputA ){
@@ -160,11 +143,18 @@ const inputListener = function(input, placeholder, input_display, next){
       }
     }
     if (input == inputD){
-      if  (!input_value.includes("/") || !input_value.includes(".com")){
-        error(input, placeholder)
+      if  (inputD_check.innerText == "Seleccioná una opción"){
+        gsap.to(input, { x: "+=7", yoyo: true, repeat: 3, duration: 0.03 });
+        input.style.borderBottom = "1px solid red";
+        inputD_titleA.innerText ="Error";
+
+        setTimeout(() => {
+          // input.value = "";
+          inputD_titleA.innerText = placeholder;
+          input.style.borderBottom = "1px solid var(--textoPrincipal)";
+        }, 1000);
       }
       else{
-        input_display.innerText = input_value;
         next.restart();
       }
     }
@@ -181,7 +171,7 @@ inputC_next.addEventListener("click", function(){
   inputListener(inputC, "¿A qué industria pertenece?\n¿Cuál es su producto o servicio?\n¿Qué pretende lograr con su producto/servicio?", display_brand, tl_inputC_next)
 })
 inputD_next.addEventListener("click", function(){
-  inputListener(inputD, "Red Social", display_social, tl_inputD_next)
+  inputListener(inputD, "Seleccioná una opción", display_social, tl_inputD_next)
 })
 inputE_next.addEventListener("click", () => {
   tl_inputE_next.restart();
@@ -224,7 +214,7 @@ inputC.addEventListener("blur", ()=>{
 })
 
 inputD.addEventListener("click", ()=>{
-  inputD.placeholder = ""
+  inputD.placeholder = "Seleccioná una opción"
 })
 inputD.addEventListener("blur", ()=>{
   inputD.placeholder = "Red social"
