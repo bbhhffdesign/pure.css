@@ -70,8 +70,8 @@ const tl_inputE_next = gsap.timeline({ paused: true });
 tl_inputE_next
   .to(inputE_container, { x: "-500%" })
   .to(inputF_container, { x: "-500%" })
-  .to("#input_frame",{height:"360px"}, "<")
-  .to("#input_frame",{height:"0px", delay:2})
+  .to("#input_frame",{height:"420px"}, "<")
+  .to("#input_frame",{height:"0px", delay:5})
   .to("#input_frame",{scaleX: 0, transformOrigin: "50% 50%"})
 
 //timelines back

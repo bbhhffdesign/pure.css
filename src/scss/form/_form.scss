@@ -233,6 +233,29 @@
         p{
           margin: .5rem;
         }
+        .btn_wpp{
+          svg{
+            .logo-wpp-1{
+              fill: var(--textoPrincipal);
+            }
+            .logo-wpp-2{
+              fill: transparent;
+              stroke: transparent;
+            }
+
+            &:hover{
+              .logo-wpp-1{
+                fill: var(--textoTitulos);
+              }
+              .logo-wpp-2{
+                fill: #25D366;
+                stroke: #25D366;
+              }
+
+            }
+
+          }
+        }
       }
   }
 

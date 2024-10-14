@@ -3907,6 +3907,20 @@ footer {
 .formulario .input .thank__page p {
   margin: 0.5rem;
 }
+.formulario .input .thank__page .btn_wpp svg .logo-wpp-1 {
+  fill: var(--textoPrincipal);
+}
+.formulario .input .thank__page .btn_wpp svg .logo-wpp-2 {
+  fill: transparent;
+  stroke: transparent;
+}
+.formulario .input .thank__page .btn_wpp svg:hover .logo-wpp-1 {
+  fill: var(--textoTitulos);
+}
+.formulario .input .thank__page .btn_wpp svg:hover .logo-wpp-2 {
+  fill: #25D366;
+  stroke: #25D366;
+}
 .formulario #gemstone-bg {
   z-index: -1;
   stroke: #616161;
