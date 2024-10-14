@@ -248,7 +248,17 @@
         }
         .btn_wpp{
           svg{
+            height: 35px;
             cursor: pointer;
+
+            @include tablet{
+              height: 45px;
+            }
+            @include desktop-sm{
+              height: 50px;
+            }
+
+
             .logo-wpp-1{
               fill: var(--textoPrincipal);
             }
