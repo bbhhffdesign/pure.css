@@ -45,10 +45,10 @@ const display_social = document.getElementById("display_social");
 //wpp
 const btn_wpp = document.getElementById("btn_wpp");
 
-const tl_wpp = gsap.timeline({delay:1, repeat: -1, repeatDelay:3});
+const tl_wpp = gsap.timeline({delay:2, repeat: -1, repeatDelay:3});
 
 tl_wpp
-    .to(btn_wpp, { x: "+=7", yoyo: true, repeat: 5, duration: 0.03 });
+    .to(btn_wpp, { x: "+=7", yoyo: true, repeat: 5, duration: 0.03 })
 
 
 
@@ -77,8 +77,6 @@ tl_inputE_next
   .to(inputE_container, { x: "-500%" })
   .to(inputF_container, { x: "-500%" })
   .to("#input_frame",{height:"420px"}, "<");
-  // .to("#input_frame",{height:"0px", delay:5})
-  // .to("#input_frame",{scaleX: 0, transformOrigin: "50% 50%"})
   tl_wpp.play()
 
   
@@ -96,23 +94,23 @@ tl_formClose
 // //timelines back
 const tl_inputB_back = gsap.timeline({ paused: true });
 tl_inputB_back
-  .to(inputB_container, { x: "-100%" })
-  .to(inputA_container, { x: "-100%" }, "<");
+  .to(inputB_container, { x: "0%" })
+  .to(inputA_container, { x: "0%" }, "<");
 
 const tl_inputC_back = gsap.timeline({ paused: true });
 tl_inputC_back
-  .to(inputC_container, { x: "-200%" })
-  .to(inputB_container, { x: "-200%" }, "<");
+  .to(inputC_container, { x: "-100%" })
+  .to(inputB_container, { x: "-100%" }, "<");
 
 const tl_inputD_back = gsap.timeline({ paused: true });
 tl_inputD_back
-  .to(inputD_container, { x: "-300%" })
-  .to(inputC_container, { x: "-300%" }, "<");
+  .to(inputD_container, { x: "-200%" })
+  .to(inputC_container, { x: "-200%" }, "<");
 
 const tl_inputE_back = gsap.timeline({ paused: true });
 tl_inputE_back
-  .to(inputE_container, { x: "-400%" })
-  .to(inputD_container, { x: "-400%" }, "<");
+  .to(inputE_container, { x: "-300%" })
+  .to(inputD_container, { x: "-300%" }, "<");
 
 
 //funcion ERROR 
@@ -165,7 +163,7 @@ const inputListener = function(input, placeholder, input_display, next){
       if  (inputD_check.innerText == "Seleccioná una opción"){
         gsap.to(input, { x: "+=7", yoyo: true, repeat: 3, duration: 0.03 });
         input.style.borderBottom = "1px solid red";
-        inputD_titleA.innerText ="Error";
+        inputD_titleA.innerText ="Invalido";
 
         setTimeout(() => {
           // input.value = "";
@@ -215,7 +213,7 @@ inputE_back.addEventListener("click", () => {
 
 btn_wpp.addEventListener("click", () =>{
   tl_formClose.restart();
-  
+
   setTimeout(() => {
     window.location.href = 'index.html';
   }, 2000);

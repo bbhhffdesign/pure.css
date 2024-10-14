@@ -4,10 +4,6 @@
 .gemstone {
   height: auto;
 
-  @include desktop-sm{
-    padding-bottom: 10rem;
-  }
-
   .gemstone-text-1-container {
     position: relative;
     @include flex(column, center, center, none);
@@ -45,17 +41,17 @@
       top: 50%
     }
     @include desktop-sm{
-      top: 45%;
-      max-width: 30%
-    }
-    @include desktop-md{
-      top: 50%;
+      top: 30%;
       max-width: 25%
     }
-    @include desktop-xlg{
-      top: 55%;
-      // max-width: 30%
-    }
+    // @include desktop-md{
+    //   top: 50%;
+    //   max-width: 25%
+    // }
+    // @include desktop-xlg{
+    //   top: 55%;
+    //   // max-width: 30%
+    // }
   }
 
   h2 {
@@ -75,6 +71,10 @@
   .pasos-container {
     height: 150vh;
     @include flex(column, space-evenly, center, none);
+
+    @include desktop-sm{
+      height: 250vh;
+    }
 
     .paso {
       position: relative;
