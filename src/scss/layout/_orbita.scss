@@ -1,3 +1,15 @@
-#orbita-5{
-    stroke: red;
+.orbita__container{
+    display: flex;
+    position: relative;
+    height: 100vw;
+
+    #svg51{
+        position: absolute;
+        height: 200%;
+        width: auto;
+        filter: var(--svgInvert);
+        left: -105%;
+        top: 0;
+    }
 }
+

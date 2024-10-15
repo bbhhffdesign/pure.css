@@ -311,7 +311,7 @@ mm_mobile.add("(max-width: 1920px)", () => {
     .from(gemstoneText1, { opacity: 0, ease: "power4.out", duration: 3 })
     .to(bgParticles, { opacity: 0 }, "<")
     .to(gemstoneSection, { background: "var(--colorBg)" })
-    .to(bgParticles, { opacity: 1 });
+    // .to(bgParticles, { opacity: 1 });
 
   const tl_gemstoneBg = gsap.timeline({
     scrollTrigger: {

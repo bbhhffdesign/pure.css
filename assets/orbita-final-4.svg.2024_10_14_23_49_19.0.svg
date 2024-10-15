@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 500 500"
+   width="500"
+   height="500"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="orbita-final-4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050" />
+  <!-- Órbita mayor -->
+  <circle
+     cx="250"
+     cy="250"
+     r="200"
+     stroke="black"
+     fill="none"
+     id="circle1" />
+  <!-- Planeta en la órbita mayor -->
+  <circle
+     cx="450"
+     cy="250"
+     r="10"
+     fill="blue"
+     id="circle2" />
+  <!-- Órbita mediana -->
+  <!-- Planeta en la órbita mediana -->
+  <g
+     id="g6">
+    <circle
+       cx="250"
+       cy="250"
+       r="150"
+       stroke="black"
+       fill="none"
+       id="circle3" />
+    <circle
+       cx="400"
+       cy="250"
+       r="8"
+       fill="green"
+       id="circle4" />
+  </g>
+  <!-- Órbita menor -->
+  <circle
+     cx="250"
+     cy="250"
+     r="100"
+     stroke="black"
+     fill="none"
+     id="circle5" />
+  <!-- Planeta en la órbita menor -->
+  <circle
+     cx="350"
+     cy="250"
+     r="6"
+     fill="red"
+     id="circle6" />
+</svg>

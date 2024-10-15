@@ -22,9 +22,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="2"
-     inkscape:cx="106"
-     inkscape:cy="233.75"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="158.21514"
+     inkscape:cy="131.43347"
      inkscape:window-width="1920"
      inkscape:window-height="1057"
      inkscape:window-x="1912"
@@ -405,25 +405,38 @@
        y2="302.42001" />
   </defs> -->
   <circle
-     class="cls-3"
-     cx="150.00008"
-     cy="150.00008"
-     r="149.83583"
-     id="orbita-5"
-     style="fill:none;stroke:#000000;stroke-width:0.328501;stroke-opacity:1">
+     id="orbita-1"
+     data-name="_x3C_Trazado_orbita_x3E_"
+     class="cls-21"
+     cx="456.62"
+     cy="456.62"
+     style="stroke:#000000;stroke-opacity:1;fill:none"
+     r="144.88"
+     transform="matrix(0.32850091,0,0,0.32850091,0,4.163188)">
     <title
-       id="title28">orbita-5</title>
+       id="title1">orbita-1</title>
   </circle>
   <g
      id="orbita-5-g"
-     style="stroke:#000000;stroke-opacity:1"
+     style="display:none;stroke:#000000;stroke-opacity:1"
      transform="scale(0.32850091)">
     <title
        id="title55">orbita-5-g</title>
+    <circle
+       class="cls-3"
+       cx="150.00008"
+       cy="150.00008"
+       r="149.83583"
+       id="orbita-5"
+       style="fill:none;stroke:#000000;stroke-width:0.328501;stroke-opacity:1"
+       transform="scale(3.0441316)">
+      <title
+         id="title28">orbita-5</title>
+    </circle>
   </g>
   <g
      id="orbita-4-g"
-     style="stroke:#000000;stroke-opacity:1"
+     style="display:none;stroke:#000000;stroke-opacity:1"
      transform="scale(0.32850091)">
     <title
        id="title54">orbita-4-g</title>
@@ -472,7 +485,7 @@
   </g>
   <g
      id="orbita-3-g"
-     style="stroke:#000000;stroke-opacity:1"
+     style="display:none;stroke:#000000;stroke-opacity:1"
      transform="scale(0.32850091)">
     <title
        id="title53">orbita-3-g</title>
@@ -504,7 +517,7 @@
          id="title58">orbita-3-icono</title>
       <polygon
          class="cls-11"
-         points="205.89,268.09 217.17,281.96 217.17,295.44 224.6,292.92 224.6,281.96 235.88,268.09 235.88,263.02 205.89,263.02 "
+         points="217.17,281.96 217.17,295.44 224.6,292.92 224.6,281.96 235.88,268.09 235.88,263.02 205.89,263.02 205.89,268.09 "
          id="orbita-3-icono-6"
          style="fill:none;stroke:#000000;stroke-opacity:1">
         <title
@@ -569,7 +582,7 @@
   </g>
   <g
      id="orbita-2-g"
-     style="stroke:#000000;stroke-opacity:1"
+     style="display:none;stroke:#000000;stroke-opacity:1"
      transform="scale(0.32850091)">
     <title
        id="title52">orbita-2-g</title>
@@ -690,20 +703,10 @@
      transform="matrix(0.32850091,0,0,0.32850091,0,4.163188)"
      inkscape:export-filename="..\..\..\..\Users\Mirko\Desktop\orbita-1-g.svg"
      inkscape:export-xdpi="96"
-     inkscape:export-ydpi="96">
+     inkscape:export-ydpi="96"
+     inkscape:label="orbita-1-g">
     <title
        id="title51">orbita-1-g</title>
-    <circle
-       id="orbita-1"
-       data-name="_x3C_Trazado_orbita_x3E_"
-       class="cls-21"
-       cx="456.62"
-       cy="456.62"
-       r="144.88"
-       style="fill:none;stroke:#000000;stroke-opacity:1">
-      <title
-         id="title1">orbita-1</title>
-    </circle>
     <circle
        class="cls-20"
        cx="449.07983"
