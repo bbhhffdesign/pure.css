@@ -3492,55 +3492,29 @@ svg .gall {
   width: auto;
 }
 
-.orbita__text__container {
-  z-index: 1;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: none;
-}
-@media (min-width: 64rem) {
-  .orbita__text__container {
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: none;
-  }
-  .orbita__text__container .orb__text__2 {
-    transform: translateY(50%);
-  }
-  .orbita__text__container .orb__text__3 {
-    transform: translateY(100%);
-  }
-}
-.orbita__text__container .orb__text__1,
-.orbita__text__container .orb__text__2,
-.orbita__text__container .orb__text__3 {
-  position: relative;
-  z-index: 0;
+.caja_icono {
+  z-index: 3;
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  display: none;
   border: 1px solid;
   border-image-slice: 1;
   border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left: none;
   border-right: none;
 }
-.orbita__text__container .orb__text__1:before,
-.orbita__text__container .orb__text__2:before,
-.orbita__text__container .orb__text__3:before {
-  content: "";
+.caja_icono p {
+  position: relative;
+  z-index: 3;
+  font-size: 100%;
+}
+.caja_icono::before {
+  z-index: 2;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  border-radius: inherit;
-  background: transparent;
+  content: "";
+  inset: 0;
+  background: rgba(255, 255, 255, 0);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }

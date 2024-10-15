@@ -324,8 +324,7 @@ mm_mobile.add("(max-width: 1920px)", () => {
         tl_gemstoneBg.play()
       },
       onLeave: () =>{
-           tl_gemstoneBg.stop()
-
+           tl_gemstoneBg.pause()
       },
       onEnterBack: ()=>{
         tl_gemstoneBg.reverse()
