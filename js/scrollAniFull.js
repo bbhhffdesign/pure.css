@@ -317,14 +317,18 @@ mm_mobile.add("(max-width: 1920px)", () => {
     scrollTrigger: {
       trigger: gemstoneBg,
       // markers:true,
-      start: "400% 40%",
-      end: "400% 40%",
+      start: "350% 40%",
+      end: "350% 40%",
+      // scrub: true
       onEnter: () =>{
         tl_gemstoneBg.play()
       },
+      onLeave: () =>{
+           tl_gemstoneBg.stop()
+
+      },
       onEnterBack: ()=>{
         tl_gemstoneBg.reverse()
-        tl_gemstoneBg.stop()
       }
     },
   });
@@ -456,52 +460,4 @@ mm_mobile.add("(max-width: 1920px)", () => {
       .from(ctaemail, { y: 200, opacity: 0, duration: 0.6 })
       .from(ctaemail_text, { y: 200, opacity: 0, duration: 0.6 }, "<");
     
-});
-
-const mm_tablet = gsap.matchMedia();
-
-mm_tablet.add("(min-width: 600px)", () => {
-
-  const tl_gemstoneBg = gsap.timeline({
-    scrollTrigger: {
-      trigger: gemstoneBg,
-      // markers:true,
-      start: "500% 40%",
-      end: "900% 40%",
-    },
-  });
-
-  tl_gemstoneBg.to(gemstoneBg, { strokeDashoffset: 0, duration: 45 });
-
-  
-});
-mm_tablet.add("(min-width: 768px)", () => {
-
-  const tl_gemstoneBg = gsap.timeline({
-    scrollTrigger: {
-      trigger: gemstoneBg,
-      // markers:true,
-      start: "450% 40%",
-      end: "900% 40%",
-    },
-  });
-
-  tl_gemstoneBg.to(gemstoneBg, { strokeDashoffset: 0, duration: 45 });
-
-  
-});
-mm_tablet.add("(min-width: 1440px)", () => {
-
-  const tl_gemstoneBg = gsap.timeline({
-    scrollTrigger: {
-      trigger: gemstoneBg,
-      // markers:true,
-      start: "350% 40%",
-      end: "900% 40%",
-    },
-  });
-
-  tl_gemstoneBg.to(gemstoneBg, { strokeDashoffset: 0, duration: 45 });
-
-  
 });

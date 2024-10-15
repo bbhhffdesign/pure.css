@@ -1,3 +1,36 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+
+.orbita__text__container{
+    z-index: 1;
+    height: fit-content;
+    @include flex(column, center, center, none);
+
+    @include desktop-sm{
+        padding: 0 2rem;
+        @include flex(row, center, center, none);
+
+        .orb__text__2{
+            transform: translateY(50%);
+        }
+        .orb__text__3{
+            transform: translateY(100%);
+        }
+    }
+
+    .orb__text__1,
+    .orb__text__2,
+    .orb__text__3{
+        position: relative;
+        @include glass-bg-only;
+        @include border-gradient;
+    }
+
+ 
+}
+
+
 .orbita__container{
     display: flex;
     position: relative;
@@ -5,6 +38,7 @@
 
     #svg51{
         position: absolute;
+        z-index: 0;
         height: 200%;
         width: auto;
         filter: var(--svgInvert);

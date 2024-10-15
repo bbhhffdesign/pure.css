@@ -14,6 +14,7 @@
     }
 
     .cta-email-container{
+        z-index: 2;
         @include font-raleway;
         position: relative;
         width: fit-content;
