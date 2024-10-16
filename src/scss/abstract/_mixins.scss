@@ -112,6 +112,7 @@ font-style: normal;
     border-radius: inherit; 
     background: $bg-color; 
     backdrop-filter: blur($blur);
+    -webkit-backdrop-filter: blur($blur);
   }
 
 }

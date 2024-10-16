@@ -3,14 +3,14 @@
 
   // Verificar el ancho del viewport
   const isDesktop = window.innerWidth > 768;
-  const particleQuantity = isDesktop ? 3 : 3; // 5 partículas en escritorio, 3 en móviles
+  const particleQuantity = isDesktop ? 3 : 3; 
 
   await tsParticles.load({
       id: "tsparticles",
       options: {
           particles: {
               number: {
-                  value: 0, // No partículas iniciales
+                  value: 0,
               },
               color: {
                   value: "#0B4599",
@@ -22,7 +22,7 @@
                   enable: true,
                   speed: 1,
                   outModes: {
-                      default: "bounce", // Las partículas rebotarán en los bordes
+                      default: "bounce", 
                   },
               },
               size: {
@@ -33,25 +33,25 @@
               },
           },
           emitters: {
-              direction: "none", // Emisión en todas direcciones
+              direction: "none",
               position: {
-                  x: 50, // Coordenadas en porcentaje para centrar
+                  x: 50, 
                   y: 50,
               },
               rate: {
-                  quantity: particleQuantity, // Cantidad basada en el ancho del viewport
-                  delay: 1, // Un pequeño retraso para emitir cada partícula
+                  quantity: particleQuantity, 
+                  delay: 1,
               },
-              autoPlay: true, // Empieza a emitir automáticamente
+              autoPlay: true, 
               life: {
-                  duration: 1, // Duración del emitter, 1 segundo
-                  count: 1, // Emitir solo una vez
+                  duration: 1,
+                  count: 1, 
               },
               particles: {
                   move: {
                       speed: 1.5,
                       outModes: {
-                          default: "out", // Rebote dentro de los límites de la pantalla
+                          default: "out", 
                       },
                   },
                   size: {
