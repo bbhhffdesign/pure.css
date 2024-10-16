@@ -24,7 +24,7 @@
       position: relative;
       padding: 1rem 0;
       @include border-gradient;
-      @include glass-bg-only;
+      // @include glass-bg-only;
       @include flex(row, center, center, 4rem);
       flex-wrap: nowrap;
   

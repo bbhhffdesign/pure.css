@@ -1,34 +1,27 @@
 @use "../abstract/variables" as *;
 @use "../abstract/mixins" as *;
 
+.orbita__text{
+    padding: 0 1rem;
+    text-align: center;
+}
 
-// .orbita__text__container{
-//     z-index: 1;
-//     height: fit-content;
-//     @include flex(column, center, center, none);
 
-//     @include desktop-sm{
-//         padding: 0 2rem;
-//         @include flex(row, center, center, none);
+.orbita__container{
+    display: flex;
+    position: relative;
+    height: 150vh;
 
-//         .orb__text__2{
-//             transform: translateY(50%);
-//         }
-//         .orb__text__3{
-//             transform: translateY(100%);
-//         }
-//     }
-
-//     .orb__text__1,
-//     .orb__text__2,
-//     .orb__text__3{
-//         position: relative;
-//         @include glass-bg-only;
-//         @include border-gradient;
-//     }
-
- 
-// }
+    #svg51{
+        position: absolute;
+        z-index: 0;
+        height: 100%;
+        width: auto;
+        filter: var(--svgInvert);
+        left: -105%;
+        top: 0;
+    }
+}
 
 .caja_icono{
     z-index: 3;
@@ -54,20 +47,5 @@
         backdrop-filter: blur(10px);
     }
 
-}
-.orbita__container{
-    display: flex;
-    position: relative;
-    height: 100vw;
-
-    #svg51{
-        position: absolute;
-        z-index: 0;
-        height: 200%;
-        width: auto;
-        filter: var(--svgInvert);
-        left: -105%;
-        top: 0;
-    }
 }
 
