@@ -7,6 +7,11 @@
   }
 }
 
+.brands-bar-gradient{
+  height: 100%;
+  width: 100vw;
+  @include border-gradient;
+}
 .brands-animation{
   @include flex(column, flex-start , center, none);
   width: 100vw;
@@ -23,8 +28,6 @@
   .brands-bar {
       position: relative;
       padding: 1rem 0;
-      @include border-gradient;
-      // @include glass-bg-only;
       @include flex(row, center, center, 4rem);
       flex-wrap: nowrap;
   
@@ -41,7 +44,7 @@
   
   .brands-slide {
       @include flex(row, center, center, 4rem);
-       animation: 10s slide linear infinite;
+       animation: 15s slide linear infinite;
        animation-direction: reverse;
   
   img {

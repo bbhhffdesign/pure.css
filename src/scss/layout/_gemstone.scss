@@ -6,8 +6,27 @@
 
   .gemstone-text-1-container {
     position: relative;
-    @include flex(column, center, center, none);
-    height: 120vh;
+    // height: 50dvh;
+    // @include flex(column, center, center,none);
+    // background-color: #333;
+    
+    .gemstone-title-container{
+      @include flex(column, flex-end, center, none);
+      height: 55vh;
+    }
+    .gemstone-svg-container{
+      height: 45vh;
+      @include flex(column, center, center, none);
+
+    
+      
+      // svg{
+      //   // width: 60%;
+      //   // height: auto;
+      //   // stroke: white;
+      // }
+
+    }
   }
   .gemstone-text {
     position: relative;
@@ -26,47 +45,16 @@
     }
   }
 
-  #gemstone-bg{
-    position: absolute;
-    max-width: 60%;
-    width: auto;
-    overflow: visible;
-    top: 25%;
-    fill: none;
-    stroke: #6b6b6b;
-    stroke-width: 2px;
 
-    @include mobile-sm{
-      top: 40%
-    }
-    @include tablet{
-      top: 45%
-    }
-    @include tablet-l{
-      max-width: 50%;
-    }
-    @include desktop-sm{
-      top: 50%;
-      max-width: 25%
-    }
-    // @include desktop-md{
-    //   top: 50%;
-    //   max-width: 25%
-    // }
-    // @include desktop-xlg{
-    //   top: 55%;
-    //   // max-width: 30%
-    // }
-  }
 
   h2 {
-    margin: 10rem 0; 
+    // margin: 10rem 0;
     @include font-raleway(600);
     @include text-gradient;
 
-    @include desktop-sm{
-      br{
-        display: none
+    @include desktop-sm {
+      br {
+        display: none;
       }
     }
 
@@ -78,7 +66,7 @@
     height: 150vh;
     @include flex(column, space-evenly, center, none);
 
-    @include desktop-sm{
+    @include desktop-sm {
       height: 250vh;
     }
 
@@ -125,21 +113,20 @@
       }
     }
 
-    button{
-      padding: .5rem 2rem;
+    button {
+      padding: 0.5rem 2rem;
     }
 
-    @include desktop-sm{
-      .paso-1{
+    @include desktop-sm {
+      .paso-1 {
         align-self: flex-start;
       }
-      .paso-2{
+      .paso-2 {
         align-self: center;
       }
-      .paso-3{
+      .paso-3 {
         align-self: flex-end;
       }
     }
-
   }
 }

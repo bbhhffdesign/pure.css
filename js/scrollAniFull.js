@@ -296,9 +296,6 @@ mm_mobile.add("(max-width: 1920px)", () => {
     .from(servicesLogo3, { fill: "#c6c6c6", duration: 3, ease: "power4.out" })
     .to(servicesLogo3, { fill: "var(--colorBg)", duration: 1 });
 
-  // tl_gemstoneText_1
-  //     .from(gemstoneText1,{opacity:0, y:80,  duration:.5})
-
   const tl_gemstoneText_1 = gsap.timeline({
     scrollTrigger: {
       trigger: gemstoneText1Container,
@@ -314,28 +311,30 @@ mm_mobile.add("(max-width: 1920px)", () => {
     .from(gemstoneText1, { opacity: 0, ease: "power4.out", duration: 3 })
     .to(bgParticles, { opacity: 0 }, "<")
     .to(gemstoneSection, { background: "var(--colorBg)" })
-    // .to(bgParticles, { opacity: 1 });
 
-  const tl_gemstoneBg = gsap.timeline({
-    scrollTrigger: {
-      trigger: gemstoneBg,
-      // markers:true,
-      start: "450% 40%",
-      end: "750% 40%",
-      // scrub: true
-      onEnter: () =>{
-        tl_gemstoneBg.play()
-      },
-      // onLeave: () =>{
-      //      tl_gemstoneBg.pause()
-      // },
-      onEnterBack: ()=>{
-        tl_gemstoneBg.reverse()
-      }
-    },
-  });
+    
 
-  tl_gemstoneBg.to(gemstoneBg, { strokeDashoffset: 0, duration: 45 });
+  // const tl_gemstoneBg = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: gemstoneBg,
+  //     markers:true,
+  //     start: "top center",
+  //     end: "bottom center",
+  //     // scrub: true
+  //     // onEnter: () =>{
+  //     //   tl_gemstoneBg.play()
+  //     // },
+  //     // onLeave: () =>{
+  //     //      tl_gemstoneBg.pause()
+  //     // },
+  //     // onEnterBack: ()=>{
+  //     //   tl_gemstoneBg.reverse()
+  //     // }
+  //   },
+  // });
+  // tl_gemstoneBg
+  //     // .from(gemstoneBg, {opacity:0})
+  //     .to(gemstoneBg, {strokeDashoffset: 1, duration: 45 });
 
   const tl_gemstoneText_2 = gsap.timeline({
     scrollTrigger: {
