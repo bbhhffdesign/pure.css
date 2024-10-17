@@ -31,16 +31,19 @@
     max-width: 60%;
     width: auto;
     overflow: visible;
-    top: 35%;
+    top: 25%;
     fill: none;
     stroke: #6b6b6b;
     stroke-width: 2px;
 
     @include mobile-sm{
-      top: 45%
+      top: 40%
     }
     @include tablet{
-      top: 50%
+      top: 45%
+    }
+    @include tablet-l{
+      max-width: 50%;
     }
     @include desktop-sm{
       top: 50%;

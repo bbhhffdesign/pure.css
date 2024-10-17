@@ -3145,19 +3145,24 @@ svg .gall {
   max-width: 60%;
   width: auto;
   overflow: visible;
-  top: 35%;
+  top: 25%;
   fill: none;
   stroke: #6b6b6b;
   stroke-width: 2px;
 }
 @media (min-width: 24rem) {
   .gemstone #gemstone-bg {
-    top: 45%;
+    top: 40%;
   }
 }
 @media (min-width: 37.5rem) {
   .gemstone #gemstone-bg {
-    top: 50%;
+    top: 45%;
+  }
+}
+@media (min-width: 48rem) {
+  .gemstone #gemstone-bg {
+    max-width: 50%;
   }
 }
 @media (min-width: 64rem) {

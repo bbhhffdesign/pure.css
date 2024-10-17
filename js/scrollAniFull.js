@@ -320,15 +320,15 @@ mm_mobile.add("(max-width: 1920px)", () => {
     scrollTrigger: {
       trigger: gemstoneBg,
       // markers:true,
-      start: "350% 40%",
-      end: "350% 40%",
+      start: "450% 40%",
+      end: "750% 40%",
       // scrub: true
       onEnter: () =>{
         tl_gemstoneBg.play()
       },
-      onLeave: () =>{
-           tl_gemstoneBg.pause()
-      },
+      // onLeave: () =>{
+      //      tl_gemstoneBg.pause()
+      // },
       onEnterBack: ()=>{
         tl_gemstoneBg.reverse()
       }

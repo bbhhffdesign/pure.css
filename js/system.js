@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
+  const svgContainer = document.getElementById("orbitas-svg-container");
+
   const orbitas = [
     document.getElementById("orbita-1"),
     document.getElementById("orbita-2"),
@@ -40,10 +42,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
         start: 0.72,
         end: 1.6,
       },
+      paused: true, // Inicia la animación en pausa
     });
 
     let isPaused = false;
     caja.style.display = "none";
+
+    // Configurar ScrollTrigger
+    ScrollTrigger.create({
+      trigger: svgContainer,
+      start: "top 50%",
+      end: "bottom 50%",
+      onEnter: () => animacion.play(),
+      onLeave: () => animacion.pause(),
+      onEnterBack: () => animacion.play(),
+      onLeaveBack: () => animacion.pause(),
+
+    });
 
     function posicionCaja() {
       const rect = icono.getBoundingClientRect();
@@ -69,7 +84,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         gsap.to(icono, {
           scale: 1.1,
           transformOrigin: "50% 50%"
-         }); 
+        }); 
       }
       isPaused = !isPaused;
     });
