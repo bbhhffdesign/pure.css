@@ -42,6 +42,7 @@
   .brands-slide {
       @include flex(row, center, center, 4rem);
        animation: 10s slide linear infinite;
+       animation-direction: reverse;
   
   img {
       height: 3.5rem;
