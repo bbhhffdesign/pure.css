@@ -1,51 +1,82 @@
 @use "../abstract/variables" as *;
 @use "../abstract/mixins" as *;
 
-.orbita__text{
-    padding: 0 1rem;
-    text-align: center;
+.orbita{
+    padding-bottom: 0;
 }
 
+.orbita__text {
+  padding: 0 1rem;
+  text-align: center;
+}
 
-.orbita__container{
-    display: flex;
+.orbita__container {
+  @include flex(column, center, center, none);
+  position: relative;
+  height: 140vh;
+
+  .orbitas__svg__container {
+    height: 100vh;
+    width: 100%;
     position: relative;
-    height: 150vh;
-
-    #svg51{
+    flex-grow: 1;
+    svg {
+        stroke-width: 1px;
         position: absolute;
-        z-index: 0;
-        height: 100%;
-        width: auto;
-        filter: var(--svgInvert);
-        left: -105%;
+        height: auto;
+        width: calc(200% - 1rem);
         top: 0;
+        right: 0;
+        margin-right: 1rem;
+
+      .orb-stroke-dash {
+        fill: none;
+        stroke: var(--colorBg_invert);
+        stroke-dasharray: 5, 5;
+      }
+
+      .orb-stroke {
+        stroke: var(--colorBg_invert);
+        fill: none;
+      }
+      .orb-stroke2 {
+        stroke-width: 2px;
+        stroke: var(--colorBg_invert);
+        fill: none;
+      }
+      .orb-fill {
+        stroke: var(--colorBg_invert);
+        fill: var(--colorBg);
+      }
+      .orb-stroke-fill {
+        stroke: var(--colorBg_invert);
+        fill: var(--colorBg_invert);
+      }
     }
+  }
 }
 
-.caja_icono{
+.caja_icono {
+  z-index: 3;
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  // background-color: red;
+  display: none;
+  @include border-gradient;
+
+  p {
+    position: relative;
     z-index: 3;
+    font-size: 100%;
+  }
+
+  &::before {
+    z-index: 2;
     position: absolute;
-    height: 100px;
-    width: 200px;
-    // background-color: red;
-    display: none;
-    @include border-gradient;
-    
-    p{
-        position: relative;
-        z-index: 3;
-        font-size: 100%;
-    }
-
-    &::before{
-        z-index: 2;
-        position: absolute;
-        content: "";
-        inset: 0;
-        background: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
-    }
-
+    content: "";
+    inset: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+  }
 }
-
