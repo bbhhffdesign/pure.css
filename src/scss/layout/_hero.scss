@@ -108,7 +108,9 @@
       background-color: var(--colorBg_switch);
     }
 
-    @include desktop-lg {
+    @include desktop-sm{
+      width: 80%;
+      height: auto;
     }
     @include desktop-xlg {
     }

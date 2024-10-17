@@ -11,11 +11,13 @@
   }
   .gemstone-text {
     position: relative;
-    height: 150vh;
+    // height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0 2rem;
+    margin: 0 2rem 0 1rem;
+    padding-left: 1rem;
+    @include border-gradient-left;
 
     @include desktop-sm {
       align-items: center;
@@ -55,6 +57,7 @@
   }
 
   h2 {
+    margin: 10rem 0; 
     @include font-raleway(600);
     @include text-gradient;
 

@@ -96,8 +96,11 @@ const testimonial_3 = document.getElementById("testimonial-3");
 //ctaemail
 const ctaemail = document.getElementById("cta-email");
 const ctaemail_text = document.getElementById("input-email-text");
+const ctaemail_text2 = document.getElementById("input-email-text-2");
 
 //faqText
+const faqContainer = document.getElementById("faq-container");
+
 const faqText = document.getElementById("faq-text");
 const faqText1 = document.getElementById("faq-text-1");
 const faqText2 = document.getElementById("faq-text-2");
@@ -364,6 +367,16 @@ mm_mobile.add("(max-width: 1920px)", () => {
   });
   tl_gemstoneText_4.from(gemstoneText4, { opacity: 0, y: 80, duration: 0.5 });
 
+  const tl_gemstoneText_5 = gsap.timeline({
+    scrollTrigger: {
+      trigger: gemstoneText5,
+      // markers: true,
+      start: "-20% 90%",
+      end: "bottom 90%",
+    },
+  });
+  tl_gemstoneText_5.from(gemstoneText5, { opacity: 0, y: 80, duration: 0.5 });
+
   const tl_paso1 = gsap.timeline({
     scrollTrigger: {
       trigger: pasoBox1,
@@ -451,12 +464,17 @@ mm_mobile.add("(max-width: 1920px)", () => {
       scrollTrigger: {
         trigger: ctaemail,
         // markers: true,
-        start: "-200% 80%",
-        end: "bottom 80%",
+        start: "-200% 95%",
+        end: "bottom 95%",
       },
     });
     tl_ctaemail
       .from(ctaemail, { y: 200, opacity: 0, duration: 0.6 })
-      .from(ctaemail_text, { y: 200, opacity: 0, duration: 0.6 }, "<");
+      .from(ctaemail_text, { y: 200, opacity: 0, duration: 0.6 }, "<")
+      .from(ctaemail_text2, { y: 200, opacity: 0, duration: 0.6 }, "<")
+      .from(faqContainer, { y: 200, opacity: 0, duration: 0.6 }, "<");
+      
     
 });
+
+

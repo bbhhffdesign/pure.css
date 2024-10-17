@@ -2852,6 +2852,12 @@ svg .gall {
   padding: 0.5rem;
   background-color: var(--colorBg_switch);
 }
+@media (min-width: 64rem) {
+  .hero .mindmap-container {
+    width: 80%;
+    height: auto;
+  }
+}
 #hero-gem {
   position: absolute;
   right: 0;
@@ -3118,11 +3124,14 @@ svg .gall {
 }
 .gemstone .gemstone-text {
   position: relative;
-  height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 0 2rem;
+  margin: 0 2rem 0 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid transparent;
+  border-image-slice: 1;
+  border-image-source: radial-gradient(circle, var(--colorBg_invert), var(--colorBg));
 }
 @media (min-width: 64rem) {
   .gemstone .gemstone-text {
@@ -3158,6 +3167,7 @@ svg .gall {
   }
 }
 .gemstone h2 {
+  margin: 10rem 0;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -3553,10 +3563,11 @@ svg .gall {
 }
 
 .caja_icono {
-  z-index: 3;
+  z-index: 4;
   position: absolute;
-  height: 100px;
-  width: 200px;
+  width: auto;
+  top: -55px;
+  left: 0;
   display: none;
   border: 1px solid;
   border-image-slice: 1;
@@ -3567,7 +3578,8 @@ svg .gall {
 .caja_icono p {
   position: relative;
   z-index: 3;
-  font-size: 100%;
+  font-size: 90%;
+  margin: 0.5rem 0;
 }
 .caja_icono::before {
   z-index: 2;
