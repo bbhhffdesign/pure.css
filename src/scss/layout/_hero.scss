@@ -76,17 +76,24 @@
     position: relative;
     width: 100%;
     overflow-y: hidden;
-    min-height: 250px;
+    min-height: 200px;
 
     .scrolldown {
-      padding: clamp(0.3rem, -0.057rem + 1.786vw, 0.8rem) clamp(2rem, 1.286rem + 3.571vw, 3rem);
+      padding: clamp(0.5rem, 0.143rem + 1.786vw, 1rem) clamp(2rem, 1.286rem + 3.571vw, 3rem);
       position: absolute;
       @include centrarAbsolute;
       z-index: 1;
+      @include desktop-sm{
+        padding: .6rem 2.5rem;
+      }
       
       img{
-        height: clamp(2rem, 1.286rem + 3.571vw, 3rem);
+        height: clamp(1rem, 0.143rem + 4.286vw, 2.2rem);
+        // height: 1.5rem;
         width: auto;
+        @include desktop-sm{
+          height: 1.5rem;
+        }
       }
     }
 

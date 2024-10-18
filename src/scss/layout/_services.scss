@@ -87,19 +87,6 @@
  
       .logo-title{
         text-align: center;
-      
-        img{
-          @include tablet{
-            height: 80px;
-          }
-          @include tablet-l{
-            height: 100px;
-          }
-          @include desktop-sm{
-            height: 80px;
-          }
-        }
-
         h3{
           margin-top: .5rem;
         }
@@ -109,13 +96,14 @@
 }
 
 
+@include desktop-sm{
+  #services-box-2{
+    // margin-top: 2rem;
+    transform: translateY(20%);
+  }
+  #services-box-3{
+      // margin-top: 4rem;
+    transform: translateY(40%)
+  }
 
-
-#services-box-2{
-  // margin-top: 2rem;
-  transform: translateY(20%);
-}
-#services-box-3{
-    // margin-top: 4rem;
-  transform: translateY(40%)
 }

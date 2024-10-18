@@ -20,11 +20,37 @@
 
     
       
-      // svg{
-      //   // width: 60%;
-      //   // height: auto;
-      //   // stroke: white;
-      // }
+      svg{
+        width: 60%;
+        height: auto;
+
+        @include tablet{
+          width: 50%;
+        }
+        @include tablet-l{
+          width: 40%;
+        }
+
+        .borde-ext,
+        .borde-int,
+        .gemstone-sup,
+        .gemstone-inf,
+        .gall{
+          fill: none;
+          stroke-width: 1.5px;
+          stroke: var(--colorBg_invert);
+          // filter: blur(5px);
+        }
+
+        .gall{
+          stroke: none;
+        }
+
+        .borde-ext{
+
+
+        }
+      }
 
     }
   }
