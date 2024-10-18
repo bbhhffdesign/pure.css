@@ -26,6 +26,7 @@
         button{
             font-size: 100%;
             padding: .5rem 1rem;
+            color: var(--colorBg);
 
             @include desktop-sm{
                 font-size: 120%;

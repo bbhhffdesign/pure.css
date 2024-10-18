@@ -34,6 +34,8 @@ footer{
     svg{
         height: 100%;
         width: 25px;
+        stroke: var(--colorBg_invert);
+        fill: var(--colorBg_invert);
     }
 
     #logo-bhf{
@@ -51,6 +53,8 @@ footer{
 
         svg{
             width: 2rem;
+            stroke: var(--colorBg_invert);
+            fill: var(--colorBg_invert);
         }
 
         @include desktop-md{    

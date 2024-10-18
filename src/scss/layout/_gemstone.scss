@@ -93,6 +93,10 @@
     @include flex(column, space-evenly, center, none);
     height: 170vh;
 
+    button{
+      color: var(--colorBg);
+    }
+
     .pasos__title{
       @include flex(column, center, center, none);
       flex-grow: 1;

@@ -68,7 +68,7 @@ const orbita_texts = [
     document.getElementById("orbita-text6")
 ]
 //scale,duration
-const paramAnim =[0.9, 0.6];
+const paramAnim =[0.9, 0.6, "90%"];
 
 const tl_navbar = gsap.timeline({
   scrollTrigger: {
@@ -87,7 +87,7 @@ for (let i = 0; i < mindmapTexts.length; i++) {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: mindmapTexts[i],
-      start: "-30% 100%",
+      start: `-30% ${paramAnim[2]}`,
       end: "300% 100%",
       // markers: true
       // scrub: 1,
@@ -108,7 +108,7 @@ for (let i = 0; i < servicesBoxes.length; i++) {
     scrollTrigger: {
       //   markers: true,
       trigger: servicesBoxes[i],
-      start: "top 90%",
+      start: `top ${paramAnim[2]}`,
       end: "500% 90%",
       // scrub: 1,
     },
@@ -192,7 +192,7 @@ for (let i = 0; i < gemstoneTexts.length; i++) {
     scrollTrigger: {
       trigger: gemstoneTexts[i],
       //   markers: true,
-      start: "-20% 90%",
+      start: `-20% ${paramAnim[2]}`,
       end: "500% 90%",
       // scrub: true,
     },
@@ -211,7 +211,7 @@ for (let i = 0; i < pasos.length; i++) {
     scrollTrigger: {
       // markers: true,
       trigger: pasos[i],
-      start: "-50% 90%",
+      start: `-50% ${paramAnim[2]}`,
       end: "bottom 90%",
       // scrub: true,
     },
@@ -235,7 +235,7 @@ const tl_ctaGemstone = gsap.timeline({
   scrollTrigger: {
     trigger: ctaGemstone,
     // markers:true,
-    start: "top 90%",
+    start: `top ${paramAnim[2]}`,
     end: "bottom 90%",
   },
 });
@@ -251,7 +251,7 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: cta_email,
     // markers: true,
-    start: "top 95%",
+    start: `top ${paramAnim[2]}`,
     end: "200% 95%",
     // scrub: true
   }
@@ -269,7 +269,7 @@ tl
     const tl = gsap.timeline({
       scrollTrigger:{
         trigger: orbita_texts[i],
-        start: "top 90%",
+        start: `top ${paramAnim[2]}`,
         end: "bottom 90%",
         // markers: true
       }
