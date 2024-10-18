@@ -3,16 +3,18 @@
 
 .faq{
     background-color:var(--faqBg);
-    height: auto;
-    min-height: 95vh;
+    height: 120vh;
+    // min-height: 120vh;
     padding-bottom: 0;
 
     @include desktop-sm{
-        min-height: 150vh;
+        // min-height: 150vh;
     }
 
    .faq-text{
+    @include flex(column, center, center, none);
     text-align: center;
+    height: 30vh;
    }
 }
 
@@ -30,13 +32,13 @@
 
     &:hover{
 
-        .answer{
-            max-height: 1000px;
-        }
-        img{
-            transform: rotate(90deg);
-            // transform-origin: center;
-        }
+        // .answer{
+        //     max-height: 1000px;
+        // }
+        // img{
+        //     transform: rotate(90deg);
+        //     // transform-origin: center;
+        // }
         
     }
 

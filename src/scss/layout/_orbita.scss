@@ -13,6 +13,12 @@
   .orbita__text {
     padding: 0 1rem;
     text-align: center;
+    @include tablet{
+      padding: 0 2.5rem;
+    }
+    @include tablet-l{
+      padding: 0 4rem;
+    }
   }
 
   .orbitas__svg__container {

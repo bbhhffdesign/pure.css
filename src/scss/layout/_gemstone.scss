@@ -61,6 +61,10 @@
     padding-left: 1rem;
     @include border-gradient-left;
 
+    @include tablet{
+      margin: 0 3rem 0 2rem;
+      padding-left: 2rem;
+    }
     @include desktop-sm {
       align-items: center;
       max-width: 60rem;

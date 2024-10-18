@@ -71,9 +71,9 @@ const gemBg_anim_tl = gsap.timeline({
   paused: true,
   scrollTrigger:{
     trigger: gemstoneText1Container,
-    markers: true, 
+    // markers: true, 
     start: "bottom center",
-    end: "bottom center",
+    end: "200% center",
     onEnter: () =>{
       gemBg_anim_tl.play()
     },
@@ -81,7 +81,11 @@ const gemBg_anim_tl = gsap.timeline({
     onEnterBack: () =>{
       gemBg_anim_tl.timeScale(3);
       gemBg_anim_tl.reverse()
-    }
+    },
+    onLeaveBack: () =>{
+      gemBg_anim_tl.timeScale(3);
+      gemBg_anim_tl.reverse()
+    },
   }
 });
 
