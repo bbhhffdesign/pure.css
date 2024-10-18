@@ -9,10 +9,29 @@
   max-width: 100vw;
   // background-color: var(--formBg);
 
-  .home{
-    position: absolute;  
-    left: .5rem;
-    top: .5rem;
+  .home-container{
+    position: relative;
+    margin: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: $border-rad-s;
+
+    &:hover{
+      // background-color: #616161;
+
+      svg{
+        transform: scale(1.2);
+        transform-origin: 50% 50%;
+        fill: var(--colorSecundario); 
+        transition: transform ease .3s;
+      }
+    }
+
+
+    svg{
+      stroke: none;
+      fill: var(--colorBg_invert);
+    }
   }
   .gradient {
     z-index: -2;
