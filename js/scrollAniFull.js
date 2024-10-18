@@ -66,27 +66,27 @@ const gemBg = [
   document.getElementById("gemstone-inf"),
 ];
 
-const gemBg_anim = []
+const gemBg_anim = [];
 const gemBg_anim_tl = gsap.timeline({
   paused: true,
-  scrollTrigger:{
+  scrollTrigger: {
     trigger: gemstoneText1Container,
-    // markers: true, 
+    // markers: true,
     start: "bottom center",
     end: "200% center",
-    onEnter: () =>{
-      gemBg_anim_tl.play()
+    onEnter: () => {
+      gemBg_anim_tl.play();
     },
-    
-    onEnterBack: () =>{
+
+    onEnterBack: () => {
       gemBg_anim_tl.timeScale(3);
-      gemBg_anim_tl.reverse()
+      gemBg_anim_tl.reverse();
     },
-    onLeaveBack: () =>{
+    onLeaveBack: () => {
       gemBg_anim_tl.timeScale(3);
-      gemBg_anim_tl.reverse()
+      gemBg_anim_tl.reverse();
     },
-  }
+  },
 });
 
 for (let i = 0; i < gemBg.length; i++) {
@@ -94,11 +94,8 @@ for (let i = 0; i < gemBg.length; i++) {
   gemBg[i].style.strokeDashoffset = length;
   gemBg[i].style.strokeDasharray = length;
 
-  gemBg_anim_tl.to(gemBg[i],{strokeDashoffset:0, duration: 5},"<")
+  gemBg_anim_tl.to(gemBg[i], { strokeDashoffset: 0, duration: 5 }, "<");
 }
-
-
-
 
 // const gemBg_bordeExt_length = gemBg_bordeExt.getTotalLength();
 // gemBg_bordeExt.style.strokeDashoffset = gemBg_bordeExt_length;
@@ -173,189 +170,189 @@ mm_mobile.add("(max-width: 1920px)", () => {
     .to(navBar, { y: "-100%" })
     .from(themeSwitch2, { opacity: 0, zIndex: "auto" }, "<");
 
-  const tl_mindmapText_1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: mindmapText_1,
-      // markers: true,
-      start: "-30% 90%",
-      end: "-30% 90%",
-    },
-  });
-  tl_mindmapText_1.from(mindmapText_1, {
-    y: 150,
-    ease: "power4.out",
-    duration: 1,
-  });
+  // const tl_mindmapText_1 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: mindmapText_1,
+  //     // markers: true,
+  //     start: "-30% 90%",
+  //     end: "-30% 90%",
+  //   },
+  // });
+  // tl_mindmapText_1.from(mindmapText_1, {
+  //   y: 150,
+  //   ease: "power4.out",
+  //   duration: 1,
+  // });
 
-  const tl_mindmapText_2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: mindmapText_2,
-      // markers: true,
-      start: "-30% 90%",
-      end: "-30% 90%",
-    },
-  });
-  tl_mindmapText_2.from(mindmapText_2, {
-    y: 150,
-    ease: "power4.out",
-    duration: 1,
-  });
+  // const tl_mindmapText_2 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: mindmapText_2,
+  //     // markers: true,
+  //     start: "-30% 90%",
+  //     end: "-30% 90%",
+  //   },
+  // });
+  // tl_mindmapText_2.from(mindmapText_2, {
+  //   y: 150,
+  //   ease: "power4.out",
+  //   duration: 1,
+  // });
 
-  const tl_mindmapText_3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: mindmapText_3,
-      // markers: true,
-      start: "-40% 90%",
-      end: "-40% 90%",
-    },
-  });
-  tl_mindmapText_3.from(mindmapText_3, {
-    y: 150,
-    ease: "power4.out",
-    duration: 1,
-  });
+  // const tl_mindmapText_3 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: mindmapText_3,
+  //     // markers: true,
+  //     start: "-40% 90%",
+  //     end: "-40% 90%",
+  //   },
+  // });
+  // tl_mindmapText_3.from(mindmapText_3, {
+  //   y: 150,
+  //   ease: "power4.out",
+  //   duration: 1,
+  // });
 
-  const tl_mindmapText_4 = gsap.timeline({
-    scrollTrigger: {
-      trigger: mindmapText_4,
-      // markers: true,
-      start: "-40% 90%",
-      end: "-40% 90%",
-    },
-  });
-  tl_mindmapText_4.from(mindmapText_4, {
-    y: 150,
-    ease: "power4.out",
-    duration: 1,
-  });
+  // const tl_mindmapText_4 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: mindmapText_4,
+  //     // markers: true,
+  //     start: "-40% 90%",
+  //     end: "-40% 90%",
+  //   },
+  // });
+  // tl_mindmapText_4.from(mindmapText_4, {
+  //   y: 150,
+  //   ease: "power4.out",
+  //   duration: 1,
+  // });
 
-  const tl_mindmapCta = gsap.timeline({
-    scrollTrigger: {
-      trigger: mindmapCta,
-      // markers: true,
-      start: "-50% 100%",
-      end: "-50% 100%",
-    },
-  });
-  tl_mindmapCta.from(mindmapCta, { y: 150, ease: "power4.out", duration: 1 });
+  // const tl_mindmapCta = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: mindmapCta,
+  //     // markers: true,
+  //     start: "-50% 100%",
+  //     end: "-50% 100%",
+  //   },
+  // });
+  // tl_mindmapCta.from(mindmapCta, { y: 150, ease: "power4.out", duration: 1 });
 
   //aca va la del mindmapGem
 
-  const tl_servicesText_1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: servicesText1,
-      // markers: true,
-      start: "-150 90%",
-      end: "bottom 90%",
-    },
-  });
-  tl_servicesText_1.from(servicesText1, {
-    opacity: 0.5,
-    y: 150,
-    ease: "power4.out",
-    duration: 1,
-  });
+  // const tl_servicesText_1 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: servicesText1,
+  //     // markers: true,
+  //     start: "-150 90%",
+  //     end: "bottom 90%",
+  //   },
+  // });
+  // tl_servicesText_1.from(servicesText1, {
+  //   opacity: 0.5,
+  //   y: 150,
+  //   ease: "power4.out",
+  //   duration: 1,
+  // });
 
-  const tl_servicesText_2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: servicesText2,
-      // markers: true,
-      start: "-150 90%",
-      end: "bottom 90%",
-    },
-  });
-  tl_servicesText_2.from(servicesText2, {
-    opacity: 0.5,
-    y: 150,
-    ease: "power4.out",
-    duration: 1,
-  });
+  // const tl_servicesText_2 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: servicesText2,
+  //     // markers: true,
+  //     start: "-150 90%",
+  //     end: "bottom 90%",
+  //   },
+  // });
+  // tl_servicesText_2.from(servicesText2, {
+  //   opacity: 0.5,
+  //   y: 150,
+  //   ease: "power4.out",
+  //   duration: 1,
+  // });
 
-  const tl_servicesText_3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: servicesText3,
-      // markers: true,
-      start: "top 90%",
-      end: "top 90%",
-    },
-  });
-  tl_servicesText_3.from(servicesText3, {
-    opacity: 0.5,
-    y: 150,
-    ease: "power4.out",
-    duration: 1,
-  });
+  // const tl_servicesText_3 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: servicesText3,
+  //     // markers: true,
+  //     start: "top 90%",
+  //     end: "top 90%",
+  //   },
+  // });
+  // tl_servicesText_3.from(servicesText3, {
+  //   opacity: 0.5,
+  //   y: 150,
+  //   ease: "power4.out",
+  //   duration: 1,
+  // });
 
-  const tl_servicesBox_1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: servicesBox1,
-      // markers: true,
-      start: "top 90%",
-      end: "top 90%",
-    },
-  });
+  // const tl_servicesBox_1 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: servicesBox1,
+  //     // markers: true,
+  //     start: "top 90%",
+  //     end: "top 90%",
+  //   },
+  // });
 
-  tl_servicesBox_1
-    .from(servicesBox1Content, {
-      opacity: 0.5,
-      y: 150,
-      ease: "power4.out",
-      duration: 1,
-    })
-    .from(servicesLogo1, { fill: "#c6c6c6", duration: 2, ease: "power4.out" })
-    .to(servicesLogo1, { fill: "var(--colorBg)", duration: 1 });
+  // tl_servicesBox_1
+  //   .from(servicesBox1Content, {
+  //     opacity: 0.5,
+  //     y: 150,
+  //     ease: "power4.out",
+  //     duration: 1,
+  //   })
+  //   .from(servicesLogo1, { fill: "#c6c6c6", duration: 2, ease: "power4.out" })
+  //   .to(servicesLogo1, { fill: "var(--colorBg)", duration: 1 });
 
-  const tl_servicesBox_2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: servicesBox2,
-      // markers: true,
-      start: "top 90%",
-      end: "top 90%",
-    },
-  });
-  tl_servicesBox_2
-    .from(servicesBox2Content, {
-      opacity: 0.5,
-      y: 150,
-      ease: "power4.out",
-      duration: 1,
-    })
-    .from(servicesLogo2, { fill: "#c6c6c6", duration: 3, ease: "power4.out" })
-    .to(servicesLogo2, { fill: "var(--colorBg)", duration: 1 });
+  // const tl_servicesBox_2 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: servicesBox2,
+  //     // markers: true,
+  //     start: "top 90%",
+  //     end: "top 90%",
+  //   },
+  // });
+  // tl_servicesBox_2
+  //   .from(servicesBox2Content, {
+  //     opacity: 0.5,
+  //     y: 150,
+  //     ease: "power4.out",
+  //     duration: 1,
+  //   })
+  //   .from(servicesLogo2, { fill: "#c6c6c6", duration: 3, ease: "power4.out" })
+  //   .to(servicesLogo2, { fill: "var(--colorBg)", duration: 1 });
 
-  const tl_servicesBox_3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: servicesBox3,
-      // markers: true,
-      start: "top 90%",
-      end: "top 90%",
-    },
-  });
-  tl_servicesBox_3
-    .from(servicesBox3Content, {
-      opacity: 0.5,
-      y: 150,
-      ease: "power4.out",
-      duration: 1,
-    })
-    .from(servicesLogo3, { fill: "#c6c6c6", duration: 3, ease: "power4.out" })
-    .to(servicesLogo3, { fill: "var(--colorBg)", duration: 1 });
+  // const tl_servicesBox_3 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: servicesBox3,
+  //     // markers: true,
+  //     start: "top 90%",
+  //     end: "top 90%",
+  //   },
+  // });
+  // tl_servicesBox_3
+  //   .from(servicesBox3Content, {
+  //     opacity: 0.5,
+  //     y: 150,
+  //     ease: "power4.out",
+  //     duration: 1,
+  //   })
+  //   .from(servicesLogo3, { fill: "#c6c6c6", duration: 3, ease: "power4.out" })
+  //   .to(servicesLogo3, { fill: "var(--colorBg)", duration: 1 });
 
-  const tl_gemstoneText_1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: gemstoneText1Container,
-      // markers: true,
-      pin: true,
-      start: "center center",
-      end: "200% center",
-      scrub: 1,
-    },
-  });
+  // const tl_gemstoneText_1 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: gemstoneText1Container,
+  //     // markers: true,
+  //     pin: true,
+  //     start: "center center",
+  //     end: "200% center",
+  //     scrub: 1,
+  //   },
+  // });
 
-  tl_gemstoneText_1
-    .from(gemstoneText1, { opacity: 0, ease: "power4.out", duration: 3 })
-    .to(bgParticles, { opacity: 0 }, "<")
-    .to(gemstoneSection, { background: "var(--colorBg)" });
+  // tl_gemstoneText_1
+  //   .from(gemstoneText1, { opacity: 0, ease: "power4.out", duration: 3 })
+  //   .to(bgParticles, { opacity: 0 }, "<")
+  //   .to(gemstoneSection, { background: "var(--colorBg)" });
 
   // const tl_gemstoneBg = gsap.timeline({
   //   scrollTrigger: {
@@ -379,87 +376,87 @@ mm_mobile.add("(max-width: 1920px)", () => {
   //     // .from(gemstoneBg, {opacity:0})
   //     .to(gemstoneBg, {strokeDashoffset: 1, duration: 45 });
 
-  const tl_gemstoneText_2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: gemstoneText2,
-      // markers: true,
-      start: "-20% 90%",
-      end: "bottom 90%",
-    },
-  });
-  tl_gemstoneText_2.from(gemstoneText2, { opacity: 0, y: 80, duration: 0.5 });
+  // const tl_gemstoneText_2 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: gemstoneText2,
+  //     // markers: true,
+  //     start: "-20% 90%",
+  //     end: "bottom 90%",
+  //   },
+  // });
+  // tl_gemstoneText_2.from(gemstoneText2, { opacity: 0, y: 80, duration: 0.5 });
 
-  const tl_gemstoneText_3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: gemstoneText3,
-      // markers: true,
-      start: "-20% 90%",
-      end: "bottom 90%",
-    },
-  });
-  tl_gemstoneText_3.from(gemstoneText3, { opacity: 0, y: 80, duration: 0.5 });
+  // const tl_gemstoneText_3 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: gemstoneText3,
+  //     // markers: true,
+  //     start: "-20% 90%",
+  //     end: "bottom 90%",
+  //   },
+  // });
+  // tl_gemstoneText_3.from(gemstoneText3, { opacity: 0, y: 80, duration: 0.5 });
 
-  const tl_gemstoneText_4 = gsap.timeline({
-    scrollTrigger: {
-      trigger: gemstoneText4,
-      // markers: true,
-      start: "-20% 90%",
-      end: "bottom 90%",
-    },
-  });
-  tl_gemstoneText_4.from(gemstoneText4, { opacity: 0, y: 80, duration: 0.5 });
+  // const tl_gemstoneText_4 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: gemstoneText4,
+  //     // markers: true,
+  //     start: "-20% 90%",
+  //     end: "bottom 90%",
+  //   },
+  // });
+  // tl_gemstoneText_4.from(gemstoneText4, { opacity: 0, y: 80, duration: 0.5 });
 
-  const tl_gemstoneText_5 = gsap.timeline({
-    scrollTrigger: {
-      trigger: gemstoneText5,
-      // markers: true,
-      start: "-20% 90%",
-      end: "bottom 90%",
-    },
-  });
-  tl_gemstoneText_5.from(gemstoneText5, { opacity: 0, y: 80, duration: 0.5 });
+  // const tl_gemstoneText_5 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: gemstoneText5,
+  //     // markers: true,
+  //     start: "-20% 90%",
+  //     end: "bottom 90%",
+  //   },
+  // });
+  // tl_gemstoneText_5.from(gemstoneText5, { opacity: 0, y: 80, duration: 0.5 });
 
-  const tl_paso1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: pasoBox1,
-      // markers: true,
-      start: "top 80%",
-      end: "bottom 80%",
-      // onEnter: () =>tl_paso1.play(),
-      // onEnterBack: () =>tl_paso1.reverse()
-    },
-  });
-  tl_paso1
-    .from(pasoNumber1, { scale: 0.8, opacity: 0, y: 80, duration: 0.8 })
-    .from(pasoText1, { opacity: 0, y: 80, duration: 0.5 }, "<");
+  // const tl_paso1 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: pasoBox1,
+  //     // markers: true,
+  //     start: "top 80%",
+  //     end: "bottom 80%",
+  //     // onEnter: () =>tl_paso1.play(),
+  //     // onEnterBack: () =>tl_paso1.reverse()
+  //   },
+  // });
+  // tl_paso1
+  //   .from(pasoNumber1, { scale: 0.8, opacity: 0, y: 80, duration: 0.8 })
+  //   .from(pasoText1, { opacity: 0, y: 80, duration: 0.5 }, "<");
 
-  const tl_paso2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: pasoBox2,
-      // markers: true,
-      start: "top 80%",
-      end: "bottom 80%",
-      // onEnter: () =>tl_paso2.play(),
-      // onEnterBack: () =>tl_paso2.reverse()
-    },
-  });
-  tl_paso2
-    .from(pasoNumber2, { scale: 0.8, opacity: 0, y: 80, duration: 0.5 })
-    .from(pasoText2, { opacity: 0, y: 80, duration: 0.8 }, "<");
+  // const tl_paso2 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: pasoBox2,
+  //     // markers: true,
+  //     start: "top 80%",
+  //     end: "bottom 80%",
+  //     // onEnter: () =>tl_paso2.play(),
+  //     // onEnterBack: () =>tl_paso2.reverse()
+  //   },
+  // });
+  // tl_paso2
+  //   .from(pasoNumber2, { scale: 0.8, opacity: 0, y: 80, duration: 0.5 })
+  //   .from(pasoText2, { opacity: 0, y: 80, duration: 0.8 }, "<");
 
-  const tl_paso3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: pasoBox3,
-      // markers: true,
-      start: "top 80%",
-      end: "bottom 80%",
-      // onEnter: () =>tl_paso3.play(),
-      // onEnterBack: () =>tl_paso3.reverse()
-    },
-  });
-  tl_paso3
-    .from(pasoNumber3, { scale: 0.8, opacity: 0, y: 80, duration: 0.8 })
-    .from(pasoText3, { opacity: 0, y: 80, duration: 0.5 }, "<");
+  // const tl_paso3 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: pasoBox3,
+  //     // markers: true,
+  //     start: "top 80%",
+  //     end: "bottom 80%",
+  //     // onEnter: () =>tl_paso3.play(),
+  //     // onEnterBack: () =>tl_paso3.reverse()
+  //   },
+  // });
+  // tl_paso3
+  //   .from(pasoNumber3, { scale: 0.8, opacity: 0, y: 80, duration: 0.8 })
+  //   .from(pasoText3, { opacity: 0, y: 80, duration: 0.5 }, "<");
 
   const tl_ctaGemstone = gsap.timeline({
     scrollTrigger: {
@@ -471,35 +468,7 @@ mm_mobile.add("(max-width: 1920px)", () => {
   });
   tl_ctaGemstone.from(ctaGemstone, { opacity: 0, y: 100 });
 
-  const tl_testimonial1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: testimonial_1,
-      // markers: true,
-      start: "-50% 80%",
-      end: "bottom 80%",
-    },
-  });
-  tl_testimonial1.from(testimonial_1, { y: 100, opacity: 0, duration: 0.8 });
 
-  const tl_testimonial2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: testimonial_2,
-      // markers: true,
-      start: "-50% 80%",
-      end: "bottom 80%",
-    },
-  });
-  tl_testimonial2.from(testimonial_2, { y: 100, opacity: 0, duration: 0.8 });
-
-  const tl_testimonial3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: testimonial_3,
-      //   markers: true,
-      start: "-50% 80%",
-      end: "bottom 80%",
-    },
-  });
-  tl_testimonial3.from(testimonial_3, { y: 100, opacity: 0, duration: 0.8 });
 
   const tl_ctaemail = gsap.timeline({
     scrollTrigger: {

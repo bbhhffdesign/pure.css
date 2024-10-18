@@ -3248,6 +3248,9 @@ svg .gall {
     max-width: 40%;
   }
 }
+.gemstone .pasos-container .paso .paso-overflow {
+  overflow-y: hidden;
+}
 .gemstone .pasos-container .paso h1 {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -3256,7 +3259,7 @@ svg .gall {
   position: absolute;
   z-index: -2;
   font-size: clamp(15rem, 10.714rem + 21.429vw, 21rem);
-  top: -50%;
+  top: -60%;
   left: -10%;
   margin: 0;
   line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);

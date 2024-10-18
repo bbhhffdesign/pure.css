@@ -27,23 +27,6 @@
     @include glass-bg-only;
     background-color: var(--colorBg_switch);
 
-
-    //ESTO NO VA CON HOVER, VA CON CLIC ! 
-
-    &:hover{
-
-        // .answer{
-        //     max-height: 1000px;
-        // }
-        // img{
-        //     transform: rotate(90deg);
-        //     // transform-origin: center;
-        // }
-        
-    }
-
-
-
     .question{
         cursor: pointer;
         @include flex(row, flex-start, center,none);
