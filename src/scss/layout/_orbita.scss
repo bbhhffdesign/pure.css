@@ -52,18 +52,21 @@
 
       .orb-stroke {
         stroke: var(--textoTitulos);
+        stroke-width: .5px;
         fill: none;
       }
       .orb-stroke2 {
-        stroke-width: 2px;
+        // stroke-width: 2px;
         stroke: var(--textoPrincipal);
         fill: none;
       }
       .orb-fill {
         stroke: var(--colorBg_invert);
         fill: var(--colorBg);
+        stroke-width: .5px;
       }
       .orb-stroke-fill {
+        stroke-width: .5px;
         stroke: var(--colorBg_invert);
         fill: var(--colorBg_invert);
       }

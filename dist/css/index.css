@@ -3557,18 +3557,20 @@ svg .gall {
 }
 .orbita__container .orbitas__svg__container svg .orb-stroke {
   stroke: var(--textoTitulos);
+  stroke-width: 0.5px;
   fill: none;
 }
 .orbita__container .orbitas__svg__container svg .orb-stroke2 {
-  stroke-width: 2px;
   stroke: var(--textoPrincipal);
   fill: none;
 }
 .orbita__container .orbitas__svg__container svg .orb-fill {
   stroke: var(--colorBg_invert);
   fill: var(--colorBg);
+  stroke-width: 0.5px;
 }
 .orbita__container .orbitas__svg__container svg .orb-stroke-fill {
+  stroke-width: 0.5px;
   stroke: var(--colorBg_invert);
   fill: var(--colorBg_invert);
 }
