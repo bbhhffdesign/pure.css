@@ -86,8 +86,13 @@
     }
   }
   .pasos-container {
-    height: 150vh;
     @include flex(column, space-evenly, center, none);
+    height: 170vh;
+
+    .pasos__title{
+      @include flex(column, center, center, none);
+      flex-grow: 1;
+    }
 
     @include desktop-sm {
       height: 250vh;

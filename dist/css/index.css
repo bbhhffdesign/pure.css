@@ -3192,12 +3192,20 @@ svg .gall {
   font-style: normal;
 }
 .gemstone .pasos-container {
-  height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   gap: none;
+  height: 170vh;
+}
+.gemstone .pasos-container .pasos__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  flex-grow: 1;
 }
 @media (min-width: 64rem) {
   .gemstone .pasos-container {
