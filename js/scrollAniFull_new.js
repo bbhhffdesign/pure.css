@@ -153,7 +153,7 @@ for (let i = 0; i < gemstoneTexts.length; i++) {
 for (let i = 0; i < pasos.length; i++) {
   const tl = gsap.timeline({
     scrollTrigger: {
-        markers: true,
+        // markers: true,
       trigger: pasos[i],
       start: "-50% 90%",
       end: "bottom 90%",
