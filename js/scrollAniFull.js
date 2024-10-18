@@ -3,7 +3,7 @@
 const bgParticles = document.getElementById("tsparticles");
 
 //navbar
-const navBar = document.getElementById("navbar");
+// const navBar = document.getElementById("navbar");
 
 //themeswitch2
 
@@ -11,7 +11,7 @@ const themeSwitch2 = document.getElementById("themeSwitch2");
 
 //hero
 const hero = document.getElementById("hero");
-const heroText = document.getElementById("hero-text");
+// const heroText = document.getElementById("hero-text");
 
 //mindmap titles
 const mindmapText_1 = document.getElementById("mindmap-text-1");
@@ -58,44 +58,43 @@ const gemstoneText5 = document.getElementById("gemstone-text-5");
 const gemstoneText6 = document.getElementById("gemstone-text-6");
 
 //gemstoneSvgs
-const gemBg = [
-  document.getElementById("borde-ext"),
-  document.getElementById("borde-int"),
-  // document.getElementById("gall"),
-  document.getElementById("gemstone-sup"),
-  document.getElementById("gemstone-inf"),
-];
+// const gemBg = [
+//   document.getElementById("borde-ext"),
+//   document.getElementById("borde-int"),
+//   document.getElementById("gemstone-sup"),
+//   document.getElementById("gemstone-inf"),
+// ];
 
-const gemBg_anim = [];
-const gemBg_anim_tl = gsap.timeline({
-  paused: true,
-  scrollTrigger: {
-    trigger: gemstoneText1Container,
-    // markers: true,
-    start: "bottom center",
-    end: "200% center",
-    onEnter: () => {
-      gemBg_anim_tl.play();
-    },
+// const gemBg_anim = [];
+// const gemBg_anim_tl = gsap.timeline({
+//   paused: true,
+//   scrollTrigger: {
+//     trigger: gemstoneText1Container,
+//     // markers: true,
+//     start: "bottom center",
+//     end: "200% center",
+//     onEnter: () => {
+//       gemBg_anim_tl.play();
+//     },
 
-    onEnterBack: () => {
-      gemBg_anim_tl.timeScale(3);
-      gemBg_anim_tl.reverse();
-    },
-    onLeaveBack: () => {
-      gemBg_anim_tl.timeScale(3);
-      gemBg_anim_tl.reverse();
-    },
-  },
-});
+//     onEnterBack: () => {
+//       gemBg_anim_tl.timeScale(3);
+//       gemBg_anim_tl.reverse();
+//     },
+//     onLeaveBack: () => {
+//       gemBg_anim_tl.timeScale(3);
+//       gemBg_anim_tl.reverse();
+//     },
+//   },
+// });
 
-for (let i = 0; i < gemBg.length; i++) {
-  let length = gemBg[i].getTotalLength();
-  gemBg[i].style.strokeDashoffset = length;
-  gemBg[i].style.strokeDasharray = length;
+// for (let i = 0; i < gemBg.length; i++) {
+//   let length = gemBg[i].getTotalLength();
+//   gemBg[i].style.strokeDashoffset = length;
+//   gemBg[i].style.strokeDasharray = length;
 
-  gemBg_anim_tl.to(gemBg[i], { strokeDashoffset: 0, duration: 5 }, "<");
-}
+//   gemBg_anim_tl.to(gemBg[i], { strokeDashoffset: 0, duration: 5 }, "<");
+// }
 
 // const gemBg_bordeExt_length = gemBg_bordeExt.getTotalLength();
 // gemBg_bordeExt.style.strokeDashoffset = gemBg_bordeExt_length;
@@ -154,21 +153,20 @@ const faqQuestion3 = document.getElementById("faq-question-3");
 const faqQuestion4 = document.getElementById("faq-question-4");
 const faqQuestion5 = document.getElementById("faq-question-5");
 
-const mm_mobile = gsap.matchMedia();
+// const mm_mobile = gsap.matchMedia();
 
-mm_mobile.add("(max-width: 1920px)", () => {
-  const tl_navbar = gsap.timeline({
-    scrollTrigger: {
-      trigger: heroText,
-      // markers: true,
-      start: "70% 10%",
-      end: "110% 10%",
-      scrub: true,
-    },
-  });
-  tl_navbar
-    .to(navBar, { y: "-100%" })
-    .from(themeSwitch2, { opacity: 0, zIndex: "auto" }, "<");
+//   const tl_navbar = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: heroText,
+//       // markers: true,
+//       start: "70% 10%",
+//       end: "110% 10%",
+//       scrub: true,
+//     },
+//   });
+//   tl_navbar
+//     .to(navBar, { y: "-100%" })
+//     .from(themeSwitch2, { opacity: 0, zIndex: "auto" }, "<");
 
   // const tl_mindmapText_1 = gsap.timeline({
   //   scrollTrigger: {
@@ -458,29 +456,29 @@ mm_mobile.add("(max-width: 1920px)", () => {
   //   .from(pasoNumber3, { scale: 0.8, opacity: 0, y: 80, duration: 0.8 })
   //   .from(pasoText3, { opacity: 0, y: 80, duration: 0.5 }, "<");
 
-  const tl_ctaGemstone = gsap.timeline({
-    scrollTrigger: {
-      trigger: ctaGemstone,
-      // markers:true,
-      start: "top 90%",
-      end: "bottom 90%",
-    },
-  });
-  tl_ctaGemstone.from(ctaGemstone, { opacity: 0, y: 100 });
+  // const tl_ctaGemstone = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ctaGemstone,
+  //     // markers:true,
+  //     start: "top 90%",
+  //     end: "bottom 90%",
+  //   },
+  // });
+  // tl_ctaGemstone.from(ctaGemstone, { opacity: 0, y: 100 });
 
 
 
-  const tl_ctaemail = gsap.timeline({
-    scrollTrigger: {
-      trigger: ctaemail,
-      // markers: true,
-      start: "-200% 95%",
-      end: "bottom 95%",
-    },
-  });
-  tl_ctaemail
-    .from(ctaemail, { y: 200, opacity: 0, duration: 0.6 })
-    .from(ctaemail_text, { y: 200, opacity: 0, duration: 0.6 }, "<")
-    .from(ctaemail_text2, { y: 200, opacity: 0, duration: 0.6 }, "<")
-    .from(faqContainer, { y: 200, opacity: 0, duration: 0.6 }, "<");
-});
+//   const tl_ctaemail = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ctaemail,
+//       // markers: true,
+//       start: "-200% 95%",
+//       end: "bottom 95%",
+//     },
+//   });
+//   tl_ctaemail
+//     .from(ctaemail, { y: 200, opacity: 0, duration: 0.6 })
+//     .from(ctaemail_text, { y: 200, opacity: 0, duration: 0.6 }, "<")
+//     .from(ctaemail_text2, { y: 200, opacity: 0, duration: 0.6 }, "<")
+//     .from(faqContainer, { y: 200, opacity: 0, duration: 0.6 }, "<");
+// });

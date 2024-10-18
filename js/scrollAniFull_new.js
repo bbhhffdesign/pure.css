@@ -1,3 +1,8 @@
+const bgParticles = document.getElementById("tsparticles");
+const navBar =
+  document.getElementById("navbar");
+const heroText =
+  document.getElementById("hero-text");
 const mindmapTexts = [
   document.getElementById("mindmap-text-1"),
   document.getElementById("mindmap-text-2"),
@@ -23,6 +28,15 @@ const servicesBoxLogos = [
   document.getElementById("comunicacion-logo"),
   document.getElementById("marca-logo"),
 ];
+const gemBg = [
+  document.getElementById("borde-ext"),
+  document.getElementById("borde-int"),
+  document.getElementById("gemstone-sup"),
+  document.getElementById("gemstone-inf"),
+];
+const gemstoneSection = document.getElementById("gemstone-section");
+const gemstoneText1Container = document.getElementById("gemstone-text-1-container");
+const gemstoneText1 = document.getElementById("gemstone-text-1");
 const gemstoneTexts = [
   document.getElementById("gemstone-text-2"),
   document.getElementById("gemstone-text-3"),
@@ -32,6 +46,7 @@ const gemstoneTexts = [
   document.getElementById("gemstone-text-7"),
   document.getElementById("gemstone-text-8"),
 ];
+const ctaGemstone = document.getElementById("cta-gemstone");
 const pasos = [
   document.getElementById("paso-text-1"),
   document.getElementById("paso-text-2"),
@@ -42,6 +57,31 @@ const pasos_number = [
   document.getElementById("paso-number-2"),
   document.getElementById("paso-number-3"),
 ];
+const cta_email =
+  document.getElementById("cta-email-container");
+const orbita_texts = [
+    document.getElementById("orbita-text1"),
+    document.getElementById("orbita-text2"),
+    document.getElementById("orbita-text3"),
+    document.getElementById("orbita-text4"),
+    document.getElementById("orbita-text5"),
+    document.getElementById("orbita-text6")
+]
+//scale,duration
+const paramAnim =[0.9, 0.6];
+
+const tl_navbar = gsap.timeline({
+  scrollTrigger: {
+    trigger: heroText,
+    // markers: true,
+    start: "70% 10%",
+    end: "110% 10%",
+    scrub: true,
+  },
+});
+tl_navbar
+  .to(navBar, { y: "-100%" })
+  .from(themeSwitch2, { opacity: 0, zIndex: "auto" }, "<");
 
 for (let i = 0; i < mindmapTexts.length; i++) {
   const tl = gsap.timeline({
@@ -50,51 +90,36 @@ for (let i = 0; i < mindmapTexts.length; i++) {
       start: "-30% 100%",
       end: "300% 100%",
       // markers: true
-      scrub: 1,
+      // scrub: 1,
     },
   });
   tl.from(mindmapTexts[i], {
-    scale: 0.9,
+    scale: paramAnim[0],
+    transformOrigin: "50% 50%",
     opacity: 0,
     y: 150,
     ease: "power4.out",
-    duration: 1,
-    transformOrigin: "50% 50%",
+    duration: paramAnim[1],
   });
 }
-
-const tl_servicesText_3 = gsap.timeline({
-  scrollTrigger: {
-    trigger: servicesText3,
-    //   markers: true,
-    start: "center 90%",
-    end: "center 90%",
-  },
-});
-tl_servicesText_3.from(servicesText3, {
-  scale: 0.9,
-  opacity: 0,
-  y: 150,
-  ease: "power4.out",
-  duration: 1,
-  transformOrigin: "50% 50%",
-});
 
 for (let i = 0; i < servicesBoxes.length; i++) {
   const tl = gsap.timeline({
     scrollTrigger: {
-        //   markers: true,
+      //   markers: true,
       trigger: servicesBoxes[i],
       start: "top 90%",
       end: "500% 90%",
-      scrub: 1,
+      // scrub: 1,
     },
   });
   tl.from(servicesBoxContent[i], {
+    scale: paramAnim[0],
+    transformOrigin: "50% 50%",
     opacity: 0,
     y: 150,
     ease: "power4.out",
-    duration: 1,
+    duration: paramAnim[1],
   })
     .from(servicesBoxLogos[i], {
       duration: 3,
@@ -131,45 +156,130 @@ tl_gemstoneText_1
     particles.play();
   });
 
+const gemBg_anim = [];
+const gemBg_anim_tl = gsap.timeline({
+  paused: true,
+  scrollTrigger: {
+    trigger: gemstoneText1Container,
+    // markers: true,
+    start: "center center",
+    end: "200% center",
+    onEnter: () => {
+      gemBg_anim_tl.play();
+    },
+
+    onEnterBack: () => {
+      gemBg_anim_tl.timeScale(3);
+      gemBg_anim_tl.reverse();
+    },
+    onLeaveBack: () => {
+      gemBg_anim_tl.timeScale(5);
+      gemBg_anim_tl.reverse();
+    },
+  },
+});
+
+for (let i = 0; i < gemBg.length; i++) {
+  let length = gemBg[i].getTotalLength();
+  gemBg[i].style.strokeDashoffset = length;
+  gemBg[i].style.strokeDasharray = length;
+
+  gemBg_anim_tl.to(gemBg[i], { strokeDashoffset: 0, duration: 5 }, "<");
+}
+
 for (let i = 0; i < gemstoneTexts.length; i++) {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: gemstoneTexts[i],
-    //   markers: true,
+      //   markers: true,
       start: "-20% 90%",
       end: "500% 90%",
-      scrub: 1,
+      // scrub: true,
     },
   });
   tl.from(gemstoneTexts[i], {
     opacity: 0,
-    scale: 0.9,
-    y: 150,
-    duration: 0.5,
+    scale: paramAnim[0],
     transformOrigin: "50% 50%",
+    y: 150,
+    duration: paramAnim[1],
   });
 }
 
 for (let i = 0; i < pasos.length; i++) {
   const tl = gsap.timeline({
     scrollTrigger: {
-        // markers: true,
+      // markers: true,
       trigger: pasos[i],
       start: "-50% 90%",
       end: "bottom 90%",
-      scrub: 1,
+      // scrub: true,
     },
   });
   tl.from(pasos[i], {
     opacity: 0,
-    scale: 0.9,
-    duration: 0.8,
+    scale: paramAnim[0],
+    transformOrigin: "50% 50%",
+    duration: paramAnim[1],
     y: 150,
   })
-  .from(pasos_number[i], {
-    opacity: 0,
-    scale: 0.9,
-    duration: 0.8,
-    y: 150,
-  }, "<");
+    .from(pasos_number[i], {
+      opacity: 0,
+      scale: paramAnim[0],
+      transformOrigin: "50% 50%",
+      duration: paramAnim[1],
+      y: 150,
+    }, "<");
 }
+const tl_ctaGemstone = gsap.timeline({
+  scrollTrigger: {
+    trigger: ctaGemstone,
+    // markers:true,
+    start: "top 90%",
+    end: "bottom 90%",
+  },
+});
+tl_ctaGemstone.from(ctaGemstone, { 
+  duration: paramAnim[1],
+  scale: paramAnim[0],
+  transformOrigin: "50% 50%",
+  opacity: 0,
+  y: 100 });
+
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: cta_email,
+    // markers: true,
+    start: "top 95%",
+    end: "200% 95%",
+    // scrub: true
+  }
+});
+tl
+  .from(cta_email, {
+    scale: paramAnim[0],
+    transformOrigin: "50% 50%",
+    duration: paramAnim[1],
+    opacity: 0,
+    y: 150,
+  })
+
+  for (let i = 0; i < orbita_texts.length; i++){
+    const tl = gsap.timeline({
+      scrollTrigger:{
+        trigger: orbita_texts[i],
+        start: "top 90%",
+        end: "bottom 90%",
+        // markers: true
+      }
+    });
+    tl
+      .from(orbita_texts[i], {
+        scale: paramAnim[0],
+        transformOrigin: "50% 50%",
+        duration: paramAnim[1],
+        opacity: 0,
+        y: 150,
+      })
+  }
