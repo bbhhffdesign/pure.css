@@ -89,14 +89,14 @@ gsap.timeline({
     trigger: ".mindmap-title-container",
     start: "top 70%",
     end: "top 70%",
-    markers: true,
+    // markers: true,
     // scrub: true
   }
 })
 .from(".mindmaptxt", {
   opacity: 0,
   y: 150,
-  stagger: 0.6, // Añadir un pequeño retardo entre animaciones
+  stagger: 0.3, // Añadir un pequeño retardo entre animaciones
   ease: "power4.out",
   duration: paramAnim[1],
 });
