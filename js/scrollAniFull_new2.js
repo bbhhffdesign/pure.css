@@ -1,139 +1,270 @@
 gsap.config({
-    autoSleep: 1
-})
-gsap.timeline({
-    scrollTrigger:{
-        trigger: "#hero",
-        start: "bottom top",
-        end: "110% top",
-        // markers: true,
-        scrub: true
-    }
-})
-.to("#navbar",{ y: -100})
-gsap.timeline({
-    scrollTrigger:{
-        trigger:".mindmap-title-container",
-        start: "top center",
-        end: "bottom center",
-        // markers: true
-    }
-})
-.from(".mindmaptxt",{
+  autoSleep: 1,
+});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#hero",
+      start: "bottom top",
+      end: "110% top",
+      scrub: true,
+      onEnter: () => {
+        document.querySelector("#navbar").style.willChange = "transform";
+      },
+      onLeave: () => {
+        document.querySelector("#navbar").style.willChange = "auto";
+      },
+    },
+  })
+  .to("#navbar", { y: -100 });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".mindmap-title-container",
+      start: "top center",
+      end: "bottom center",
+    //   markers: true,
+      onEnter: () => {
+        document.querySelectorAll(".mindmaptxt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onEnterBack: () => {
+        document.querySelectorAll(".mindmaptxt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onLeave: () => {
+        document.querySelectorAll(".mindmaptxt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+      onLeaveBack: () => {
+        document.querySelectorAll(".mindmaptxt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+    },
+  })
+  .from(".mindmaptxt", {
     opacity: 0,
     y: 70,
-    stagger: .3
-})
+    stagger: 0.3,
+  });
 
-gsap.timeline({
-    scrollTrigger:{
-        trigger:"#services-box-1",
-        start: "top 80%",
-        end: "bottom 80%",
-        // markers: true,
-    }
-})
-.from(".serv",{
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#services-box-1",
+      start: "top 80%",
+      end: "400% 80%",
+    //   markers: true,
+      onEnter: () => {
+        document.querySelectorAll(".serv").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onEnterBack: () => {
+        document.querySelectorAll(".serv").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onLeave: () => {
+        document.querySelectorAll(".serv").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+      onLeaveBack: () => {
+        document.querySelectorAll(".serv").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+    },
+  })
+  .from(".serv", {
     opacity: 0,
     y: 70,
-    stagger: .8
-})
-
-
+    stagger: 0.8,
+  });
 
 ///////////GEMBG/////////
 const gemBg = [
-    document.getElementById("borde-ext"),
-    document.getElementById("borde-int"),
-    document.getElementById("gemstone-sup"),
-    document.getElementById("gemstone-inf"),
-  ];
+  document.getElementById("borde-ext"),
+  document.getElementById("borde-int"),
+  document.getElementById("gemstone-sup"),
+  document.getElementById("gemstone-inf"),
+];
 
-for(let i = 0; i < gemBg.length; i++){
-    const length = gemBg[i].getTotalLength();
+for (let i = 0; i < gemBg.length; i++) {
+  const length = gemBg[i].getTotalLength();
 
-    gsap.set(gemBg[i],{
-        strokeDasharray: length,
-        strokeDashoffset: length
-    })
-
+  gsap.set(gemBg[i], {
+    strokeDasharray: length,
+    strokeDashoffset: length,
+  });
 }
-const gemBg_tween = gsap.to(".gemstone-bg-path",{strokeDashoffset : 0, duration: 6, paused: true});
+const gemBg_tween = gsap.to(".gemstone-bg-path", {
+  strokeDashoffset: 0,
+  duration: 6,
+  paused: true,
+});
 
 gsap.timeline({
-    scrollTrigger:{
-        trigger:".gemstone-text-1-container",
-        start: "30% center",
-        end: "70% center",
-        // pin: true,
-        scrub: true,
-        // markers: true,
-        onEnter: () =>{
-            gsap.to("#tsparticles",{opacity:0});
-
-        },
-        onLeave: ()=>{
-            gemBg_tween.play();
-            const particles = tsParticles.domItem(0);
-            particles.stop();
-        },
-        onEnterBack: ()=>{
-            gemBg_tween.timeScale(4).reverse();
-            const particles = tsParticles.domItem(0);
-            particles.refresh();
-        },
-        onLeaveBack: () =>{
-            gsap.to("#tsparticles",{opacity:1})
-        }
-    }
-})
+  scrollTrigger: {
+    trigger: ".gemstone-text-1-container",
+    start: "30% center",
+    end: "70% center",
+    // pin: true,
+    scrub: true,
+    // markers: true,
+    onEnter: () => {
+      document.getElementById("tsparticles").style.willChange = "opacity";
+      gsap.to("#tsparticles", { opacity: 0 });
+    },
+    onLeave: () => {
+      document.getElementById("tsparticles").style.willChange = "auto";
+      gemBg_tween.play();
+      const particles = tsParticles.domItem(0);
+      particles.stop();
+    },
+    onEnterBack: () => {
+      document.getElementById("tsparticles").style.willChange = "opacity";
+      gemBg_tween.timeScale(4).reverse();
+      const particles = tsParticles.domItem(0);
+      particles.refresh();
+    },
+    onLeaveBack: () => {
+      document.getElementById("tsparticles").style.willChange = "auto";
+      gsap.to("#tsparticles", { opacity: 1 });
+    },
+  },
+});
 ////////////////////////
 
-
-
-gsap.timeline({
-    scrollTrigger:{
-        trigger:".gemstone-text-content",
-        start: "top 80%",
-        end: "bottom 80%",
-        // markers: true
-    }
-})
-.from(".gem-txt",{
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".gemstone-text-content",
+      start: "top 80%",
+      end: "150% 80%",
+    //   markers: true,
+      onEnter: () => {
+        document.querySelectorAll(".gem-txt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onEnterBack: () => {
+        document.querySelectorAll(".gem-txt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onLeave: () => {
+        document.querySelectorAll(".gem-txt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+      onLeaveBack: () => {
+        document.querySelectorAll(".gem-txt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+    },
+  })
+  .from(".gem-txt", {
     opacity: 0,
     y: 70,
-    stagger: .6
-})
+    stagger: 0.6,
+  });
 
-gsap.timeline({
-    scrollTrigger:{
-        trigger:".paso-1",
-        start: "top 80%",
-        end: "top 80%",
-        // markers: true
-    }
-})
-.from(".paso-number",{
-    opacity: 0,
-    y: "80%",
-    stagger: .6
-})
-.from(".paso-text",{
-    opacity: 0,
-    y: "80%",
-    stagger: .6
-},"<")
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".paso-1",
+      start: "top 80%",
+      end: "400% 80%",
+    //   markers: true,
+      onEnter: () => {
+        document.querySelectorAll(".paso-number").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+        document.querySelectorAll(".paso-text").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onEnterBack: () => {
+        document.querySelectorAll(".paso-number").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+        document.querySelectorAll(".paso-text").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onLeave: () => {
+        document.querySelectorAll(".paso-number").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+        document.querySelectorAll(".paso-text").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+      onLeaveBack: () => {
+        document.querySelectorAll(".paso-number").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+        document.querySelectorAll(".paso-text").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
 
-gsap.timeline({
-    scrollTrigger:{
-        trigger:".orbita__text",
-        start: "top 80%",
-        end: "top 80%",
-        // markers: true
-    }
-})
-.from(".orbitxt",{
+    },
+  })
+  .from(".paso-number", {
     opacity: 0,
     y: "80%",
-    stagger: .3
-})
+    stagger: 0.6,
+  })
+  .from(
+    ".paso-text",
+    {
+      opacity: 0,
+      y: "80%",
+      stagger: 0.6,
+    },
+    "<"
+  );
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".orbita__text",
+      start: "top 80%",
+      end: "150% 80%",
+      markers: true,
+      onEnter: () => {
+        document.querySelectorAll(".orbitxt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onEnterBack: () => {
+        document.querySelectorAll(".orbitxt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onLeave: () => {
+        document.querySelectorAll(".orbitxt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+      onLeaveBack: () => {
+        document.querySelectorAll(".orbitxt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+    },
+  })
+  .from(".orbitxt", {
+    opacity: 0,
+    y: "80%",
+    stagger: 0.3,
+  });
