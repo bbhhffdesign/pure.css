@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   function animarOrbita(icono, caja, orbita, duracion, delay) {
     gsap.set([icono, caja], { xPercent: -50, yPercent: -50 });
+    // console.log("ahre")
 
     const animacion = gsap.to([icono, caja], {
       delay: delay,
@@ -49,14 +50,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     caja.style.display = "none";
 
     // Configurar ScrollTrigger
+    
     ScrollTrigger.create({
+      // markers: true,
       trigger: svgContainer,
-      start: "top 50%",
-      end: "bottom 50%",
-      onEnter: () => animacion.play(),
-      onLeave: () => animacion.pause(),
+      start: "-80% 50%",
+      end: "180% 50%",
+      onEnter: () => animacion.restart(),
+      onLeave: () => animacion.restart() + animacion.pause(),
       onEnterBack: () => animacion.play(),
-      onLeaveBack: () => animacion.pause(),
+      onLeaveBack: () => animacion.restart()+ animacion.seek(3) + animacion.pause(),
 
     });
 
@@ -64,6 +67,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       const rect = icono.getBoundingClientRect();
       const posicionX = rect.left;
       const anchoPantalla = window.innerWidth / 2;
+
 
       if (posicionX < anchoPantalla) {
         caja.style.left = "100px";
@@ -93,10 +97,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const mm = gsap.matchMedia();
 
   mm.add("(max-width: 767px)", () => {
+
     for (let i = 0; i < iconos.length; i++) {
       animarOrbita(iconos[i], cajas[i], orbitas[i], duraciones[i], delays[i]);
     }
   });
+
+
+function cerrarCajas(){
+  for (let i = 0; i < iconos.length; i++){
+    const posicionX = iconos[i].getBoundingClientRect().x;
+    if (posicionX < 0){
+      cajas[i].style.display = "none";      
+    }
+  }
+}
+
+setInterval(cerrarCajas, 1000);
+// repeticion();
+
 
   mm.add("(min-width: 768px)", () => {
     for (let i = 0; i < iconos.length; i++) {

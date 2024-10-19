@@ -111,8 +111,11 @@
       padding: $spac-s;
       margin: $spac-m;
       border: $border-white;
+
       @include glass-bg-only;
       @include border-gradient;
+
+    
 
       @include desktop-sm {
         max-width: 40%;
@@ -169,4 +172,5 @@
       }
     }
   }
+  
 }

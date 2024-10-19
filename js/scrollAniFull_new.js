@@ -121,16 +121,16 @@ for (let i = 0; i < servicesBoxes.length; i++) {
     ease: "power4.out",
     duration: paramAnim[1],
   })
-    .from(servicesBoxLogos[i], {
-      duration: 3,
-      fill: "#c6c6c6",
-      ease: "power4.out",
-    })
-    .to(servicesBoxLogos[i], {
-      duration: 1,
-      fill: "var(--colorBg)",
-      ease: "power4.out",
-    });
+    // .from(servicesBoxLogos[i], {
+    //   duration: 3,
+    //   fill: "#c6c6c6",
+    //   ease: "power4.out",
+    // })
+    // .to(servicesBoxLogos[i], {
+    //   duration: 1,
+    //   fill: "var(--colorBg)",
+    //   ease: "power4.out",
+    // });
 }
 
 const tl_gemstoneText_1 = gsap.timeline({

@@ -16,6 +16,8 @@
     --borderGradient1: #c6c6c6;
     --borderGradient2: #000000;
 
+    --glassBg : radial-gradient(at center top, #ffffff20, #01010100);
+
     --gris: #6969698b;
     --svgInvert: invert(1);
 

@@ -67,6 +67,15 @@
       padding: $spac-s $spac-s;
       text-align: center;
       overflow-y: hidden;
+
+      &:hover{
+        @include glass-bg-only(){
+          background: var(--glassBg);
+
+        };
+      }
+
+      
       @include border-gradient;
       @include glass-bg-only;
 

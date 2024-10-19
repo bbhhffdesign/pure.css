@@ -101,6 +101,7 @@ font-style: normal;
 
 @mixin glass-bg-only($zIndex1: -1, $bg-color: transparent, $blur: 10px){
   z-index: 0;
+  @content;
 
   &:before {
     content: '';
