@@ -15,10 +15,10 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger:{
-        trigger:"#service-box-1",
+        trigger:"#services-box-1",
         start: "top 80%",
         end: "bottom 80%",
-        // markers: trues
+        markers: true
     }
 })
 .from(".serv",{
