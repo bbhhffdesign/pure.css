@@ -71,44 +71,6 @@ const orbita_texts = [
 // scale,duration
 const paramAnim =[0.9, 1, "90%"];
 
-gsap.timeline({
-  scrollTrigger:{
-    trigger: ".mindmap-title-container",
-    start: "top 70%",
-    end: "top 70%",
-    // markers: true,
-    // scrub: true
-  }
-})
-.from(".mindmap-title-container", {
-  scale: paramAnim[0],
-  transformOrigin: "50% 50%",
-  opacity: 0,
-  y: 150,
-  stagger: 0.1, // Añadir un pequeño retardo entre animaciones
-  ease: "power4.out",
-  duration: paramAnim[1],
-});
-
-gsap.timeline({
-  scrollTrigger:{
-    trigger: ".gemstone-text",
-    start: "bottom 90%",
-    end: "bottom 90%",
-    markers: true,
-    // scrub: true
-  }
-})
-.from(".gem-txt", {
-  scale: paramAnim[0],
-  transformOrigin: "50% 50%",
-  opacity: 0,
-  y: 150,
-  stagger: 0.1, // Añadir un pequeño retardo entre animaciones
-  ease: "power4.out",
-  duration: paramAnim[1],
-});
-
 const tl_navbar = gsap.timeline({
   scrollTrigger: {
     trigger: heroText,
@@ -121,6 +83,76 @@ const tl_navbar = gsap.timeline({
 tl_navbar
   .to(navBar, { y: "-100%" })
   .from(themeSwitch2, { opacity: 0, zIndex: "auto" }, "<");
+
+gsap.timeline({
+  scrollTrigger:{
+    trigger: ".mindmap-title-container",
+    start: "top 70%",
+    end: "top 70%",
+    markers: true,
+    // scrub: true
+  }
+})
+.from(".mindmaptxt", {
+  opacity: 0,
+  y: 150,
+  stagger: 0.6, // Añadir un pequeño retardo entre animaciones
+  ease: "power4.out",
+  duration: paramAnim[1],
+});
+
+gsap.timeline({
+  scrollTrigger:{
+    trigger: ".gemstone-text",
+    start: "bottom 90%",
+    end: "bottom 90%",
+    // markers: true,
+  }
+})
+.from(".gemstone-text-content", {
+  opacity: 0,
+  y: 150,
+  stagger: 0.1, // Añadir un pequeño retardo entre animaciones
+  ease: "power4.out",
+  duration: paramAnim[1],
+})
+.from(".gemstone-text", {opacity: 0}, "<");;
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pasos-container",
+    start: "80% 90%",
+    end: "80% 90%",
+    // markers: true,
+  }
+})
+.from(".paso-number", {
+  // scale: paramAnim[0],
+  // transformOrigin: "50% 50%",
+  opacity: 0,
+  y: 150,
+  stagger: .6, // Añadir un pequeño retardo entre animaciones
+  ease: "power4.out",
+  duration: paramAnim[1],
+});
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".orbita-text",
+    start: "80% 90%",
+    end: "80% 90%",
+    // markers: true,
+  }
+})
+.from(".orbita__text", {
+  // scale: paramAnim[0],
+  // transformOrigin: "50% 50%",
+  opacity: 0,
+  y: 150,
+  stagger: 0.1, // Añadir un pequeño retardo entre animaciones
+  ease: "power4.out",
+  duration: paramAnim[1],
+});
 
 // for (let i = 0; i < mindmapTexts.length; i++) {
 //   const tl = gsap.timeline({
