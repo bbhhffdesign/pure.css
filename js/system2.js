@@ -1,4 +1,3 @@
-
 const orbitas = [
   document.getElementById("orbita-1"),
   document.getElementById("orbita-2"),
