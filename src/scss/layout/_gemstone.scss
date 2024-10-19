@@ -6,9 +6,6 @@
 
   .gemstone-text-1-container {
     position: relative;
-    // height: 50dvh;
-    // @include flex(column, center, center,none);
-    // background-color: #333;
     
     .gemstone-title-container{
       @include flex(column, flex-end, center, none);
