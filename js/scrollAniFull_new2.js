@@ -1,3 +1,6 @@
+gsap.config({
+    autoSleep: 1
+})
 gsap.timeline({
     scrollTrigger:{
         trigger: "#hero",
