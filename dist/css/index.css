@@ -3059,7 +3059,6 @@ svg .gall {
 .services .services-boxes .service:hover {
   z-index: 0;
   background: var(--glassBg);
-  transition: background 1s ease;
 }
 .services .services-boxes .service:hover:before {
   content: "";
@@ -3250,9 +3249,6 @@ svg .gall {
   border-image-source: radial-gradient(circle, var(--borderGradient1), var(--borderGradient2));
   border-left: none;
   border-right: none;
-}
-.gemstone .pasos-container .paso:hover {
-  background-color: var(--colorPrimTransparent);
 }
 .gemstone .pasos-container .paso:before {
   content: "";
