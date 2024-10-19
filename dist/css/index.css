@@ -2624,7 +2624,7 @@ svg .gall {
   bottom: 0;
   z-index: -1;
   border-radius: inherit;
-  background: rgba(55, 54, 54, 0.3490196078);
+  background: transparent;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -3263,6 +3263,9 @@ svg .gall {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+.gemstone .pasos-container .paso:hover h1 {
+  color: var(--colorSecundario);
+}
 @media (min-width: 64rem) {
   .gemstone .pasos-container .paso {
     max-width: 40%;
@@ -3284,9 +3287,6 @@ svg .gall {
   margin: 0;
   line-height: clamp(10rem, 5.714rem + 21.429vw, 16rem);
   color: var(--textoPrincipal);
-}
-.gemstone .pasos-container .paso h1:hover {
-  color: var(--colorSecundario);
 }
 @media (min-width: 37.5rem) {
   .gemstone .pasos-container .paso h1 {
@@ -3321,7 +3321,7 @@ svg .gall {
 }
 
 .faq {
-  background-color: var(--faqBg);
+  background: var(--glassBg_bottom);
   height: 120vh;
   padding-bottom: 0;
 }
@@ -3410,6 +3410,11 @@ svg .gall {
   gap: none;
   width: 100vw;
   margin: 10rem 0;
+  background: var(--glassBg);
+}
+.brands-animation::before {
+  content: "";
+  inset: 0;
 }
 .brands-animation .brands-container {
   position: relative;
@@ -3715,6 +3720,8 @@ footer {
 }
 
 .footer {
+  border-top: 1px solid var(--textoTitulos);
+  padding-top: 1rem;
   max-width: 80rem;
   text-align: center;
 }

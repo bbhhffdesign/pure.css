@@ -20,6 +20,7 @@
         width: fit-content;
         max-width: 512px;
         border-radius: $border-rad-s;
+        
         @include glass-bg-only($bg-color: #6f6f6f52);
 
 

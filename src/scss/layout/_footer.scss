@@ -8,6 +8,8 @@ footer{
 
 .footer{
     // height: auto;
+    border-top: 1px solid var(--textoTitulos);
+    padding-top: 1rem;
     max-width: $desktop-md;
     text-align: center;
 

@@ -17,6 +17,7 @@
     --borderGradient2: #c6c6c6;
     
     --glassBg : radial-gradient(at center top, #00000020, #01010100);
+    --glassBg_bottom : radial-gradient(at center bottom, #105ac20a, #00000000);
 
 
     --gris: #969696;

@@ -139,7 +139,7 @@ const tl_gemstoneText_1 = gsap.timeline({
     // markers: true,
     pin: true,
     start: "center center",
-    end: "200% center",
+    end: "bottom center",
     scrub: 1,
   },
 });
@@ -162,7 +162,7 @@ const gemBg_anim_tl = gsap.timeline({
   scrollTrigger: {
     trigger: gemstoneText1Container,
     // markers: true,
-    start: "center center",
+    start: "60% center",
     end: "200% center",
     onEnter: () => {
       gemBg_anim_tl.play();
