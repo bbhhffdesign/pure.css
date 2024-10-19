@@ -124,3 +124,13 @@ setInterval(cerrarCajas, 1000);
     }
   });
 });
+
+
+        // document.querySelectorAll(".iconosvg").forEach((el) => {
+        //   el.style.willChange = "transform";
+        //   console.log("icono apli")
+        // });
+        // document.querySelectorAll(".caja_icono").forEach((el) => {
+        //   el.style.willChange = "transform";
+        //   console.log("caja apli")
+        // });
