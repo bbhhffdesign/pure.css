@@ -3448,7 +3448,7 @@ svg .gall {
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  animation: 10s slide linear infinite;
+  animation: 20s slide linear infinite;
   animation-direction: reverse;
 }
 .brands-animation .brands-slide img {
