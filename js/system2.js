@@ -123,12 +123,7 @@ for (let i = 0; i < iconos.length; i++) {
 
   animaciones.push(animacion, animacionCaja)
 
-  // const posicionCaja = iconos[i].getBoundingClientRect();
-  // const posicionX = posicionCaja.left;
-  // const anchoPantalla = window.innerWidth / 2;
-
   iconos[i].addEventListener("click", () => {
-    // Alternar la pausa de las animaciones
     animacion.paused(!animacion.paused());
     animacionCaja.paused(!animacionCaja.paused());
 
@@ -137,8 +132,7 @@ for (let i = 0; i < iconos.length; i++) {
     if (animacion.paused()) {
       if (display_caja === "none") {
         cajas[i].style.display = "block";
-
-        // Obtener la posición del ícono
+        
         const posicionIcono = iconos[i].getBoundingClientRect();
         const anchoPantalla = window.innerWidth / 2;
 
