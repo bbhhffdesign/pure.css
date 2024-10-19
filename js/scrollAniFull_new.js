@@ -28,12 +28,12 @@ const servicesBoxLogos = [
   document.getElementById("comunicacion-logo"),
   document.getElementById("marca-logo"),
 ];
-const gemBg = [
-  document.getElementById("borde-ext"),
-  document.getElementById("borde-int"),
-  document.getElementById("gemstone-sup"),
-  document.getElementById("gemstone-inf"),
-];
+// const gemBg = [
+//   document.getElementById("borde-ext"),
+//   document.getElementById("borde-int"),
+//   document.getElementById("gemstone-sup"),
+//   document.getElementById("gemstone-inf"),
+// ];
 const gemstoneSection = document.getElementById("gemstone-section");
 const gemstoneText1Container = document.getElementById("gemstone-text-1-container");
 const gemstoneText1 = document.getElementById("gemstone-text-1");

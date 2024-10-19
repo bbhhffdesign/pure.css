@@ -2042,6 +2042,10 @@ p {
 }
 
 strong {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-weight: 600;
   color: var(--textoStrong);
 }
@@ -2890,7 +2894,7 @@ svg .gall {
 
 @media (min-width: 64rem) {
   .somos {
-    height: 150vh;
+    height: 120vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -3280,7 +3284,7 @@ svg .gall {
   font-weight: 400;
   font-style: normal;
   position: absolute;
-  z-index: -2;
+  z-index: -3;
   font-size: clamp(15rem, 10.714rem + 21.429vw, 21rem);
   top: -60%;
   left: -10%;

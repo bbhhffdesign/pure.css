@@ -64,6 +64,7 @@ p{
 
 }
 strong{
+    @include font-raleway;
     font-weight: 600;
     color: var(--textoStrong);
 }
