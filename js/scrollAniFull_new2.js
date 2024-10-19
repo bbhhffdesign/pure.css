@@ -240,7 +240,7 @@ gsap
       trigger: ".orbita__text",
       start: "top 80%",
       end: "150% 80%",
-      markers: true,
+    //   markers: true,
       onEnter: () => {
         document.querySelectorAll(".orbitxt").forEach((el) => {
           el.style.willChange = "transform, opacity";
