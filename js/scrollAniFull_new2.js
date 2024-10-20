@@ -148,7 +148,7 @@ gsap
       trigger: ".gemstone-text-content",
       start: "bottom 80%",
       end: "150% 80%",
-      markers: true,
+      // markers: true,
       // onEnter: () => {
       //   document.querySelectorAll(".gem-txt").forEach((el) => {
       //     el.style.willChange = "transform, opacity";
@@ -241,26 +241,26 @@ gsap
       start: "bottom 80%",
       end: "150% 80%",
     //   markers: true,
-      onEnter: () => {
-        document.querySelectorAll(".orbitxt").forEach((el) => {
-          el.style.willChange = "transform, opacity";
-        });
-      },
-      onEnterBack: () => {
-        document.querySelectorAll(".orbitxt").forEach((el) => {
-          el.style.willChange = "transform, opacity";
-        });
-      },
-      onLeave: () => {
-        document.querySelectorAll(".orbitxt").forEach((el) => {
-          el.style.willChange = "auto";
-        });
-      },
-      onLeaveBack: () => {
-        document.querySelectorAll(".orbitxt").forEach((el) => {
-          el.style.willChange = "auto";
-        });
-      },
+      // onEnter: () => {
+      //   document.querySelectorAll(".orbitxt").forEach((el) => {
+      //     el.style.willChange = "transform, opacity";
+      //   });
+      // },
+      // onEnterBack: () => {
+      //   document.querySelectorAll(".orbitxt").forEach((el) => {
+      //     el.style.willChange = "transform, opacity";
+      //   });
+      // },
+      // onLeave: () => {
+      //   document.querySelectorAll(".orbitxt").forEach((el) => {
+      //     el.style.willChange = "auto";
+      //   });
+      // },
+      // onLeaveBack: () => {
+      //   document.querySelectorAll(".orbitxt").forEach((el) => {
+      //     el.style.willChange = "auto";
+      //   });
+      // },
     },
   })
   .from("#orbita-text6", {
