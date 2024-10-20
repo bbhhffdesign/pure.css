@@ -20,8 +20,8 @@ const cajas = [
   document.getElementById("caja_icono4"),
 ];
 
-const duraciones = [5, 7, 10, 15];
-const delays = [0, 1, 1.5, 2];
+const duraciones = [10, 14, 20, 35];
+const delays = [4, 7, 0, 5];
 
 gsap.config({
   autoSleep: 1,
@@ -131,6 +131,7 @@ for (let i = 0; i < iconos.length; i++) {
     if (animacion.paused()) {
       if (display_caja === "none") {
         cajas[i].style.display = "block";
+        gsap.to(iconos[i],{ transformOrigin: "50% 50%", scale: 1.1, duration: .3})
         
         const posicionIcono = iconos[i].getBoundingClientRect();
         const anchoPantalla = window.innerWidth / 2;
@@ -143,6 +144,7 @@ for (let i = 0; i < iconos.length; i++) {
         }
       }
     } else {
+      gsap.to(iconos[i], { transformOrigin: "50% 50%", scale: 1})
       cajas[i].style.display = "none";
       gsap.set(cajas[i], { x: 0 });  
     }
