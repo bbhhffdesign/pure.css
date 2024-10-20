@@ -183,7 +183,7 @@ gsap
       trigger: ".gemstone-text-content",
       start: "bottom 80%",
       end: "150% 80%",
-      markers: true,
+      // markers: true,
       onEnter: () => {
         document.querySelectorAll(".gem-txt").forEach((el) => {
           el.style.willChange = "transform, opacity";
