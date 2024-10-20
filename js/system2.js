@@ -28,7 +28,7 @@ gsap.config({
 });
 
 ScrollTrigger.create({
-  markers: true,
+  // markers: true,
   trigger: ".orbitas__svg__container",
     start: "-50% 50%",
     end: "150% 50%",
