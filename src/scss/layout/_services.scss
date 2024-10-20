@@ -68,7 +68,9 @@
       text-align: center;
       overflow-y: hidden;
 
-      &:hover{
+      //hover luz
+
+      &:active{
         @include glass-bg-only(){
           background: var(--glassBg);
 

@@ -28,7 +28,9 @@
     @include desktop-sm {
       max-width: 60rem;
     }
-
+    .mindmaptxtbottom{
+      margin: 0 2rem;
+    }
     .mindmap-text-border{
       @include flex(column, space-between, center, none);
       overflow-x: hidden;
@@ -45,7 +47,7 @@
 
     & > div {
       overflow-y: hidden;
-      margin: 0 auto;
+      // margin: 0 auto;
     }
 
     h2 {

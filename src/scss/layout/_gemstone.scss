@@ -112,9 +112,8 @@
 
       @include glass-bg-only;
       
-      &:hover {
+      &:active {
         h1{
-
           color: var(--colorSecundario);
         }
       }
