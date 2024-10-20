@@ -10,9 +10,9 @@
   // background-color: var(--formBg);
 
   .home-container{
-    position: relative;
+    position: absolute;
     margin: 1rem;
-    display: inline-block;
+    // display: inline-block;
     cursor: pointer;
     border-radius: $border-rad-s;
 
@@ -252,6 +252,7 @@
     }
       .thank__page{
         text-align: center;
+        margin: 1rem 0;
         p{
           padding: 0 1rem;
           max-width: 100%;

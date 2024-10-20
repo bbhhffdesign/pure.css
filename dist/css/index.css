@@ -3798,9 +3798,8 @@ footer {
   font-style: normal;
 }
 .formulario .home-container {
-  position: relative;
+  position: absolute;
   margin: 1rem;
-  display: inline-block;
   cursor: pointer;
   border-radius: 0.5rem 0.05rem;
 }
@@ -4069,6 +4068,7 @@ footer {
 }
 .formulario .input .thank__page {
   text-align: center;
+  margin: 1rem 0;
 }
 .formulario .input .thank__page p {
   padding: 0 1rem;
