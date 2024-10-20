@@ -2738,7 +2738,7 @@ svg .gall {
     box-sizing: border-box;
     padding: 0 2rem;
     padding-top: 2rem;
-    height: calc(100vh - 2rem);
+    height: calc(100dvh - 4rem);
     margin: 0 auto;
     max-width: 100rem;
   }
@@ -2747,7 +2747,7 @@ svg .gall {
   margin-top: 0.5rem;
 }
 .hero .hero-text {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
