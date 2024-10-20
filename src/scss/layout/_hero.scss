@@ -13,7 +13,7 @@
     padding: 0 2rem;
     padding-top: 2rem;
     // margin-top: 5rem;
-    height: calc(100vh - 2rem);
+    height: calc(100dvh - 4rem);
     margin: 0 auto;
 
     max-width: 100rem;
@@ -23,7 +23,7 @@
   }
 
   .hero-text {
-    height: 100vh;
+    height: 100dvh;
     @include flex(column, center, flex-start, none);
     position: relative;
     gap: 1rem;

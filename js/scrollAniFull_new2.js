@@ -238,7 +238,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".orbita__text",
-      start: "top 80%",
+      start: "bottom 80%",
       end: "150% 80%",
     //   markers: true,
       onEnter: () => {
@@ -263,8 +263,13 @@ gsap
       },
     },
   })
-  .from(".orbitxt", {
+  .from("#orbita-text6", {
     opacity: 0,
-    y: "80%",
+    y: "100",
     stagger: 0.3,
   });
+  // .from("#orbita-text6", {
+  //   opacity: 0,
+  //   y: "80%",
+  //   stagger: 0.3,
+  // });
