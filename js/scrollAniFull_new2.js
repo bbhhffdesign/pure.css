@@ -47,10 +47,45 @@ gsap
       },
     },
   })
-  .from(".mindmaptxt", {
+  .from(".mindmaptxtleft", {
+    delay: .5,
+    opacity: 0,
+    x: "-100%",
+    stagger: 0.3,
+  });
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".mindmap-title-container",
+      start: "top center",
+      end: "bottom center",
+    //   markers: true,
+      onEnter: () => {
+        document.querySelectorAll(".mindmaptxt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onEnterBack: () => {
+        document.querySelectorAll(".mindmaptxt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onLeave: () => {
+        document.querySelectorAll(".mindmaptxt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+      onLeaveBack: () => {
+        document.querySelectorAll(".mindmaptxt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+    },
+  })
+  .from(".mindmaptxtbottom", {
     opacity: 0,
     y: 70,
-    stagger: 0.3,
+    stagger: 1.5,
   });
 
 // gsap

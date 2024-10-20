@@ -2910,16 +2910,24 @@ svg .gall {
   align-items: center;
   gap: none;
 }
-.somos .mindmap-title-container > div:nth-of-type(2),
-.somos .mindmap-title-container > div:nth-of-type(3),
-.somos .mindmap-title-container > div:nth-of-type(4),
-.somos .mindmap-title-container > div:nth-of-type(5) {
-  padding: 0 2.5rem;
-}
 @media (min-width: 64rem) {
   .somos .mindmap-title-container {
     max-width: 60rem;
   }
+}
+.somos .mindmap-title-container .mindmap-text-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  overflow-x: hidden;
+  height: 40%;
+  margin: 2rem;
+  padding: 0.5rem;
+  border-left: 2px solid transparent;
+  border-image-slice: 1;
+  border-image-source: radial-gradient(circle, var(--colorBg_invert), var(--colorBg));
 }
 .somos .mindmap-title-container .mindmap-title-cta {
   padding: 0.5rem 2rem;
