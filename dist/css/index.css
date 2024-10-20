@@ -1,9 +1,11 @@
+@charset "UTF-8";
 /*!
 Pure v3.0.0
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE
-*//*!
+*/
+/*!
 normalize.css v | MIT License | https://necolas.github.io/normalize.css/
 Copyright (c) Nicolas Gallagher and Jonathan Neal
 */
@@ -3622,8 +3624,6 @@ svg .gall {
   z-index: 4;
   position: absolute;
   width: auto;
-  top: -55px;
-  left: 0;
   display: none;
   border: 1px solid;
   border-image-slice: 1;
@@ -4066,7 +4066,6 @@ footer {
 }
 .formulario .input .thank__page {
   text-align: center;
-  margin: 1rem 0;
 }
 .formulario .input .thank__page p {
   padding: 0 1rem;
