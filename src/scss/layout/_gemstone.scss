@@ -58,6 +58,14 @@
     padding-left: 1rem;
     @include border-gradient-left;
 
+    .gemstone-text-content{
+      & > *{
+        margin-bottom: 2rem;
+      }
+
+    }
+
+
     @include tablet{
       margin: 0 3rem 0 2rem;
       padding-left: 2rem;

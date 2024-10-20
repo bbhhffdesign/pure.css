@@ -303,8 +303,3 @@ gsap
     y: "100",
     stagger: 0.3,
   });
-  // .from("#orbita-text6", {
-  //   opacity: 0,
-  //   y: "80%",
-  //   stagger: 0.3,
-  // });
