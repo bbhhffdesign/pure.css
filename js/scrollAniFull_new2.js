@@ -53,40 +53,40 @@ gsap
     stagger: 0.3,
   });
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: "#services-box-1",
-      start: "top 80%",
-      end: "400% 80%",
-    //   markers: true,
-      onEnter: () => {
-        document.querySelectorAll(".serv").forEach((el) => {
-          el.style.willChange = "transform, opacity";
-        });
-      },
-      onEnterBack: () => {
-        document.querySelectorAll(".serv").forEach((el) => {
-          el.style.willChange = "transform, opacity";
-        });
-      },
-      onLeave: () => {
-        document.querySelectorAll(".serv").forEach((el) => {
-          el.style.willChange = "auto";
-        });
-      },
-      onLeaveBack: () => {
-        document.querySelectorAll(".serv").forEach((el) => {
-          el.style.willChange = "auto";
-        });
-      },
-    },
-  })
-  .from(".serv", {
-    opacity: 0,
-    y: 70,
-    stagger: 0.8,
-  });
+// gsap
+//   .timeline({
+//     scrollTrigger: {
+//       trigger: "#services-box-1",
+//       start: "top 80%",
+//       end: "400% 80%",
+//     //   markers: true,
+//       onEnter: () => {
+//         document.querySelectorAll(".serv").forEach((el) => {
+//           el.style.willChange = "transform, opacity";
+//         });
+//       },
+//       onEnterBack: () => {
+//         document.querySelectorAll(".serv").forEach((el) => {
+//           el.style.willChange = "transform, opacity";
+//         });
+//       },
+//       onLeave: () => {
+//         document.querySelectorAll(".serv").forEach((el) => {
+//           el.style.willChange = "auto";
+//         });
+//       },
+//       onLeaveBack: () => {
+//         document.querySelectorAll(".serv").forEach((el) => {
+//           el.style.willChange = "auto";
+//         });
+//       },
+//     },
+//   })
+//   .from(".serv", {
+//     opacity: 0,
+//     y: 70,
+//     stagger: 0.8,
+//   });
 
 ///////////GEMBG/////////
 const gemBg = [
