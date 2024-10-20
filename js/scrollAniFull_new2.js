@@ -148,27 +148,27 @@ gsap
       trigger: ".gemstone-text-content",
       start: "bottom 80%",
       end: "150% 80%",
-      // markers: true,
-      // onEnter: () => {
-      //   document.querySelectorAll(".gem-txt").forEach((el) => {
-      //     el.style.willChange = "transform, opacity";
-      //   });
-      // },
-      // onEnterBack: () => {
-      //   document.querySelectorAll(".gem-txt").forEach((el) => {
-      //     el.style.willChange = "transform, opacity";
-      //   });
-      // },
-      // onLeave: () => {
-      //   document.querySelectorAll(".gem-txt").forEach((el) => {
-      //     el.style.willChange = "auto";
-      //   });
-      // },
-      // onLeaveBack: () => {
-      //   document.querySelectorAll(".gem-txt").forEach((el) => {
-      //     el.style.willChange = "auto";
-      //   });
-      // },
+      markers: true,
+      onEnter: () => {
+        document.querySelectorAll(".gem-txt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onEnterBack: () => {
+        document.querySelectorAll(".gem-txt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onLeave: () => {
+        document.querySelectorAll(".gem-txt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+      onLeaveBack: () => {
+        document.querySelectorAll(".gem-txt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
     },
   })
   .from("#gemstone-text-7", {
@@ -240,27 +240,27 @@ gsap
       trigger: ".orbita__text",
       start: "bottom 80%",
       end: "150% 80%",
-    //   markers: true,
-      // onEnter: () => {
-      //   document.querySelectorAll(".orbitxt").forEach((el) => {
-      //     el.style.willChange = "transform, opacity";
-      //   });
-      // },
-      // onEnterBack: () => {
-      //   document.querySelectorAll(".orbitxt").forEach((el) => {
-      //     el.style.willChange = "transform, opacity";
-      //   });
-      // },
-      // onLeave: () => {
-      //   document.querySelectorAll(".orbitxt").forEach((el) => {
-      //     el.style.willChange = "auto";
-      //   });
-      // },
-      // onLeaveBack: () => {
-      //   document.querySelectorAll(".orbitxt").forEach((el) => {
-      //     el.style.willChange = "auto";
-      //   });
-      // },
+      // markers: true,
+      onEnter: () => {
+        document.querySelectorAll(".orbitxt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onEnterBack: () => {
+        document.querySelectorAll(".orbitxt").forEach((el) => {
+          el.style.willChange = "transform, opacity";
+        });
+      },
+      onLeave: () => {
+        document.querySelectorAll(".orbitxt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
+      onLeaveBack: () => {
+        document.querySelectorAll(".orbitxt").forEach((el) => {
+          el.style.willChange = "auto";
+        });
+      },
     },
   })
   .from("#orbita-text6", {
