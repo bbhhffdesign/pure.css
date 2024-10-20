@@ -146,35 +146,35 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".gemstone-text-content",
-      start: "top 80%",
+      start: "bottom 80%",
       end: "150% 80%",
-    //   markers: true,
-      onEnter: () => {
-        document.querySelectorAll(".gem-txt").forEach((el) => {
-          el.style.willChange = "transform, opacity";
-        });
-      },
-      onEnterBack: () => {
-        document.querySelectorAll(".gem-txt").forEach((el) => {
-          el.style.willChange = "transform, opacity";
-        });
-      },
-      onLeave: () => {
-        document.querySelectorAll(".gem-txt").forEach((el) => {
-          el.style.willChange = "auto";
-        });
-      },
-      onLeaveBack: () => {
-        document.querySelectorAll(".gem-txt").forEach((el) => {
-          el.style.willChange = "auto";
-        });
-      },
+      markers: true,
+      // onEnter: () => {
+      //   document.querySelectorAll(".gem-txt").forEach((el) => {
+      //     el.style.willChange = "transform, opacity";
+      //   });
+      // },
+      // onEnterBack: () => {
+      //   document.querySelectorAll(".gem-txt").forEach((el) => {
+      //     el.style.willChange = "transform, opacity";
+      //   });
+      // },
+      // onLeave: () => {
+      //   document.querySelectorAll(".gem-txt").forEach((el) => {
+      //     el.style.willChange = "auto";
+      //   });
+      // },
+      // onLeaveBack: () => {
+      //   document.querySelectorAll(".gem-txt").forEach((el) => {
+      //     el.style.willChange = "auto";
+      //   });
+      // },
     },
   })
-  .from(".gem-txt", {
+  .from("#gemstone-text-7", {
     opacity: 0,
     y: 70,
-    stagger: 0.6,
+    // stagger: 0.6,
   });
 
 gsap
