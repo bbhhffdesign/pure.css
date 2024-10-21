@@ -5,7 +5,7 @@
   height: 100dvh;
 
   @include desktop-sm {
-    height: 120vh;
+    height: 120svh;
     @include flex(row, center, center, none);
   }
 

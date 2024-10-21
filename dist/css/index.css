@@ -2900,7 +2900,7 @@ svg .gall {
 }
 @media (min-width: 64rem) {
   .somos {
-    height: 120vh;
+    height: 120svh;
     display: flex;
     flex-direction: row;
     justify-content: center;
