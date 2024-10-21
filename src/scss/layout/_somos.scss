@@ -10,17 +10,17 @@
   }
 
   .mindmap-title-container {
-    // padding: 0 $spac-l;
     height: 100%;
     @include flex(column, space-around, center, none);
 
-    // // > div:nth-of-type(2),
-    // // > div:nth-of-type(3),
-    // > div:nth-of-type(4),
-    // > div:nth-of-type(5) {
-    //   padding: 0 $spac-l;
-    //   background-color: red;
-    // }
+    h2 {
+      hr {
+        border: none;
+        height: 1px;
+        background: #ffffff;
+        background: var(--gradHr);
+      }
+    }
 
     @include tablet {
       // padding: 0 $spac-m;
@@ -29,17 +29,15 @@
     @include desktop-sm {
       max-width: 60rem;
     }
-    .mindmaptxtbottom{
+    .mindmaptxtbottom {
       margin: 0 2rem;
     }
-    .mindmap-text-border{
+    .mindmap-text-border {
       @include flex(column, space-around, center, none);
-      flex-grow: .5;
+      flex-grow: 0.5;
       overflow-x: hidden;
-      // height: 40%;
       margin: $spac-m;
       padding: $spac-xs;
-      // border-left: solid 1px white;
       @include border-gradient-left;
     }
 
@@ -72,22 +70,21 @@
       color: var(--colorBg);
       // transform: translateY(-130px);
 
-      @include tablet{
+      @include tablet {
         transform: scale(1.2);
       }
 
-      strong{
+      strong {
         color: var(--colorBg);
       }
 
-      &:hover{
+      &:hover {
         color: var(--colorBg_invert);
 
-        strong{
+        strong {
           color: var(--colorBg_invert);
         }
       }
-
     }
     @include tablet {
       br {

@@ -1,22 +1,22 @@
 gsap.config({
   autoSleep: 1,
 });
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: "#hero",
-      start: "bottom top",
-      end: "110% top",
-      scrub: true,
-      onEnter: () => {
-        document.querySelector("#navbar").style.willChange = "transform";
-      },
-      onLeave: () => {
-        document.querySelector("#navbar").style.willChange = "auto";
-      },
-    },
-  })
-  .to("#navbar", { y: -100 });
+// gsap
+//   .timeline({
+//     scrollTrigger: {
+//       trigger: "#hero",
+//       start: "bottom top",
+//       end: "110% top",
+//       scrub: true,
+//       onEnter: () => {
+//         document.querySelector("#navbar").style.willChange = "transform";
+//       },
+//       onLeave: () => {
+//         document.querySelector("#navbar").style.willChange = "auto";
+//       },
+//     },
+//   })
+//   .to("#navbar", { y: -100 });
 
 gsap
   .timeline({

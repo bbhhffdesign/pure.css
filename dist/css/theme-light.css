@@ -19,6 +19,8 @@
     --glassBg : radial-gradient(at center top, #00000020, #01010100);
     --glassBg_bottom : radial-gradient(at center bottom, #105ac20a, #00000000);
 
+    --gradHr : radial-gradient(at center, #010101, #ffffffd3);
+
 
     --gris: #969696;
     --svgInvert: invert(0);

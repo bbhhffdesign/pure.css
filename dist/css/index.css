@@ -2750,6 +2750,7 @@ svg .gall {
   margin-top: 0.5rem;
 }
 .hero .hero-text {
+  margin-top: 2rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -2906,6 +2907,12 @@ svg .gall {
   justify-content: space-around;
   align-items: center;
   gap: none;
+}
+.somos .mindmap-title-container h2 hr {
+  border: none;
+  height: 1px;
+  background: #ffffff;
+  background: var(--gradHr);
 }
 @media (min-width: 64rem) {
   .somos .mindmap-title-container {

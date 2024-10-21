@@ -27,6 +27,7 @@
   }
 
   .hero-text {
+    margin-top: 2rem;
     height: 100%;
     @include flex(column, center, flex-start, none);
     position: relative;
