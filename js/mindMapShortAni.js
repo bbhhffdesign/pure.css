@@ -7,6 +7,7 @@ const aniStartBtn = document.getElementById("scrollDown");
 const dueño = document.getElementById("owner");
 const agenda = document.getElementById("agenda");
 const posicionarMarca = document.getElementById("posicionarMarca");
+const posicionarMarca2 = document.getElementById("posicionarMarca2");
 const branding = document.getElementById("branding");
 const excelente = document.getElementById("excelente");
 const aumentarVentas = document.getElementById("aumentarVentas");
@@ -51,6 +52,7 @@ for (let i = 1; i <= 7; i++) {
       .to(flecha2, { strokeDashoffset: 0 })
       .from(si1, { opacity: 0 }, "<50%")
       .from(posicionarMarca, { opacity: 0 })
+      .from(posicionarMarca2, { opacity: 0 }, "<")
       .to(flecha3, { strokeDashoffset: 0 })
       .from(si2, { opacity: 0 }, "<50%")
       .from(branding, { opacity: 0 })

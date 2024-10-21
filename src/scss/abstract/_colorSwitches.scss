@@ -2,47 +2,11 @@
 @use '../abstract/mixins' as*;
 
 svg {
-  .mindmap-like {
-    fill: var(--colorSecundario);
-    stroke-width: 1px;
-    stroke: var(--textoPrincipal);
-  }
-
-  .owner-svg,
-  .ventas-svg,
-  .branding-svg,
-  .agendabigtext-svg,
-  .estrategia-svg,
-  .excelente-svg,
-  .no-svg,
-  .si-svg,
-  .agenda-svg {
-    fill: var(--textoPrincipal);
-    stroke-width: 1px;
-    stroke: var(--textoPrincipal);
-  }
-  .like-1, .like-2{
-    stroke: black;
-  }
-  .agendabigfill-svg {
-    fill: var(--colorSecundario);
-  }
-  .flecha {
-    stroke-width: 2px;
-    stroke: var(--textoPrincipal);
-    fill: none;
-  }
-  .posicionmarca-svg {
-    fill: var(--textoPrincipal);
-    stroke: var(--textoPrincipal);
-  }
-
 
   .hero-gem {
     fill: var(--colorBg);
   }
   
-
   .oferta-logo-1,
   .comunicacion-logo-1,
   .marca-logo-1 {
@@ -93,11 +57,3 @@ svg {
     fill: var(--colorSvg_1);
   }
 }
-
-// .btn-pri{
-//   color: var(--colorBg);
-
-//   &:hover{
-//     color: var(--textoPrincipal);
-//   }
-// }

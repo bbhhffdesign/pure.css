@@ -133,11 +133,9 @@ const inputListener = function(input, placeholder, input_display, next){
     if (input == inputA ){
       if (input_value === ""){
         error(input, placeholder)
-        console.log(placeholder)
       }
       else {
         input_display.innerText = input_value;
-        console.log(input_display);
         next.restart();
       }
     }
