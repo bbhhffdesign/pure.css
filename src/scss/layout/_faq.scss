@@ -2,20 +2,21 @@
 @use "../abstract/variables" as *;
 
 .faq{
+    height: 110svh;
     background:var(--glassBg_bottom);
-    height: 120vh;
-    // min-height: 120vh;
     padding-bottom: 0;
-
-    @include desktop-sm{
-        // min-height: 150vh;
+    @include mobile-sm{
+        height: 90svh;
+    }
+    @include tablet{
+        height: 100svh;
     }
 
    .faq-text{
-    @include flex(column, center, center, none);
-    text-align: center;
-    height: 30vh;
+       text-align: center;
+        margin: 0 0 10lvh 0;
    }
+
 }
 
 .faq-qanda{
@@ -26,6 +27,10 @@
     @include flex(column, center, center,none);
     @include glass-bg-only;
     background-color: var(--colorBg_switch);
+
+    // p{
+    //     font-size: ;
+    // }
 
     .question{
         cursor: pointer;

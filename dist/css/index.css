@@ -1985,7 +1985,7 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: clamp(1.5rem, 0.429rem + 5.357vw, 3rem);
+  font-size: clamp(1.55rem, 0.275rem + 5.667vw, 2.4rem);
   margin-bottom: 1.2rem;
   margin-top: 1.2rem;
 }
@@ -2008,12 +2008,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: clamp(1.2rem, 0.343rem + 4.286vw, 2.4rem);
-}
-@media (min-width: 64rem) {
-  h3 {
-    font-size: 2rem;
-  }
+  font-size: clamp(1.4rem, 0.5rem + 4vw, 2rem);
 }
 
 h4 {
@@ -2022,7 +2017,7 @@ h4 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: clamp(1.2rem, 0.771rem + 2.143vw, 1.8rem);
+  font-size: clamp(1.2rem, 0.45rem + 3.333vw, 1.7rem);
 }
 
 p {
@@ -2033,12 +2028,7 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(1rem, 0.294rem + 3.137vw, 1.8rem);
-}
-@media (min-width: 64rem) {
-  p {
-    font-size: 1.7rem;
-  }
+  font-size: clamp(1rem, 0.25rem + 3.333vw, 1.5rem);
 }
 
 strong {
@@ -2922,6 +2912,16 @@ svg .gall {
 .somos .mindmap-title-container .mindmaptxtbottom {
   margin: 0 2rem;
 }
+@media (min-width: 37.5rem) {
+  .somos .mindmap-title-container .mindmaptxtbottom {
+    margin: 0 4rem;
+  }
+}
+@media (min-width: 48rem) {
+  .somos .mindmap-title-container .mindmaptxtbottom {
+    margin: 0 5rem;
+  }
+}
 .somos .mindmap-title-container .mindmap-text-border {
   display: flex;
   flex-direction: column;
@@ -2930,11 +2930,30 @@ svg .gall {
   gap: none;
   flex-grow: 0.5;
   overflow-x: hidden;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0 2rem 0 1rem;
+  padding-left: 1rem;
   border-left: 2px solid transparent;
   border-image-slice: 1;
   border-image-source: radial-gradient(circle, var(--colorBg_invert), var(--colorBg));
+}
+@media (min-width: 37.5rem) {
+  .somos .mindmap-title-container .mindmap-text-border {
+    margin: 0 3rem 0 2rem;
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 48rem) {
+  .somos .mindmap-title-container .mindmap-text-border {
+    margin: 0 4rem 0 3rem;
+    padding-left: 3rem;
+  }
+}
+@media (min-width: 64rem) {
+  .somos .mindmap-title-container .mindmap-text-border {
+    align-items: center;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
 }
 .somos .mindmap-title-container .mindmap-title-cta {
   padding: 0.5rem 2rem;
@@ -2996,7 +3015,7 @@ svg .gall {
   justify-content: space-evenly;
   align-items: center;
   gap: none;
-  height: 100svh;
+  height: 110svh;
 }
 .services .services-text-container .services-boxes-title {
   font-family: "monument_dos";
@@ -3062,10 +3081,17 @@ svg .gall {
   -webkit-backdrop-filter: blur(10px);
 }
 .services .services-boxes {
+  margin: 0 auto;
   width: 100%;
   height: 150svh;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 37.5rem) {
+  .services .services-boxes {
+    max-width: 650px;
+  }
 }
 @media (min-width: 64rem) {
   .services .services-boxes {
@@ -3209,6 +3235,12 @@ svg .gall {
     padding-left: 2rem;
   }
 }
+@media (min-width: 48rem) {
+  .gemstone .gemstone-text {
+    margin: 0 4rem 0 3rem;
+    padding-left: 3rem;
+  }
+}
 @media (min-width: 64rem) {
   .gemstone .gemstone-text {
     align-items: center;
@@ -3244,6 +3276,8 @@ svg .gall {
   gap: none;
   gap: clamp(1rem, -0.143rem + 5.714vw, 2rem);
   height: 200lvh;
+  max-width: 650px;
+  margin: 0 auto;
 }
 .gemstone .pasos-container button {
   color: var(--colorBg);
@@ -3344,18 +3378,23 @@ svg .gall {
 }
 
 .faq {
+  height: 110svh;
   background: var(--glassBg_bottom);
-  height: 120vh;
   padding-bottom: 0;
 }
+@media (min-width: 24rem) {
+  .faq {
+    height: 90svh;
+  }
+}
+@media (min-width: 37.5rem) {
+  .faq {
+    height: 100svh;
+  }
+}
 .faq .faq-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: none;
   text-align: center;
-  height: 30vh;
+  margin: 0 0 10lvh 0;
 }
 
 .faq-qanda {
@@ -3421,7 +3460,7 @@ svg .gall {
   }
 }
 .brand__display {
-  height: 50lvh;
+  height: 80lvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3679,11 +3718,18 @@ svg .gall {
   gap: none;
   height: auto;
   padding: 1rem;
+  max-width: 1000px;
+  margin: 20lvh 0;
 }
 .cta-email p {
   text-align: center;
   font-size: 80%;
   max-width: 512px;
+}
+@media (min-width: 37.5rem) {
+  .cta-email p {
+    font-size: 100%;
+  }
 }
 .cta-email .cta-email-container {
   z-index: 2;
@@ -3696,20 +3742,7 @@ svg .gall {
   width: fit-content;
   max-width: 512px;
   border-radius: 0.5rem 0.05rem;
-  z-index: 0;
-}
-.cta-email .cta-email-container:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  border-radius: inherit;
-  background: rgba(111, 111, 111, 0.3215686275);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(111, 111, 111, 0.3215686275);
 }
 .cta-email .cta-email-container button {
   font-size: 100%;
@@ -3741,6 +3774,7 @@ svg .gall {
 }
 
 footer {
+  z-index: 4;
   position: relative;
   background: var(--colorBg);
 }

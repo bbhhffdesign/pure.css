@@ -31,13 +31,35 @@
     }
     .mindmaptxtbottom {
       margin: 0 2rem;
+
+      @include tablet{
+        margin: 0 4rem;
+      }
+      @include tablet-l{
+        margin: 0 5rem;
+      }
+
     }
     .mindmap-text-border {
       @include flex(column, space-around, center, none);
       flex-grow: 0.5;
       overflow-x: hidden;
-      margin: $spac-s;
-      padding: $spac-s;
+
+      margin: 0 2rem 0 1rem;
+      padding-left: 1rem;
+      @include tablet{
+        margin: 0 3rem 0 2rem;
+        padding-left: 2rem;
+      }
+      @include tablet-l{
+        margin: 0 4rem 0 3rem;
+        padding-left: 3rem;
+      }
+      @include desktop-sm {
+        align-items: center;
+        max-width: 60rem;
+        margin: 0 auto;
+      }
       @include border-gradient-left;
     }
 

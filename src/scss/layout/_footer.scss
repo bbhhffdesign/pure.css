@@ -2,6 +2,7 @@
 @use "../abstract/variables" as *;
 
 footer{
+    z-index: 4;
     position: relative;
     background: var(--colorBg);
 }

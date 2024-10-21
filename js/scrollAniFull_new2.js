@@ -5,7 +5,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: "#hero",
-      start: "bottom top",
+      start: "80% top",
       end: "110% top",
       scrub: true,
       onEnter: () => {

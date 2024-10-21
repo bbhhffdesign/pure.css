@@ -8,24 +8,23 @@
     @include flex(column, center, center, none);
     position: relative;
     height: 100lvh;
-    
-    .gemstone-title-container{
+
+    .gemstone-title-container {
       @include flex(column, flex-end, center, none);
       flex-grow: 1.5;
     }
-    .gemstone-svg-container{
+    .gemstone-svg-container {
       @include flex(column, center, center, none);
       flex-grow: 1;
-    
-      
-      svg{
+
+      svg {
         width: 60%;
         height: auto;
 
-        @include tablet{
+        @include tablet {
           width: 50%;
         }
-        @include tablet-l{
+        @include tablet-l {
           width: 40%;
         }
 
@@ -33,20 +32,17 @@
         .borde-int,
         .gemstone-sup,
         .gemstone-inf,
-        .gall{
+        .gall {
           fill: none;
           stroke-width: 1.5px;
           stroke: var(--colorBg_invert);
           // filter: blur(5px);
         }
 
-        .gall{
+        .gall {
           stroke: none;
         }
-
-
       }
-
     }
   }
   .gemstone-text {
@@ -59,17 +55,19 @@
     padding-left: 1rem;
     @include border-gradient-left;
 
-    .gemstone-text-content{
-      & > *{
+    .gemstone-text-content {
+      & > * {
         margin-bottom: 2rem;
       }
-
     }
 
-
-    @include tablet{
+    @include tablet {
       margin: 0 3rem 0 2rem;
       padding-left: 2rem;
+    }
+    @include tablet-l {
+      margin: 0 4rem 0 3rem;
+      padding-left: 3rem;
     }
     @include desktop-sm {
       align-items: center;
@@ -77,8 +75,6 @@
       margin: 0 auto;
     }
   }
-
-
 
   h2 {
     // margin: 10rem 0;
@@ -99,16 +95,16 @@
     @include flex(column, space-evenly, center, none);
     gap: clamp(1rem, -0.143rem + 5.714vw, 2rem);
     height: 200lvh;
+    max-width: 650px;
+    margin: 0 auto;
 
-
-    button{
+    button {
       color: var(--colorBg);
     }
 
-    .pasos__title{
+    .pasos__title {
       @include flex(column, center, center, none);
       flex-grow: 1;
-
     }
 
     @include desktop-sm {
@@ -120,22 +116,21 @@
       padding: $spac-s;
       margin: $spac-m;
       border: $border-white;
-      
+
       @include glass-bg-only;
-      
-      
-      .paso__active{
+
+      .paso__active {
         color: var(--colorSecundario);
       }
-      
+
       @include border-gradient;
 
       @include desktop-sm {
         max-width: 40%;
       }
 
-      .paso-overflow{
-        overflow-y: hidden
+      .paso-overflow {
+        overflow-y: hidden;
       }
 
       h1 {
@@ -185,5 +180,4 @@
       }
     }
   }
-  
 }
