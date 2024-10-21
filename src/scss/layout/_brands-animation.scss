@@ -7,28 +7,28 @@
   }
 }
 
+.brand__display{
+  height: 50lvh;
+  @include flex(column, center, center, none);
+}
 
 .brands-animation{
   @include border-gradient;
   @include flex(column, flex-start , center, none);
   width: 100vw;
-  margin: 10rem 0;
   background: var(--glassBg);
   
-  &::before{
-    content: "";
-    inset: 0;
-  }
   
   @include desktop-sm{
     // height: 50vh;
   }
   
   .brands-container{
-      position: relative;
+    position: relative;
   }
   
   .brands-bar {
+    max-height: 60px;
       position: relative;
       padding: 1rem 0;
       @include flex(row, center, center, 4rem);

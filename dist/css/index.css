@@ -3139,7 +3139,13 @@ svg .gall {
   height: auto;
 }
 .gemstone .gemstone-text-1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
   position: relative;
+  height: 100lvh;
 }
 .gemstone .gemstone-text-1-container .gemstone-title-container {
   display: flex;
@@ -3147,15 +3153,15 @@ svg .gall {
   justify-content: flex-end;
   align-items: center;
   gap: none;
-  height: 55vh;
+  flex-grow: 1.5;
 }
 .gemstone .gemstone-text-1-container .gemstone-svg-container {
-  height: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: none;
+  flex-grow: 1;
 }
 .gemstone .gemstone-text-1-container .gemstone-svg-container svg {
   width: 60%;
@@ -3236,7 +3242,8 @@ svg .gall {
   justify-content: space-evenly;
   align-items: center;
   gap: none;
-  height: 170vh;
+  gap: clamp(1rem, -0.143rem + 5.714vw, 2rem);
+  height: 200lvh;
 }
 .gemstone .pasos-container button {
   color: var(--colorBg);
@@ -3279,7 +3286,7 @@ svg .gall {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-.gemstone .pasos-container .paso:active h1 {
+.gemstone .pasos-container .paso .paso__active {
   color: var(--colorSecundario);
 }
 @media (min-width: 64rem) {
@@ -3413,6 +3420,15 @@ svg .gall {
     transform: translateX(calc(-100% - 4rem));
   }
 }
+.brand__display {
+  height: 50lvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+
 .brands-animation {
   border: 1px solid;
   border-image-slice: 1;
@@ -3425,17 +3441,13 @@ svg .gall {
   align-items: center;
   gap: none;
   width: 100vw;
-  margin: 10rem 0;
   background: var(--glassBg);
-}
-.brands-animation::before {
-  content: "";
-  inset: 0;
 }
 .brands-animation .brands-container {
   position: relative;
 }
 .brands-animation .brands-bar {
+  max-height: 60px;
   position: relative;
   padding: 1rem 0;
   display: flex;
@@ -3560,11 +3572,11 @@ svg .gall {
 .orbita__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: none;
   position: relative;
-  height: auto;
+  height: 150svh;
 }
 .orbita__container .orbita__text {
   padding: 0 1rem;
@@ -3583,7 +3595,7 @@ svg .gall {
 .orbita__container .orbitas__svg__container {
   overflow: hidden;
   position: relative;
-  height: 90vh;
+  height: 90svh;
   width: 100%;
 }
 .orbita__container .orbitas__svg__container::after {

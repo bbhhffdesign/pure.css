@@ -5,16 +5,17 @@
   height: auto;
 
   .gemstone-text-1-container {
+    @include flex(column, center, center, none);
     position: relative;
+    height: 100lvh;
     
     .gemstone-title-container{
       @include flex(column, flex-end, center, none);
-      height: 55vh;
+      flex-grow: 1.5;
     }
     .gemstone-svg-container{
-      height: 45vh;
       @include flex(column, center, center, none);
-
+      flex-grow: 1;
     
       
       svg{
@@ -96,7 +97,8 @@
   }
   .pasos-container {
     @include flex(column, space-evenly, center, none);
-    height: 170vh;
+    gap: clamp(1rem, -0.143rem + 5.714vw, 2rem);
+    height: 200lvh;
 
 
     button{
@@ -106,6 +108,7 @@
     .pasos__title{
       @include flex(column, center, center, none);
       flex-grow: 1;
+
     }
 
     @include desktop-sm {
@@ -117,15 +120,13 @@
       padding: $spac-s;
       margin: $spac-m;
       border: $border-white;
-
+      
       @include glass-bg-only;
       
-      &:active {
-        h1{
-          color: var(--colorSecundario);
-        }
-      }
       
+      .paso__active{
+        color: var(--colorSecundario);
+      }
       
       @include border-gradient;
 

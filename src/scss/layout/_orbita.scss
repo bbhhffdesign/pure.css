@@ -6,9 +6,9 @@
 }
 
 .orbita__container {
-  @include flex(column, center, center, none);
+  @include flex(column, space-between, center, none);
   position: relative;
-  height: auto;
+  height: 150svh;
 
   .orbita__text {
     padding: 0 1rem;
@@ -24,7 +24,7 @@
   .orbitas__svg__container {
     overflow: hidden;
     position: relative;
-    height: 90vh;
+    height: 90svh;
     width: 100%;
 
     &::after {
