@@ -27,6 +27,8 @@ gsap
     },
   });
 
+
+
 gsap
   .timeline({
     scrollTrigger: {
