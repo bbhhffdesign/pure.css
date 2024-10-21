@@ -2930,8 +2930,8 @@ svg .gall {
   gap: none;
   flex-grow: 0.5;
   overflow-x: hidden;
-  margin: 2rem;
-  padding: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
   border-left: 2px solid transparent;
   border-image-slice: 1;
   border-image-source: radial-gradient(circle, var(--colorBg_invert), var(--colorBg));

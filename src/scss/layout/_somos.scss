@@ -36,8 +36,8 @@
       @include flex(column, space-around, center, none);
       flex-grow: 0.5;
       overflow-x: hidden;
-      margin: $spac-m;
-      padding: $spac-xs;
+      margin: $spac-s;
+      padding: $spac-s;
       @include border-gradient-left;
     }
 
