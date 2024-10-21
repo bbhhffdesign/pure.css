@@ -3037,6 +3037,23 @@ svg .gall {
     display: none;
   }
 }
+.services .active {
+  z-index: 0;
+  background: var(--glassBg);
+}
+.services .active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
 .services .services-boxes {
   width: 100%;
   height: 150svh;
@@ -3061,23 +3078,6 @@ svg .gall {
   border-left: none;
   border-right: none;
   z-index: 0;
-}
-.services .services-boxes .service:active {
-  z-index: 0;
-  background: var(--glassBg);
-}
-.services .services-boxes .service:active:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  border-radius: inherit;
-  background: transparent;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 .services .services-boxes .service:before {
   content: "";
