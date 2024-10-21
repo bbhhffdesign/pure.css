@@ -4,6 +4,10 @@
 .hero {
   position: relative;
 
+  & > div{
+    height: 100dvh;
+  }
+
   & > :nth-child(2) {
     @include flex(column, center, center, none);
   }
@@ -23,7 +27,7 @@
   }
 
   .hero-text {
-    height: 100dvh;
+    height: 100%;
     @include flex(column, center, flex-start, none);
     position: relative;
     gap: 1rem;

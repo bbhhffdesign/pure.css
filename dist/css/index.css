@@ -2726,6 +2726,9 @@ svg .gall {
 .hero {
   position: relative;
 }
+.hero > div {
+  height: 100dvh;
+}
 .hero > :nth-child(2) {
   display: flex;
   flex-direction: column;
@@ -2747,7 +2750,7 @@ svg .gall {
   margin-top: 0.5rem;
 }
 .hero .hero-text {
-  height: 100dvh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2892,6 +2895,9 @@ svg .gall {
   }
 }
 
+.somos {
+  height: 100dvh;
+}
 @media (min-width: 64rem) {
   .somos {
     height: 120vh;
@@ -2903,7 +2909,7 @@ svg .gall {
   }
 }
 .somos .mindmap-title-container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -2925,7 +2931,6 @@ svg .gall {
   align-items: center;
   gap: none;
   overflow-x: hidden;
-  height: 40%;
   margin: 2rem;
   padding: 0.5rem;
   border-left: 2px solid transparent;
