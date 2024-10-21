@@ -2,10 +2,10 @@
 @use "../abstract/mixins" as *;
 
 .somos {
-  height: 900px;
+  height: 100svh;
 
   @include desktop-sm {
-    height: 120svh;
+    // height: 120svh;
     @include flex(row, center, center, none);
   }
 
