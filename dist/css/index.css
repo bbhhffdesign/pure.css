@@ -2875,14 +2875,6 @@ svg .gall {
     height: auto;
   }
 }
-#hero-gem {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  opacity: 0.5;
-  z-index: 1;
-}
-
 .cuales-title div {
   padding: 0 2rem;
 }
