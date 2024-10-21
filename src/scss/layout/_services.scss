@@ -11,9 +11,13 @@
   }
 
   .services-text-container{
-    // padding: 0;
-    height: 30vh;
-    @include flex(column, flex-end, center,none);
+    @include flex(column, space-evenly, center,none);
+    height: 100svh;
+
+    .services-boxes-title{
+      @include font-monument-normal;
+      @include text-gradient;
+    }
   }
   
   .services-text {
@@ -39,9 +43,9 @@
   }
 
   .services-boxes{
-    justify-content: center;
+    // justify-content: center;
     width: 100%;
-    height: 200vh;
+    height: 100svh;
     flex-direction: column;
     justify-content: space-evenly;
 
@@ -51,14 +55,7 @@
     }
 
     
-    .services-boxes-title{
-      height: 50vh;
-      width: 100vw;
-
-      @include flex(column, center, center,none);
-      @include font-monument-normal;
-      @include text-gradient;
-    }
+    
 
     .service{
       // margin: $spac-s;

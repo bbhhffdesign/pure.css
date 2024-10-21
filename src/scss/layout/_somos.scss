@@ -33,7 +33,8 @@
       margin: 0 2rem;
     }
     .mindmap-text-border{
-      @include flex(column, space-between, center, none);
+      @include flex(column, space-around, center, none);
+      flex-grow: .5;
       overflow-x: hidden;
       // height: 40%;
       margin: $spac-m;

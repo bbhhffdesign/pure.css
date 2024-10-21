@@ -2918,9 +2918,10 @@ svg .gall {
 .somos .mindmap-title-container .mindmap-text-border {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: none;
+  flex-grow: 0.5;
   overflow-x: hidden;
   margin: 2rem;
   padding: 0.5rem;
@@ -2983,12 +2984,20 @@ svg .gall {
   margin: 0 auto;
 }
 .services .services-text-container {
-  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
   gap: none;
+  height: 100svh;
+}
+.services .services-text-container .services-boxes-title {
+  font-family: "monument_dos";
+  font-weight: 100;
+  font-style: normal;
+  background: radial-gradient(circle, var(--colorBg_invert), var(--colorBg_almost));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .services .services-text {
   position: relative;
@@ -3029,9 +3038,8 @@ svg .gall {
   }
 }
 .services .services-boxes {
-  justify-content: center;
   width: 100%;
-  height: 200vh;
+  height: 100svh;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -3040,21 +3048,6 @@ svg .gall {
     flex-direction: row;
     height: 100vh;
   }
-}
-.services .services-boxes .services-boxes-title {
-  height: 50vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: none;
-  font-family: "monument_dos";
-  font-weight: 100;
-  font-style: normal;
-  background: radial-gradient(circle, var(--colorBg_invert), var(--colorBg_almost));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .services .services-boxes .service {
   margin: 0 1rem;
