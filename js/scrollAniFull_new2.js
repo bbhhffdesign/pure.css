@@ -1,22 +1,31 @@
 gsap.config({
   autoSleep: 1,
 });
+
+const tween_nav = gsap.to("#navbar", { paused: true, y: -100 });
+
 gsap
   .timeline({
     scrollTrigger: {
       trigger: "#hero",
-      start: "80% top",
+      start: "bottom top",
       end: "110% top",
-      scrub: true,
       onEnter: () => {
         document.querySelector("#navbar").style.willChange = "transform";
+        tween_nav.play()
       },
       onLeave: () => {
         document.querySelector("#navbar").style.willChange = "auto";
       },
+      onEnterBack: () => {
+        document.querySelector("#navbar").style.willChange = "transform";
+      },
+      onLeaveBack: () => {
+        document.querySelector("#navbar").style.willChange = "auto";
+        tween_nav.reverse()
+      },
     },
-  })
-  .to("#navbar", { y: -100 });
+  });
 
 gsap
   .timeline({

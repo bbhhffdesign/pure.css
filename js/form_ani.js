@@ -255,4 +255,3 @@ inputD.addEventListener("click", ()=>{
 inputD.addEventListener("blur", ()=>{
   inputD.placeholder = "Red social"
 })
-

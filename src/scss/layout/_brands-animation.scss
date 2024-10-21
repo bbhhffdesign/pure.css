@@ -17,6 +17,14 @@
   @include flex(column, flex-start , center, none);
   width: 100vw;
   background: var(--glassBg);
+  will-change: transform;
+
+  @include tablet{
+    transform: scale(1.2);
+  }
+  @include tablet-l{
+    transform: scale(1.4);
+  }
   
   
   @include desktop-sm{
@@ -34,9 +42,7 @@
       @include flex(row, center, center, 4rem);
       flex-wrap: nowrap;
   
-      @include tablet{
-        transform: scale(1.5);
-      }
+
   
       .brand:hover{
         transform: scale(1.2);
