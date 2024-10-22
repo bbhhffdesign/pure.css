@@ -24,7 +24,7 @@
         },
         move: {
           enable: true,
-          speed: 1,
+          speed: .5,
           outModes: {
             default: "bounce",
           },
@@ -59,7 +59,7 @@
             },
           },
           size: {
-            value: { min: 250, max: 300 },
+            value: { min: 200, max: 250 },
           },
           opacity: {
             value: 1,
