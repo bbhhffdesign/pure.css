@@ -44,15 +44,20 @@
     .mindmap-text-border {
       text-align: center;
       position: relative;
+      overflow: visible;
       @include flex(column, space-around, center, none);
       flex-grow: 0.5;
       overflow-x: hidden;
-      margin: 0 1rem;
-      padding: 0 1rem;
+      // margin: 0 1rem;
+      padding: 0 2rem;
       &::before{
         border-radius: $border-rad-s;
         background-color: var(--lightTransparent);
+        mask: url('/assets/gallLogo-mask.svg') center no-repeat;
+        mask-size: 110%;
+        overflow: visible;
       }
+
 
       @include tablet{
         margin: 0 3rem 0 2rem;

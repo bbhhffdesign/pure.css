@@ -2928,6 +2928,7 @@ svg .gall {
 .somos .mindmap-title-container .mindmap-text-border {
   text-align: center;
   position: relative;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -2935,12 +2936,16 @@ svg .gall {
   gap: none;
   flex-grow: 0.5;
   overflow-x: hidden;
-  margin: 0 1rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .somos .mindmap-title-container .mindmap-text-border::before {
   border-radius: 0.5rem 0.05rem;
   background-color: var(--lightTransparent);
+  -webkit-mask: url("/assets/gallLogo-mask.svg") center no-repeat;
+          mask: url("/assets/gallLogo-mask.svg") center no-repeat;
+  -webkit-mask-size: 110%;
+          mask-size: 110%;
+  overflow: visible;
 }
 @media (min-width: 37.5rem) {
   .somos .mindmap-title-container .mindmap-text-border {
