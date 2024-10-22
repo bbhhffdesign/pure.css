@@ -38,7 +38,6 @@ tl_wpp
     .to(btn_wpp, { x: "+=7", yoyo: true, repeat: 5, duration: 0.03 })
 
 
-
 let observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -51,7 +50,7 @@ let observer = new IntersectionObserver((entries) => {
     });
   }, { threshold: 0.1 });
 
-  observer.observe(btn_wpp);
+observer.observe(btn_wpp);
 
 
 const place_holders = [
@@ -72,41 +71,74 @@ const error = function (input, placeholder) {
       input.placeholder = placeholder;
       input.style.borderBottom = "1px solid var(--textoPrincipal)";
     }, 1000);
-  };
+};
 
 
+// Función para agregar y quitar will-change dinámicamente
+function addWillChange(element, property) {
+    element.style.willChange = property;
+}
+
+function removeWillChange(element) {
+    element.style.willChange = '';
+}
 
 for (let i = 0; i < btns_next.length; i++){
-    btns_next[i].addEventListener("click", ()=>{
+    btns_next[i].addEventListener("click", ()=> {
         let input_value = inputs[i].value;
 
-        if(btns_next[i] === btns_next[3]){
-            if ( inputD_check.innerText === "Seleccioná una opción"){
+        if (btns_next[i] === btns_next[3]) {
+            if (inputD_check.innerText === "Seleccioná una opción") {
                 error(inputs[i], place_holders[i])
                 return;
+            } else {
+                gsap.to(inputs_containers[i], {
+                    x: `${-100 * (i + 1)}%`,
+                    onStart: () => addWillChange(inputs_containers[i], "transform"), // Agregar will-change
+                    onComplete: () => removeWillChange(inputs_containers[i]) // Quitar will-change
+                });
+                gsap.to(inputs_containers[i + 1], {
+                    x: `${-100 * (i + 1)}%`,
+                    onStart: () => addWillChange(inputs_containers[i + 1], "transform"),
+                    onComplete: () => removeWillChange(inputs_containers[i + 1])
+                });
             }
-            else{
-                gsap.to(inputs_containers[i], { x: `${-100 * (i + 1)}%` })
-                gsap.to(inputs_containers[i + 1], { x: `${-100 * (i + 1)}%` });
-            }
-            
         }
-        
-        if (input_value === ""){
+
+        if (input_value === "") {
             error(inputs[i], place_holders[i])
-        }
-        else{
-            gsap.to(inputs_containers[i], { x: `${-100 * (i + 1)}%` })
-            gsap.to(inputs_containers[i + 1], { x: `${-100 * (i + 1)}%` });
+        } else {
+            gsap.to(inputs_containers[i], {
+                x: `${-100 * (i + 1)}%`,
+                onStart: () => addWillChange(inputs_containers[i], "transform"),
+                onComplete: () => removeWillChange(inputs_containers[i])
+            });
+            gsap.to(inputs_containers[i + 1], {
+                x: `${-100 * (i + 1)}%`,
+                onStart: () => addWillChange(inputs_containers[i + 1], "transform"),
+                onComplete: () => removeWillChange(inputs_containers[i + 1])
+            });
         }
 
-
-        if(btns_next[i] === btns_next[4]){
-            gsap.to(input_frame, {height: "420px"})
+        if (btns_next[i] === btns_next[4]) {
+            gsap.to(input_frame, {
+                height: "420px",
+                onStart: () => addWillChange(input_frame, "height"),
+                onComplete: () => removeWillChange(input_frame)
+            });
         }
     });
-    btns_back[i].addEventListener("click", () =>{
-        gsap.to(inputs_containers[i], {x: `${-1 * (i * 100)}%`})
-        gsap.to(inputs_containers[i + 1], {x: `${-1 * (i * 100)}%`})
-    })
+
+    btns_back[i].addEventListener("click", () => {
+        gsap.to(inputs_containers[i], {
+            x: `${-1 * (i * 100)}%`,
+            onStart: () => addWillChange(inputs_containers[i], "transform"),
+            onComplete: () => removeWillChange(inputs_containers[i])
+        });
+        gsap.to(inputs_containers[i + 1], {
+            x: `${-1 * (i * 100)}%`,
+            onStart: () => addWillChange(inputs_containers[i + 1], "transform"),
+            onComplete: () => removeWillChange(inputs_containers[i + 1])
+        });
+    });
 }
