@@ -45,7 +45,7 @@ const display_social = document.getElementById("display_social");
 //wpp
 const btn_wpp = document.getElementById("btn_wpp");
 
-const tl_wpp = gsap.timeline({delay:2, repeat: -1, repeatDelay:3});
+const tl_wpp = gsap.timeline({delay:2, repeat: 3, repeatDelay:3});
 
 tl_wpp
     .to(btn_wpp, { x: "+=7", yoyo: true, repeat: 5, duration: 0.03 })
