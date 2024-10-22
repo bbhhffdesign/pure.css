@@ -10,6 +10,7 @@
   }
 
   .mindmap-title-container {
+    position: relative;
     height: 100%;
     @include flex(column, space-around, center, none);
 
@@ -41,12 +42,18 @@
 
     }
     .mindmap-text-border {
+      text-align: center;
+      position: relative;
       @include flex(column, space-around, center, none);
       flex-grow: 0.5;
       overflow-x: hidden;
+      margin: 0 1rem;
+      padding: 0 1rem;
+      &::before{
+        border-radius: $border-rad-s;
+        background-color: var(--lightTransparent);
+      }
 
-      margin: 0 2rem 0 1rem;
-      padding-left: 1rem;
       @include tablet{
         margin: 0 3rem 0 2rem;
         padding-left: 2rem;
@@ -60,8 +67,11 @@
         max-width: 60rem;
         margin: 0 auto;
       }
-      @include border-gradient-left;
+      // @include border-gradient-left;
     }
+
+
+
 
     .mindmap-title-cta {
       padding: 0.5rem 2rem;

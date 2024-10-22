@@ -24,7 +24,7 @@
     width: 100%;
     padding: 1rem 0;
     overflow-y: hidden;
-    @include glass-bg-only;
+    // @include glass-bg-only;
     @include border-gradient;
     background-color: var(--colorBg_switch);
 
@@ -41,8 +41,12 @@
     }
   }
 
+  // .blur {
+  //   @include glass-bg-only;
+  // }
+
   .active {
-    @include glass-bg-only() {
+    &::before {
       background: var(--glassBg);
     }
   }
@@ -56,7 +60,7 @@
     justify-content: space-evenly;
     align-items: center;
 
-    @include tablet{
+    @include tablet {
       max-width: 650px;
     }
 
@@ -72,17 +76,7 @@
       padding: $spac-s $spac-s;
       text-align: center;
       overflow-y: hidden;
-
-      //hover luz
-
-      // .active {
-      //   @include glass-bg-only() {
-      //     background: var(--glassBg);
-      //   }
-      // }
-
       @include border-gradient;
-      @include glass-bg-only;
 
       @include tablet {
         margin: 0 $spac-l;

@@ -4,7 +4,6 @@
 
 .nav{
     @extend .pure-menu-horizontal;
-    @include glass-bg-only();
     position: fixed;
     top: 0;
     height: 4rem;

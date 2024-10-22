@@ -117,7 +117,7 @@
       margin: $spac-m;
       border: $border-white;
 
-      @include glass-bg-only;
+      // @include glass-bg-only;
 
       .paso__active {
         color: var(--colorSecundario);

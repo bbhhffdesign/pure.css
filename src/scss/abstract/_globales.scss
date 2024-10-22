@@ -105,3 +105,6 @@ span{
 .txt-secundario{
     color: var(--colorSecundario) ;
 }
+.blur {
+    @include glass-bg-only;
+  }

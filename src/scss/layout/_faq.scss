@@ -25,7 +25,6 @@
     border-radius: $border-rad-s;
     padding: $spac-s;
     @include flex(column, center, center,none);
-    @include glass-bg-only;
     background-color: var(--colorBg_switch);
 
     // p{

@@ -114,7 +114,7 @@
       position: relative;
       overflow: hidden;
       @include flex(column, center, center, none);
-      @include glass-bg-only;
+      // @include glass-bg-only;
     }
 
     .mindmap {
