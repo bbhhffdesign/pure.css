@@ -3,6 +3,7 @@
 
 .hero {
   position: relative;
+  
 
   & > div{
     height: 100svh;
@@ -14,13 +15,20 @@
 
   @include desktop-sm {
     box-sizing: border-box;
-    // padding: 0 2rem;
-    // padding-top: 2rem;
-    // margin-top: 5rem;
-    // height: calc(100dvh - 4rem);
+    // max-width: 90vw;
+  }
+  @include desktop-md{
+    // margin: 0 3rem;
+  }
+  @include desktop-lg{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    // max-width: ;
+  }
+  @include desktop-xlg{
     margin: 0 auto;
-
-    // max-width: 100rem;
+    // max-width: $desktop-lg;
   }
   .mindmap-click {
     margin-top: $spac-xs;
@@ -37,7 +45,12 @@
       padding: 0 3rem;
     }
     @include desktop-sm{
-      padding: 0 $spac-m;
+      
+      // margin-left: 1rem;
+      
+    }
+    @include desktop-lg{
+      // margin-left: 2rem;
     }
 
     @include mobile-sm {

@@ -119,16 +119,18 @@
       .paso__active {
         color: var(--colorSecundario);
       }
-      &:hover{
-        h1{
-          color: var(--colorSecundario);
-        }
-      }
+ 
 
       @include border-gradient;
 
       @include desktop-sm {
         max-width: 40%;
+
+        &:hover{
+          h1{
+            color: var(--colorSecundario);
+          }
+        }
       }
 
       .paso-overflow {

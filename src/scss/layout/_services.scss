@@ -89,6 +89,10 @@
       @include desktop-sm {
         margin: 0;
         width: 30%;
+
+        &:hover{
+          background: var(--glassBg);
+        }
       }
       @include desktop-md {
         // margin: 0 2rem;
