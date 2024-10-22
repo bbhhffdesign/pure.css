@@ -3098,8 +3098,8 @@ svg .gall {
 .somos .mindmap-title-container .mindmap-text-border::before {
   border-radius: 0.5rem 0.05rem;
   background-color: var(--lightTransparent);
-  -webkit-mask: url("/assets/gallLogo-mask.svg") center no-repeat;
-          mask: url("/assets/gallLogo-mask.svg") center no-repeat;
+  -webkit-mask: url("../../assets/gallLogo-mask.svg") center no-repeat;
+          mask: url("../../assets/gallLogo-mask.svg") center no-repeat;
   -webkit-mask-size: 90%;
           mask-size: 90%;
   overflow: visible;
