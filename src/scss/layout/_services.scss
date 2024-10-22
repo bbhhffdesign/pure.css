@@ -67,6 +67,8 @@
     @include desktop-sm {
       flex-direction: row;
       height: 100vh;
+      max-width: none;
+      width: 100%;
     }
 
     .service {

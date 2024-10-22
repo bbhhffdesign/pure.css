@@ -10,9 +10,15 @@
     padding: $spac-xs 0;
     border: none; 
     z-index: 2;
+    width: 100%;
     @include flex(row, space-around, center, auto);
     flex-wrap: wrap;
     @include font-raleway;
+    // width: inherit;
+
+    // &::before{
+    //     width: 100vw;
+    // }
 
     a{
         svg{

@@ -4,6 +4,10 @@
 .gemstone {
   height: auto;
 
+  @include desktop-sm{
+      //margin
+  }
+
   .gemstone-text-1-container {
     @include flex(column, center, center, none);
     position: relative;
@@ -26,17 +30,6 @@
         }
         @include tablet-l {
           width: 40%;
-        }
-
-        .borde-ext,
-        .borde-int,
-        .gemstone-sup,
-        .gemstone-inf,
-        .gall {
-          fill: none;
-          stroke-width: 1.5px;
-          stroke: var(--colorBg_invert);
-          // filter: blur(5px);
         }
 
         .gall {
@@ -98,6 +91,8 @@
     max-width: 650px;
     margin: 0 auto;
 
+    
+
     button {
       color: var(--colorBg);
     }
@@ -108,7 +103,9 @@
     }
 
     @include desktop-sm {
-      height: 250vh;
+
+        max-width: 1920px;
+      // height: 250vh;
     }
 
     .paso {
@@ -118,9 +115,14 @@
       border: $border-white;
 
       // @include glass-bg-only;
-
+      
       .paso__active {
         color: var(--colorSecundario);
+      }
+      &:hover{
+        h1{
+          color: var(--colorSecundario);
+        }
       }
 
       @include border-gradient;

@@ -2027,7 +2027,6 @@ h3 {
   font-style: normal;
   font-size: clamp(1.4rem, 0.5rem + 4vw, 2rem);
 }
-
 h4 {
   color: var(--textoTitulos);
   font-family: "Raleway", sans-serif;
@@ -2598,6 +2597,7 @@ svg .gall {
   padding: 0.5rem 0;
   border: none;
   z-index: 2;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -2716,11 +2716,7 @@ svg .gall {
 @media (min-width: 64rem) {
   .hero {
     box-sizing: border-box;
-    padding: 0 2rem;
-    padding-top: 2rem;
-    height: calc(100dvh - 4rem);
     margin: 0 auto;
-    max-width: 100rem;
   }
 }
 .hero .mindmap-click {
@@ -2846,9 +2842,6 @@ svg .gall {
   .cuales-title div {
     padding: 0;
   }
-  .cuales-title div h3 {
-    font-size: 160%;
-  }
 }
 
 .mind-svg-text,
@@ -2941,11 +2934,17 @@ svg .gall {
 .somos .mindmap-title-container .mindmap-text-border::before {
   border-radius: 0.5rem 0.05rem;
   background-color: var(--lightTransparent);
-  -webkit-mask: url('https://bbhhffdesign.github.io/pure.css/assets/gallLogo-mask.svg') center no-repeat;
-          mask: url('https://bbhhffdesign.github.io/pure.css/assets/gallLogo-mask.svg') center no-repeat;
+  -webkit-mask: url("https://bbhhffdesign.github.io/pure.css/assets/gallLogo-mask.svg") center no-repeat;
+          mask: url("https://bbhhffdesign.github.io/pure.css/assets/gallLogo-mask.svg") center no-repeat;
   -webkit-mask-size: 90%;
           mask-size: 90%;
   overflow: visible;
+}
+@media (min-width: 64rem) {
+  .somos .mindmap-title-container .mindmap-text-border::before {
+    -webkit-mask-size: contain;
+            mask-size: contain;
+  }
 }
 @media (min-width: 37.5rem) {
   .somos .mindmap-title-container .mindmap-text-border {
@@ -2964,6 +2963,10 @@ svg .gall {
     align-items: center;
     max-width: 60rem;
     margin: 0 auto;
+    flex-grow: 1;
+    border-left: 2px solid transparent;
+    border-image-slice: 1;
+    border-image-source: radial-gradient(circle, var(--colorBg_invert), var(--colorBg));
   }
 }
 .somos .mindmap-title-container .mindmap-title-cta {
@@ -3080,6 +3083,8 @@ svg .gall {
   .services .services-boxes {
     flex-direction: row;
     height: 100vh;
+    max-width: none;
+    width: 100%;
   }
 }
 .services .services-boxes .service {
@@ -3172,15 +3177,6 @@ svg .gall {
     width: 40%;
   }
 }
-.gemstone .gemstone-text-1-container .gemstone-svg-container svg .borde-ext,
-.gemstone .gemstone-text-1-container .gemstone-svg-container svg .borde-int,
-.gemstone .gemstone-text-1-container .gemstone-svg-container svg .gemstone-sup,
-.gemstone .gemstone-text-1-container .gemstone-svg-container svg .gemstone-inf,
-.gemstone .gemstone-text-1-container .gemstone-svg-container svg .gall {
-  fill: none;
-  stroke-width: 1.5px;
-  stroke: var(--colorBg_invert);
-}
 .gemstone .gemstone-text-1-container .gemstone-svg-container svg .gall {
   stroke: none;
 }
@@ -3261,7 +3257,7 @@ svg .gall {
 }
 @media (min-width: 64rem) {
   .gemstone .pasos-container {
-    height: 250vh;
+    max-width: 1920px;
   }
 }
 .gemstone .pasos-container .paso {
@@ -3276,6 +3272,9 @@ svg .gall {
   border-right: none;
 }
 .gemstone .pasos-container .paso .paso__active {
+  color: var(--colorSecundario);
+}
+.gemstone .pasos-container .paso:hover h1 {
   color: var(--colorSecundario);
 }
 @media (min-width: 64rem) {

@@ -53,9 +53,13 @@
       &::before{
         border-radius: $border-rad-s;
         background-color: var(--lightTransparent);
-        mask: url('../../assets/gallLogo-mask.svg') center no-repeat;
+        mask: url('https://bbhhffdesign.github.io/pure.css/assets/gallLogo-mask.svg') center no-repeat;
         mask-size: 90%;
         overflow: visible;
+
+        @include desktop-sm{
+          mask-size: contain;
+        }
       }
 
 
@@ -71,8 +75,9 @@
         align-items: center;
         max-width: 60rem;
         margin: 0 auto;
+        flex-grow: 1;
+        @include border-gradient-left;
       }
-      // @include border-gradient-left;
     }
 
 

@@ -14,13 +14,13 @@
 
   @include desktop-sm {
     box-sizing: border-box;
-    padding: 0 2rem;
-    padding-top: 2rem;
+    // padding: 0 2rem;
+    // padding-top: 2rem;
     // margin-top: 5rem;
-    height: calc(100dvh - 4rem);
+    // height: calc(100dvh - 4rem);
     margin: 0 auto;
 
-    max-width: 100rem;
+    // max-width: 100rem;
   }
   .mindmap-click {
     margin-top: $spac-xs;
@@ -146,10 +146,6 @@
     padding: 0 2rem ;
     @include desktop-sm{
       padding: 0;
-      h3{
-        font-size: 160%;
-
-      }
     }
 
   }

@@ -98,6 +98,13 @@ font-style: normal;
   border-image-slice: 1;
   border-image-source: radial-gradient(circle, var(--colorBg_invert), var(--colorBg));
 }
+@mixin border-gradient-left-right( $color1:var(--colorBg_invert), $color2:var(--colorBg)) {
+  border-left: 1px solid transparent; // Establece el borde izquierdo
+  border-right: 1px solid transparent; // Establece el borde izquierdo
+  // border: solid 2px transparent;
+  border-image-slice: 1;
+  border-image-source:  linear-gradient(180deg,  $color1, $color2);
+}
 
 @mixin glass-bg-only($zIndex1: -1, $bg-color: transparent, $blur: 10px){
   z-index: 0;
