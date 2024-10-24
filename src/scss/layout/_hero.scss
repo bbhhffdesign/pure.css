@@ -3,6 +3,7 @@
 
 .hero {
   position: relative;
+  margin-top: 1rem;
   
 
   & > div{
@@ -13,29 +14,26 @@
     @include flex(column, center, center, none);
   }
 
+
+
   @include desktop-sm {
+    margin-top: 2rem ;
     box-sizing: border-box;
-    // max-width: 90vw;
   }
-  @include desktop-md{
-    // margin: 0 3rem;
-  }
+
   @include desktop-lg{
     flex-direction: row;
     flex-wrap: nowrap;
     box-sizing: border-box;
-    // max-width: ;
   }
   @include desktop-xlg{
     margin: 0 auto;
-    // max-width: $desktop-lg;
   }
   .mindmap-click {
     margin-top: $spac-xs;
   }
 
   .hero-text {
-    margin-top: 1.5rem;
     height: 100%;
     @include flex(column, center, flex-start, none);
     position: relative;
