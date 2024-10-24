@@ -4,6 +4,7 @@
 .hero {
   position: relative;
   margin-top: 1rem;
+  padding: 0 2rem;
   
 
   & > div{
@@ -11,6 +12,7 @@
   }
 
   & > :nth-child(2) {
+    height: 60svh;
     @include flex(column, center, center, none);
   }
 
@@ -33,6 +35,10 @@
     margin-top: $spac-xs;
   }
 
+  .cuales-title{
+    box-sizing: border-box;
+  }
+
   .hero-text {
     height: 100%;
     @include flex(column, center, flex-start, none);
@@ -45,10 +51,10 @@
     
     @include tablet{
       margin-top: 0;
-      padding: 0 3rem;
+      // padding: 0 3rem;
     }
     @include desktop-sm{
-      padding: 0 0 0 3rem;
+      // padding: 0 0 0 3rem;
 
       .hr__disable{
         display: none;
@@ -74,16 +80,11 @@
     }
 
     h1 {
-      // flex-grow: .1;
       margin: 0;
     }
-    h2 {
-      // flex-grow: .1;
-      // margin: 0;
-    }
+
     p {
       margin: 0;
-      // line-height: 1.5rem;
       @include tablet {
         line-height: 1.8rem;
       }
@@ -159,7 +160,3 @@
 //   z-index: 1;
 // }
 
-.cuales-title{
-  box-sizing: border-box;
-  padding: 1rem;
-}
