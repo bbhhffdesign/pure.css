@@ -89,7 +89,7 @@ ScrollTrigger.create({
 const animaciones = []
 
 for (let i = 0; i < iconos.length; i++) {
-  gsap.set([iconos[i]], { xPercent: -50, yPercent: -50 });
+  gsap.set([iconos[i]], { xPercent: -50, yPercent: -50});
   gsap.set([cajas[i]], { xPercent: 20, yPercent: -200 });
 
   const animacion = gsap.to(iconos[i], {

@@ -10,6 +10,11 @@
 .brand__display{
   height: 80lvh;
   @include flex(column, center, center, none);
+
+  @include desktop-sm{
+    height: 40lvh;
+    justify-content: flex-end;
+  }
 }
 
 .brands-animation{

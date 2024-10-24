@@ -25,6 +25,7 @@
     max-width: 512px;
     border-radius: $border-rad-s;
     background-color: #6f6f6f52;
+    @include flex(row, center, center,none);
 
     button {
       font-size: 100%;

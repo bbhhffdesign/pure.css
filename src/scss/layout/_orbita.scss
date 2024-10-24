@@ -10,18 +10,22 @@
   position: relative;
   height: 150svh;
 
-  @include desktop-sm{
+  @include desktop-sm {
     flex-direction: column-reverse;
   }
 
   .orbita__text {
     padding: 0 1rem;
     text-align: center;
-    @include tablet{
+    @include tablet {
       padding: 0 2.5rem;
     }
-    @include tablet-l{
+    @include tablet-l {
       padding: 0 4rem;
+    }
+
+    @include desktop-sm{
+      
     }
   }
 
@@ -31,6 +35,11 @@
     height: 90svh;
     width: 100%;
 
+    @include desktop-sm {
+      height: auto;
+      @include flex(row, center, center, none);
+    }
+
     &::after {
       z-index: 3;
       content: "";
@@ -38,9 +47,16 @@
       top: -20%;
       width: 200%;
       height: 150%;
-      // box-shadow: inset 10px 0px 50px 30px rgb(0, 0, 0);
       box-shadow: inset 1px 0px 50px 40px var(--colorBg);
       pointer-events: none;
+
+      @include desktop-sm {
+        width: 150%;
+        height: 120%;
+        top: auto;
+        bottom: -10px;
+        box-shadow: inset 1px 0px 50px 40px var(--colorBg);
+      }
     }
 
     svg {
@@ -48,15 +64,15 @@
       overflow: visible;
       stroke-width: 1px;
       position: absolute;
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: 50%;
       top: 0px;
       left: 0px;
       transform: translateX(-50%);
 
-      @include desktop-sm{
-        transform: translateX(0);
-        transform: rotate(-90deg);
+      @include desktop-sm {
+        position: relative;
+        transform: rotate(-90deg) translateX(-50%);
       }
 
       .orb-stroke-dash {
@@ -67,7 +83,7 @@
 
       .orb-stroke {
         stroke: var(--textoTitulos);
-        stroke-width: .5px;
+        stroke-width: 0.5px;
         fill: none;
       }
       .orb-stroke2 {
@@ -78,10 +94,10 @@
       .orb-fill {
         stroke: var(--colorBg_invert);
         fill: var(--colorBg);
-        stroke-width: .5px;
+        stroke-width: 0.5px;
       }
       .orb-stroke-fill {
-        stroke-width: .5px;
+        stroke-width: 0.5px;
         stroke: var(--colorBg_invert);
         fill: var(--textoPrincipal);
       }
@@ -102,7 +118,7 @@
     position: relative;
     z-index: 3;
     font-size: 90%;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
   &::before {
