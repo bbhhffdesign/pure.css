@@ -12,6 +12,7 @@
 
   @include desktop-sm {
     flex-direction: column-reverse;
+    height: auto;
   }
 
   .orbita__text {
@@ -64,13 +65,15 @@
       overflow: visible;
       stroke-width: 1px;
       position: absolute;
-      height: auto;
-      width: 50%;
+      height: 100%;
+      width: auto;
       top: 0px;
       left: 0px;
       transform: translateX(-50%);
 
       @include desktop-sm {
+        width: 50%;
+        height: auto;
         position: relative;
         transform: rotate(-90deg) translateX(-50%);
       }
