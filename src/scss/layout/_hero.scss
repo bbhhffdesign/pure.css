@@ -71,16 +71,16 @@
     }
 
     h1 {
-      flex-grow: .1;
+      // flex-grow: .1;
       // margin: 0;
     }
     h2 {
-      flex-grow: .1;
+      // flex-grow: .1;
       // margin: 0;
     }
     p {
       margin: 0;
-      line-height: 1.5rem;
+      // line-height: 1.5rem;
       @include tablet {
         line-height: 1.8rem;
       }
