@@ -4,13 +4,12 @@
 .hero {
   position: relative;
   margin-top: 1rem;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, -0.765rem + 7.843vw, 3rem);
   
 
   & > div{
     height: 100svh;
   }
-
   & > :nth-child(2) {
     height: 60svh;
     @include flex(column, center, center, none);
@@ -37,6 +36,10 @@
 
   .cuales-title{
     box-sizing: border-box;
+
+    @include desktop-sm{
+      height: 100svh;
+    }
   }
 
   .hero-text {

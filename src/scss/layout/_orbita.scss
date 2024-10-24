@@ -10,6 +10,10 @@
   position: relative;
   height: 150svh;
 
+  @include desktop-sm{
+    flex-direction: column-reverse;
+  }
+
   .orbita__text {
     padding: 0 1rem;
     text-align: center;
@@ -49,6 +53,11 @@
       top: 0px;
       left: 0px;
       transform: translateX(-50%);
+
+      @include desktop-sm{
+        transform: translateX(0);
+        transform: rotate(-90deg);
+      }
 
       .orb-stroke-dash {
         fill: none;
