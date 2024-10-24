@@ -35,30 +35,36 @@
   }
 
   .hero-text {
-    // margin-top: 2rem;
+    margin-top: 1.5rem;
     height: 100%;
     @include flex(column, center, flex-start, none);
     position: relative;
-    // gap: 1rem;
 
+    @include mobile-sm{
+      gap: 1rem;
+
+    }
+    
     @include tablet{
+      margin-top: 0;
       padding: 0 3rem;
     }
     @include desktop-sm{
       padding: 0 0 0 3rem;
-      // margin-left: 1rem;
+
+      .hr__disable{
+        display: none;
+      }
+
       
     }
     @include desktop-lg{
-      // margin-left: 2rem;
+
     }
 
-    @include mobile-sm {
-      // gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
-      // gap: 4rem;
-    }
 
     button{
+      margin-top: 2rem;
       color: var(--colorBg);
     }
 
@@ -72,7 +78,7 @@
 
     h1 {
       // flex-grow: .1;
-      // margin: 0;
+      margin: 0;
     }
     h2 {
       // flex-grow: .1;

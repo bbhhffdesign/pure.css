@@ -35,6 +35,11 @@
     border-left: none;
     border-right: none;
     height: 80%;
+    padding: .2rem;
+
+    @include desktop-sm{
+        padding: 0;
+    }
 
     .counter__msj{
         @include flex(column, center, center,none);

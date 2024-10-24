@@ -6,7 +6,7 @@
     @extend .pure-menu-horizontal;
     position: fixed;
     top: 0;
-    height: 4rem;
+    height: 3rem;
     padding: $spac-xs 0;
     border: none; 
     z-index: 2;
@@ -14,16 +14,12 @@
     @include flex(row, space-around, center, auto);
     flex-wrap: wrap;
     @include font-raleway;
-    // width: inherit;
-
-    // &::before{
-    //     width: 100vw;
-    // }
+ 
 
     a{
         svg{
             overflow: visible;
-            height: clamp(2.5rem, 1.429rem + 5.357vw, 4rem);
+            height: inherit;
             width: auto;
         }
     }
@@ -31,11 +27,12 @@
 
     @include tablet{
         padding: .5rem 0;
-        height: 4rem;
+        // height: 4rem;
         justify-content: space-evenly;
 
     }
     @include desktop-sm{
+        height: 4rem;
     }
     @include desktop-md{
         border-top: none;
