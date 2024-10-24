@@ -7,6 +7,10 @@
   padding: $spac-s;
   max-width: 1000px;
   margin: 20lvh 0;
+  
+  @include desktop-sm{
+    width: auto;
+  }
 
   p {
     text-align: center;
@@ -26,6 +30,11 @@
     border-radius: $border-rad-s;
     background-color: #6f6f6f52;
     @include flex(row, center, center,none);
+
+    @include desktop-sm{
+      justify-content: space-between;
+    }
+
 
     button {
       font-size: 100%;
