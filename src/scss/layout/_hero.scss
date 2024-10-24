@@ -55,11 +55,10 @@
       .hr__disable{
         display: none;
       }
-
-      
     }
-    @include desktop-lg{
-
+    @include desktop-md{
+        padding: 0;
+        padding-left: clamp(3rem, -7rem + 12.5vw, 8rem);
     }
 
 
@@ -162,12 +161,7 @@
 //   z-index: 1;
 // }
 
-// .cuales-title{
-//   div{
-//     // padding: 0 2rem ;
-//     // @include desktop-sm{
-//     //   padding: 0;
-//     // }
-
-//   }
-// }
+.cuales-title{
+  box-sizing: border-box;
+  padding: 1rem;
+}
