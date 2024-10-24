@@ -1,11 +1,25 @@
 @use "../abstract/variables" as *;
 @use "../abstract/mixins" as *;
 
-.somos {
+.somos,
+.somos__laptop{
   height: 100svh;
+}
+
+.somos__laptop{
+  display: none;
+
+  @include desktop-sm{
+
+    @include flex(column, center, center,none);
+
+  }
+}
+
+.somos {
+  box-sizing: border-box;
 
   @include desktop-sm {
-    // height: 120svh;
     @include flex(row, center, center, none);
   }
 

@@ -35,11 +35,11 @@
   }
 
   .hero-text {
-    margin-top: 2rem;
+    // margin-top: 2rem;
     height: 100%;
     @include flex(column, center, flex-start, none);
     position: relative;
-    gap: 1rem;
+    // gap: 1rem;
 
     @include tablet{
       padding: 0 3rem;
@@ -54,7 +54,7 @@
     }
 
     @include mobile-sm {
-      gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
+      // gap: clamp(2rem, 1.118rem + 3.922vw, 3rem);
       // gap: 4rem;
     }
 
@@ -71,10 +71,12 @@
     }
 
     h1 {
-      margin: 0;
+      flex-grow: .1;
+      // margin: 0;
     }
     h2 {
-      margin: 0;
+      flex-grow: .1;
+      // margin: 0;
     }
     p {
       margin: 0;
@@ -154,12 +156,12 @@
 //   z-index: 1;
 // }
 
-.cuales-title{
-  div{
-    padding: 0 2rem ;
-    @include desktop-sm{
-      padding: 0;
-    }
+// .cuales-title{
+//   div{
+//     // padding: 0 2rem ;
+//     // @include desktop-sm{
+//     //   padding: 0;
+//     // }
 
-  }
-}
+//   }
+// }

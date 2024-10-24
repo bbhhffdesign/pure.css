@@ -54,6 +54,14 @@
       }
     }
 
+
+    //hover span ! 
+    .text-hover{
+      &:hover{
+        // color
+      }
+    }
+
     @include tablet {
       margin: 0 3rem 0 2rem;
       padding-left: 2rem;
